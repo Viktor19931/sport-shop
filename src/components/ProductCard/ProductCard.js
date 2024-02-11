@@ -12,6 +12,7 @@ const ProductCard = (props) => {
     imageAlt,
     name,
     price,
+    gallery,
     originalPrice,
     meta,
     showQuickView,
@@ -19,7 +20,7 @@ const ProductCard = (props) => {
   } = props;
 
   const handleRouteToProduct = () => {
-    navigate('/product/sample');
+    // navigate('/product/sample', { id });
   };
 
   const handleQuickView = (e) => {
@@ -68,7 +69,7 @@ const ProductCard = (props) => {
           <span
             className={`${originalPrice !== undefined ? styles.salePrice : ''}`}
           >
-            <CurrencyFormatter amount={price}></CurrencyFormatter>
+            ${price}
           </span>
           {originalPrice && (
             <span className={styles.originalPrice}>

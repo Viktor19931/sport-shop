@@ -1,40 +1,39 @@
 .root {
-
 }
 
 .cardGrid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2px;
 }
 
 .imageContainer {
-    width: 100%;
-    height: 520px;
+  width: 100%;
+  height: 520px;
 }
 
 .imageContainer img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .mobileSlider {
-    display: none;
+  display: none;
 }
 
 @media (max-width: 800px) {
-    .cardGrid {
-        display: none;
-    }
+  .cardGrid {
+    display: none;
+  }
 
-    .mobileSlider {
-        display: block;
-        margin-bottom: 32px;
-    }
+  .mobileSlider {
+    display: block;
+    margin-bottom: 32px;
+  }
 
-    .root {
-        margin-left: -3.5%;
-        margin-right: -2.5%;
-    }
+  .root {
+    margin-left: -3.5%;
+    margin-right: -2.5%;
+  }
 }

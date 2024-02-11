@@ -23,13 +23,29 @@
     "description": "This soft lambswool jumper is knitted in Scotland, using yarn from one of the world's oldest spinners based in Fife. Once knitted, the garment is washed in Scottish spring water to make it beautifully soft."
   },
   {
-    "name": "Classic T-Shirt",
-    "price": 75,
-    "alt": "classic t-shirt 1",
-    "image": "/products/shirt1.jpg",
-    "tags": ["shirt", "men"]
+    "id": 1,
+    "name": "лижна куртка Nevica Banff",
+    "price": 69,
+    "alt": "relaxed t shirt woman",
+    "image": "/products/product1/1.jpeg",
+    "tags": ["woman"],
+    "meta": "+ 2 colors",
+    "colorOptions": [
+      { "color": "#000000", "title": "Anthracite Melange" },
+      { "color": "#4D34AE", "title": "Pale Purple" },
+      { "color": "#488266", "title": "Green Moss" }
+    ],
+    "sizeOptions": ["xs", "s", "m", "l", "xl"],
+    "wishlist": true,
+    "gallery": [
+      { "image": "/products/product1/1.jpeg", "alt": "pdp description 1" },
+      { "image": "/products/product1/2.jpeg", "alt": "pdp description 2" },
+      { "image": "/products/product1/3.jpeg", "alt": "pdp description 3" },
+      { "image": "/products/product1/4.jpeg", "alt": "pdp description 4" }
+    ]
   },
   {
+    "id": 2,
     "name": "Classic T-Shirt",
     "price": 75,
     "alt": "classic t-shirt 2",
@@ -37,6 +53,7 @@
     "tags": ["shirt", "men"]
   },
   {
+    "id": 3,
     "name": "Classic T-Shirt",
     "price": 75,
     "alt": "classic t-shirt 3",
@@ -44,6 +61,7 @@
     "tags": ["shirt", "men"]
   },
   {
+    "id": 4,
     "name": "Relaxed-fit graphic T-shirt",
     "price": 13.9,
     "alt": "relaxed t shirt woman",
@@ -52,6 +70,7 @@
     "meta": "+ 2 colors"
   },
   {
+    "id": 5,
     "name": "Relaxed-fit graphic T-shirt",
     "price": 15.9,
     "alt": "relaxed t shirt woman",
@@ -59,6 +78,7 @@
     "tags": ["woman"]
   },
   {
+    "id": 6,
     "name": "Relaxed-fit graphic T-shirt",
     "price": 13.9,
     "alt": "relaxed t shirt woman",
@@ -67,6 +87,7 @@
     "meta": "+ 2 colors"
   },
   {
+    "id": 7,
     "name": "Relaxed-fit graphic T-shirt",
     "price": 15.9,
     "alt": "relaxed t shirt woman",
@@ -74,6 +95,7 @@
     "tags": ["woman"]
   },
   {
+    "id": 8,
     "name": "Relaxed-fit graphic T-shirt",
     "price": 15.9,
     "alt": "relaxed t shirt woman",
@@ -82,6 +104,7 @@
     "originalPrice": 31.5
   },
   {
+    "id": 9,
     "name": "Relaxed-fit graphic T-shirt",
     "price": 21,
     "alt": "relaxed t shirt woman",
@@ -89,6 +112,7 @@
     "tags": ["woman"]
   },
   {
+    "id": 10,
     "name": "Relaxed-fit graphic T-shirt",
     "price": 15.9,
     "alt": "relaxed t shirt woman",
@@ -96,6 +120,7 @@
     "tags": ["woman"]
   },
   {
+    "id": 11,
     "name": "Relaxed-fit graphic T-shirt",
     "price": 15.9,
     "alt": "relaxed t shirt woman",
@@ -104,6 +129,7 @@
     "originalPrice": 31.5
   },
   {
+    "id": 12,
     "name": "Relaxed-fit graphic T-shirt",
     "price": 21,
     "alt": "relaxed t shirt woman",

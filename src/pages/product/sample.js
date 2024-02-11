@@ -13,7 +13,7 @@ import Split from '../../components/Split';
 import SwatchList from '../../components/SwatchList';
 import Layout from '../../components/Layout/Layout';
 
-import { generateMockProductData } from '../../helpers/mock';
+import { generateMockProductData, getProductById } from '../../helpers/mock';
 import Icon from '../../components/Icons/Icon';
 import ProductCardGrid from '../../components/ProductCardGrid';
 import { navigate } from 'gatsby';
@@ -39,8 +39,7 @@ const ProductPage = (props) => {
           <Breadcrumbs
             crumbs={[
               { link: '/', label: 'Home' },
-              { label: 'Men', link: '/shop' },
-              { label: 'Sweater', link: '/shop' },
+              { label: 'Магазин', link: '/shop' },
               { label: `${sampleProduct.name}` },
             ]}
           />

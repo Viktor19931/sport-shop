@@ -19,10 +19,10 @@ const BlogPage = (props) => {
         <Hero
           maxWidth={'400px'}
           image={'/blogCover.png'}
-          title={`The new standard of Closing`}
-          ctaLink={'read story'}
+          title={`Новий стандарт закриття`}
+          ctaLink={'читати історію'}
           ctaTo={'/blog/sample'}
-          header={'design'}
+          header={'Дизайн'}
         />
 
         <div className={styles.navContainer}>

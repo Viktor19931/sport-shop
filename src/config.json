@@ -66,67 +66,7 @@
     {
       "menuLabel": "Магазин",
       "menuLink": "/shop",
-      "category": [
-        {
-          "categoryLabel": "жінка",
-          "submenu": [
-            {
-              "menuLabel": "Весь одяг",
-              "menuLink": "/shop"
-            },
-            {
-              "menuLabel": "світшоти та толстовки",
-              "menuLink": "/shop"
-            },
-            {
-              "menuLabel": "куртки",
-              "menuLink": "/shop"
-            },
-            {
-              "menuLabel": "штани",
-              "menuLink": "/shop"
-            }
-          ]
-        },
-        {
-          "categoryLabel": "чоловіки",
-          "submenu": [
-            {
-              "menuLabel": "Весь одяг",
-              "menuLink": "/shop"
-            },
-            {
-              "menuLabel": "світшоти та толстовки",
-              "menuLink": "/shop"
-            },
-            {
-              "menuLabel": "куртки",
-              "menuLink": "/shop"
-            },
-            {
-              "menuLabel": "штани",
-              "menuLink": "/shop"
-            },
-            {
-              "menuLabel": "штани",
-              "menuLink": "/shop"
-            }
-          ]
-        },
-        {
-          "categoryLabel": "аксесуари",
-          "submenu": [
-            {
-              "menuLabel": "шапки та шарфи",
-              "menuLink": "/shop"
-            },
-            {
-              "menuLabel": "сумки",
-              "menuLink": "/shop"
-            }
-          ]
-        }
-      ]
+      "category": null
     },
     {
       "menuLabel": "журнал",

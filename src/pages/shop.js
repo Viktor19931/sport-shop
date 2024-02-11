@@ -32,7 +32,7 @@ const ShopPage = (props) => {
     <Layout>
       <div className={styles.root}>
         <Container size={'large'} spacing={'min'}>
-          <div className={styles.breadcrumbContainer}>
+          {/* <div className={styles.breadcrumbContainer}>
             <Breadcrumbs
               crumbs={[
                 { link: '/', label: 'Home' },
@@ -40,17 +40,16 @@ const ShopPage = (props) => {
                 { label: 'Sweaters' },
               ]}
             />
-          </div>
+          </div> */}
         </Container>
-        <Banner
+        {/* <Banner
           maxWidth={'650px'}
           name={`Жіночі светри`}
           subtitle="Подивіться на наші жіночі светри, щоб отримати сучасні погляди на одноразовий одяг. Від міді зі сміливими принтами до драматичних стилів для підмітання підлоги та легких моноблоків — наша редакція охоплює будь-який настрій."
-        />
+        /> */}
         <Container size={'large'} spacing={'min'}>
-          <div className={styles.metaContainer}>
-            <span className={styles.itemCount}>476 речей</span>
-            <div className={styles.controllerContainer}>
+          {/* <div className={styles.metaContainer}> */}
+          {/* <div className={styles.controllerContainer}>
               <div
                 className={styles.iconContainer}
                 role={'presentation'}
@@ -65,19 +64,18 @@ const ShopPage = (props) => {
                 <span>Сортувати</span>
                 <Icon symbol={'caret'} />
               </div>
-            </div>
-          </div>
+            </div> */}
+          {/* </div> */}
           <CardController
             closeFilter={() => setShowFilter(false)}
             visible={showFilter}
             filters={Config.filters}
           />
-          <div className={styles.chipsContainer}>
+          {/* <div className={styles.chipsContainer}>
             <Chip name={'XS'} />
             <Chip name={'S'} />
-          </div>
+          </div> */}
           <div className={styles.productContainer}>
-            <span className={styles.mobileItemCount}>476 речей</span>
             <ProductCardGrid data={data}></ProductCardGrid>
           </div>
           {/* <div className={styles.loadMoreContainer}>

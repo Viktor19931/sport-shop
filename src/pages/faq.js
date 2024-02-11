@@ -11,102 +11,77 @@ const FaqPage = (props) => {
       <div className={styles.root}>
         <Banner
           maxWidth={'650px'}
-          name={`Frequently Asked Questions`}
+          name={`Питання що часто задаються`}
           bgImage={'/faqCover.png'}
           color={'var(--standard-white)'}
           height={'350px'}
         />
         <Container>
           <div className={styles.section}>
-            <span>Your Orders</span>
+            <span>Ваші замовлення</span>
             <div className={styles.subSection}>
-              <h3>Deliveries</h3>
+              <h3>Доставки</h3>
               <p>
-                To review the status of your order please visit the "My Orders"
-                section of your Sunspel Account. You should receive an email
-                notification when your package is dispatched. Please check your
-                email inbox and your junk filter.
+                Щоб переглянути статус свого замовлення, перейдіть у розділ «Мої
+                замовлення» розділ вашого облікового запису Sunspel. Ви повинні
+                отримати електронний лист сповіщення, коли ваш пакет буде
+                відправлено. Будь ласка, перевірте свій скриньку вхідних
+                повідомлень електронної пошти та ваш фільтр сміття.
               </p>
               <p>
-                We dispatch all orders within 24 hours of being placed. During
-                our sale periods it can get very busy in our factory, orders may
-                take a little longer to be dispatched so please add five working
-                days just in case.
+                Ми відправляємо всі замовлення протягом 24 годин після
+                розміщення. Протягом наші періоди продажу можуть бути дуже
+                зайнятими на нашому заводі, замовлення можуть бути на відправку
+                потрібно трохи більше часу, тому додайте п’ять робочих днів про
+                всяк випадок.
               </p>
               <p>
-                If there’s something you want to know about your order, please
-                get in touch with us at customerservice@example.com or call us
-                on +44 (0)115 111 1111.
+                Будь ласка, якщо ви хочете щось знати про своє замовлення
+                зв’яжіться з нами за адресою customerservice@example.com або
+                зателефонуйте нам за телефоном +380974323121.
               </p>
             </div>
             <div className={styles.subSection}>
-              <h3>Returns & Exchanges</h3>
+              <h3>Повернення та обмін</h3>
               <p>
-                To review the status of your order please visit the "My Orders"
-                section of your Sunspel Account. You should receive an email
-                notification when your package is dispatched. Please check your
-                email inbox and your junk filter.
+                Щоб переглянути статус свого замовлення, перейдіть у розділ «Мої
+                замовлення» розділ вашого облікового запису. Ви повинні отримати
+                електронний лист сповіщення, коли ваш пакет буде відправлено.
+                Будь ласка, перевірте свій скриньку вхідних повідомлень
+                електронної пошти та ваш фільтр сміття.
               </p>
               <p>
-                We dispatch all orders within 24 hours of being placed. During
-                our sale periods it can get very busy in our factory, orders may
-                take a little longer to be dispatched so please add five working
-                days just in case.
+                Ми відправляємо всі замовлення протягом 24 годин після
+                розміщення. Протягом наші періоди продажу можуть бути дуже
+                зайнятими на нашому заводі, замовлення можуть бути на відправку
+                потрібно трохи більше часу, тому додайте п’ять робочих днів про
+                всяк випадок.
               </p>
             </div>
           </div>
 
           <div className={styles.section}>
-            <span>Payment</span>
+            <span>Оплата</span>
             <div className={styles.subSection}>
-              <h3>Shipping Rates</h3>
+              <h3>Тарифи доставки</h3>
               <p>
-                To review the status of your order please visit the "My Orders"
-                section of your Sunspel Account. You should receive an email
-                notification when your package is dispatched. Please check your
-                email inbox and your junk filter.
+                Щоб переглянути статус свого замовлення, перейдіть у розділ «Мої
+                замовлення» розділ вашого облікового запису Sunspel. Ви повинні
+                отримати електронний лист сповіщення, коли ваш пакет буде
+                відправлено. Будь ласка, перевірте свій скриньку вхідних
+                повідомлень електронної пошти та ваш фільтр сміття.
               </p>
               <p>
-                We dispatch all orders within 24 hours of being placed. During
-                our sale periods it can get very busy in our factory, orders may
-                take a little longer to be dispatched so please add five working
-                days just in case.
+                Ми відправляємо всі замовлення протягом 24 годин після
+                розміщення. Протягом наші періоди продажу можуть бути дуже
+                зайнятими на нашому заводі, замовлення можуть бути на відправку
+                потрібно трохи більше часу, тому додайте п’ять робочих днів про
+                всяк випадок.
               </p>
               <p>
-                If there’s something you want to know about your order, please
-                get in touch with us at customerservice@example.com call us on
-                +44 (0)115 111 1111.
-              </p>
-            </div>
-            <div className={styles.subSection}>
-              <h3>Currency</h3>
-              <p>
-                Our website automatically selects the currency that matches your
-                delivery location. You can change this manually in the top left
-                hand corner of the page.
-              </p>
-              <p>
-                For deliveries to the UK, we will bill you in Pounds Sterling
-                (£), to the European Union in Euros (€), to the US in Dollars
-                ($), and to the Rest of World in Pounds Sterling (£).
-              </p>
-              <p>
-                Standard rate VAT is included in all orders to the UK and
-                Europe. Orders to the Rest of the World do not include VAT.
-                Where applicable, you will be responsible for any local country
-                import duty.
-              </p>
-            </div>
-            <div className={styles.subSection}>
-              <h3>Suspect Fraud?</h3>
-              <p>
-                Given our high levels of security, it’s very unlikely fraudulent
-                use of your card will take place on our website. But if a
-                fraudulent transaction does take place, first contact your
-                credit or debit card company so they can protect your card and
-                reimburse you. Then let us know at customerservice@example.com
-                and we will work with your card company to minimise any further
-                inconvenience to you.
+                Будь ласка, якщо ви хочете щось знати про своє замовлення
+                зв’яжіться з нами за адресою customerservice@example.com,
+                зателефонуйте нам +44 (0)115 111 1111.
               </p>
             </div>
           </div>

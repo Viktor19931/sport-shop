@@ -62,44 +62,45 @@
   },
   {
     "id": 4,
-    "name": "Relaxed-fit graphic T-shirt",
-    "price": 13.9,
+    "name": "Термо білизна",
+    "price": 49,
     "alt": "relaxed t shirt woman",
-    "image": "/products/woman1.jpeg",
+    "image": "/products/product2/1.jpeg",
     "tags": ["woman"],
     "meta": "+ 2 colors"
   },
   {
     "id": 5,
-    "name": "Relaxed-fit graphic T-shirt",
-    "price": 15.9,
+    "name": "костюм для хлопчика",
+    "price": 59,
     "alt": "relaxed t shirt woman",
-    "image": "/products/woman2.jpeg",
+    "image": "/products/product3/1.jpeg",
+
     "tags": ["woman"]
   },
   {
     "id": 6,
-    "name": "Relaxed-fit graphic T-shirt",
-    "price": 13.9,
+    "name": "Куртка Nevica man",
+    "price": 112,
     "alt": "relaxed t shirt woman",
-    "image": "/products/woman3.jpeg",
+    "image": "/products/product4/1.jpeg",
     "tags": ["woman"],
     "meta": "+ 2 colors"
   },
   {
     "id": 7,
-    "name": "Relaxed-fit graphic T-shirt",
-    "price": 15.9,
+    "name": "Окуляри для катання",
+    "price": 39,
     "alt": "relaxed t shirt woman",
-    "image": "/products/woman4.jpeg",
+    "image": "/products/product5/1.jpeg",
     "tags": ["woman"]
   },
   {
     "id": 8,
-    "name": "Relaxed-fit graphic T-shirt",
-    "price": 15.9,
+    "name": "Захисний шолом",
+    "price": 75,
     "alt": "relaxed t shirt woman",
-    "image": "/products/woman5.jpeg",
+    "image": "/products/product6/1.jpeg",
     "tags": ["woman"],
     "originalPrice": 31.5
   },

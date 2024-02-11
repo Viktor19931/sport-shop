@@ -72,9 +72,7 @@ const ProductCard = (props) => {
             ${price}
           </span>
           {originalPrice && (
-            <span className={styles.originalPrice}>
-              <CurrencyFormatter amount={originalPrice}></CurrencyFormatter>
-            </span>
+            <span className={styles.originalPrice}>${originalPrice}</span>
           )}
         </div>
         <span className={styles.meta}>{meta}</span>

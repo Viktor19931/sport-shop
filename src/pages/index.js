@@ -30,28 +30,16 @@ const IndexPage = () => {
       <Hero
         maxWidth={'500px'}
         image={'/banner1.png'}
-        title={'Essentials for a cold winter'}
-        subtitle={'Discover Autumn Winter 2021'}
-        ctaText={'shop now'}
+        title={'Основні речі для холодної зими'}
+        subtitle={'Відкрийте для себе осінь-зима 2023'}
+        ctaText={'Магазин'}
         ctaAction={goToShop}
       />
-
-      {/* Message Container */}
-      <div className={styles.messageContainer}>
-        <p>
-          This is a demonstration of the Sydney theme for verse by{' '}
-          <span className={styles.gold}>matter design.</span>
-        </p>
-        <p>
-          wear by <span className={styles.gold}>sunspel</span> and{' '}
-          <span className={styles.gold}>scotch&soda</span>
-        </p>
-      </div>
 
       {/* Collection Container */}
       <div className={styles.collectionContainer}>
         <Container size={'large'}>
-          <Title name={'New Collection'} />
+          <Title name={'Нова колекія'} />
           <ProductCollectionGrid />
         </Container>
       </div>
@@ -59,7 +47,11 @@ const IndexPage = () => {
       {/* New Arrivals */}
       <div className={styles.newArrivalsContainer}>
         <Container>
-          <Title name={'New Arrivals'} link={'/shop'} textLink={'view all'} />
+          <Title
+            name={'Нові надходження'}
+            link={'/shop'}
+            textLink={'view all'}
+          />
           <ProductCardGrid
             spacing={true}
             showSlider
@@ -78,9 +70,9 @@ const IndexPage = () => {
             altImage={'highlight image'}
             miniImage={'/highlightmin.png'}
             miniImageAlt={'mini highlight image'}
-            title={'Luxury Knitwear'}
-            description={`This soft lambswool jumper is knitted in Scotland, using yarn from one of the world's oldest spinners based in Fife`}
-            textLink={'shop now'}
+            title={'Розкішний трикотаж'}
+            description={`Цей м’який джемпер з овечої вовни пов’язаний у Шотландії з використанням пряжі однієї з найстаріших у світі прядильних фабрик у Файфі`}
+            textLink={'купити'}
             link={'/shop'}
           />
         </Container>
@@ -90,8 +82,8 @@ const IndexPage = () => {
       <div className={styles.promotionContainer}>
         <Hero image={'/banner2.png'} title={`-50% off \n All Essentials`} />
         <div className={styles.linkContainers}>
-          <Link to={'/shop'}>WOMAN</Link>
-          <Link to={'/shop'}>MAN</Link>
+          <Link to={'/shop'}>Жінкам</Link>
+          <Link to={'/shop'}>Чоловікам</Link>
         </div>
       </div>
 
@@ -100,14 +92,14 @@ const IndexPage = () => {
         bgColor={'var(--standard-light-grey)'}
         title={'about Sydney'}
         quote={
-          '“We believe in two things: the pursuit of quality in everything we do, and looking after one another. Everything else should take care of itself.”'
+          '“Ми віримо в дві речі: прагнення до якості в усьому, що ми робимо, і турбота один про одного. Все інше має подбати про себе.”'
         }
       />
 
       {/* Blog Grid */}
       <div className={styles.blogsContainer}>
         <Container size={'large'}>
-          <Title name={'Journal'} subtitle={'Notes on life and style'} />
+          <Title name={'Журнал'} subtitle={'Нотатки про життя та стиль'} />
           <BlogPreviewGrid data={blogData} />
         </Container>
       </div>
@@ -116,11 +108,11 @@ const IndexPage = () => {
       <div className={styles.sustainableContainer}>
         <Hero
           image={'/banner3.png'}
-          title={'We are Sustainable'}
+          title={'Ми стійкі'}
           subtitle={
-            'From caring for our land to supporting our people, discover the steps we’re taking to do more for the world around us.'
+            'Від турботи про нашу землю до підтримки наших людей – дізнайтеся про кроки, які ми робимо, щоб зробити більше для світу навколо нас.'
           }
-          ctaText={'read more'}
+          ctaText={'читати далі'}
           maxWidth={'660px'}
           ctaStyle={styles.ctaCustomButton}
         />
@@ -129,8 +121,8 @@ const IndexPage = () => {
       {/* Social Media */}
       <div className={styles.socialContainer}>
         <Title
-          name={'Styled by You'}
-          subtitle={'Tag @sydney to be featured.'}
+          name={'Стилізовано вами'}
+          subtitle={'Tag @elite_sport to be featured.'}
         />
         <div className={styles.socialContentGrid}>
           <img src={`/social/socialMedia1.png`} alt={'social media 1'} />

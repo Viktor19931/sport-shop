@@ -28,25 +28,24 @@ const AboutPage = (props) => {
 
         <div className={styles.navContainer}>
           <ThemeLink onClick={() => handleScroll(historyRef)} to={'#history'}>
-            History
+            Історія
           </ThemeLink>
           <ThemeLink onClick={() => handleScroll(valuesRef)} to={'#values'}>
-            Values
+            Цінності
           </ThemeLink>
           <ThemeLink
             onClick={() => handleScroll(sustainabilityRef)}
             to={'#sustainability'}
           >
-            Sustainability
+            Стабільність
           </ThemeLink>
         </div>
 
         <Container size={'large'} spacing={'min'}>
           <div className={styles.detailContainer} ref={historyRef}>
             <p>
-              Заснований у році, Sydney є інноваційним британським брендом з a
-              сучасний край. Ми створюємо позачасовий повсякденний одяг класу
-              люкс.
+              Elit Sport є інноваційним магазином. Ми створюємо позачасовий
+              повсякденний одяг класу люкс.
             </p>
             <br />
             <br />
@@ -65,50 +64,50 @@ const AboutPage = (props) => {
 
         <Container size={'large'} spacing={'min'}>
           <div className={styles.content}>
-            <h3>Our Values</h3>
+            <h3>Наші цінності</h3>
             <div ref={valuesRef}>
               <p>
-                Sunspel produced some of the world's earliest T-shirts. In the
-                late 1800s the business made luxury tunics and undershirts from
-                lightweight Sea Island cotton for export to the Far East and
-                other warm climates. While these garments initially had silk
-                buttoned plackets, these were removed in the early 1900s and
-                replaced with simple bound necks to reduce manufacturing costs -
-                creating the T-shirt. We've supplied the world as the T-shirt
-                has evolved from underwear to outerwear, from symbol of youthful
-                rebellion to everyday wardrobe staple, and we've spent decades
-                refining its every last aspect.
+                Компанія Elite Sport випустила одні з найперших у світі
+                футболок. В наприкінці 1800-х років компанія виготовляла
+                розкішні туніки та нижні сорочки легка бавовна Sea Island для
+                експорту на Далекий Схід і інші теплі клімати. Хоча цей одяг
+                спочатку мав шовк планки на ґудзиках, їх було видалено на
+                початку 1900-х років замінено простими зв'язаними горловинами
+                для зменшення витрат на виробництво - створення футболки. Ми
+                поставили світ як футболку еволюціонував від нижньої білизни до
+                верхнього одягу, від символу молодості повстання до
+                повсякденного гардеробу, і ми витратили десятиліття
+                вдосконалюючи кожен його аспект.
               </p>
               <ol>
-                <li>Be an ecowear</li>
-                <li>Sophisticated and not mass-produced</li>
-                <li>Only natural materials</li>
+                <li>Будьте ecowear</li>
+                <li>Складний і не масовий</li>
+                <li>Тільки натуральні матеріали</li>
               </ol>
               <img alt={'founder'} src={'/about2.png'}></img>
             </div>
-            <h3>Sustainability</h3>
+            <h3>Стабільність</h3>
             <div id={'#sustainability'} ref={sustainabilityRef}>
               <p>
-                Our founder, Thomas Hill, had both an eye for quality and a
-                desire to innovate. As well as using the finest fibres such as
-                Sea Island cotton, cashmere and silk, he invented his own
-                fabrics. Sunspel continues this commitment to innovation today
-                and our unique fabrics include: Q100 Sea Island cotton, Q82
-                Supima cotton, Q75 warp knit mesh cotton and Q14 warp knit
-                cellular cotton. The technology behind these fabrics remains
-                unchanged today and all Sunspel products use the finest cottons,
-                wools and fibres.
+                Наш засновник, Томас Хілл, мав як око на якість, так і прагнення
+                до інновацій. А також з використанням найтонших волокон, таких
+                як Бавовна, кашемір і шовк Сі-Айленд він винайшов власний
+                тканини. Sunspel продовжує цю відданість інноваціям і сьогодні і
+                наші унікальні тканини включають: Q100 Sea Island cotton, Q82
+                Бавовна Supima, бавовна з основотрикотажної сітки Q75 і
+                основотрикотаж Q14 сотовий бавовна. Технологія, що лежить в
+                основі цих тканин, залишається незмінна сьогодні, і всі продукти
+                Sunspel використовують найкращу бавовну, шерсть і волокна.
               </p>
               <p>
-                Made in Long Eaton, England and crafted from our luxurious long
-                staple Supima cotton for unparalleled softness, comfort and
-                durability, the Sunspel T-shirt has a classic fit and only the
-                most essential details.{' '}
+                Зроблено в Лонг-Ітоні, Англія, і виготовлено з нашого розкішного
+                довгого одягу штапельна бавовна Supima для неперевершеної
+                м'якості, комфорту та довговічність, футболка Sunspel має
+                класичний крій і тільки найважливіші деталі.{' '}
               </p>
               <p>
-                With over 100 years spent perfecting fabric, fit and style, the
-                Sunspel Classic T-shirt is recognised as the finest in the
-                world.
+                Понад 100 років вдосконалюючи тканину, форму та стиль, Футболка
+                Sunspel Classic визнана найкращою в світі світ.
               </p>
             </div>
           </div>

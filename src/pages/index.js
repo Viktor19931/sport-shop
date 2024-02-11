@@ -50,7 +50,7 @@ const IndexPage = () => {
           <Title
             name={'Нові надходження'}
             link={'/shop'}
-            textLink={'view all'}
+            textLink={'подивитись все'}
           />
           <ProductCardGrid
             spacing={true}
@@ -80,7 +80,7 @@ const IndexPage = () => {
 
       {/* Promotion */}
       <div className={styles.promotionContainer}>
-        <Hero image={'/banner2.png'} title={`-50% off \n All Essentials`} />
+        <Hero image={'/banner2.png'} title={`-50% Знижка`} />
         <div className={styles.linkContainers}>
           <Link to={'/shop'}>Жінкам</Link>
           <Link to={'/shop'}>Чоловікам</Link>
@@ -90,7 +90,7 @@ const IndexPage = () => {
       {/* Quote */}
       <Quote
         bgColor={'var(--standard-light-grey)'}
-        title={'about Sydney'}
+        title={''}
         quote={
           '“Ми віримо в дві речі: прагнення до якості в усьому, що ми робимо, і турбота один про одного. Все інше має подбати про себе.”'
         }

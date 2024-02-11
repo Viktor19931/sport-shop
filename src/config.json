@@ -24,104 +24,104 @@
   },
   "footerLinks": [
     {
-      "subTitle": "Info",
+      "subTitle": "Інформація",
       "links": [
         {
-          "text": "About Us",
-          "link": "/about"
+          "text": "Про нас",
+          "link": "/про"
         },
         {
-          "text": "Journal",
-          "link": "/blog"
+          "text": "Щоденник",
+          "link": "/блог"
         },
         {
-          "text": "Privacy Policy",
+          "text": "Політика конфіденційності",
           "link": "/support#policy"
         }
       ]
     },
     {
-      "subTitle": "Support",
+      "subTitle": "Підтримка",
       "links": [
         {
           "text": "FAQ",
           "link": "/faq"
         },
         {
-          "text": "Contact Us",
+          "text": "Зв'язатися з нами",
           "link": "/support#contact"
         },
         {
-          "text": "Shipping & Returns",
+          "text": "Доставка та повернення",
           "link": "/support#returns"
         },
         {
-          "text": "How to use this theme",
-          "link": "/how-to-use"
+          "text": "Як використовувати цю тему",
+          "link": "/як використовувати"
         }
       ]
     }
   ],
   "headerLinks": [
     {
-      "menuLabel": "Shop",
-      "menuLink": "/shop",
+      "menuLabel": "Магазин",
+      "menuLink": "/магазин",
       "category": [
         {
-          "categoryLabel": "woman",
+          "categoryLabel": "жінка",
           "submenu": [
             {
-              "menuLabel": "All clothing",
+              "menuLabel": "Весь одяг",
               "menuLink": "/shop"
             },
             {
-              "menuLabel": "sweatshirts & hoodies",
+              "menuLabel": "світшоти та толстовки",
               "menuLink": "/shop"
             },
             {
-              "menuLabel": "jackets",
+              "menuLabel": "куртки",
               "menuLink": "/shop"
             },
             {
-              "menuLabel": "trousers",
+              "menuLabel": "штани",
               "menuLink": "/shop"
             }
           ]
         },
         {
-          "categoryLabel": "men",
+          "categoryLabel": "чоловіки",
           "submenu": [
             {
-              "menuLabel": "All clothing",
+              "menuLabel": "Весь одяг",
               "menuLink": "/shop"
             },
             {
-              "menuLabel": "sweatshirts & hoodies",
+              "menuLabel": "світшоти та толстовки",
               "menuLink": "/shop"
             },
             {
-              "menuLabel": "jackets",
+              "menuLabel": "куртки",
               "menuLink": "/shop"
             },
             {
-              "menuLabel": "trousers",
+              "menuLabel": "штани",
               "menuLink": "/shop"
             },
             {
-              "menuLabel": "pants",
+              "menuLabel": "штани",
               "menuLink": "/shop"
             }
           ]
         },
         {
-          "categoryLabel": "accessories",
+          "categoryLabel": "аксесуари",
           "submenu": [
             {
-              "menuLabel": "caps & scarves",
+              "menuLabel": "шапки та шарфи",
               "menuLink": "/shop"
             },
             {
-              "menuLabel": "bags",
+              "menuLabel": "сумки",
               "menuLink": "/shop"
             }
           ]
@@ -129,12 +129,12 @@
       ]
     },
     {
-      "menuLabel": "journal",
+      "menuLabel": "журнал",
       "menuLink": "/blog",
       "category": null
     },
     {
-      "menuLabel": "About",
+      "menuLabel": "Про програму",
       "menuLink": "/about",
       "category": null
     }
@@ -143,12 +143,12 @@
     {
       "category": "colour",
       "items": [
-        { "name": "Black", "value": true },
-        { "name": "Green", "value": false },
-        { "name": "Dark Blue", "value": false },
-        { "name": "Blue", "value": true },
-        { "name": "Grey", "value": false },
-        { "name": "Red", "value": false }
+        { "name": "Чорний", "value": true },
+        { "name": "Зелений", "value": false },
+        { "name": "темно-синій", "value": false },
+        { "name": "синій", "value": true },
+        { "name": "Сірий", "value": false },
+        { "name": "Червоний", "value": false }
       ]
     },
 
@@ -168,9 +168,9 @@
     {
       "category": "gender",
       "items": [
-        { "name": "Male", "value": false },
-        { "name": "Female", "value": false },
-        { "name": "Unisex", "value": false }
+        { "name": "Чоловік", "value": false },
+        { "name": "Жінка", "value": false },
+        { "name": "унісекс", "value": false }
       ]
     }
   ]

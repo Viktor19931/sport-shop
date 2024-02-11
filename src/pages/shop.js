@@ -44,14 +44,12 @@ const ShopPage = (props) => {
         </Container>
         <Banner
           maxWidth={'650px'}
-          name={`Woman's Sweaters`}
-          subtitle={
-            'Look to our women’s sweaters for modern takes on one-and-done dressing. From midis in bold prints to dramatic floor-sweeping styles and easy all-in-ones, our edit covers every mood.'
-          }
+          name={`Жіночі светри`}
+          subtitle="Подивіться на наші жіночі светри, щоб отримати сучасні погляди на одноразовий одяг. Від міді зі сміливими принтами до драматичних стилів для підмітання підлоги та легких моноблоків — наша редакція охоплює будь-який настрій."
         />
         <Container size={'large'} spacing={'min'}>
           <div className={styles.metaContainer}>
-            <span className={styles.itemCount}>476 items</span>
+            <span className={styles.itemCount}>476 речей</span>
             <div className={styles.controllerContainer}>
               <div
                 className={styles.iconContainer}
@@ -59,12 +57,12 @@ const ShopPage = (props) => {
                 onClick={() => setShowFilter(!showFilter)}
               >
                 <Icon symbol={'filter'} />
-                <span>Filters</span>
+                <span>Фільтри</span>
               </div>
               <div
                 className={`${styles.iconContainer} ${styles.sortContainer}`}
               >
-                <span>Sort by</span>
+                <span>Сортувати</span>
                 <Icon symbol={'caret'} />
               </div>
             </div>
@@ -79,15 +77,15 @@ const ShopPage = (props) => {
             <Chip name={'S'} />
           </div>
           <div className={styles.productContainer}>
-            <span className={styles.mobileItemCount}>476 items</span>
+            <span className={styles.mobileItemCount}>476 речей</span>
             <ProductCardGrid data={data}></ProductCardGrid>
           </div>
-          <div className={styles.loadMoreContainer}>
+          {/* <div className={styles.loadMoreContainer}>
             <span>6 of 456</span>
             <Button fullWidth level={'secondary'}>
               LOAD MORE
             </Button>
-          </div>
+          </div> */}
         </Container>
       </div>
 

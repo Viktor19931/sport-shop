@@ -69,10 +69,11 @@ const Footer = (prop) => {
             })}
             <div className={styles.newsLetter}>
               <div className={styles.newsLetterContent}>
-                <span className={styles.linkTitle}>Newsletter</span>
+                <span className={styles.linkTitle}>Підришіться на нас</span>
                 <p className={styles.promoMessage}>
-                  Get 15% off your first purchase! Plus, be the first to know
-                  about sales, new product launches and exclusive offers!
+                  Отримайте знижку 15% на першу покупку! Крім того, будьте
+                  першим, хто дізнається про розпродажі, запуски нових продуктів
+                  та ексклюзивні пропозиції!
                 </p>
                 <form
                   className={styles.newsLetterForm}
@@ -135,13 +136,13 @@ const Footer = (prop) => {
       <div className={styles.contentBottomContainer}>
         <Container size={'large'} spacing={'min'}>
           <div className={styles.contentBottom}>
-            <div className={styles.settings}>
+            {/* <div className={styles.settings}>
               <Dropdown
                 label={'Country/Region'}
                 optionList={Config.currencyList}
               />
               <Dropdown label={'Language'} optionList={Config.languageList} />
-            </div>
+            </div> */}
             <div className={styles.copyrightContainer}>
               <div className={styles.creditCardContainer}>
                 {Config.paymentOptions.amex && (

@@ -24,11 +24,7 @@ const AboutPage = (props) => {
     <Layout disablePaddingBottom>
       <div className={styles.root}>
         {/* Hero Container */}
-        <Hero
-          maxWidth={'900px'}
-          image={'/about.png'}
-          title={`Sydney \n A British brand since 1860`}
-        />
+        <Hero maxWidth={'900px'} image={'/about.png'} title={`Elite sport`} />
 
         <div className={styles.navContainer}>
           <ThemeLink onClick={() => handleScroll(historyRef)} to={'#history'}>
@@ -48,16 +44,17 @@ const AboutPage = (props) => {
         <Container size={'large'} spacing={'min'}>
           <div className={styles.detailContainer} ref={historyRef}>
             <p>
-              Founded in 1860, Sydney is an innovative British brand with a
-              contemporary edge. We make timeless everyday luxury clothing.
+              Заснований у році, Sydney є інноваційним британським брендом з a
+              сучасний край. Ми створюємо позачасовий повсякденний одяг класу
+              люкс.
             </p>
             <br />
             <br />
             <p>
-              We created some of the world's first T-shirts and spent decades
-              perfecting the feel of the cotton. Today we are the only brand
-              that makes T-shirts in its own factory in the UK. And we do this
-              in the same factory we have occupied since 1937.
+              Ми створили одні з перших у світі футболок і витратили на це
+              десятиліття покращуючи відчуття бавовни. Сьогодні ми єдиний бренд
+              яка виготовляє футболки на власній фабриці у Великобританії. І ми
+              це робимо на тій самій фабриці, яку ми займаємо з 1937 року.
             </p>
           </div>
         </Container>

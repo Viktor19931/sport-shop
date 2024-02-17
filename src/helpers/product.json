@@ -27,9 +27,7 @@
     "name": "лижна куртка Nevica Banff",
     "price": 69,
     "alt": "relaxed t shirt woman",
-    "image": "/products/product1/1.jpeg",
     "tags": ["woman"],
-    "meta": "+ 2 colors",
     "colorOptions": [
       { "color": "#000000", "title": "Anthracite Melange" },
       { "color": "#4D34AE", "title": "Pale Purple" },
@@ -38,103 +36,82 @@
     "sizeOptions": ["xs", "s", "m", "l", "xl"],
     "wishlist": true,
     "gallery": [
-      { "image": "/products/product1/1.jpeg", "alt": "pdp description 1" },
-      { "image": "/products/product1/2.jpeg", "alt": "pdp description 2" },
-      { "image": "/products/product1/3.jpeg", "alt": "pdp description 3" },
-      { "image": "/products/product1/4.jpeg", "alt": "pdp description 4" }
+      "/products/product1/1.jpeg",
+      "/products/product1/2.jpeg",
+      "/products/product1/3.jpeg",
+      "/products/product1/4.jpeg"
     ]
-  },
-  {
-    "id": 2,
-    "name": "Classic T-Shirt",
-    "price": 75,
-    "alt": "classic t-shirt 2",
-    "image": "/products/shirt2.jpg",
-    "tags": ["shirt", "men"]
-  },
-  {
-    "id": 3,
-    "name": "Classic T-Shirt",
-    "price": 75,
-    "alt": "classic t-shirt 3",
-    "image": "/products/shirt3.jpg",
-    "tags": ["shirt", "men"]
   },
   {
     "id": 4,
     "name": "Термо білизна",
     "price": 49,
     "alt": "relaxed t shirt woman",
-    "image": "/products/product2/1.jpeg",
+    "gallery": ["/products/product2/1.jpeg"],
     "tags": ["woman"],
-    "meta": "+ 2 colors"
+    "colorOptions": [
+      { "color": "#000000", "title": "Anthracite Melange" },
+      { "color": "#4D34AE", "title": "Pale Purple" },
+      { "color": "#488266", "title": "Green Moss" }
+    ],
+    "sizeOptions": ["xs", "s", "m", "l", "xl"]
   },
   {
     "id": 5,
     "name": "костюм для хлопчика",
     "price": 59,
     "alt": "relaxed t shirt woman",
-    "image": "/products/product3/1.jpeg",
-
-    "tags": ["woman"]
+    "gallery": ["/products/product3/1.jpeg"],
+    "tags": ["woman"],
+    "colorOptions": [
+      { "color": "#000000", "title": "Anthracite Melange" },
+      { "color": "#4D34AE", "title": "Pale Purple" },
+      { "color": "#488266", "title": "Green Moss" }
+    ],
+    "sizeOptions": ["xs", "s", "m", "l", "xl"]
   },
   {
     "id": 6,
     "name": "Куртка Nevica man",
     "price": 112,
     "alt": "relaxed t shirt woman",
-    "image": "/products/product4/1.jpeg",
+    "gallery": ["/products/product4/1.jpeg"],
     "tags": ["woman"],
-    "meta": "+ 2 colors"
+    "meta": "+ 2 colors",
+    "colorOptions": [
+      { "color": "#000000", "title": "Anthracite Melange" },
+      { "color": "#4D34AE", "title": "Pale Purple" },
+      { "color": "#488266", "title": "Green Moss" }
+    ],
+    "sizeOptions": ["xs", "s", "m", "l", "xl"]
   },
   {
     "id": 7,
     "name": "Окуляри для катання",
     "price": 39,
     "alt": "relaxed t shirt woman",
-    "image": "/products/product5/1.jpeg",
-    "tags": ["woman"]
+    "gallery": ["/products/product5/1.jpeg"],
+    "tags": ["woman"],
+    "colorOptions": [
+      { "color": "#000000", "title": "Anthracite Melange" },
+      { "color": "#4D34AE", "title": "Pale Purple" },
+      { "color": "#488266", "title": "Green Moss" }
+    ],
+    "sizeOptions": ["xs", "s", "m", "l", "xl"]
   },
   {
     "id": 8,
     "name": "Захисний шолом",
     "price": 75,
     "alt": "relaxed t shirt woman",
-    "image": "/products/product6/1.jpeg",
+    "gallery": ["/products/product6/1.jpeg"],
     "tags": ["woman"],
-    "originalPrice": 31.5
-  },
-  {
-    "id": 9,
-    "name": "Relaxed-fit graphic T-shirt",
-    "price": 21,
-    "alt": "relaxed t shirt woman",
-    "image": "/products/woman6.jpeg",
-    "tags": ["woman"]
-  },
-  {
-    "id": 10,
-    "name": "Relaxed-fit graphic T-shirt",
-    "price": 15.9,
-    "alt": "relaxed t shirt woman",
-    "image": "/products/woman3.jpeg",
-    "tags": ["woman"]
-  },
-  {
-    "id": 11,
-    "name": "Relaxed-fit graphic T-shirt",
-    "price": 15.9,
-    "alt": "relaxed t shirt woman",
-    "image": "/products/woman2.jpeg",
-    "tags": ["woman"],
-    "originalPrice": 31.5
-  },
-  {
-    "id": 12,
-    "name": "Relaxed-fit graphic T-shirt",
-    "price": 21,
-    "alt": "relaxed t shirt woman",
-    "image": "/products/woman1.jpeg",
-    "tags": ["woman"]
+    "originalPrice": 31.5,
+    "colorOptions": [
+      { "color": "#000000", "title": "Anthracite Melange" },
+      { "color": "#4D34AE", "title": "Pale Purple" },
+      { "color": "#488266", "title": "Green Moss" }
+    ],
+    "sizeOptions": ["xs", "s", "m", "l", "xl"]
   }
 ]

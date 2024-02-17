@@ -8,6 +8,7 @@ import CurrencyFormatter from '../CurrencyFormatter';
 const ProductCard = (props) => {
   const [isWishlist, setIsWishlist] = useState(false);
   const {
+    id,
     image,
     imageAlt,
     name,
@@ -20,7 +21,7 @@ const ProductCard = (props) => {
   } = props;
 
   const handleRouteToProduct = () => {
-    // navigate('/product/sample', { id });
+    navigate(`/product/sample?id=${id}`);
   };
 
   const handleQuickView = (e) => {
@@ -40,7 +41,11 @@ const ProductCard = (props) => {
         onClick={() => handleRouteToProduct()}
         role={'presentation'}
       >
-        <img style={{ height: `${height}px` }} src={image} alt={imageAlt}></img>
+        <img
+          style={{ height: `${height}px` }}
+          src={gallery[0]}
+          alt={imageAlt}
+        ></img>
         <div
           className={styles.bagContainer}
           role={'presentation'}

@@ -1,5 +1,5 @@
 import { Link } from 'gatsby';
-import React from 'react';
+import React, { useContext } from 'react';
 
 import Brand from '../components/Brand';
 import CartItem from '../components/CartItem';
@@ -9,17 +9,12 @@ import Icon from '../components/Icons/Icon';
 import OrderSummary from '../components/OrderSummary';
 
 import * as styles from './cart.module.css';
+import CartContext from '../context/cartContext';
 
 const CartPage = (props) => {
-  const sampleCartItem = {
-    image: '/products/pdp1.jpeg',
-    alt: '',
-    name: 'Lambswool Crew Neck Jumper',
-    price: 220,
-    color: 'Anthracite Melange',
-    size: 'XS',
-  };
+  const { items } = useContext(CartContext);
 
+  console.log('TTT ', items);
   return (
     <div>
       <div className={styles.contentContainer}>
@@ -42,8 +37,9 @@ const CartPage = (props) => {
             <h3>My Bag</h3>
             <div className={styles.cartContainer}>
               <div className={styles.cartItemsContainer}>
-                <CartItem {...sampleCartItem} />
-                <CartItem {...sampleCartItem} />
+                {items.map((item) => (
+                  <CartItem id={item.id} {...item} />
+                ))}
               </div>
               <OrderSummary />
             </div>

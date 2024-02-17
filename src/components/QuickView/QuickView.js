@@ -6,7 +6,7 @@ import SizeList from '../SizeList';
 import SwatchList from '../SwatchList';
 
 import { generateMockProductData } from '../../helpers/mock';
-import AddItemNotificationContext from '../../context/AddItemNotificationProvider';
+import AddItemNotificationContext from '../../context/cartContext';
 
 import * as styles from './QuickView.module.css';
 

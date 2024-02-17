@@ -1,9 +1,8 @@
-import React, { useState, useEffect, createRef } from 'react';
+import React, { useState, useEffect, createRef, useContext } from 'react';
 import { Link, navigate } from 'gatsby';
 
 import { isAuth } from '../../helpers/general';
 
-import AddNotification from '../AddNotification';
 import Brand from '../Brand';
 import Container from '../Container';
 import Config from '../../config.json';
@@ -14,11 +13,15 @@ import Icon from '../Icons/Icon';
 import MiniCart from '../MiniCart';
 import MobileNavigation from '../MobileNavigation';
 import * as styles from './Header.module.css';
+import CartContext from '../../context/cartContext';
 
 const Header = (prop) => {
   const [showMiniCart, setShowMiniCart] = useState(false);
   const [mobileMenu, setMobileMenu] = useState(false);
   const [showMenu, setShowMenu] = useState(true);
+
+  const { items } = useContext(CartContext);
+  const totalItems = items.reduce((acc, item) => acc + item.quantity, 0);
 
   const [menu, setMenu] = useState();
   const [activeMenu, setActiveMenu] = useState();
@@ -146,18 +149,17 @@ const Header = (prop) => {
               aria-label="Cart"
               className={`${styles.iconButton} ${styles.iconContainer} ${styles.bagIconContainer}`}
               onClick={() => {
-                setShowMiniCart(true);
-                setMobileMenu(false);
+                navigate('/cart');
               }}
             >
               <Icon symbol={'bag'}></Icon>
               <div className={styles.bagNotification}>
-                <span>1</span>
+                <span>{totalItems}</span>
               </div>
             </button>
-            <div className={styles.notificationContainer}>
+            {/* <div className={styles.notificationContainer}>
               <AddNotification openCart={() => setShowMiniCart(true)} />
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -220,9 +222,9 @@ const Header = (prop) => {
       </div>
 
       {/* minicart container */}
-      <Drawer visible={showMiniCart} close={() => setShowMiniCart(false)}>
+      {/* <Drawer visible={showMiniCart} close={() => setShowMiniCart(false)}>
         <MiniCart />
-      </Drawer>
+      </Drawer> */}
 
       {/* mobile menu */}
       <div className={styles.mobileMenuContainer}>

@@ -12,10 +12,10 @@ const Gallery = (props) => {
   };
 
   const renderImages = () => {
-    return images?.map((imageObject, index) => {
+    return images?.map((img, index) => {
       return (
         <div key={index} className={styles.imageContainer}>
-          <img alt={imageObject.alt} src={imageObject.image} />
+          <img alt={'product'} src={img} />
         </div>
       );
     });
@@ -24,10 +24,10 @@ const Gallery = (props) => {
   return (
     <div className={styles.root}>
       <div className={styles.cardGrid}>
-        {images?.map((imageObject, index) => {
+        {images?.map((img, index) => {
           return (
             <div key={index} className={styles.imageContainer}>
-              <img alt={imageObject.alt} src={imageObject.image} />
+              <img alt={img} src={img} />
             </div>
           );
         })}

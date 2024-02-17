@@ -1,11 +1,15 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import Icon from '../Icons/Icon';
 import * as styles from './AdjustItem.module.css';
 
 const AdjustItem = (props) => {
   const { isTransparent } = props;
-  const [qty, setQty] = useState(1);
+  const [qty, setQty] = useState(props.quantity || 1);
+
+  useEffect(() => {
+    // props.setQty?.(qty);
+  }, [qty]);
 
   const handleOnChange = (e) => {
     const num = parseInt(e.target.value);

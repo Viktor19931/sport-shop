@@ -31,9 +31,7 @@ const MiniCartItem = (props) => {
             <span className={styles.size}>{size}</span>
           </span>
         </div>
-        <div className={styles.adjustItemContainer}>
-          <AdjustItem />
-        </div>
+        <div className={styles.adjustItemContainer}>{/* <AdjustItem /> */}</div>
       </div>
       <div className={styles.closeContainer}>
         <RemoveItem />

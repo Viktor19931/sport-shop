@@ -2,6 +2,7 @@ import React from 'react';
 
 import * as styles from './BreadCrumbs.module.css';
 import Icon from '../Icons/Icon';
+import { Link } from 'gatsby';
 
 const Breadcrumbs = ({ crumbs }) => {
   let crumbsOutput = crumbs;
@@ -24,9 +25,9 @@ const Breadcrumbs = ({ crumbs }) => {
               </span>
             )}
             {typeof crumb === 'object' && 'link' in crumb && (
-              <a className={styles.crumb} href={crumb.link}>
+              <Link className={styles.crumb} to={crumb.link}>
                 {crumb.label.trim()}
-              </a>
+              </Link>
             )}
             {typeof crumb === 'object' && !('link' in crumb) && (
               <span className={styles.crumb}>{crumb.label.trim()}</span>

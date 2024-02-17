@@ -21,7 +21,7 @@ const Header = (prop) => {
   const [showMenu, setShowMenu] = useState(true);
 
   const { items } = useContext(CartContext);
-  const totalItems = items.reduce((acc, item) => acc + item.quantity, 0);
+  const totalItems = items?.reduce((acc, item) => acc + item.quantity, 0);
 
   const [menu, setMenu] = useState();
   const [activeMenu, setActiveMenu] = useState();

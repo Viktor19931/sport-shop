@@ -77,7 +77,7 @@
   },
   {
     "id": 5,
-    "name": "Окуляри для катання",
+    "name": "Окуляри для катання безрамкові",
     "price": 39,
     "alt": "relaxed t shirt woman",
     "gallery": [
@@ -112,13 +112,78 @@
   {
     "id": 7,
     "name": "костюм для дівчинки",
-    "price": 75,
+    "price": 59,
     "alt": "relaxed t shirt woman",
-    "gallery": ["/products/product6/1.jpeg", "/products/product6/2.jpeg"],
+    "gallery": ["/products/product7/1.jpg", "/products/product7/2.jpg"],
     "tags": ["woman"],
-    "originalPrice": 59,
     "description": "Цей дизайн костюма Nevica Meribel ідеально підходить для зимових спортивних пригод. Оснащена довгими рукавами з внутрішніми манжетами для додаткового тепла, ця куртка оснащена всіма необхідними характеристиками лиж, щоб зробити ваш день на схилах успішним. Ці функції запобігають потраплянню снігу та холодного повітря, забезпечують сухість і комфорт незалежно від погодних умов.",
     "colorOptions": [{ "color": "pink", "title": "Pink" }],
+    "sizeOptions": ["s", "m", "l"]
+  },
+  {
+    "id": 8,
+    "name": "Окуляри для катання",
+    "price": 39,
+    "alt": "relaxed t shirt woman",
+    "gallery": [
+      "/products/product8/1.jpeg",
+      "/products/product8/2.jpeg",
+      "/products/product8/3.jpeg"
+    ],
+    "tags": ["woman"],
+    "colorOptions": [{ "color": "#fff", "title": "White" }],
+    "sizeOptions": ["m"]
+  },
+  {
+    "id": 9,
+    "name": "Чоловічі рукавиці",
+    "price": 59,
+    "alt": "relaxed t shirt woman",
+    "description": "Nevica Meribel забезпечать комфорт і сухість під час катання. Прогумована долоня не ковзає під час зчеплення. Рукавиці мають еластичний манжет і теплу підкладку з флісу. Особливості* Лижні рукавиці* Флісова підкладка* Еластичний манжет* Стяжка для кращої фіксації* Прогумована долоня* Захист від вологи 5000мм",
+    "gallery": [
+      "/products/product9/1.jpeg",
+      "/products/product9/2.jpeg",
+      "/products/product9/3.jpeg"
+    ],
+    "tags": ["woman"],
+    "colorOptions": [{ "color": "#000", "title": "Black" }],
+    "sizeOptions": ["s", "m", "l"]
+  },
+  {
+    "id": 10,
+    "name": "Жіночі лижні штани",
+    "price": 71,
+    "alt": "relaxed t shirt woman",
+    "description": "",
+    "gallery": [
+      "/products/product10/1.jpg",
+      "/products/product10/2.jpg",
+      "/products/product10/3.jpg"
+    ],
+    "tags": ["woman"],
+    "colorOptions": [
+      { "color": "#000", "title": "Black" },
+      { "color": "#fff", "title": "White" }
+    ],
+    "sizeOptions": ["s", "m", "l"]
+  },
+  {
+    "id": 11,
+    "name": "Окуляри для катання",
+    "price": 99,
+    "alt": "relaxed t shirt woman",
+    "description": "",
+    "gallery": [
+      "/products/product11/1.jpg",
+      "/products/product11/2.jpg",
+      "/products/product11/3.jpg",
+      "/products/product11/4.jpg"
+    ],
+    "tags": ["woman"],
+    "colorOptions": [
+      { "color": "#000", "title": "Black" },
+      { "color": "#fff", "title": "White" }
+    ],
     "sizeOptions": ["s", "m", "l"]
   }
 ]

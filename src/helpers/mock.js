@@ -9,6 +9,12 @@ function generateMockProductData(count, tag) {
   return filtered.slice(0, count);
 }
 
+function getAllProducts(count, tag) {
+  const products = productJson;
+
+  return products;
+}
+
 function getProductById(id) {
   const products = productJson;
   const filtered = products.find((item) => item.id === id);
@@ -20,4 +26,9 @@ function generateMockBlogData(count) {
   return blogJson.slice(0, count);
 }
 
-export { generateMockProductData, generateMockBlogData, getProductById };
+export {
+  getAllProducts,
+  generateMockProductData,
+  generateMockBlogData,
+  getProductById,
+};

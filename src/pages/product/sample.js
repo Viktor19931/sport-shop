@@ -121,27 +121,41 @@ const ProductPage = (props) => {
 
               <div className={styles.description}>
                 <p>{product.description}</p>
-                <span>Product code: {product.productCode}</span>
               </div>
 
               <div className={styles.informationContainer}>
-                <Accordion
+                {/* <Accordion
                   type={'plus'}
                   customStyle={styles}
                   title={'composition & care'}
                 >
                   <p className={styles.information}>{product.description}</p>
-                </Accordion>
+                </Accordion> */}
                 <Accordion
                   type={'plus'}
                   customStyle={styles}
-                  title={'delivery & returns'}
+                  title={'доставка і повернення'}
                 >
-                  <p className={styles.information}>{product.description}</p>
+                  <p className={styles.information}>
+                    Для всіх замовлень доставка за рахунок відправника згідно
+                    тарифів пошти. ТЕРМІН ДОСТАВКИ: Очікуваний термін доставки у
+                    відділенні пошти становить 2-4 робочі дні. Для замовлень, що
+                    оформлені в період розпродажу термін доставки може бути
+                    збільшено.
+                    <br />
+                    <br />
+                    Обмін та повернення Товар, який ви придбали на сайті Elit
+                    Sport Lviv ви завжди можете обміняти або повернути, при
+                    умові що товар не був у вжитку, а його оригінальна упаковка,
+                    товарний вигляд та споживчі властивості (етикетки, ярлики,
+                    що містять характеристики товару) збережені. У вас є 14 днів
+                    від дати відправлення, щоб повернути чи обміняти товар,
+                    придбаний на сайті Elit Sport Lviv
+                  </p>
                 </Accordion>
-                <Accordion type={'plus'} customStyle={styles} title={'help'}>
+                {/* <Accordion type={'plus'} customStyle={styles} title={'help'}>
                   <p className={styles.information}>{product.description}</p>
-                </Accordion>
+                </Accordion> */}
               </div>
             </div>
           </div>
@@ -157,7 +171,7 @@ const ProductPage = (props) => {
           </div>
         </Container>
 
-        <div className={styles.attributeContainer}>
+        {/* <div className={styles.attributeContainer}>
           <Split
             image={'/cloth.png'}
             alt={'attribute description'}
@@ -169,7 +183,7 @@ const ProductPage = (props) => {
             cta={() => navigate('/blog')}
             bgColor={'var(--standard-light-grey)'}
           />
-        </div>
+        </div> */}
       </div>
     </Layout>
   );

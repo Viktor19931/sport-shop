@@ -1,33 +1,11 @@
 [
   {
-    "productCode": "MJUM8066-GYDZ",
-    "name": "Lambswool Crew Neck Jumper",
-    "vendor": "Sunspel",
-    "price": 75,
-    "alt": "lambswool crew neck jumper",
-    "image": "/products/pdp1.jpeg",
-    "colorOptions": [
-      { "color": "#000000", "title": "Anthracite Melange" },
-      { "color": "#4D34AE", "title": "Pale Purple" },
-      { "color": "#488266", "title": "Green Moss" }
-    ],
-    "sizeOptions": ["xs", "s", "m", "l", "xl"],
-    "wishlist": true,
-    "tags": ["sample"],
-    "gallery": [
-      { "image": "/products/pdp1.jpeg", "alt": "pdp description 1" },
-      { "image": "/products/pdp2.jpeg", "alt": "pdp description 2" },
-      { "image": "/products/pdp3.jpeg", "alt": "pdp description 3" },
-      { "image": "/products/pdp4.jpeg", "alt": "pdp description 4" }
-    ],
-    "description": "This soft lambswool jumper is knitted in Scotland, using yarn from one of the world's oldest spinners based in Fife. Once knitted, the garment is washed in Scottish spring water to make it beautifully soft."
-  },
-  {
     "id": 1,
     "name": "лижна куртка Nevica Banff",
     "price": 69,
     "alt": "relaxed t shirt woman",
     "tags": ["woman"],
+    "description": "Ця куртка має довгі рукави, внутрішні манжети, дизайн з капюшоном і класичний зовнішній вигляд з елементами малюнка в тон. Ця лижна куртка Nevica Banff має чотиристоронню еластичну тканину для комфортної посадки, водонепроникні блискавки спереду та кишені. Стрейч-підкладка з внутрішньої сторони робить носіння куртки приємнішим і дозволяє їй розтягуватися. Образ доповнює назва бренду на грудях і кольорова блискавка, щоб виділятися на схилах.",
     "colorOptions": [
       { "color": "#000000", "title": "Anthracite Melange" },
       { "color": "#4D34AE", "title": "Pale Purple" },
@@ -43,11 +21,17 @@
     ]
   },
   {
-    "id": 4,
+    "id": 2,
     "name": "Термо білизна",
     "price": 49,
     "alt": "relaxed t shirt woman",
-    "gallery": ["/products/product2/1.jpeg"],
+    "gallery": [
+      "/products/product2/1.jpeg",
+      "/products/product2/2.jpeg",
+      "/products/product2/3.jpeg",
+      "/products/product2/4.jpeg"
+    ],
+    "description": "Цей еластичний поліестеровий одяг є ідеальним базовим шаром, що відводить вологу, під час прогулянок у горах або як легкий шар під час будь-якої активної діяльності.",
     "tags": ["woman"],
     "colorOptions": [
       { "color": "#000000", "title": "Anthracite Melange" },
@@ -57,11 +41,16 @@
     "sizeOptions": ["xs", "s", "m", "l", "xl"]
   },
   {
-    "id": 5,
+    "id": 3,
     "name": "костюм для хлопчика",
     "price": 59,
     "alt": "relaxed t shirt woman",
-    "gallery": ["/products/product3/1.jpeg"],
+    "gallery": [
+      "/products/product3/1.jpeg",
+      "/products/product3/3.jpeg",
+      "/products/product3/2.jpeg"
+    ],
+    "description": "Цей дизайн костюма Nevica Meribel ідеально підходить для зимових спортивних пригод. Оснащена довгими рукавами з внутрішніми манжетами для додаткового тепла, ця куртка оснащена всіма необхідними характеристиками лиж, щоб зробити ваш день на схилах успішним. Ці функції запобігають потраплянню снігу та холодного повітря, забезпечують сухість і комфорт незалежно від погодних умов.",
     "tags": ["woman"],
     "colorOptions": [
       { "color": "#000000", "title": "Anthracite Melange" },
@@ -71,11 +60,12 @@
     "sizeOptions": ["xs", "s", "m", "l", "xl"]
   },
   {
-    "id": 6,
+    "id": 4,
     "name": "Куртка Nevica man",
     "price": 112,
     "alt": "relaxed t shirt woman",
     "gallery": ["/products/product4/1.jpeg"],
+    "description": "Ця куртка має довгі рукави, внутрішні манжети, дизайн з капюшоном і класичний зовнішній вигляд з елементами малюнка в тон. Ця лижна куртка Nevica Banff має чотиристоронню еластичну тканину для комфортної посадки, водонепроникні блискавки спереду та кишені. Стрейч-підкладка з внутрішньої сторони робить носіння куртки приємнішим і дозволяє їй розтягуватися. Образ доповнює назва бренду на грудях і кольорова блискавка, щоб виділятися на схилах.",
     "tags": ["woman"],
     "meta": "+ 2 colors",
     "colorOptions": [
@@ -86,32 +76,49 @@
     "sizeOptions": ["xs", "s", "m", "l", "xl"]
   },
   {
-    "id": 7,
+    "id": 5,
     "name": "Окуляри для катання",
     "price": 39,
     "alt": "relaxed t shirt woman",
-    "gallery": ["/products/product5/1.jpeg"],
-    "tags": ["woman"],
-    "colorOptions": [
-      { "color": "#000000", "title": "Anthracite Melange" },
-      { "color": "#4D34AE", "title": "Pale Purple" },
-      { "color": "#488266", "title": "Green Moss" }
+    "gallery": [
+      "/products/product5/1.jpeg",
+      "/products/product5/2.jpeg",
+      "/products/product5/3.jpeg"
     ],
-    "sizeOptions": ["xs", "s", "m", "l", "xl"]
+    "tags": ["woman"],
+    "colorOptions": [{ "color": "pink", "title": "pink" }],
+    "sizeOptions": ["m"]
   },
   {
-    "id": 8,
+    "id": 6,
     "name": "Захисний шолом",
     "price": 75,
     "alt": "relaxed t shirt woman",
-    "gallery": ["/products/product6/1.jpeg"],
+    "gallery": [
+      "/products/product6/1.jpeg",
+      "/products/product6/2.jpeg",
+      "/products/product6/3.jpeg",
+      "/products/product6/4.jpeg"
+    ],
     "tags": ["woman"],
     "originalPrice": 31.5,
+    "description": "Шолом гірськолижний Nevica Meribel чорний чоловічий. Це шолом, який оцінять люди, які вже катаються не перший раз і знають, що їм потрібно. Безліч приємних і корисних функції, які поєднані в цьому шоломі зроблять ваше катання максимально комфортним. Вентиляційні отвори з можливістю відкривання і закривання, механізм регулювання розміру шолома, внутрішня флісова частина шолома може відстібатися при потребі , кліпса для фіксації маски на шоломі.Особливості:- вентиляційні отвори (on/off);- регулювання розміру;- внутрішня частина знімається;- кліпса для фіксації маски.",
     "colorOptions": [
-      { "color": "#000000", "title": "Anthracite Melange" },
-      { "color": "#4D34AE", "title": "Pale Purple" },
-      { "color": "#488266", "title": "Green Moss" }
+      { "color": "#000", "title": "Black" },
+      { "color": "#fff", "title": "White" }
     ],
-    "sizeOptions": ["xs", "s", "m", "l", "xl"]
+    "sizeOptions": ["s", "m", "l"]
+  },
+  {
+    "id": 7,
+    "name": "костюм для дівчинки",
+    "price": 75,
+    "alt": "relaxed t shirt woman",
+    "gallery": ["/products/product6/1.jpeg", "/products/product6/2.jpeg"],
+    "tags": ["woman"],
+    "originalPrice": 59,
+    "description": "Цей дизайн костюма Nevica Meribel ідеально підходить для зимових спортивних пригод. Оснащена довгими рукавами з внутрішніми манжетами для додаткового тепла, ця куртка оснащена всіма необхідними характеристиками лиж, щоб зробити ваш день на схилах успішним. Ці функції запобігають потраплянню снігу та холодного повітря, забезпечують сухість і комфорт незалежно від погодних умов.",
+    "colorOptions": [{ "color": "pink", "title": "Pink" }],
+    "sizeOptions": ["s", "m", "l"]
   }
 ]

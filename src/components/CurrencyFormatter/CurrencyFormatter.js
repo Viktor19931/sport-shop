@@ -45,8 +45,8 @@ const CurrencyFormatter = ({
 
   const priceComponent = (
     <>
-      <span>{symbol}</span>
-      <span>{formattedPrice}</span>
+      <span>$</span>
+      <span>{amount}</span>
     </>
   );
 

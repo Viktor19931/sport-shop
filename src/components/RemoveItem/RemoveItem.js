@@ -6,7 +6,7 @@ import * as styles from './RemoveItem.module.css';
 
 const RemoveItem = (props) => {
   return (
-    <div className={styles.root}>
+    <div className={styles.root} onClick={props.onRemove}>
       <Icon symbol={'cross'} />
     </div>
   );

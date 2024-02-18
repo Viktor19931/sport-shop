@@ -15,24 +15,6 @@ const OrderSummary = (props) => {
     <div className={styles.root}>
       <div className={styles.orderSummary}>
         <span className={styles.title}>order summary</span>
-        <div className={styles.calculationContainer}>
-          <div className={styles.labelContainer}>
-            <span>Subtotal</span>
-            <span>
-              <CurrencyFormatter amount={440} appendZero />
-            </span>
-          </div>
-          <div className={styles.labelContainer}>
-            <span>Shipping</span>
-            <span>---</span>
-          </div>
-          <div className={styles.labelContainer}>
-            <span>Tax</span>
-            <span>
-              <CurrencyFormatter amount={0} appendZero />
-            </span>
-          </div>
-        </div>
         <div className={styles.couponContainer}>
           <span>Coupon Code</span>
           <FormInputField
@@ -52,7 +34,7 @@ const OrderSummary = (props) => {
         <div className={styles.totalContainer}>
           <span>Total: </span>
           <span>
-            <CurrencyFormatter amount={440} appendZero />
+            <CurrencyFormatter amount={props.totalPrice} appendZero />
           </span>
         </div>
       </div>

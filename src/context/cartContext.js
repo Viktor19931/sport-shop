@@ -7,8 +7,7 @@ export const CartProvider = ({ children }) => {
 
   useEffect(() => {
     const savedItems = localStorage.getItem('cart');
-    console.log('SSS savedItems ', JSON.parse(savedItems));
-    savedItems && setItem(JSON.parse(savedItems));
+    savedItems && setItems(JSON.parse(savedItems));
   }, []);
 
   const setItem = (item) => {
@@ -19,9 +18,7 @@ export const CartProvider = ({ children }) => {
       console.log(items);
 
       newItems = newItems.map((it) =>
-        it.id === item.id
-          ? { ...it, quantity: Math.max(1, it.quantity + item.quantity) }
-          : it
+        it.id === item.id ? { ...it, quantity: Math.max(1, item.quantity) } : it
       );
     } else {
       newItems = [...newItems, item];
@@ -31,14 +28,27 @@ export const CartProvider = ({ children }) => {
     localStorage.setItem('cart', JSON.stringify(newItems));
   };
 
-  const getItems = () => JSON.parse(localStorage.getItem('cart'));
+  const deleteItems = (id) => {
+    const newItems = items.filter((it) => it.id !== id);
+
+    console.log(id);
+
+    setItems(newItems);
+    localStorage.setItem('cart', JSON.stringify(newItems));
+  };
+
+  const totalPrice = items.reduce(
+    (acc, item) => acc + item.quantity * item.price,
+    0
+  );
 
   return (
     <CartContext.Provider
       value={{
         items,
+        totalPrice,
         setItem,
-        getItems,
+        deleteItems,
       }}
     >
       {children}

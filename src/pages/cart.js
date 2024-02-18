@@ -12,9 +12,8 @@ import * as styles from './cart.module.css';
 import CartContext from '../context/cartContext';
 
 const CartPage = (props) => {
-  const { items } = useContext(CartContext);
+  const { items, totalPrice } = useContext(CartContext);
 
-  console.log('TTT ', items);
   return (
     <div>
       <div className={styles.contentContainer}>
@@ -38,10 +37,10 @@ const CartPage = (props) => {
             <div className={styles.cartContainer}>
               <div className={styles.cartItemsContainer}>
                 {items.map((item) => (
-                  <CartItem id={item.id} {...item} />
+                  <CartItem key={item.id} {...item} />
                 ))}
               </div>
-              <OrderSummary />
+              <OrderSummary totalPrice={totalPrice} />
             </div>
           </div>
         </Container>

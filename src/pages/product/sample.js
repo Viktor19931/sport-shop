@@ -30,16 +30,19 @@ const ProductPage = (props) => {
 
   const ctxAddItemNotification = useContext(AddItemNotificationContext);
   const showNotification = ctxAddItemNotification.showNotification;
-  // const sampleProduct = generateMockProductData(1, 'sample')[0];
   const [qty, setQty] = useState(1);
   const [isWishlist, setIsWishlist] = useState(false);
   const [activeSwatch, setActiveSwatch] = useState(product.colorOptions[0]);
   const [activeSize, setActiveSize] = useState(product.sizeOptions[0]);
   const suggestions = generateMockProductData(4, 'woman');
 
-  console.log('PPP ', productId, product);
-
   const handleAddToCart = () => {
+    console.log('PPP ', {
+      ...product,
+      quantity: qty,
+      color: activeSwatch,
+      size: activeSize,
+    });
     setItem({
       ...product,
       quantity: qty,
@@ -47,6 +50,8 @@ const ProductPage = (props) => {
       size: activeSize,
     });
   };
+
+  console.log('DDD ', product.name, qty);
 
   return (
     <Layout>
@@ -65,8 +70,6 @@ const ProductPage = (props) => {
             </div>
             <div className={styles.details}>
               <h1>{product.name}</h1>
-              {/* <span className={styles.vendor}> by {product.vendor}</span> */}
-
               <div className={styles.priceContainer}>${product.price}</div>
 
               <div>

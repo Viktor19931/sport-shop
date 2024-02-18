@@ -11,7 +11,7 @@ import { navigate } from 'gatsby';
 import CartContext from '../../context/cartContext';
 
 const CartItem = (props) => {
-  const { setItem } = useContext(CartContext);
+  const { setItem, deleteItems } = useContext(CartContext);
   const [showQuickView, setShowQuickView] = useState(false);
   const { gallery, alt, color, name, size, price, quantity } = props;
 
@@ -22,21 +22,10 @@ const CartItem = (props) => {
         role={'presentation'}
         onClick={() => navigate('/product/sample')}
       >
-        <img src={gallery[0]} alt={alt}></img>
+        <img src={gallery?.[0]} alt={alt} />
       </div>
       <div className={styles.itemContainer}>
         <span className={styles.name}>{name}</span>
-        {/* <div className={styles.metaContainer}>
-          <span>Color: {color}</span>
-          <span>Size: {size}</span>
-        </div> */}
-        {/* <div
-          className={styles.editContainer}
-          role={'presentation'}
-          onClick={() => setShowQuickView(true)}
-        >
-          <span>Edit</span>
-        </div>*/}
       </div>
       <div className={styles.adjustItemContainer}>
         <AdjustItem
@@ -46,7 +35,7 @@ const CartItem = (props) => {
       </div>
       <div className={styles.priceContainer}>{price}$</div>
       <div className={styles.removeContainer}>
-        <RemoveItem />
+        <RemoveItem onRemove={() => deleteItems(props.id)} />
       </div>
       <Drawer visible={showQuickView} close={() => setShowQuickView(false)}>
         <QuickView close={() => setShowQuickView(false)} />

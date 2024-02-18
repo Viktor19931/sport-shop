@@ -5,15 +5,16 @@ import * as styles from './AdjustItem.module.css';
 
 const AdjustItem = (props) => {
   const { isTransparent } = props;
-  const [qty, setQty] = useState(props.quantity || 1);
+  const [qty, setQty] = useState(1);
 
   useEffect(() => {
-    // props.setQty?.(qty);
-  }, [qty]);
+    props.qty && setQty(props.qty);
+  }, [props.qty]);
 
   const handleOnChange = (e) => {
     const num = parseInt(e.target.value);
     setQty(num);
+    props.setQty(num);
   };
 
   return (
@@ -28,6 +29,7 @@ const AdjustItem = (props) => {
         onClick={() => {
           if (qty <= 1) return;
           setQty(qty - 1);
+          props.setQty(qty - 1);
         }}
       >
         <Icon symbol={'minus'}></Icon>
@@ -42,7 +44,10 @@ const AdjustItem = (props) => {
       </div>
       <div
         role={'presentation'}
-        onClick={() => setQty(qty + 1)}
+        onClick={() => {
+          setQty(qty + 1);
+          props.setQty(qty + 1);
+        }}
         className={styles.iconContainer}
       >
         <Icon symbol={'plus'}></Icon>

@@ -182,7 +182,7 @@
     "tags": ["woman"],
     "colorOptions": [
       { "color": "#000", "title": "Black" },
-      { "color": "#fff", "title": "White" }
+      { "color": "pink", "title": "Pink" }
     ],
     "sizeOptions": ["s", "m", "l"]
   }

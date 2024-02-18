@@ -69,12 +69,7 @@ const Footer = (prop) => {
             })}
             <div className={styles.newsLetter}>
               <div className={styles.newsLetterContent}>
-                <span className={styles.linkTitle}>Підришіться на нас</span>
-                <p className={styles.promoMessage}>
-                  Отримайте знижку 15% на першу покупку! Крім того, будьте
-                  першим, хто дізнається про розпродажі, запуски нових продуктів
-                  та ексклюзивні пропозиції!
-                </p>
+                <span className={styles.linkTitle}>Підпишіться на нас</span>
                 <form
                   className={styles.newsLetterForm}
                   onSubmit={(e) => subscribeHandler(e)}

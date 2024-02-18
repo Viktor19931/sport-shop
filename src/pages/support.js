@@ -15,39 +15,11 @@ const SupportPage = (props) => {
     { title: 'Returns', key: 'returns' },
     { title: 'Payments & Security', key: 'payments' },
     { title: 'Terms & Conditions', key: 'terms' },
-    { title: 'Contact Us', key: 'contact' },
+    { title: "Зв'яжіться з нами", key: 'contact' },
     { title: 'Privacy Policy', key: 'policy' },
   ];
 
   const [current, setCurrent] = useState(subpages[4]);
-
-  const renderElement = (key) => {
-    let tempElement = <React.Fragment />;
-
-    switch (key) {
-      case 'contact':
-        tempElement = <Contact />;
-        break;
-      case 'policy':
-        tempElement = <Policy />;
-        break;
-      case 'shipping':
-        tempElement = <Policy />;
-        break;
-      case 'returns':
-        tempElement = <Policy />;
-        break;
-      case 'payments':
-        tempElement = <Policy />;
-        break;
-      case 'terms':
-        tempElement = <Policy />;
-        break;
-      default:
-        break;
-    }
-    return tempElement;
-  };
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -77,37 +49,9 @@ const SupportPage = (props) => {
           height={'350px'}
         />
 
-        <div className={styles.navContainer}>
-          {subpages.map((details, index) => {
-            return (
-              <ThemeLink
-                onClick={(e) => {
-                  navigate(`/support#${details.key}`);
-                }}
-                key={details.key}
-                isActive={current.key === details.key}
-                to={`/support#${details.key}`}
-              >
-                {details.title}
-              </ThemeLink>
-            );
-          })}
-        </div>
-
         <div className={styles.pageContainer}>
           <Container size={'large'} spacing={'min'}>
-            {subpages.map((details) => {
-              return (
-                <div
-                  key={details.key}
-                  className={`${styles.content} ${
-                    current.key === details.key ? styles.show : styles.hide
-                  }`}
-                >
-                  {renderElement(details.key)}
-                </div>
-              );
-            })}
+            <Contact></Contact>
           </Container>
         </div>
       </div>

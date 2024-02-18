@@ -28,25 +28,26 @@ const Contact = (props) => {
   return (
     <div className={styles.root}>
       <div className={styles.section}>
-        <h4>Send Us A Message</h4>
+        <h4>Надішліть нам повідомлення</h4>
         <p>
-          Our Customer Service team are here for all enquiries Monday to Friday,
-          9am - 5pm AEDT (Australian Eastern Daylight Savings Time).
+          Наша команда обслуговування клієнтів готова відповісти на всі
+          запитання з понеділка по п’ятницю, 9:00–17:00.
         </p>
-        <p>We look forward to hearing from you.</p>
+        <p>Ми з нетерпінням чекаємо на вашу думку.</p>
       </div>
 
       <div className={styles.section}>
-        <h4>Phone</h4>
-        <p>+1 424 280 4971</p>
-        <p>Monday to Friday - 9am - 5pm AEDT</p>
+        <h4>Телефон</h4>
+        <p>+380 424 280 4971</p>
+        <p>З понеділка по п’ятницю з 9:00 до 17:00 UTC +2</p>
       </div>
 
       <div className={styles.section}>
-        <h4>Email</h4>
+        <h4>Електронна пошта</h4>
         <p>
-          You can email our Customer Service team at customerservice@example.com
-          or via the contact form below:
+          Ви можете надіслати електронного листа нашій команді обслуговування
+          клієнтів за адресою elite_sport@gmail.com або через контактну форму
+          нижче:
         </p>
       </div>
 
@@ -58,7 +59,7 @@ const Contact = (props) => {
               value={contactForm.name}
               handleChange={(id, e) => handleChange(id, e)}
               type={'text'}
-              labelName={'Full Name'}
+              labelName={"Повне ім'я"}
               required
             />
             <FormInputField
@@ -66,7 +67,7 @@ const Contact = (props) => {
               value={contactForm.phone}
               handleChange={(id, e) => handleChange(id, e)}
               type={'number'}
-              labelName={'Phone Number'}
+              labelName={'Номер телефону'}
               required
             />
             <FormInputField
@@ -74,7 +75,7 @@ const Contact = (props) => {
               value={contactForm.email}
               handleChange={(id, e) => handleChange(id, e)}
               type={'email'}
-              labelName={'Email'}
+              labelName={'Електронна пошта'}
               required
             />
             <div className={styles.commentInput}>
@@ -83,7 +84,7 @@ const Contact = (props) => {
                 value={contactForm.comment}
                 handleChange={(id, e) => handleChange(id, e)}
                 type={'textarea'}
-                labelName={'Comments / Questions'}
+                labelName={'Коментарі / Питання'}
                 required
               />
             </div>
@@ -93,7 +94,7 @@ const Contact = (props) => {
             level={'primary'}
             type={'buttonSubmit'}
           >
-            submit
+            Надіслати
           </Button>
         </form>
       </div>

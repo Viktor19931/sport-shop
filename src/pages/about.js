@@ -24,20 +24,14 @@ const AboutPage = (props) => {
     <Layout disablePaddingBottom>
       <div className={styles.root}>
         {/* Hero Container */}
-        <Hero maxWidth={'900px'} image={'/about.png'} title={`Elite sport`} />
+        <Hero maxWidth={'900px'} image={'/about.jpg'} title={`Elite sport`} />
 
         <div className={styles.navContainer}>
           <ThemeLink onClick={() => handleScroll(historyRef)} to={'#history'}>
             Історія
           </ThemeLink>
           <ThemeLink onClick={() => handleScroll(valuesRef)} to={'#values'}>
-            Цінності
-          </ThemeLink>
-          <ThemeLink
-            onClick={() => handleScroll(sustainabilityRef)}
-            to={'#sustainability'}
-          >
-            Стабільність
+            Якість
           </ThemeLink>
         </div>
 
@@ -77,7 +71,7 @@ const AboutPage = (props) => {
                 Elite_sport_lviv - це якість і доступність найкращого одягу.
               </p>
               <p>Бажаємо приємного шопінгу!</p>
-              <img alt={'founder'} src={'/about2.png'}></img>
+              <img alt={'founder'} src={'/about2.webp'}></img>
             </div>
           </div>
         </Container>

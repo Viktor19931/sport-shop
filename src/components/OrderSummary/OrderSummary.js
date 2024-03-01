@@ -9,7 +9,6 @@ import * as styles from './OrderSummary.module.css';
 
 import axios from 'axios';
 
-
 const useMonoBankPayment = () => {
   const handlePayMono = async (email: string, amount: number) => {
     const monoData = await axios
@@ -49,7 +48,6 @@ const useMonoBankPayment = () => {
       )
       .catch((e) => console.log('MMM error', e));
 
-
     if (monoData) window.location.href = monoData.data.pageUrl;
     // window.open(monoData?.data.pageUrl);
   };
@@ -57,12 +55,16 @@ const useMonoBankPayment = () => {
   return handlePayMono;
 };
 
-export default useMonoBankPayment;
-
-
 const OrderSummary = (props) => {
   const [coupon, setCoupon] = useState('');
   const [giftCard, setGiftCard] = useState('');
+
+  const handlePayMono = useMonoBankPayment();
+
+  const handelPay = async () => {
+    await handlePayMono();
+    navigate('/orderConfirm');
+  };
 
   return (
     <div className={styles.root}>
@@ -92,11 +94,7 @@ const OrderSummary = (props) => {
         </div>
       </div>
       <div className={styles.actionContainer}>
-        <Button
-          onClick={() => navigate('/orderConfirm')}
-          fullWidth
-          level={'primary'}
-        >
+        <Button onClick={handelPay} fullWidth level={'primary'}>
           checkout
         </Button>
         <div className={styles.linkContainer}>

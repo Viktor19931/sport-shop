@@ -42,7 +42,7 @@ const useMonoBankPayment = () => {
         },
         {
           headers: {
-            'X-Token': process.env.GATSBY_MONO_TOKEN,
+            'X-Token': 'u1m4F4F-Zsn-gPQ4wBAtsbqlw1fbaKXdWLzD7ZcQy6wI',
           },
         }
       )

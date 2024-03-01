@@ -99,7 +99,7 @@ const OrderSummary = (props) => {
             value={address}
             handleChange={(_, t) => setAddress(t)}
           />
-          <span>Пощтова скринька</span>
+          <span>Поштова скринька</span>
           <FormInputField
             id={'email'}
             value={email}

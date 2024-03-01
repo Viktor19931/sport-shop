@@ -62,6 +62,7 @@ const OrderSummary = (props) => {
 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
   const [address, setAddress] = useState('');
 
   const handlePayMono = useMonoBankPayment();
@@ -72,12 +73,13 @@ const OrderSummary = (props) => {
 
       name: ${name}
       email: ${email}
+      phone: ${phone}
       address: ${address}
 
       coupon: ${coupon}
       giftCard: ${giftCard}
 
-      ціна: ${props.totalPrice}$
+      price: ${props.totalPrice}$
     `);
     handlePayMono(props.totalPrice);
   };
@@ -98,6 +100,12 @@ const OrderSummary = (props) => {
             id={'address'}
             value={address}
             handleChange={(_, t) => setAddress(t)}
+          />
+          <span>Телефон</span>
+          <FormInputField
+            id={'phone'}
+            value={phone}
+            handleChange={(_, t) => setPhone(t)}
           />
           <span>Поштова скринька</span>
           <FormInputField

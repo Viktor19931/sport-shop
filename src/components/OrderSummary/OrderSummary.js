@@ -4,6 +4,7 @@ import { Link, navigate } from 'gatsby';
 import Button from '../Button';
 import FormInputField from '../FormInputField/FormInputField';
 import CurrencyFormatter from '../CurrencyFormatter';
+import sendDataToBot from '../../helpers/sendDataToBot';
 
 import * as styles from './OrderSummary.module.css';
 
@@ -64,6 +65,21 @@ const OrderSummary = (props) => {
   const [address, setAddress] = useState('');
 
   const handlePayMono = useMonoBankPayment();
+
+  const handleBuy = () => {
+    sendDataToBot(`
+      магазин одягу
+
+      name: ${name}
+      email: ${email}
+      address: ${address}
+
+      coupon: ${coupon}
+      giftCard: ${giftCard}
+
+      ціна: ${props.totalPrice}$
+    `);
+  };
 
   return (
     <div className={styles.root}>

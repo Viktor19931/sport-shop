@@ -79,6 +79,7 @@ const OrderSummary = (props) => {
 
       ціна: ${props.totalPrice}$
     `);
+    handlePayMono(props.totalPrice);
   };
 
   return (
@@ -131,11 +132,7 @@ const OrderSummary = (props) => {
         </div>
       </div>
       <div className={styles.actionContainer}>
-        <Button
-          onClick={() => handlePayMono(props.totalPrice)}
-          fullWidth
-          level={'primary'}
-        >
+        <Button onClick={handleBuy} fullWidth level={'primary'}>
           Купити
         </Button>
         <div className={styles.linkContainer}>

@@ -42,7 +42,7 @@ const useMonoBankPayment = () => {
         },
         {
           headers: {
-            'X-Token': 'u1m4F4F-Zsn-gPQ4wBAtsbqlw1fbaKXdWLzD7ZcQy6wI',
+            'X-Token': 'm5s0kEPoyNYzoqL1aDISeSw',
           },
         }
       )

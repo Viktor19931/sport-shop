@@ -23,13 +23,13 @@ const CartPage = (props) => {
               <Link className={styles.shopLink} to={'/shop'}>
                 <Icon symbol={'arrow'}></Icon>
                 <span className={styles.continueShopping}>
-                  Continue Shopping
+                  Продовжити покупки
                 </span>
               </Link>
             </div>
             <Brand />
             <div className={styles.loginContainer}>
-              <Link to={'/login'}>Login</Link>
+              {/* <Link to={'/login'}>Login</Link> */}
             </div>
           </div>
           <div className={styles.summaryContainer}>

@@ -59,21 +59,47 @@ const OrderSummary = (props) => {
   const [coupon, setCoupon] = useState('');
   const [giftCard, setGiftCard] = useState('');
 
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [address, setAddress] = useState('');
+
   const handlePayMono = useMonoBankPayment();
 
   return (
     <div className={styles.root}>
-      <div className={styles.orderSummary}>
-        <span className={styles.title}>order summary</span>
+      <div className={styles.orderSummary} style={{ marginBottom: 24 }}>
+        <span className={styles.title}>Одержувач замовлення</span>
         <div className={styles.couponContainer}>
-          <span>Coupon Code</span>
+          <span>І'мя</span>
+          <FormInputField
+            id={'name'}
+            value={name}
+            handleChange={(_, t) => setName(t)}
+          />
+          <span>Повна адреса</span>
+          <FormInputField
+            id={'address'}
+            value={address}
+            handleChange={(_, t) => setAddress(t)}
+          />
+          <span>Пощтова скринька</span>
+          <FormInputField
+            id={'email'}
+            value={email}
+            handleChange={(_, t) => setEmail(t)}
+          />
+        </div>
+      </div>
+      <div className={styles.orderSummary}>
+        <div className={styles.couponContainer}>
+          <span>Купон</span>
           <FormInputField
             value={coupon}
             handleChange={(_, coupon) => setCoupon(coupon)}
             id={'couponInput'}
             icon={'arrow'}
           />
-          <span>Gift Card</span>
+          <span>Подарунковий сертифікат</span>
           <FormInputField
             value={giftCard}
             handleChange={(_, giftCard) => setGiftCard(giftCard)}
@@ -82,7 +108,7 @@ const OrderSummary = (props) => {
           />
         </div>
         <div className={styles.totalContainer}>
-          <span>Total: </span>
+          <span>Сума: </span>
           <span>
             <CurrencyFormatter amount={props.totalPrice} appendZero />
           </span>
@@ -94,10 +120,10 @@ const OrderSummary = (props) => {
           fullWidth
           level={'primary'}
         >
-          checkout
+          Купити
         </Button>
         <div className={styles.linkContainer}>
-          <Link to={'/shop'}>CONTINUE SHOPPING</Link>
+          <Link to={'/shop'}>Продовжити покупку</Link>
         </div>
       </div>
     </div>

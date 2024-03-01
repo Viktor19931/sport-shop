@@ -100,7 +100,7 @@ const ProductPage = (props) => {
                     fullWidth
                     level={'primary'}
                   >
-                    Add to Bag
+                    Додати в корзину
                   </Button>
                 </div>
                 <div

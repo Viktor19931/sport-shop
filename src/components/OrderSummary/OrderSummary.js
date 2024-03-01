@@ -17,7 +17,7 @@ const useMonoBankPayment = () => {
         {
           amount: amount * 100,
           ccy: 840,
-          redirectUrl: 'https://amanita-store.com/shop/',
+          redirectUrl: 'https://amanita-store.com/orderConfirm',
           merchantPaymInfo: {
             customerEmails: [], // Масив пошт, на які потрібно відправити фіскальний чек, якщо у мерчанта активна звʼязка з checkbox
             destination: 'Покупка речей',
@@ -61,11 +61,6 @@ const OrderSummary = (props) => {
 
   const handlePayMono = useMonoBankPayment();
 
-  const handelPay = async (amount) => {
-    await handlePayMono(amount);
-    navigate('/orderConfirm');
-  };
-
   return (
     <div className={styles.root}>
       <div className={styles.orderSummary}>
@@ -95,7 +90,7 @@ const OrderSummary = (props) => {
       </div>
       <div className={styles.actionContainer}>
         <Button
-          onClick={() => handelPay(props.totalPrice)}
+          onClick={() => handlePayMono(props.totalPrice)}
           fullWidth
           level={'primary'}
         >

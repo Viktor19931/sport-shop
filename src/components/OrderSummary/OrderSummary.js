@@ -10,7 +10,7 @@ import * as styles from './OrderSummary.module.css';
 import axios from 'axios';
 
 const useMonoBankPayment = () => {
-  const handlePayMono = async (email: string, amount: number) => {
+  const handlePayMono = async (amount) => {
     const monoData = await axios
       .post(
         'https://api.monobank.ua/api/merchant/invoice/create',
@@ -19,7 +19,7 @@ const useMonoBankPayment = () => {
           ccy: 840,
           redirectUrl: 'https://amanita-store.com/shop/',
           merchantPaymInfo: {
-            customerEmails: [email], // Масив пошт, на які потрібно відправити фіскальний чек, якщо у мерчанта активна звʼязка з checkbox
+            customerEmails: [], // Масив пошт, на які потрібно відправити фіскальний чек, якщо у мерчанта активна звʼязка з checkbox
             destination: 'Покупка речей',
             basketOrder: [
               // Склад замовлення, використовується для відображення кошика замовлення, обовʼязково вказувати при активній звʼязці з ПРРО (звʼязка створюється у веб-кабінеті https://web.monobank.ua або через портал check by mono https://www.monobank.ua/check)
@@ -61,8 +61,8 @@ const OrderSummary = (props) => {
 
   const handlePayMono = useMonoBankPayment();
 
-  const handelPay = async () => {
-    await handlePayMono();
+  const handelPay = async (amount) => {
+    await handlePayMono(amount);
     navigate('/orderConfirm');
   };
 
@@ -94,7 +94,11 @@ const OrderSummary = (props) => {
         </div>
       </div>
       <div className={styles.actionContainer}>
-        <Button onClick={handelPay} fullWidth level={'primary'}>
+        <Button
+          onClick={() => handelPay(props.totalPrice)}
+          fullWidth
+          level={'primary'}
+        >
           checkout
         </Button>
         <div className={styles.linkContainer}>

@@ -51,8 +51,6 @@ const ProductPage = (props) => {
     });
   };
 
-  console.log('DDD ', product.name, qty);
-
   return (
     <Layout>
       <div className={styles.root}>

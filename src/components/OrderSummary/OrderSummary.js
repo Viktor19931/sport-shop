@@ -11,7 +11,7 @@ import * as styles from './OrderSummary.module.css';
 import axios from 'axios';
 
 const useMonoBankPayment = () => {
-  const handlePayMono = async (amount) => {
+  const handlePayMono = async (name, amount) => {
     const monoData = await axios
       .post(
         'https://api.monobank.ua/api/merchant/invoice/create',
@@ -21,7 +21,7 @@ const useMonoBankPayment = () => {
           redirectUrl: 'https://amanita-store.com/orderConfirm',
           merchantPaymInfo: {
             customerEmails: [], // Масив пошт, на які потрібно відправити фіскальний чек, якщо у мерчанта активна звʼязка з checkbox
-            destination: 'Покупка речей',
+            destination: `Покупка речей, ${name}`,
             basketOrder: [
               // Склад замовлення, використовується для відображення кошика замовлення, обовʼязково вказувати при активній звʼязці з ПРРО (звʼязка створюється у веб-кабінеті https://web.monobank.ua або через портал check by mono https://www.monobank.ua/check)
               // {
@@ -83,7 +83,7 @@ const OrderSummary = (props) => {
 
       price: ${props.totalPrice}$
     `);
-    handlePayMono(isTest() ? 1 : props.totalPrice);
+    handlePayMono(name, isTest() ? 1 : props.totalPrice);
   };
 
   return (

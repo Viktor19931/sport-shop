@@ -1,11 +1,13 @@
 import React from 'react';
-import { navigate } from 'gatsby';
+import { Link } from 'gatsby';
 
 import * as styles from './Brand.module.css';
 
 const Brand = (props) => {
   return (
-    <h2 style={{ textAlign: 'center', lineHeight: '20px' }}>Elite Sport</h2>
+    <Link to="/">
+      <h2 style={{ textAlign: 'center', lineHeight: '20px' }}>Elite Sport</h2>
+    </Link>
   );
 };
 

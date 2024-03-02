@@ -26,7 +26,8 @@ const ProductCard = (props) => {
 
   const handleQuickView = (e) => {
     e.stopPropagation();
-    showQuickView();
+    // showQuickView();
+    navigate(`/product/sample?id=${id}`);
   };
 
   const handleFavorite = (e) => {

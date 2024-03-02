@@ -20,7 +20,7 @@ const Footer = (prop) => {
   };
 
   const handleSocialClick = (platform) => {
-    window.open(Config.social[platform]);
+    window.open('https://www.instagram.com/elite_sport__lviv/');
   };
 
   const renderLinks = (linkCollection) => {
@@ -83,16 +83,6 @@ const Footer = (prop) => {
                   />
                 </form>
                 <div className={styles.socialContainer}>
-                  {Config.social.youtube && (
-                    <div
-                      onClick={() => handleSocialClick('youtube')}
-                      role={'presentation'}
-                      className={styles.socialIconContainer}
-                    >
-                      <Icon symbol={'youtube'}></Icon>
-                    </div>
-                  )}
-
                   {Config.social.instagram && (
                     <div
                       onClick={() => handleSocialClick('instagram')}
@@ -100,26 +90,6 @@ const Footer = (prop) => {
                       className={styles.socialIconContainer}
                     >
                       <Icon symbol={'instagram'}></Icon>
-                    </div>
-                  )}
-
-                  {Config.social.facebook && (
-                    <div
-                      onClick={() => handleSocialClick('facebook')}
-                      role={'presentation'}
-                      className={styles.socialIconContainer}
-                    >
-                      <Icon symbol={'facebook'}></Icon>
-                    </div>
-                  )}
-
-                  {Config.social.twitter && (
-                    <div
-                      onClick={() => handleSocialClick('twitter')}
-                      role={'presentation'}
-                      className={styles.socialIconContainer}
-                    >
-                      <Icon symbol={'twitter'}></Icon>
                     </div>
                   )}
                 </div>

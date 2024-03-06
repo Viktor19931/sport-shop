@@ -33,7 +33,11 @@
 
         {
           "text": "Політика конфіденційності",
-          "link": "/support#policy"
+          "link": "/policy"
+        },
+        {
+          "text": "Публічна оферта",
+          "link": "/public-offer"
         }
       ]
     },
@@ -41,16 +45,12 @@
       "subTitle": "Підтримка",
       "links": [
         {
-          "text": "FAQ",
-          "link": "/faq"
-        },
-        {
           "text": "Зв'язатися з нами",
-          "link": "/support#contact"
+          "link": "/contact-us"
         },
         {
           "text": "Доставка та повернення",
-          "link": "/support#returns"
+          "link": "/shipping"
         }
       ]
     }
@@ -63,7 +63,7 @@
     },
     {
       "menuLabel": "Зв'язатися з нами",
-      "menuLink": "/support#contact",
+      "menuLink": "/contact-us",
       "category": null
     },
     {

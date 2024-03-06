@@ -33,7 +33,9 @@ const CartItem = (props) => {
           setQty={(gty) => setItem({ ...props, quantity: gty })}
         />
       </div>
-      <div className={styles.priceContainer}>{price}$</div>
+      <div className={styles.priceContainer}>
+        {price}$ / ₴{price * 40}
+      </div>
       <div className={styles.removeContainer}>
         <RemoveItem onRemove={() => deleteItems(props.id)} />
       </div>

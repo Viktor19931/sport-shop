@@ -75,7 +75,7 @@ const ProductCard = (props) => {
           <span
             className={`${originalPrice !== undefined ? styles.salePrice : ''}`}
           >
-            ${price}
+            ${price} / ₴{price * 40}
           </span>
           {originalPrice && (
             <span className={styles.originalPrice}>${originalPrice}</span>

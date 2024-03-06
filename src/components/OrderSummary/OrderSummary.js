@@ -136,8 +136,9 @@ const OrderSummary = (props) => {
         </div>
         <div className={styles.totalContainer}>
           <span>Сума: </span>
-          <span>
-            <CurrencyFormatter amount={props.totalPrice} appendZero />
+          <span style={{ fontSize: 24 }}>
+            <CurrencyFormatter amount={props.totalPrice} appendZero /> / ₴
+            {props.totalPrice * 40}
           </span>
         </div>
       </div>

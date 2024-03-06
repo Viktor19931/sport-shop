@@ -68,7 +68,9 @@ const ProductPage = (props) => {
             </div>
             <div className={styles.details}>
               <h1>{product.name}</h1>
-              <div className={styles.priceContainer}>${product.price}</div>
+              <div className={styles.priceContainer}>
+                ${product.price} / ₴{product.price * 40}
+              </div>
 
               <div>
                 <SwatchList

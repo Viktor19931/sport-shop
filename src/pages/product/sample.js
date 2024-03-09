@@ -120,7 +120,7 @@ const ProductPage = (props) => {
               </div>
 
               <div className={styles.description}>
-                <p>{product.description}</p>
+                <p dangerouslySetInnerHTML={{ __html: product.description }} />
               </div>
 
               <div className={styles.informationContainer}>

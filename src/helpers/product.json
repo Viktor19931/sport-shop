@@ -1,10 +1,28 @@
 [
   {
+    "id": 21,
+    "name": "Шлем велосипедний",
+    "price": 69,
+    "description": "Idolo Black Red Metallic Glossy XL 60–64 см.",
+    "gallery": [
+      "/products/product-21/1.jpeg",
+      "/products/product-21/2.jpeg",
+      "/products/product-21/3.jpeg"
+    ],
+    "tags": ["woman"],
+    "colorOptions": [
+      { "color": "black", "title": "Black" },
+      { "color": "red", "title": "Red" },
+      { "color": "white", "title": "White" }
+    ],
+    "sizeOptions": ["m"]
+  },
+  {
     "id": 20,
     "name": "Велоформа (куртка + штани) SPOINT DIMENSION",
     "price": 39,
     "description": "Матеріал преміум-класу із високою зносостійкістю.Стильний, зручний крій.Висока якість у поєднанні з доступною",
-    "gallery": ["/products/product19/1.jpeg", "/products/product19/2.jpeg"],
+    "gallery": ["/products/product-20/1.jpeg", "/products/product-20/2.jpeg"],
     "tags": ["woman"],
     "colorOptions": [
       { "color": "black", "title": "Black" },

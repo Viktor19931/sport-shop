@@ -1,5 +1,168 @@
 [
   {
+    "id": 31,
+    "name": "Топ Nebbia Padded High-Impact Sports bra Gym",
+    "price": 69,
+    "description": "",
+    "gallery": [
+      "/products/product-31/1.jpeg",
+      "/products/product-31/2.jpeg",
+      "/products/product-31/3.jpeg"
+    ],
+    "tags": ["woman"],
+    "colorOptions": [{ "color": "black", "title": "Black" }],
+    "sizeOptions": ["s", "m", "l"]
+  },
+  {
+    "id": 30,
+    "name": "Легінси Legging Fitzona Glorial",
+    "price": 69,
+    "description": "",
+    "gallery": [
+      "/products/product-30/1.jpeg",
+      "/products/product-30/2.jpeg",
+      "/products/product-30/3.jpeg",
+      "/products/product-30/4.jpeg"
+    ],
+    "tags": ["woman"],
+    "colorOptions": [
+      { "color": "blue", "title": "Blue" },
+      { "color": "white", "title": "White" }
+    ],
+    "sizeOptions": ["s", "m", "l"]
+  },
+  {
+    "id": 29,
+    "name": "Легінси Legging Fitzona Nanaiz",
+    "price": 55,
+    "description": "",
+    "gallery": [
+      "/products/product-29/1.jpeg",
+      "/products/product-29/2.jpeg",
+      "/products/product-29/3.jpeg",
+      "/products/product-29/4.jpeg"
+    ],
+    "tags": ["woman"],
+    "colorOptions": [
+      { "color": "beige", "title": "Beige" },
+      { "color": "red", "title": "Red" }
+    ],
+    "sizeOptions": ["s", "m", "l"]
+  },
+  {
+    "id": 28,
+    "name": "Топ Mini Top Fitzona Yumi",
+    "price": 55,
+    "description": "",
+    "gallery": [
+      "/products/product-28/1.jpeg",
+      "/products/product-28/2.jpeg",
+      "/products/product-28/3.jpeg",
+      "/products/product-28/4.jpeg"
+    ],
+    "tags": ["woman"],
+    "colorOptions": [
+      { "color": "beige", "title": "Beige" },
+      { "color": "red", "title": "Red" }
+    ],
+    "sizeOptions": ["s", "m", "l"]
+  },
+  {
+    "id": 27,
+    "name": "Шорти Double-Layer Shorts with Smart Pockets ",
+    "price": 89,
+    "description": "",
+    "gallery": [
+      "/products/product-27/1.jpeg",
+      "/products/product-27/2.jpeg",
+      "/products/product-27/3.jpeg",
+      "/products/product-27/4.jpeg"
+    ],
+    "tags": ["woman"],
+    "colorOptions": [
+      { "color": "black", "title": "Black" },
+      { "color": "red", "title": "Red" }
+    ],
+    "sizeOptions": ["s", "m", "l"]
+  },
+  {
+    "id": 26,
+    "name": "Чоловічі велосипедки NEBBIA ROAD ",
+    "price": 39,
+    "description": "",
+    "gallery": [
+      "/products/product-26/1.jpeg",
+      "/products/product-26/2.jpeg",
+      "/products/product-26/3.jpeg"
+    ],
+    "tags": ["woman"],
+    "colorOptions": [
+      { "color": "black", "title": "Black" },
+      { "color": "white", "title": "White" }
+    ],
+    "sizeOptions": ["s", "m", "l"]
+  },
+  {
+    "id": 25,
+    "name": "Легінси Nebbia Thermal Sports",
+    "price": 69,
+    "description": "",
+    "gallery": ["/products/product-25/1.jpeg"],
+    "tags": ["woman"],
+    "colorOptions": [{ "color": "black", "title": "Black" }],
+    "sizeOptions": ["s", "m", "l"]
+  },
+  {
+    "id": 24,
+    "name": "АЙКА З КАПЮШОНОМ LEGEND-APPROVED HOODIE",
+    "price": 39,
+    "description": "",
+    "gallery": [
+      "/products/product-24/1.jpeg",
+      "/products/product-24/2.jpeg",
+      "/products/product-24/3.jpeg",
+      "/products/product-24/4.jpeg"
+    ],
+    "tags": ["woman"],
+    "colorOptions": [{ "color": "gray", "title": "Grey" }],
+    "sizeOptions": ["s", "m", "l"]
+  },
+  {
+    "id": 23,
+    "name": "Шорти Nebbia Workout Compression",
+    "price": 69,
+    "description": "",
+    "gallery": [
+      "/products/product-23/1.jpeg",
+      "/products/product-23/2.jpeg",
+      "/products/product-23/3.jpeg"
+    ],
+    "tags": ["woman"],
+    "colorOptions": [
+      { "color": "black", "title": "Black" },
+      { "color": "white", "title": "White" }
+    ],
+    "sizeOptions": ["s", "m", "l"]
+  },
+  {
+    "id": 22,
+    "name": "Футболка Nebbia Workout Compression",
+    "price": 69,
+    "description": "Idolo Black Red Metallic Glossy XL 60–64 см.",
+    "gallery": [
+      "/products/product-22/1.jpeg",
+      "/products/product-22/2.jpeg",
+      "/products/product-22/3.jpeg",
+      "/products/product-22/4.jpeg"
+    ],
+    "tags": ["woman"],
+    "colorOptions": [
+      { "color": "black", "title": "Black" },
+      { "color": "white", "title": "White" }
+    ],
+    "sizeOptions": ["s", "m", "l"]
+  },
+  {
     "id": 21,
     "name": "Шлем велосипедний",
     "price": 69,

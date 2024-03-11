@@ -17,7 +17,7 @@ const ProductCardGrid = (props) => {
     return data.map((product, index) => {
       return (
         <ProductCard
-          key={index}
+          key={product.id}
           id={product.id}
           height={height}
           price={product.price}

@@ -75,7 +75,7 @@ const ShopPage = (props) => {
             <Chip name={'S'} />
           </div> */}
           <div className={styles.productContainer}>
-            <ProductCardGrid data={data}></ProductCardGrid>
+            <ProductCardGrid data={data.reverse()} />
           </div>
           {/* <div className={styles.loadMoreContainer}>
             <span>6 of 456</span>

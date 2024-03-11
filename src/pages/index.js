@@ -11,14 +11,21 @@ import ProductCardGrid from '../components/ProductCardGrid';
 import Quote from '../components/Quote';
 import Title from '../components/Title';
 
-import { generateMockBlogData, generateMockProductData } from '../helpers/mock';
+import {
+  generateMockBlogData,
+  generateMockProductData,
+  getAllProducts,
+} from '../helpers/mock';
 
 import * as styles from './index.module.css';
 import { Link, navigate } from 'gatsby';
 
 const IndexPage = () => {
-  const newArrivals = generateMockProductData(3, 'shirt');
+  const allProducts = getAllProducts();
   const blogData = generateMockBlogData(3);
+
+  const newArrivals = allProducts.slice(-3);
+  const bestSellers = allProducts.filter((p) => [5, 6, 9, 15].includes(p.id));
 
   const goToShop = () => {
     navigate('/shop');
@@ -30,8 +37,7 @@ const IndexPage = () => {
       <Hero
         maxWidth={'500px'}
         image={'/banner1.png'}
-        title={'Основні речі для холодної зими'}
-        subtitle={'Відкрийте для себе осінь-зима 2023'}
+        title={'Основні речі для активного відпочинку'}
         ctaText={'Магазин'}
         ctaAction={goToShop}
       />
@@ -66,25 +72,16 @@ const IndexPage = () => {
       <div className={styles.highlightContainer}>
         <Container size={'large'} fullMobile>
           <Highlight
-            image={'/highlight.png'}
-            altImage={'highlight image'}
-            miniImage={'/highlightmin.png'}
+            image={'/products/product1/1.jpeg'}
+            altImage={'куртка'}
+            miniImage={'/products/product1/4.jpeg'}
             miniImageAlt={'mini highlight image'}
-            title={'Розкішний трикотаж'}
-            description={`Цей м’який джемпер з овечої вовни пов’язаний у Шотландії з використанням пряжі однієї з найстаріших у світі прядильних фабрик у Файфі`}
+            title={'Водотривка куртка'}
+            description={`Ця лижна куртка Nevica Banff має чотиристоронню еластичну тканину для комфортної посадки, водонепроникні блискавки спереду та кишені. Стрейч-підкладка з внутрішньої сторони робить носіння куртки приємнішим і дозволяє їй розтягуватися. Образ доповнює назва бренду на грудях і кольорова блискавка, щоб виділятися на схилах.`}
             textLink={'купити'}
-            link={'/shop'}
+            link={'/product/sample?id=1'}
           />
         </Container>
-      </div>
-
-      {/* Promotion */}
-      <div className={styles.promotionContainer}>
-        <Hero image={'/banner2.png'} title={`-50% Знижка`} />
-        <div className={styles.linkContainers}>
-          <Link to={'/shop'}>Жінкам</Link>
-          <Link to={'/shop'}>Чоловікам</Link>
-        </div>
       </div>
 
       {/* Quote */}
@@ -96,16 +93,28 @@ const IndexPage = () => {
         }
       />
 
+      {/* Promotion */}
+      <div className={styles.promotionContainer}>
+        <Hero
+          image={'/banner2.png'}
+          title={`Знижка до 30%`}
+          subtitle={'для оптових клієнтів'}
+        />
+        <div className={styles.linkContainers}>
+          <Link to={'/shop'}>Купити</Link>
+        </div>
+      </div>
+
       {/* Blog Grid */}
-      <div className={styles.blogsContainer}>
+      {/* <div className={styles.blogsContainer}>
         <Container size={'large'}>
           <Title name={'Журнал'} subtitle={'Нотатки про життя та стиль'} />
           <BlogPreviewGrid data={blogData} />
         </Container>
-      </div>
+      </div> */}
 
       {/* Promotion */}
-      <div className={styles.sustainableContainer}>
+      {/* <div className={styles.sustainableContainer}>
         <Hero
           image={'/banner3.png'}
           title={'Ми стійкі'}
@@ -116,19 +125,18 @@ const IndexPage = () => {
           maxWidth={'660px'}
           ctaStyle={styles.ctaCustomButton}
         />
-      </div>
+      </div> */}
 
       {/* Social Media */}
       <div className={styles.socialContainer}>
         <Title
-          name={'Стилізовано вами'}
-          subtitle={'Tag @elite_sport to be featured.'}
+          name={'Hайкращі товари'}
+          subtitle={'Тегни @elite_sport__lviv щоб бути особливим.'}
         />
         <div className={styles.socialContentGrid}>
-          <img src={`/social/socialMedia1.png`} alt={'social media 1'} />
-          <img src={`/social/socialMedia2.png`} alt={'social media 2'} />
-          <img src={`/social/socialMedia3.png`} alt={'social media 3'} />
-          <img src={`/social/socialMedia4.png`} alt={'social media 4'} />
+          {bestSellers.map((p) => (
+            <img key={p.id} src={p.gallery[0]} alt={p.name} />
+          ))}
         </div>
       </div>
       <AttributeGrid />

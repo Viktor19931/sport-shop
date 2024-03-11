@@ -10,7 +10,7 @@ function generateMockProductData(count, tag) {
 }
 
 function getAllProducts(count, tag) {
-  const products = productJson;
+  const products = productJson.sort((a, b) => a.id - b.id);
 
   return products;
 }

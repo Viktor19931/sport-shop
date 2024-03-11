@@ -36,7 +36,7 @@ const IndexPage = () => {
       {/* Hero Container */}
       <Hero
         maxWidth={'500px'}
-        image={'/banner1.png'}
+        image={'/walk.jpeg'}
         title={'Основні речі для активного відпочинку'}
         ctaText={'Магазин'}
         ctaAction={goToShop}
@@ -96,7 +96,7 @@ const IndexPage = () => {
       {/* Promotion */}
       <div className={styles.promotionContainer}>
         <Hero
-          image={'/banner2.png'}
+          image={'/board.jpeg'}
           title={`Знижка до 30%`}
           subtitle={'для оптових клієнтів'}
         />

@@ -160,7 +160,7 @@ const ProductPage = (props) => {
             </div>
           </div>
           <div className={styles.suggestionContainer}>
-            <h2>You may also like</h2>
+            <h2>Схожі товари</h2>
             <ProductCardGrid
               spacing
               showSlider

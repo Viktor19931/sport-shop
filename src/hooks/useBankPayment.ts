@@ -10,6 +10,12 @@ const useBankPayment = () => {
     VOSTOK: handlePayVostok,
   };
 
+  console.log(
+    'useBankPayment ',
+    process.env.GATSBY_PAYMENT_SYSTEM,
+    mapper[process.env.GATSBY_PAYMENT_SYSTEM!]
+  );
+
   return mapper[process.env.GATSBY_PAYMENT_SYSTEM!];
 };
 

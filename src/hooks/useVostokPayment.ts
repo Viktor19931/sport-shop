@@ -9,11 +9,15 @@ const PASS = process.env.GATSBY_VOSTOK_PASS!;
 const useVostokPayment = () => {
   const handlePayVostok = async (name, email, amount, rate) => {
     const data = btoa(
-      JSON.stringify({
-        amount: amount * rate, // 1000.00
-        currency: 'UAH',
-        destination: 'TEST' || `Оплата за товар від ${name} (${email}).`,
-      })
+      unescape(
+        encodeURIComponent(
+          JSON.stringify({
+            amount: amount * rate, // 1000.00
+            currency: 'UAH',
+            destination: `Оплата за товар від ${name} (${email}).`,
+          })
+        )
+      )
     );
 
     const sign = md5(

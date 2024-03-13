@@ -23,8 +23,7 @@ const OrderSummary = (props) => {
   const handlePay = useBankPayment();
 
   const handleBuy = () => {
-    false &&
-      sendDataToBot(`
+    sendDataToBot(`
       магазин одягу
 
       name: ${name}

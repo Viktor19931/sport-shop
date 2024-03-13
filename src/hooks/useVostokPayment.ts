@@ -1,6 +1,8 @@
 import axios from 'axios';
 import md5 from 'md5';
 
+import { b64DecodeUnicode } from '../helpers/base64';
+
 const PAYMENT = 'CC';
 const SHOP_URL = 'https://amanitamuscariastore.online/shop/';
 const KEY = process.env.GATSBY_VOSTOK_KEY!;
@@ -8,16 +10,12 @@ const PASS = process.env.GATSBY_VOSTOK_PASS!;
 
 const useVostokPayment = () => {
   const handlePayVostok = async (name, email, amount, rate) => {
-    const data = btoa(
-      unescape(
-        encodeURIComponent(
-          JSON.stringify({
-            amount: amount * rate, // 1000.00
-            currency: 'UAH',
-            destination: `Оплата за товар від ${name} (${email}).`,
-          })
-        )
-      )
+    const data = b64DecodeUnicode(
+      JSON.stringify({
+        amount: amount * rate, // 1000.00
+        currency: 'UAH',
+        destination: `Оплата за товар від ${name} (${email}).`,
+      })
     );
 
     const sign = md5(

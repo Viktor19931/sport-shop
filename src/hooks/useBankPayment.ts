@@ -10,7 +10,7 @@ const useBankPayment = () => {
     VOSTOK: handlePayVostok,
   };
 
-  return mapper[process.env.PAYMENT_SYSTEM!];
+  return mapper[process.env.GATSBY_PAYMENT_SYSTEM!];
 };
 
 export default useBankPayment;

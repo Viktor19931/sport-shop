@@ -3,39 +3,28 @@ import md5 from 'md5';
 
 import { b64EncodeUnicode } from '../helpers/base64';
 
+const PAYMENT = 'CC';
+const SHOP_URL = 'https://elite-sport.netlify.app/shop/';
+const KEY = process.env.GATSBY_VOSTOK_KEY!;
+const PASS = process.env.GATSBY_VOSTOK_PASS!;
+
 const useVostokPayment = () => {
   const handlePayVostok = async (name, email, amount, rate) => {
-    const PAYMENT = 'CC';
-    const SHOP_URL = 'https://elite-sport.netlify.app//shop/';
-    const KEY = process.env.GATSBY_VOSTOK_KEY!;
-    const PASS = process.env.GATSBY_VOSTOK_PASS!;
+    const data = b64EncodeUnicode(
+      JSON.stringify({
+        amount: amount * rate, // 1000.00
+        currency: 'UAH',
+        destination: `Payment for goods from ${name} (${email}).`,
+      })
+    );
 
-    let data;
-    try {
-      data = b64EncodeUnicode(
-        JSON.stringify({
-          amount: amount * rate, // 1000.00
-          currency: 'UAH',
-          destination: `Payment for goods from ${name} (${email}).`,
-        })
-      );
-    } catch (error) {
-      console.log('EEE data ', error);
-    }
-
-    let sign;
-
-    try {
-      sign = md5(
-        KEY.split('').reverse().join('').toUpperCase() +
-          PAYMENT.split('').reverse().join('').toUpperCase() +
-          data.split('').reverse().join('').toUpperCase() +
-          SHOP_URL.split('').reverse().join('').toUpperCase() +
-          PASS.split('').reverse().join('').toUpperCase()
-      );
-    } catch (error) {
-      console.log('EEE sign ', error);
-    }
+    const sign = md5(
+      KEY.split('').reverse().join('').toUpperCase() +
+        PAYMENT.split('').reverse().join('').toUpperCase() +
+        data.split('').reverse().join('').toUpperCase() +
+        SHOP_URL.split('').reverse().join('').toUpperCase() +
+        PASS.split('').reverse().join('').toUpperCase()
+    );
 
     console.log('AAA 1 ', {
       key: KEY,

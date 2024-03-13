@@ -14,7 +14,7 @@ const useVostokPayment = () => {
       JSON.stringify({
         amount: amount * rate, // 1000.00
         currency: 'UAH',
-        destination: `Оплата за товар від ${name} (${email}).`,
+        destination: `Payment for goods from ${name} (${email}).`,
       })
     );
 
@@ -26,7 +26,7 @@ const useVostokPayment = () => {
         PASS.split('').reverse().join('').toUpperCase()
     );
 
-    console.log('AAA ', {
+    console.log('AAA 1 ', {
       key: KEY,
       payment: PAYMENT,
       data,

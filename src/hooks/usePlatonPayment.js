@@ -3,7 +3,7 @@ const usePlatonPayment = () => {
 
   const handlePayPlaton = async () => {
     const form = document.getElementById('paymentForm');
-    console.log(Object.fromEntries(new FormData(form)));
+    console.log(JSON.stringify(Object.fromEntries(new FormData(form))));
     form.submit();
   };
 

@@ -15,7 +15,7 @@ const useBankPayment = () => {
 
   console.log('AAA useBankPayment ', process.env.GATSBY_PAYMENT_SYSTEM);
 
-  return mapper[process.env.GATSBY_PAYMENT_SYSTEM!];
+  return mapper[process.env.GATSBY_PAYMENT_SYSTEM];
 };
 
 export default useBankPayment;

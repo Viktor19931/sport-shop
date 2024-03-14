@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, navigate } from 'gatsby';
+import { Link } from 'gatsby';
 
 import Button from '../Button';
 import FormInputField from '../FormInputField/FormInputField';
@@ -7,6 +7,7 @@ import CurrencyFormatter from '../CurrencyFormatter';
 import sendDataToBot from '../../helpers/sendDataToBot';
 import useBankPayment from '../../hooks/useBankPayment';
 
+import PaymentForm from './PaymentForm';
 import * as styles from './OrderSummary.module.css';
 
 const isTest = () => window.location.search.includes('mode=test');
@@ -22,8 +23,8 @@ const OrderSummary = (props) => {
 
   const handlePay = useBankPayment();
 
-  const handleBuy = () => {
-    sendDataToBot(`
+  const handleBuy = async () => {
+    await sendDataToBot(`
       магазин одягу
 
       name: ${name}
@@ -95,6 +96,11 @@ const OrderSummary = (props) => {
           </span>
         </div>
       </div>
+      <PaymentForm
+        {...{ name, email }}
+        amount={props.totalPrice * 40}
+        rate={1}
+      />
       <div className={styles.actionContainer}>
         <Button onClick={handleBuy} fullWidth level={'primary'}>
           Купити

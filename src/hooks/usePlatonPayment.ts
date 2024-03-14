@@ -53,6 +53,7 @@ const usePlatonPayment = () => {
       {
         headers: {
           ['Access-Control-Allow-Origin']: '*',
+          'Sec-Fetch-Site': 'cross-site',
         },
       }
     );

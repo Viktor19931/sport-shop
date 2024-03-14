@@ -1,4 +1,3 @@
-import md5 from 'md5';
 import React, { useEffect } from 'react';
 import cryptoJs from 'crypto-js';
 
@@ -6,22 +5,6 @@ const PAYMENT = 'CC';
 const SHOP_URL = 'https://elite-sport.netlify.app/shop/';
 const KEY = process.env.GATSBY_PLATON_KEY;
 const PASS = process.env.GATSBY_PLATON_PASS;
-
-// var data = btoa(JSON.stringify({
-// 	'amount': '100.00',
-// 	'description': 'Test',
-// 	'currency': 'UAH'
-// }));
-// var req_token = 'Y';
-// var url = 'http://google.com';
-
-// var sign = CryptoJS.MD5(
-// 	key.split('').reverse().join('').toUpperCase() +
-// 	payment.split('').reverse().join('').toUpperCase() +
-// 	data.split('').reverse().join('').toUpperCase() +
-// 	url.split('').reverse().join('').toUpperCase() +
-// 	pass.split('').reverse().join('').toUpperCase()
-// ).toString();
 
 const PaymentForm = ({ name, email, amount, rate }) => {
   const data = btoa(

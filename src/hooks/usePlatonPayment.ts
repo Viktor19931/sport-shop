@@ -49,6 +49,11 @@ const usePlatonPayment = () => {
         email,
         req_token: 'Y',
         sign,
+      },
+      {
+        headers: {
+          ['Access-Control-Allow-Origin']: '*',
+        },
       }
     );
 

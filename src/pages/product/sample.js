@@ -37,12 +37,6 @@ const ProductPage = (props) => {
   const suggestions = generateMockProductData(4, 'woman');
 
   const handleAddToCart = () => {
-    console.log('PPP ', {
-      ...product,
-      quantity: qty,
-      color: activeSwatch,
-      size: activeSize,
-    });
     setItem({
       ...product,
       quantity: qty,

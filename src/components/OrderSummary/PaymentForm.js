@@ -32,7 +32,7 @@ const PaymentForm = ({ name, email, amount, rate }) => {
     document.getElementById('data').value = data;
     document.getElementById('req_token').value = 'Y';
     document.getElementById('sign').value = sign;
-  }, []);
+  }, [name, email, amount, rate]);
 
   if (process.env.GATSBY_PAYMENT_SYSTEM !== 'PLATON') return;
 

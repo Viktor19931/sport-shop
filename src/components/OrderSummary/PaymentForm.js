@@ -13,7 +13,7 @@ const PaymentForm = ({ name, email, amount, rate }) => {
     JSON.stringify({
       amount: (amount * rate).toFixed(2), // 1000.00
       currency: 'UAH',
-      destination: `Payment for goods from ${name} (${email}).`,
+      description: `Payment for goods from ${name} (${email}).`,
     })
   );
 

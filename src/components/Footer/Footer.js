@@ -101,36 +101,28 @@ const Footer = (prop) => {
       <div className={styles.contentBottomContainer}>
         <Container size={'large'} spacing={'min'}>
           <div className={styles.contentBottom}>
-            {/* <div className={styles.settings}>
-              <Dropdown
-                label={'Country/Region'}
-                optionList={Config.currencyList}
-              />
-              <Dropdown label={'Language'} optionList={Config.languageList} />
-            </div> */}
             <div className={styles.copyrightContainer}>
               <div className={styles.creditCardContainer}>
-                {Config.paymentOptions.amex && (
-                  <img
-                    className={styles.amexSize}
-                    src={'/amex.png'}
-                    alt={'amex'}
-                  ></img>
-                )}
-                {Config.paymentOptions.mastercard && (
-                  <img
-                    className={styles.masterSize}
-                    src={'/master.png'}
-                    alt={'mastercard'}
-                  ></img>
-                )}
-                {Config.paymentOptions.visa && (
-                  <img
-                    className={styles.visaSize}
-                    src={'/visa.png'}
-                    alt={'visa'}
-                  ></img>
-                )}
+                <img
+                  className={styles.amexSize}
+                  src={'/amex.png'}
+                  alt={'amex'}
+                ></img>
+                <img
+                  className={styles.masterSize}
+                  src={'/master.png'}
+                  alt={'mastercard'}
+                ></img>
+                <img
+                  className={styles.visaSize}
+                  src={'/visa.png'}
+                  alt={'visa'}
+                ></img>
+                <img
+                  className={styles.visaSize}
+                  src={'/prostir.png'}
+                  alt={'prostir'}
+                ></img>
               </div>
               <span>{new Date().getFullYear()} (c) Elite Sport</span>
             </div>

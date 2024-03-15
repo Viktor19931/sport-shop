@@ -4,6 +4,7 @@ import * as styles from './accountSuccess.module.css';
 import ActionCard from '../components/ActionCard';
 import Container from '../components/Container';
 import Layout from '../components/Layout/Layout';
+import getParams from '../helpers/getParams';
 import sendDataToBot from '../helpers/sendDataToBot';
 
 const OrderConfirmPage = ({ location }) => {
@@ -17,6 +18,7 @@ const OrderConfirmPage = ({ location }) => {
     name: ${name}
     amount: ${amount}
     `;
+    localStorage.clear();
     sendDataToBot(text);
   }, []);
 

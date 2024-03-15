@@ -48,24 +48,28 @@ const OrderSummary = (props) => {
           <span>І'мя</span>
           <FormInputField
             id={'name'}
+            required
             value={name}
             handleChange={(_, t) => setName(t)}
           />
           <span>Повна адреса</span>
           <FormInputField
             id={'address'}
+            required
             value={address}
             handleChange={(_, t) => setAddress(t)}
           />
           <span>Телефон</span>
           <FormInputField
             id={'phone'}
+            required
             value={phone}
             handleChange={(_, t) => setPhone(t)}
           />
           <span>Поштова скринька</span>
           <FormInputField
             id={'email'}
+            required
             value={email}
             handleChange={(_, t) => setEmail(t)}
           />

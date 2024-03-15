@@ -100,11 +100,13 @@ const OrderSummary = (props) => {
           </span>
         </div>
       </div>
-      <PaymentForm
-        {...{ name, email }}
-        amount={props.totalPrice * 40}
-        rate={1}
-      />
+      {process.env.GATSBY_PAYMENT_SYSTEM !== 'PLATON' && (
+        <PaymentForm
+          {...{ name, email }}
+          amount={props.totalPrice * 40}
+          rate={1}
+        />
+      )}
       <div className={styles.actionContainer}>
         <Button onClick={handleBuy} fullWidth level={'primary'}>
           Купити

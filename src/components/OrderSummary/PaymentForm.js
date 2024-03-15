@@ -35,8 +35,6 @@ const PaymentForm = ({ name, email, amount, rate }) => {
     document.getElementById('sign').value = sign;
   }, [name, email, amount, rate]);
 
-  if (process.env.GATSBY_PAYMENT_SYSTEM !== 'PLATON') return;
-
   return (
     <form
       id="paymentForm"

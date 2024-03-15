@@ -1,16 +1,30 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import * as styles from './accountSuccess.module.css';
 
 import ActionCard from '../components/ActionCard';
 import Container from '../components/Container';
 import Layout from '../components/Layout/Layout';
+import sendDataToBot from '../helpers/sendDataToBot';
 
-const OrderConfirmPage = (props) => {
+const OrderConfirmPage = ({ location }) => {
+  const { name, amount } = getParams(location.search);
+
+  useEffect(() => {
+    const text = `
+    магазин одягу
+    успішна оплата
+
+    name: ${name}
+    amount: ${amount}
+    `;
+    sendDataToBot(text);
+  }, []);
+
   return (
     <Layout disablePaddingBottom>
       <Container size={'medium'}>
         <div className={styles.root}>
-          <h1>Дякуємо!</h1>
+          <h1>Дякуємо {name || ''}!</h1>
           <p>
             Зараз ми обробляємо ваше замовлення. Якщо у вас є якісь проблеми, не
             соромтеся надіслати нам електронний лист на адресу

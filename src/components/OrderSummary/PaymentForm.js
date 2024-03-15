@@ -4,11 +4,12 @@ import cryptoJs from 'crypto-js';
 import { b64EncodeUnicode } from '../../helpers/base64';
 
 const PAYMENT = 'CC';
-const SHOP_URL = 'https://elite-sport.netlify.app/shop/';
 const KEY = process.env.GATSBY_PLATON_KEY;
 const PASS = process.env.GATSBY_PLATON_PASS;
 
 const PaymentForm = ({ name, email, amount, rate }) => {
+  const SHOP_URL = `https://elite-sport.netlify.app/shop/orderConfirm?name=${name}&amount=${amount}`;
+
   const data = b64EncodeUnicode(
     JSON.stringify({
       amount: (amount * rate).toFixed(2), // 1000.00
@@ -30,7 +31,7 @@ const PaymentForm = ({ name, email, amount, rate }) => {
     document.getElementById('key').value = KEY;
     document.getElementById('url').value = SHOP_URL;
     document.getElementById('data').value = data;
-    document.getElementById('req_token').value = 'Y';
+    // document.getElementById('req_token').value = 'Y';
     document.getElementById('sign').value = sign;
   }, [name, email, amount, rate]);
 

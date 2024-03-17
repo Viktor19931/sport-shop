@@ -1,6 +1,9 @@
 import axios from 'axios';
 import CryptoJs from 'crypto-js';
 
+// https://www.npmjs.com/package/sha256-uint8array
+// https://www.npmjs.com/package/sha256-uint8array
+
 const useVostokPayment = () => {
   const handlePayVostok = async (name, amount, email, rate) => {
     const amountToPay = (amount * rate).toFixed(2);

@@ -6,21 +6,16 @@ import AdjustItem from '../../components/AdjustItem';
 import Button from '../../components/Button';
 import Breadcrumbs from '../../components/Breadcrumbs';
 import Container from '../../components/Container';
-import CurrencyFormatter from '../../components/CurrencyFormatter';
 import Gallery from '../../components/Gallery';
 import SizeList from '../../components/SizeList';
-import Split from '../../components/Split';
 import SwatchList from '../../components/SwatchList';
 import Layout from '../../components/Layout/Layout';
 import products from '../../helpers/product.json';
 
-import { generateMockProductData, getProductById } from '../../helpers/mock';
+import { generateMockProductData } from '../../helpers/mock';
 import Icon from '../../components/Icons/Icon';
 import ProductCardGrid from '../../components/ProductCardGrid';
-import { navigate } from 'gatsby';
 import { CartContext } from '../../context/cartContext';
-
-import AddItemNotificationContext from '../../context/cartContext';
 
 const ProductPage = (props) => {
   const productId = +props.location.search.split('=')[1] || 1;
@@ -28,8 +23,6 @@ const ProductPage = (props) => {
 
   const { setItem } = useContext(CartContext);
 
-  const ctxAddItemNotification = useContext(AddItemNotificationContext);
-  const showNotification = ctxAddItemNotification.showNotification;
   const [qty, setQty] = useState(1);
   const [isWishlist, setIsWishlist] = useState(false);
   const [activeSwatch, setActiveSwatch] = useState(product.colorOptions[0]);

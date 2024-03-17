@@ -9,10 +9,9 @@ const Swatch = (props) => {
       className={`${styles.root} ${isActive === true ? styles.isActive : ''}`}
       onClick={() => setActiveSwatch(data)}
     >
-      <div
-        style={{ backgroundColor: data.color }}
-        className={styles.circle}
-      ></div>
+      <div style={{ backgroundColor: data.color }} className={styles.circle}>
+        Swatch
+      </div>
     </button>
   );
 };

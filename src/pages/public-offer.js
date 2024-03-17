@@ -1,11 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import { navigate } from 'gatsby';
+import React, { useEffect } from 'react';
 import * as styles from './contact-us.module.css';
 
 import Banner from '../components/Banner';
 import Layout from '../components/Layout/Layout';
-import ThemeLink from '../components/ThemeLink';
-import Policy from '../components/Policy';
 import Container from '../components/Container';
 import PublicOffer from '../components/PublicOffer';
 

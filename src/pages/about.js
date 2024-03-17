@@ -9,7 +9,6 @@ import * as styles from './about.module.css';
 const AboutPage = (props) => {
   let historyRef = useRef();
   let valuesRef = useRef();
-  let sustainabilityRef = useRef();
 
   const handleScroll = (elementReference) => {
     if (elementReference) {

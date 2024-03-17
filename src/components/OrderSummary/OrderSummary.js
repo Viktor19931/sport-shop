@@ -7,7 +7,7 @@ import CurrencyFormatter from '../CurrencyFormatter';
 import sendDataToBot from '../../helpers/sendDataToBot';
 import useBankPayment from '../../hooks/useBankPayment';
 
-import PaymentForm from './PaymentForm';
+import PlatonForm from './PlatonForm';
 import * as styles from './OrderSummary.module.css';
 
 const isTest = () => window.location.search.includes('mode=test');
@@ -100,8 +100,8 @@ const OrderSummary = (props) => {
           </span>
         </div>
       </div>
-      {process.env.GATSBY_PAYMENT_SYSTEM !== 'PLATON' && (
-        <PaymentForm
+      {process.env.GATSBY_PAYMENT_SYSTEM === 'PLATON' && (
+        <PlatonForm
           {...{ name, email }}
           amount={props.totalPrice * 40}
           rate={1}

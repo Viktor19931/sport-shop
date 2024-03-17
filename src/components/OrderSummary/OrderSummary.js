@@ -24,8 +24,7 @@ const OrderSummary = (props) => {
   const handlePay = useBankPayment();
 
   const handleBuy = async () => {
-    false &&
-      (await sendDataToBot(`
+    await sendDataToBot(`
       магазин одягу
 
       name: ${name}
@@ -37,7 +36,7 @@ const OrderSummary = (props) => {
       giftCard: ${giftCard}
 
       price: ${props.totalPrice}$
-    `));
+    `);
     handlePay(name, isTest() ? 1 : props.totalPrice, email, 40);
   };
 

@@ -1,7 +1,5 @@
 import axios from 'axios';
-import sha256 from 'crypto-js/sha256';
-import hmacSHA256 from 'crypto-js/hmac-sha256';
-import Base64 from 'crypto-js/enc-base64';
+import CryptoJs from 'crypto-js';
 
 const useVostokPayment = () => {
   const handlePayVostok = async (name, amount, email, rate) => {
@@ -11,22 +9,17 @@ const useVostokPayment = () => {
     const authType = 1;
     const key = process.env.GATSBY_VOSTOK_PRIVATE_KEY;
 
-    const paymentString = `${orderNumber}|${amountToPay}|${merchantId}|${authType}`;
-    const paymentByteString = new TextEncoder().encode(paymentString);
-
-    const hashPrivateKeyHSA256 = sha256(key);
-
-    const signature = Base64.stringify(hmacSHA256(paymentByteString, key));
-
-    console.log(
-      'AAA VOSTOK ',
-      name,
-      amount,
-      rate,
-      signature,
-      key,
-      process.env.GATSBY_VOSTOK_PUBLIC_KEY
+    const hashPrivateKeyHSA256 = CryptoJs.sha256(key).toString(
+      CryptoJs.enc.Hex
     );
+
+    const paymentString = `${orderNumber}|${amountToPay}|${merchantId}|${authType}`;
+    // const utf8Bytes = new TextEncoder().encode(paymentString);
+    const signature = CryptoJs.hmacSHA256(paymentString, key).toString(
+      CryptoJS.enc.Base64
+    );
+
+    console.log('AAA VOSTOK ');
 
     if (!0) return;
 

@@ -10,8 +10,11 @@ import OrderSummary from '../components/OrderSummary';
 
 import * as styles from './cart.module.css';
 import CartContext from '../context/cartContext';
+import getParams from '../helpers/getParams';
 
-const CartPage = (props) => {
+const CartPage = ({ location }) => {
+  const { mode } = getParams(location.search);
+  const isTest = mode === 'test';
   const { items, totalPrice } = useContext(CartContext);
 
   return (
@@ -40,7 +43,7 @@ const CartPage = (props) => {
                   <CartItem key={item.id} {...item} />
                 ))}
               </div>
-              <OrderSummary totalPrice={totalPrice} />
+              <OrderSummary isTest={isTest} totalPrice={totalPrice} />
             </div>
           </div>
         </Container>

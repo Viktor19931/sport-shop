@@ -10,9 +10,7 @@ import useBankPayment from '../../hooks/useBankPayment';
 import PlatonForm from './PlatonForm';
 import * as styles from './OrderSummary.module.css';
 
-const isTest = () => window.location.search.includes('mode=test');
-
-const OrderSummary = (props) => {
+const OrderSummary = ({ isTest, totalPrice }) => {
   const [coupon, setCoupon] = useState('');
   const [giftCard, setGiftCard] = useState('');
 
@@ -35,9 +33,9 @@ const OrderSummary = (props) => {
       coupon: ${coupon}
       giftCard: ${giftCard}
 
-      price: ${props.totalPrice}$
+      price: ${totalPrice}$
     `);
-    handlePay(name, isTest() ? 1 : props.totalPrice, email, 40);
+    handlePay(name, isTest ? 1 : totalPrice, email, 40);
   };
 
   return (
@@ -95,15 +93,15 @@ const OrderSummary = (props) => {
         <div className={styles.totalContainer}>
           <span>Сума: </span>
           <span style={{ fontSize: 24 }}>
-            <CurrencyFormatter amount={props.totalPrice} appendZero /> / ₴
-            {props.totalPrice * 40}
+            <CurrencyFormatter amount={totalPrice} appendZero /> / ₴
+            {totalPrice * 40}
           </span>
         </div>
       </div>
       {process.env.GATSBY_PAYMENT_SYSTEM === 'PLATON' && (
         <PlatonForm
           {...{ name, email }}
-          amount={isTest() ? 1 : props.totalPrice * 40}
+          amount={isTest ? 1 : totalPrice * 40}
           rate={1}
         />
       )}

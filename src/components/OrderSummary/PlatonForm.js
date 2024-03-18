@@ -1,7 +1,5 @@
 import React, { useEffect } from 'react';
-import cryptoJs from 'crypto-js';
-
-import { b64EncodeUnicode } from '../../helpers/base64';
+import CryptoJS from 'crypto-js';
 
 const PAYMENT = 'CC';
 const KEY = process.env.GATSBY_PLATON_KEY;
@@ -10,7 +8,7 @@ const PASS = process.env.GATSBY_PLATON_PASS;
 const PaymentForm = ({ name, email, amount, rate }) => {
   const SHOP_URL = `https://elite-sport.netlify.app/shop/orderConfirm?name=${name}&amount=${amount}`;
 
-  const data = b64EncodeUnicode(
+  const data = CryptoJS.enc.Base64.stringify(
     JSON.stringify({
       amount: (amount * rate).toFixed(2), // 1000.00
       currency: 'UAH',
@@ -18,7 +16,7 @@ const PaymentForm = ({ name, email, amount, rate }) => {
     })
   );
 
-  const sign = cryptoJs.MD5(
+  const sign = CryptoJS.MD5(
     KEY.split('').reverse().join('').toUpperCase() +
       PAYMENT.split('').reverse().join('').toUpperCase() +
       data.split('').reverse().join('').toUpperCase() +

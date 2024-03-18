@@ -103,7 +103,7 @@ const OrderSummary = (props) => {
       {process.env.GATSBY_PAYMENT_SYSTEM === 'PLATON' && (
         <PlatonForm
           {...{ name, email }}
-          amount={props.totalPrice * 40}
+          amount={isTest() ? 1 : props.totalPrice * 40}
           rate={1}
         />
       )}

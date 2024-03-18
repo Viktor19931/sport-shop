@@ -19,7 +19,8 @@ import { CartContext } from '../../context/cartContext';
 import getParams from '../../helpers/getParams';
 
 const ProductPage = (props) => {
-  const { id: productId } = getParams(props.location.search);
+  const { id } = getParams(props.location.search);
+  const productId = id || 1;
   const product = products.find((p) => p.id === productId);
 
   const { setItem } = useContext(CartContext);

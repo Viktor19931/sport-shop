@@ -9,10 +9,16 @@ import Layout from '../components/Layout';
 import ProductCardGrid from '../components/ProductCardGrid';
 import { getAllProducts } from '../helpers/mock';
 import Config from '../config.json';
+import getParams from '../helpers/getParams';
 
 const ShopPage = (props) => {
+  const { gender } = getParams(props.location.search);
   const [showFilter, setShowFilter] = useState(false);
-  const data = getAllProducts();
+  const allProducts = getAllProducts();
+
+  const data = gender
+    ? getAllProducts().filter((p) => p.tags.includes(gender))
+    : allProducts;
 
   useEffect(() => {
     window.addEventListener('keydown', escapeHandler);

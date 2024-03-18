@@ -5,7 +5,7 @@
     "price": 55,
     "description": "легкий та потужний<br>багатогранна конструкція лінзтехнологія PowerTap дозволяє миттєво перемикатися між повним і затемненим світломможливість обрати режим<br>велика кількість режимів роботи: ближнє, дальнє світло, розсіяне світло, яскравий промінь, RGB нічний режим, стробоскопчервоне, зелене і синє світло нічного режиму покривають весь спектр потреб освітлення в темряві<br>водостійкий корпус<br>заощаджує витрати батареї<br>трирівневий індикатор заряду батареї<br>запам’ятовує потрібний режим<br>функція цифрового блокування<br>Характеристики Black Diamond Storm 400 люмен (Dark Olive):<br><br>Люмени: 400<br>Дальність променя світла: 8 лм - 9 м, 180 лм - 45 м, 400 лм -100 м<br>Час роботи: 8 лм - 150 год, 180 лм - 10 год, 400 лм - 5 год<br>Вага: 120 г (з батарейками)<br>Живлення: 4 батарейки ААА (у комплекті)<br>Ступінь захисту: IPX67",
     "gallery": ["/products/product-37/1.jpeg"],
-    "tags": ["woman"],
+    "tags": ["woman", "man"],
     "colorOptions": [{ "color": "black", "title": "Black" }],
     "sizeOptions": ["m"]
   },
@@ -19,7 +19,7 @@
       "/products/product-36/2.jpeg",
       "/products/product-36/3.jpeg"
     ],
-    "tags": ["woman"],
+    "tags": ["woman", "man"],
     "colorOptions": [{ "color": "blue", "title": "Blue" }],
     "sizeOptions": ["m"]
   },
@@ -29,7 +29,7 @@
     "price": 55,
     "description": "Особливості Ortovox Tour Light Glove Mns чоловічі black raven:<br>Еластичний захист<br>Міцний, стійкий до стирання зовнішній матеріал<br>Козяча шкіра на долоні (можна прати)<br>Набивання з переробленої мериносової вовни<br>Функція “розумний палець” для сенсорних пристроїв<br><br>Технічні характеристики Ortovox Tour Light Glove Mns чоловічі black raven:<br>Основний матеріал: 75% Поліамід + 18% Вовна (Merino OWP) + 7% Еластан<br>Вставки: 100% Козяча шкіра",
     "gallery": ["/products/product-35/1.jpeg"],
-    "tags": ["woman"],
+    "tags": ["woman", "man"],
     "colorOptions": [{ "color": "black", "title": "Black" }],
     "sizeOptions": ["s", "m", "l"]
   },
@@ -39,7 +39,7 @@
     "price": 112,
     "description": "зроблений з посиленої тканини 210D High Tenacity Nylon Shadowbox спінена спинка. <br>доступ до основного відділення через задній відсік<br>кріплення для лиж чи сноуборду<br>місце для лавинного зонда та лопати<br>місце під шолом<br>захищені відділення для окулярів (3)<br>місце для пляшки<br>подушка безпеки<br><br>Технічні характеристики Osprey Soelden 22 чорний:<br>Матеріал: 210D High Tenacity Nylon Shadowbox<br>Об`єм: 22 л<br>Розмір: 51x29x24 см<br>Вага: 1 кг",
     "gallery": ["/products/product-34/1.jpeg", "/products/product-34/2.jpeg"],
-    "tags": ["woman"],
+    "tags": ["woman", "man"],
     "colorOptions": [{ "color": "black", "title": "Black" }],
     "sizeOptions": ["m"]
   },
@@ -54,7 +54,7 @@
       "/products/product-33/3.jpeg",
       "/products/product-33/4.jpeg"
     ],
-    "tags": ["woman"],
+    "tags": ["woman", "man"],
     "colorOptions": [{ "color": "blue", "title": "Blue" }],
     "sizeOptions": ["L"]
   },
@@ -69,7 +69,7 @@
       "/products/product-32/3.jpeg",
       "/products/product-32/4.jpeg"
     ],
-    "tags": ["woman"],
+    "tags": ["woman", "man"],
     "colorOptions": [
       { "color": "black", "title": "Black" },
       { "color": "white", "title": "White" }
@@ -155,7 +155,7 @@
       "/products/product-27/3.jpeg",
       "/products/product-27/4.jpeg"
     ],
-    "tags": ["woman"],
+    "tags": ["man"],
     "colorOptions": [
       { "color": "black", "title": "Black" },
       { "color": "red", "title": "Red" }
@@ -172,7 +172,7 @@
       "/products/product-26/2.jpeg",
       "/products/product-26/3.jpeg"
     ],
-    "tags": ["woman"],
+    "tags": ["man"],
     "colorOptions": [
       { "color": "black", "title": "Black" },
       { "color": "white", "title": "White" }
@@ -185,7 +185,7 @@
     "price": 69,
     "description": "Компресійні легінси — це функціональна річ, яка відчувається як друга шкіра. Вони ідеально адаптуються до будь-якої фігури, а їх компресія зменшує мʼязовий шок у нижніх кінцівках. Крім того, вони відмінно відводять піт, тому вам буде комфортно носити їх навіть під час інтенсивних тренувань. Таким чином, леггінси ідеально підходять для силових тренувань, бігу та інших занять. Склад 79% поліестер, 21% еластан",
     "gallery": ["/products/product-25/1.jpeg"],
-    "tags": ["woman"],
+    "tags": ["man"],
     "colorOptions": [{ "color": "black", "title": "Black" }],
     "sizeOptions": ["s", "m", "l"]
   },
@@ -200,7 +200,7 @@
       "/products/product-24/3.jpeg",
       "/products/product-24/4.jpeg"
     ],
-    "tags": ["woman"],
+    "tags": ["man"],
     "colorOptions": [{ "color": "gray", "title": "Grey" }],
     "sizeOptions": ["s", "m", "l"]
   },
@@ -214,7 +214,7 @@
       "/products/product-23/2.jpeg",
       "/products/product-23/3.jpeg"
     ],
-    "tags": ["woman"],
+    "tags": ["man"],
     "colorOptions": [
       { "color": "black", "title": "Black" },
       { "color": "white", "title": "White" }
@@ -232,7 +232,7 @@
       "/products/product-22/3.jpeg",
       "/products/product-22/4.jpeg"
     ],
-    "tags": ["woman"],
+    "tags": ["man"],
     "colorOptions": [
       { "color": "black", "title": "Black" },
       { "color": "white", "title": "White" }
@@ -249,7 +249,7 @@
       "/products/product-21/2.jpeg",
       "/products/product-21/3.jpeg"
     ],
-    "tags": ["woman"],
+    "tags": ["woman", "man"],
     "colorOptions": [
       { "color": "black", "title": "Black" },
       { "color": "red", "title": "Red" },
@@ -263,7 +263,7 @@
     "price": 39,
     "description": "Матеріал преміум-класу із високою зносостійкістю.Стильний, зручний крій.Висока якість у поєднанні з доступною",
     "gallery": ["/products/product-20/1.jpeg", "/products/product-20/2.jpeg"],
-    "tags": ["woman"],
+    "tags": ["man"],
     "colorOptions": [
       { "color": "black", "title": "Black" },
       { "color": "gray", "title": "Gray" }
@@ -276,7 +276,7 @@
     "price": 69,
     "description": "Northwave Fahrenheit Jersey",
     "gallery": ["/products/product19/1.jpeg"],
-    "tags": ["woman"],
+    "tags": ["man"],
     "colorOptions": [
       { "color": "black", "title": "Black" },
       { "color": "gray", "title": "Gray" }
@@ -289,7 +289,7 @@
     "price": 69,
     "description": "комплект 5 в 1 MANTO (Манто) для тренувань Чорний. Склад:<br>Легінси та Рашгард: Поліестер 87 % Еластан 13 %<br>Шорти Поліестер - 100%<br>Матеріал м'який та приємний до тіла",
     "gallery": ["/products/product18/1.jpeg"],
-    "tags": ["woman"],
+    "tags": ["man"],
     "colorOptions": [{ "color": "black", "title": "Black" }],
     "sizeOptions": ["s", "m", "l"]
   },
@@ -304,7 +304,7 @@
       "/products/product17/3.jpeg",
       "/products/product17/4.jpeg"
     ],
-    "tags": ["woman"],
+    "tags": ["woman", "man"],
     "colorOptions": [{ "color": "black", "title": "Black" }],
     "sizeOptions": ["m"]
   },
@@ -318,7 +318,7 @@
       "/products/product16/2.jpeg",
       "/products/product16/3.jpeg"
     ],
-    "tags": ["woman"],
+    "tags": ["woman", "man"],
     "colorOptions": [{ "color": "black", "title": "Black" }],
     "sizeOptions": ["m"]
   },
@@ -332,7 +332,7 @@
       "/products/product15/2.jpeg",
       "/products/product15/3.jpeg"
     ],
-    "tags": ["woman"],
+    "tags": ["woman", "man"],
     "colorOptions": [{ "color": "black", "title": "Black" }],
     "sizeOptions": ["m"]
   },
@@ -341,7 +341,7 @@
     "name": "лижна куртка Nevica Banff",
     "price": 69,
     "alt": "relaxed t shirt woman",
-    "tags": ["woman"],
+    "tags": ["man"],
     "description": "Ця куртка має довгі рукави, внутрішні манжети, дизайн з капюшоном і класичний зовнішній вигляд з елементами малюнка в тон. Ця лижна куртка Nevica Banff має чотиристоронню еластичну тканину для комфортної посадки, водонепроникні блискавки спереду та кишені. Стрейч-підкладка з внутрішньої сторони робить носіння куртки приємнішим і дозволяє їй розтягуватися. Образ доповнює назва бренду на грудях і кольорова блискавка, щоб виділятися на схилах.",
     "colorOptions": [
       { "color": "#000000", "title": "Anthracite Melange" },
@@ -369,7 +369,7 @@
       "/products/product2/4.jpeg"
     ],
     "description": "Цей еластичний поліестеровий одяг є ідеальним базовим шаром, що відводить вологу, під час прогулянок у горах або як легкий шар під час будь-якої активної діяльності.",
-    "tags": ["woman"],
+    "tags": ["man", "woman"],
     "colorOptions": [
       { "color": "#000000", "title": "Anthracite Melange" },
       { "color": "#4D34AE", "title": "Pale Purple" },
@@ -388,7 +388,7 @@
       "/products/product3/2.jpeg"
     ],
     "description": "Цей дизайн костюма Nevica Meribel ідеально підходить для зимових спортивних пригод. Оснащена довгими рукавами з внутрішніми манжетами для додаткового тепла, ця куртка оснащена всіма необхідними характеристиками лиж, щоб зробити ваш день на схилах успішним. Ці функції запобігають потраплянню снігу та холодного повітря, забезпечують сухість і комфорт незалежно від погодних умов.",
-    "tags": ["woman"],
+    "tags": ["man"],
     "colorOptions": [
       { "color": "#000000", "title": "Anthracite Melange" },
       { "color": "#4D34AE", "title": "Pale Purple" },
@@ -403,7 +403,7 @@
     "alt": "relaxed t shirt woman",
     "gallery": ["/products/product4/1.jpeg"],
     "description": "Ця куртка має довгі рукави, внутрішні манжети, дизайн з капюшоном і класичний зовнішній вигляд з елементами малюнка в тон. Ця лижна куртка Nevica Banff має чотиристоронню еластичну тканину для комфортної посадки, водонепроникні блискавки спереду та кишені. Стрейч-підкладка з внутрішньої сторони робить носіння куртки приємнішим і дозволяє їй розтягуватися. Образ доповнює назва бренду на грудях і кольорова блискавка, щоб виділятися на схилах.",
-    "tags": ["woman"],
+    "tags": ["man"],
     "meta": "+ 2 colors",
     "colorOptions": [
       { "color": "#000000", "title": "Anthracite Melange" },
@@ -437,7 +437,7 @@
       "/products/product6/3.jpeg",
       "/products/product6/4.jpeg"
     ],
-    "tags": ["woman"],
+    "tags": ["man", "woman"],
     "originalPrice": 31.5,
     "description": "Шолом гірськолижний Nevica Meribel чорний чоловічий. Це шолом, який оцінять люди, які вже катаються не перший раз і знають, що їм потрібно. Безліч приємних і корисних функції, які поєднані в цьому шоломі зроблять ваше катання максимально комфортним. Вентиляційні отвори з можливістю відкривання і закривання, механізм регулювання розміру шолома, внутрішня флісова частина шолома може відстібатися при потребі , кліпса для фіксації маски на шоломі.Особливості:- вентиляційні отвори (on/off);- регулювання розміру;- внутрішня частина знімається;- кліпса для фіксації маски.",
     "colorOptions": [
@@ -482,7 +482,7 @@
       "/products/product9/2.jpeg",
       "/products/product9/3.jpeg"
     ],
-    "tags": ["woman"],
+    "tags": ["man"],
     "colorOptions": [{ "color": "#000", "title": "Black" }],
     "sizeOptions": ["s", "m", "l"]
   },
@@ -511,12 +511,11 @@
     "alt": "relaxed t shirt woman",
     "description": "",
     "gallery": [
-      "/products/product11/1.jpg",
-      "/products/product11/2.jpg",
-      "/products/product11/3.jpg",
-      "/products/product11/4.jpg"
+      "/products/product11/1.jpeg",
+      "/products/product11/2.jpeg",
+      "/products/product11/3.jpeg"
     ],
-    "tags": ["woman"],
+    "tags": ["woman", "man"],
     "colorOptions": [
       { "color": "#000", "title": "Black" },
       { "color": "pink", "title": "Pink" }
@@ -534,7 +533,7 @@
       "/products/product12/3.jpeg",
       "/products/product12/4.jpeg"
     ],
-    "tags": ["woman"],
+    "tags": ["man"],
     "colorOptions": [{ "color": "gold", "title": "Gold" }],
     "sizeOptions": ["s", "m", "l"]
   },
@@ -549,7 +548,7 @@
       "/products/product13/3.jpeg",
       "/products/product13/4.jpeg"
     ],
-    "tags": ["woman"],
+    "tags": ["man"],
     "colorOptions": [
       { "color": "green", "title": "Green" },
       { "color": "red", "title": "red" },
@@ -568,7 +567,7 @@
       "/products/product14/3.jpeg",
       "/products/product14/4.jpeg"
     ],
-    "tags": ["woman"],
+    "tags": ["woman", "man"],
     "colorOptions": [
       { "color": "black", "title": "Black" },
       { "color": "red", "title": "red" },

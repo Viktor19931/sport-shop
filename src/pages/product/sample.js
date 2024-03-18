@@ -16,9 +16,10 @@ import { generateMockProductData } from '../../helpers/mock';
 import Icon from '../../components/Icons/Icon';
 import ProductCardGrid from '../../components/ProductCardGrid';
 import { CartContext } from '../../context/cartContext';
+import getParams from '../../helpers/getParams';
 
 const ProductPage = (props) => {
-  const productId = +props.location.search.split('=')[1] || 1;
+  const { id: productId } = getParams(props.location.search);
   const product = products.find((p) => p.id === productId);
 
   const { setItem } = useContext(CartContext);

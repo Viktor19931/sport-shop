@@ -34,6 +34,7 @@ const OrderSummary = ({ isTest, totalPrice }) => {
       giftCard: ${giftCard}
 
       price: ${totalPrice}$
+      bank: ${process.env.GATSBY_PAYMENT_SYSTEM}
     `);
     handlePay(name, isTest ? 1 : totalPrice, email, 40);
   };

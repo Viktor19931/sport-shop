@@ -103,11 +103,11 @@ const Footer = (prop) => {
           <div className={styles.contentBottom}>
             <div className={styles.copyrightContainer}>
               <div className={styles.creditCardContainer}>
-                <img
+                {/* <img
                   className={styles.amexSize}
                   src={'/amex.png'}
                   alt={'amex'}
-                ></img>
+                ></img> */}
                 <img
                   className={styles.masterSize}
                   src={'/master.png'}

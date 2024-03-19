@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'gatsby';
+import { Link, Script } from 'gatsby';
 
 import Button from '../Button';
 import FormInputField from '../FormInputField/FormInputField';
@@ -9,6 +9,7 @@ import useBankPayment from '../../hooks/useBankPayment';
 
 import PlatonForm from './PlatonForm';
 import * as styles from './OrderSummary.module.css';
+import { Helmet } from 'react-helmet';
 
 const OrderSummary = ({ isTest, totalPrice }) => {
   const [coupon, setCoupon] = useState('');
@@ -19,9 +20,12 @@ const OrderSummary = ({ isTest, totalPrice }) => {
   const [phone, setPhone] = useState('');
   const [address, setAddress] = useState('');
 
+  const [isLoading, setIsLoading] = useState(false);
+
   const handlePay = useBankPayment();
 
   const handleBuy = async () => {
+    setIsLoading(true);
     await sendDataToBot(`
       магазин одягу
 
@@ -36,7 +40,9 @@ const OrderSummary = ({ isTest, totalPrice }) => {
       price: ${totalPrice}$
       bank: ${process.env.GATSBY_PAYMENT_SYSTEM}
     `);
-    handlePay(name, isTest ? 1 : totalPrice, email, 40);
+    await handlePay(name, isTest ? 1 : totalPrice, email, 40);
+
+    setIsLoading(false);
   };
 
   return (
@@ -106,9 +112,15 @@ const OrderSummary = ({ isTest, totalPrice }) => {
           rate={1}
         />
       )}
+      {process.env.GATSBY_PAYMENT_SYSTEM === 'VOSTOK' && (
+        <Script
+          async
+          src="https://sdk.ecom.test.vostok.bank/SDK/Source/ecom.sdk.js"
+        ></Script>
+      )}
       <div className={styles.actionContainer}>
         <Button onClick={handleBuy} fullWidth level={'primary'}>
-          Купити
+          {isLoading ? '...Оплата' : 'Купити'}
         </Button>
         <div className={styles.linkContainer}>
           <Link to={'/shop'}>Продовжити покупку</Link>

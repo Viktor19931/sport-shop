@@ -15,7 +15,7 @@ const MiniCartItem = (props) => {
       <div
         className={styles.imageContainer}
         role={'presentation'}
-        onClick={() => navigate('/product/sample')}
+        onClick={() => navigate('/product')}
       >
         <img src={image} alt={alt} />
       </div>

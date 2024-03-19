@@ -20,7 +20,7 @@ const CartItem = (props) => {
       <div
         className={styles.imageContainer}
         role={'presentation'}
-        onClick={() => navigate('/product/sample')}
+        onClick={() => navigate('/product')}
       >
         <img src={gallery?.[0]} alt={alt} />
       </div>

@@ -1,7 +1,4 @@
-import React, { useState } from 'react';
-import Button from '../Button';
-
-import FormInputField from '../FormInputField/FormInputField';
+import React from 'react';
 
 import * as styles from './Shipping.module.css';
 

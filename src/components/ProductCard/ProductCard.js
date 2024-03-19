@@ -3,31 +3,28 @@ import { navigate } from 'gatsby';
 import * as styles from './ProductCard.module.css';
 
 import Icon from '../Icons/Icon';
-import CurrencyFormatter from '../CurrencyFormatter';
 
 const ProductCard = (props) => {
   const [isWishlist, setIsWishlist] = useState(false);
   const {
     id,
-    image,
     imageAlt,
     name,
     price,
     gallery,
     originalPrice,
     meta,
-    showQuickView,
     height = 580,
   } = props;
 
   const handleRouteToProduct = () => {
-    navigate(`/product/sample?id=${id}`);
+    navigate(`/product?id=${id}`);
   };
 
   const handleQuickView = (e) => {
     e.stopPropagation();
     // showQuickView();
-    navigate(`/product/sample?id=${id}`);
+    navigate(`/product?id=${id}`);
   };
 
   const handleFavorite = (e) => {

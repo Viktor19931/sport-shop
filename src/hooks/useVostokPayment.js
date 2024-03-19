@@ -1,8 +1,8 @@
-import axios from 'axios';
 import CryptoJs from 'crypto-js';
 
-// https://www.npmjs.com/package/sha256-uint8array
-// https://www.npmjs.com/package/sha256-uint8array
+import forge from 'node-forge';
+
+import { b64EncodeUnicode } from '../helpers/base64';
 
 const useVostokPayment = () => {
   const handlePayVostok = async (name, amount, email, rate) => {
@@ -10,50 +10,35 @@ const useVostokPayment = () => {
     const orderNumber = Date.now();
     const merchantId = process.env.GATSBY_VOSTOK_MERCHANT_ID;
     const authType = 1;
-    const key = process.env.GATSBY_VOSTOK_PRIVATE_KEY;
+    const privateKeyPem = process.env.GATSBY_VOSTOK_PRIVATE_KEY;
+    const privateKeyHash = process.env.GATSBY_VOSTOK_KEY_HASH;
 
-    const hashPrivateKeyHSA256 = CryptoJs.sha256(key).toString(
-      CryptoJs.enc.Hex
-    );
+    const data = `${orderNumber}|${amountToPay}|${merchantId}|${authType}`;
 
-    const paymentString = `${orderNumber}|${amountToPay}|${merchantId}|${authType}`;
-    // const utf8Bytes = new TextEncoder().encode(paymentString);
-    const signature = CryptoJs.hmacSHA256(paymentString, key).toString(
-      CryptoJS.enc.Base64
-    );
+    const privateKey = forge.pki.privateKeyFromPem(privateKeyPem);
 
-    console.log('AAA VOSTOK ');
+    const md = forge.md.sha256.create();
+    md.update(data, 'utf8');
+    const signature = privateKey.sign(md);
 
-    if (!0) return;
+    const base64Signature = forge.util.encode64(signature);
 
-    const data = await axios.post(
-      'https://api.ecom.test.vostok.bank',
-      {
-        amount: amountToPay,
-        partnerOrderId: orderNumber,
-        merchantId: merchantId,
-        authType: authType,
-        // 1 - Authorization
-        // 2 - PreAuthorization
-        // 4 - Verify
-        currency: 'UAH',
-        signature: 'signature',
-        keyHash: 'keyHash',
-        description: `Покупка речей, ${name}`,
-        cultureName: 'en', // uk-UA (default)
-        successRedirectUrl: `https://elite-sport.netlify.app/orderConfirm?name=${name}&amount=${amount}`,
-        failureRedirectUrl: 'https://elite-sport.netlify.app/404',
-        deepLinkUrl: null,
-      },
-      {
-        headers: {
-          'X-Key': hashPrivateKeyHSA256, // 'SHA256HASH(private_key)'
-          'X-Signature': signature, // 'BASE64(RSA_SIGN(private_key, data, sha256 digest))',
-        },
-      }
-    );
+    const eComPay = new window.EcomSDK.CheckoutPay();
 
-    console.log(data);
+    eComPay.phoneNumber = '+380981234567';
+    eComPay.amount = amountToPay;
+    eComPay.description = 'Тестовий платіж';
+    eComPay.partnerOrderId = orderNumber;
+    eComPay.merchantId = merchantId;
+    eComPay.authType = authType;
+    eComPay.successRedirectUrl = `https://elite-sport.netlify.app/orderConfirm?name=${name}&amount=${amount}`;
+    eComPay.failureRedirectUrl = 'https://elite-sport.netlify.app/404';
+    eComPay.cultureName = 'uk-UA';
+    eComPay.signature = base64Signature;
+    eComPay.keyHash = privateKeyHash;
+    eComPay.customParameters = {};
+
+    eComPay.checkout();
   };
 
   return handlePayVostok;

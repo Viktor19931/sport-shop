@@ -13,8 +13,6 @@ const useBankPayment = () => {
     PLATON: handlePayPlaton,
   };
 
-  console.log('AAA useBankPayment ', process.env.GATSBY_PAYMENT_SYSTEM);
-
   return mapper[process.env.GATSBY_PAYMENT_SYSTEM];
 };
 

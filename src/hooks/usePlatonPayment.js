@@ -1,7 +1,6 @@
 const usePlatonPayment = () => {
-  console.log('AAA Platon ');
-
   const handlePayPlaton = async () => {
+    console.log('AAA Platon ');
     const form = document.getElementById('paymentForm');
     console.log(JSON.stringify(Object.fromEntries(new FormData(form))));
     form.submit();

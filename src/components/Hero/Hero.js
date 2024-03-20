@@ -18,7 +18,7 @@ const Hero = (props) => {
     header,
     children,
   } = props;
-  const { t } = useContext(LocalizationContext);
+  const { t } = React.useContext(LocalizationContext);
 
   return (
     <div className={styles.root} style={{ backgroundImage: `url(${image})` }}>

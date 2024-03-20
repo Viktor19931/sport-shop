@@ -8,7 +8,7 @@ import FormInputField from '../FormInputField/FormInputField';
 import Icon from '../Icons/Icon';
 import Button from '../Button';
 import Config from '../../config.json';
-import { LocalizationContext } from '../../context/LocalizationContext';
+// import { LocalizationContext } from '../../context/LocalizationContext';
 
 import * as styles from './Footer.module.css';
 
@@ -25,7 +25,8 @@ const Footer = (prop) => {
     window.open('https://www.instagram.com/elite_sport__lviv/');
   };
 
-  const { t } = useContext(LocalizationContext);
+  const t = (k) => k;
+  // const { t } = useContext(LocalizationContext);
 
   const renderLinks = (linkCollection) => {
     return (

@@ -8,7 +8,8 @@ import * as styles from './Attribute.module.css';
 const Attribute = (props) => {
   const { icon, title, subtitle } = props;
 
-  const { t } = useContext(LocalizationContext);
+  const t = (k) => k;
+  // const { t } = useContext(LocalizationContext);
 
   return (
     <div className={styles.root}>

@@ -1,14 +1,15 @@
 import { navigate } from 'gatsby';
 import React, { useContext } from 'react';
 
-import { LocalizationContext } from '../../context/LocalizationContext';
+// import { LocalizationContext } from '../../context/LocalizationContext';
 
 import * as styles from './ProductCollection.module.css';
 
 const ProductCollection = (props) => {
   const { image, title, text, link } = props;
 
-  const { t } = useContext(LocalizationContext);
+  const t = (k) => k;
+  // const { t } = useContext(LocalizationContext);
 
   return (
     <div

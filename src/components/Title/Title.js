@@ -1,7 +1,7 @@
 import { Link } from 'gatsby';
 import React, { useContext } from 'react';
 import * as styles from './Title.module.css';
-import { LocalizationContext } from '../../context/LocalizationContext';
+// import { LocalizationContext } from '../../context/LocalizationContext';
 
 const Title = (props) => {
   const {
@@ -15,7 +15,8 @@ const Title = (props) => {
     marginBottom = '32px',
   } = props;
 
-  const { t } = useContext(LocalizationContext);
+  const t = (k) => k;
+  // const { t } = useContext(LocalizationContext);
 
   return (
     <div

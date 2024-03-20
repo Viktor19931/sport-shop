@@ -12,7 +12,7 @@ import FormInputField from '../FormInputField/FormInputField';
 import Icon from '../Icons/Icon';
 import MiniCart from '../MiniCart';
 import MobileNavigation from '../MobileNavigation';
-import { LocalizationContext } from '../../context/LocalizationContext';
+// import { LocalizationContext } from '../../context/LocalizationContext';
 import CartContext from '../../context/cartContext';
 
 import * as styles from './Header.module.css';
@@ -83,7 +83,10 @@ const Header = (prop) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [showSearch]);
 
-  const { lang, t, changeLanguage } = useContext(LocalizationContext);
+  const lang = 'en';
+  const changeLanguage = (k) => k;
+  const t = (k) => k;
+  // const { t } = useContext(LocalizationContext);
 
   return (
     <div className={styles.root}>

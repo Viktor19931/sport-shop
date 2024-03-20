@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { Link } from 'gatsby';
 
 import Icon from '../Icons/Icon';
-import { LocalizationContext } from '../../context/LocalizationContext';
+// import { LocalizationContext } from '../../context/LocalizationContext';
 
 import * as styles from './BreadCrumbs.module.css';
 
@@ -16,7 +16,8 @@ const Breadcrumbs = ({ crumbs }) => {
     }
   }
 
-  const { t } = useContext(LocalizationContext);
+  const t = (k) => k;
+  // const { t } = useContext(LocalizationContext);
 
   return (
     <div data-breadcrumbs className={styles.breadcrumbs}>

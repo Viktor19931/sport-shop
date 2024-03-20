@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 
 import Icon from '../Icons/Icon';
-import { LocalizationContext } from '../../context/LocalizationContext';
+// import { LocalizationContext } from '../../context/LocalizationContext';
 
 import * as styles from './Attribute.module.css';
 

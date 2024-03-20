@@ -6,26 +6,6 @@ import uaJson from '../translations/ua.json';
 const LANG_KEY = 'current-language';
 const DEFAULT_LANG = 'en';
 
-const getPropertyByStringKey = (obj, keyString) => {
-  const keys = keyString.split('.');
-  let result = obj;
-
-  for (let i = 0; i < keys.length; i++) {
-    if (result[keys[i]] !== undefined) {
-      result = result[keys[i]];
-    } else {
-      return keyString;
-    }
-  }
-
-  return result;
-};
-
-const TRANSLATIONS = {
-  ua: uaJson,
-  en: enJson,
-};
-
 export const LocalizationContext = createContext({
   lang: DEFAULT_LANG,
   t: (k) => k,
@@ -34,6 +14,26 @@ export const LocalizationContext = createContext({
 
 export const LocalizationProvider = ({ children }) => {
   const [lang, setLang] = useState(DEFAULT_LANG);
+
+  const getPropertyByStringKey = (obj, keyString) => {
+    const keys = keyString.split('.');
+    let result = obj;
+
+    for (let i = 0; i < keys.length; i++) {
+      if (result[keys[i]] !== undefined) {
+        result = result[keys[i]];
+      } else {
+        return keyString;
+      }
+    }
+
+    return result;
+  };
+
+  const TRANSLATIONS = {
+    ua: uaJson,
+    en: enJson,
+  };
 
   useEffect(() => {
     const savedLang = localStorage.getItem(LANG_KEY);

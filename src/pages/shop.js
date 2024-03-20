@@ -31,26 +31,25 @@ const ShopPage = (props) => {
   };
 
   return (
-    <Layout>
-      <div className={styles.root}>
-        <Container size={'large'} spacing={'min'}>
-          <div className={styles.breadcrumbContainer}>
-            <Breadcrumbs
-              crumbs={[
-                { link: '/', label: 'MENU.main' },
-                { label: 'MENU.shop', link: '/shop' },
-              ]}
-            />
-          </div>
-        </Container>
-        {/* <Banner
+    <div className={styles.root}>
+      <Container size={'large'} spacing={'min'}>
+        <div className={styles.breadcrumbContainer}>
+          <Breadcrumbs
+            crumbs={[
+              { link: '/', label: 'MENU.main' },
+              { label: 'MENU.shop', link: '/shop' },
+            ]}
+          />
+        </div>
+      </Container>
+      {/* <Banner
           maxWidth={'650px'}
           name={`Жіночі светри`}
           subtitle="Подивіться на наші жіночі светри, щоб отримати сучасні погляди на одноразовий одяг. Від міді зі сміливими принтами до драматичних стилів для підмітання підлоги та легких моноблоків — наша редакція охоплює будь-який настрій."
         /> */}
-        <Container size={'large'} spacing={'min'}>
-          {/* <div className={styles.metaContainer}> */}
-          {/* <div className={styles.controllerContainer}>
+      <Container size={'large'} spacing={'min'}>
+        {/* <div className={styles.metaContainer}> */}
+        {/* <div className={styles.controllerContainer}>
               <div
                 className={styles.iconContainer}
                 role={'presentation'}
@@ -66,30 +65,27 @@ const ShopPage = (props) => {
                 <Icon symbol={'caret'} />
               </div>
             </div> */}
-          {/* </div> */}
-          <CardController
-            closeFilter={() => setShowFilter(false)}
-            visible={showFilter}
-            filters={Config.filters}
-          />
-          {/* <div className={styles.chipsContainer}>
+        {/* </div> */}
+        <CardController
+          closeFilter={() => setShowFilter(false)}
+          visible={showFilter}
+          filters={Config.filters}
+        />
+        {/* <div className={styles.chipsContainer}>
             <Chip name={'XS'} />
             <Chip name={'S'} />
           </div> */}
-          <div className={styles.productContainer}>
-            <ProductCardGrid data={data.reverse()} />
-          </div>
-          {/* <div className={styles.loadMoreContainer}>
+        <div className={styles.productContainer}>
+          <ProductCardGrid data={data.reverse()} />
+        </div>
+        {/* <div className={styles.loadMoreContainer}>
             <span>6 of 456</span>
             <Button fullWidth level={'secondary'}>
               LOAD MORE
             </Button>
           </div> */}
-        </Container>
-      </div>
-
-      {/* <LayoutOption /> */}
-    </Layout>
+      </Container>
+    </div>
   );
 };
 

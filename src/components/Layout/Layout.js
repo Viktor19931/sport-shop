@@ -36,8 +36,8 @@ const Layout = ({ props, children, disablePaddingBottom = false }) => {
         >
           {children}
         </main>
-        <Footer />
       </LocalizationProvider>
+      <Footer />
     </>
   );
 };

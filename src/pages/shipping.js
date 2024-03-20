@@ -12,7 +12,7 @@ const ShippingPage = (props) => {
   }, []);
 
   return (
-    <Layout disablePaddingBottom>
+    <div>
       <div className={styles.root}>
         <Banner
           maxWidth={'650px'}
@@ -28,7 +28,7 @@ const ShippingPage = (props) => {
           </Container>
         </div>
       </div>
-    </Layout>
+    </div>
   );
 };
 

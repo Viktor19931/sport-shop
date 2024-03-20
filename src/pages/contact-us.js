@@ -3,7 +3,6 @@ import * as styles from './contact-us.module.css';
 
 import Banner from '../components/Banner';
 import Contact from '../components/Contact';
-import Layout from '../components/Layout/Layout';
 import Container from '../components/Container';
 
 const ContactPage = (props) => {
@@ -12,23 +11,21 @@ const ContactPage = (props) => {
   }, []);
 
   return (
-    <Layout disablePaddingBottom>
-      <div className={styles.root}>
-        <Banner
-          maxWidth={'650px'}
-          name={"ЗВ'ЯЗАТИСЯ З НАМИ"}
-          bgImage={'/support.png'}
-          color={'var(--standard-white)'}
-          height={'350px'}
-        />
+    <div className={styles.root}>
+      <Banner
+        maxWidth={'650px'}
+        name={"ЗВ'ЯЗАТИСЯ З НАМИ"}
+        bgImage={'/support.png'}
+        color={'var(--standard-white)'}
+        height={'350px'}
+      />
 
-        <div className={styles.pageContainer}>
-          <Container size={'large'} spacing={'min'}>
-            <Contact />
-          </Container>
-        </div>
+      <div className={styles.pageContainer}>
+        <Container size={'large'} spacing={'min'}>
+          <Contact />
+        </Container>
       </div>
-    </Layout>
+    </div>
   );
 };
 

@@ -27,7 +27,7 @@ const IndexPage = () => {
   };
 
   return (
-    <Layout disablePaddingBottom>
+    <div>
       {/* Hero Container */}
       <Hero
         maxWidth={'500px'}
@@ -137,7 +137,7 @@ const IndexPage = () => {
         </div>
       </div>
       <AttributeGrid />
-    </Layout>
+    </div>
   );
 };
 

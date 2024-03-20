@@ -22,15 +22,15 @@ const CartPage = ({ location }) => {
       <div className={styles.contentContainer}>
         <Container size={'large'} spacing={'min'}>
           <div className={styles.headerContainer}>
-            <div className={styles.shoppingContainer}>
-              <Link className={styles.shopLink} to={'/shop'}>
+            {/* <div className={styles.shoppingContainer}> */}
+            {/* <Link className={styles.shopLink} to={'/shop'}>
                 <Icon symbol={'arrow'}></Icon>
                 <span className={styles.continueShopping}>
                   Продовжити покупки
                 </span>
-              </Link>
-            </div>
-            <Brand />
+              </Link> */}
+            {/* </div> */}
+            {/* <Brand /> */}
             <div className={styles.loginContainer}>
               {/* <Link to={'/login'}>Login</Link> */}
             </div>

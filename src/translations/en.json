@@ -5,5 +5,206 @@
     "contact": "Contact us",
     "about": "About us"
   },
-  "mainPage": { "title": "Basic things for outdoor activities" }
+  "FOOTER": {
+    "information": "Information",
+    "about": "About us",
+    "privacy": "Privacy Policy",
+    "offer": "Public offer",
+    "support": "Support",
+    "contact": "Contact us",
+    "shipping": "Delivery and returns",
+    "subscribe": "Subscribe to us"
+  },
+  "MAIN_PAGE": {
+    "section1": {
+      "title": "Basic things for outdoor activities",
+      "button": "Shop"
+    },
+    "section2": {
+      "title": "New collecium",
+      "button": "Shop",
+      "forMan": "To men",
+      "forWoman": "To women",
+      "buy": "Buy"
+    },
+    "section3": {
+      "title": "New arrivals",
+      "seeAll": "see all"
+    },
+    "section4": {
+      "title": "Waterproof jacket",
+      "description": "This Nevica Banff ski jacket features four-way stretch fabric for a comfortable fit, waterproof front zips and pockets. ",
+      "button": "to buy"
+    },
+    "section5": {
+      "text": "\"We believe in two things: striving for quality in everything we do and caring for each other. "
+    },
+    "section6": {
+      "title": "Discount up to 30%",
+      "subTitle": "for wholesale customers",
+      "button": "Buy"
+    },
+    "section7": {
+      "title": "The best products",
+      "subTitle": "Tag @elite_sport__lviv to be special."
+    },
+    "section8": {
+      "title1": "free shipping",
+      "subTitle1": "all over the world",
+      "title2": "return",
+      "subTitle2": "within 14 days",
+      "title3": "Secure payment",
+      "subTitle3": "Buy safely"
+    }
+  },
+  "PRODUCTS": {
+    "product1": {
+      "name": "Nevica Banff ski jacket",
+      "description": "This jacket features long sleeves, inner cuffs, a hooded design and a classic look with matching graphic elements. "
+    },
+    "product2": {
+      "name": "Thermal underwear",
+      "description": "This stretchy polyester garment is the perfect moisture-wicking base layer for mountain walks or as a light layer for any active activity."
+    },
+    "product3": {
+      "name": "suit for a boy",
+      "description": "This Nevica Meribel suit design is perfect for winter sports adventures. "
+    },
+    "product4": {
+      "name": "Jacket Nevica man",
+      "description": "This jacket features long sleeves, inner cuffs, a hooded design and a classic look with matching graphic elements. "
+    },
+    "product5": {
+      "name": "Rimless skating glasses",
+      "description": "Ski helmet Nevica Meribel black for men. "
+    },
+    "product6": {
+      "name": "Protective helmet",
+      "description": "Ski helmet Nevica Meribel black for men. "
+    },
+    "product7": {
+      "name": "suit for a girl",
+      "description": "This Nevica Meribel suit design is perfect for winter sports adventures. "
+    },
+    "product8": {
+      "name": "Glasses for skating",
+      "description": ""
+    },
+    "product9": {
+      "name": "Men's gloves",
+      "description": "Nevica Meribel will ensure comfort and dryness during skiing. "
+    },
+    "product10": {
+      "name": "Women's ski pants",
+      "description": ""
+    },
+    "product11": {
+      "name": "Glasses for skating",
+      "description": ""
+    },
+    "product12": {
+      "name": "Nike Premier 3 football boots",
+      "description": "Get a timeless match-winning look with these Nike Premier 3 soccer cleats, which have been crafted from premium K-Leather to ensure you feel close to the ball for an incredible first touch, while allowing you to play in comfort. "
+    },
+    "product13": {
+      "name": "Nike Mercurial Superfly 9 football boots",
+      "description": "Get ready to improve your game with the Nike Mercurial Superfly 9 Elite Firm Ground Football Boots. "
+    },
+    "product14": {
+      "name": "CCM JETSPEED FT1 skates",
+      "description": "Professional skates for experienced hockey players from the Jetspeed line. "
+    },
+    "product15": {
+      "name": "Poles for Nordic walking",
+      "description": "Characteristics <br>* Type of stick: telescopic three-section<br>* Length: 68 cm to 135 cm<br>* The weight of one stick is about 240 g. <br>* Stick material: carbon 50% (2 lower sections - carbon, upper section - aluminum)<br>* Handle with natural cork coating<br>* Quick-release neoprene lanyard. <br>* Steel pin-tip<br>* Removable shoes made of durable rubber for walking on asphalt and hard ground Made in Germany."
+    },
+    "product16": {
+      "name": "Eagle Rock trekking poles",
+      "description": "Specifications<br>LENGTH:<br>* 54 cm - in the disassembled state<br>* 62 cm - folded<br>* 135 cm - fully unfolded<br>WEIGHT OF STICKS:<br>* 260 grams without basket or tip<br>Full set included! Unlike other brands, Eagle Rock trekking poles already include:<br>* 1 pair of mud baskets<br>* 1 pair of snow baskets<br>* 2 pairs of rubber tips<br>* 1 pair of connectors<br>* 1 bag for carrying and storage"
+    },
+    "product17": {
+      "name": "Poles for Nordic walking Vipole Traveler DLX",
+      "description": "Characteristics:<br>* Type: super strong folding.<br>* Purpose: Scandinavian walking.<br>* Number of sections: 4.<br>* Material: aluminum metal Alu 7075.<br>* Handle: from pressed cork and plastic.<br>* Harness: made of neoprene, asymmetric, breathable, hypoallergenic, with a quick release system.<br>* Tip: tungsten carbide.<br>Complete set:<br>* Stick: 2 pcs.<br>* Detachable lanyard size M with a special fastex of the Top-Click system: 2 pcs.<br>* Removable trekking ring made of frost-resistant plastic (32 mm): 2 pcs.<br>* Rubber protective boot cap: 2 pcs.<br>* Carrying case: 1 pc.<br>* Dimensions and weight:<br>* Minimum folded length: 34 cm.<br>* Maximum length in working condition: 130 cm.<br>* Section diameter: 12/12/12/14/16 mm.<br>* Weight (of one stick): 240 g."
+    },
+    "product18": {
+      "name": "Compression clothing",
+      "description": "set 5 in 1 MANTO (Manto) for training Black. <br>Leggings and Rashguard: Polyester 87% Elastane 13%<br>Shorts Polyester - 100%<br>The material is soft and pleasant to the body"
+    },
+    "product19": {
+      "name": "Men's Velokofta",
+      "description": "Northwave Fahrenheit Jersey"
+    },
+    "product20": {
+      "name": "Cycling uniform (jacket and pants) SPOINT DIMENSION",
+      "description": "Premium material with high wear resistance. Stylish, comfortable cut. High quality combined with affordable"
+    },
+    "product21": {
+      "name": "Bicycle helmet",
+      "description": "Idolo Black Red Metallic Glossy XL 60–64 cm."
+    },
+    "product22": {
+      "name": "Nebbia Workout Compression T-shirt",
+      "description": ""
+    },
+    "product23": {
+      "name": "Nebbia Workout Compression Shorts",
+      "description": ""
+    },
+    "product24": {
+      "name": "LEGEND-APPROVED HOODIE",
+      "description": ""
+    },
+    "product25": {
+      "name": "Nebbia Thermal Sports leggings",
+      "description": "Compression leggings are a functional thing that feels like a second skin. "
+    },
+    "product26": {
+      "name": "Men's bicycles NEBBIA ROAD",
+      "description": ""
+    },
+    "product27": {
+      "name": "Double-Layer Shorts with Smart Pockets",
+      "description": ""
+    },
+    "product28": {
+      "name": "Top Mini Top Fitzona Yumi",
+      "description": ""
+    },
+    "product29": {
+      "name": "Leggings Legging Fitzona Nanaiz",
+      "description": "due to its style, it fits your buttocks perfectly. "
+    },
+    "product30": {
+      "name": "Leggings Legging Fitzona Glorial",
+      "description": "due to its style, it fits your buttocks perfectly. "
+    },
+    "product31": {
+      "name": "Top Nebbia Padded High-Impact Sports bra Gym",
+      "description": ""
+    },
+    "product32": {
+      "name": "Fingerless bicycle gloves GUB 2099",
+      "description": "Comfortable cycling gloves of high European quality.<br>Soft and at the same time strong material increases comfort and guarantees perfect grip and wear resistance. "
+    },
+    "product33": {
+      "name": "Backpack Deuter Aircontact 50 10 SL",
+      "description": "Divider for dividing the backpack into two parts Adapted to the female body (SlimLine design) Two sewn daisy chains for hanging equipment Attachments for carrying ice tools and trekking poles Functional pocket located in the flap of the backpack Inner pocket for small items Small pocket for small items on the belt Side pockets for racks  <br>Dimensions: 80 x 30 x 24 cm <br>Weight: 2.22 kg <br>Volume: 50 10 liters <br>Material: 100D PA High Tenacity / 600D PES"
+    },
+    "product34": {
+      "name": "Backpack Osprey Soelden 22 black",
+      "description": "made of reinforced fabric 210D High Tenacity Nylon Shadowbox foam back. <br>access to the main compartment through the rear compartment<br>bindings for skis or snowboards<br>place for avalanche probe and shovel<br>place under the helmet<br>protected compartments for glasses (3)<br>place for a bottle<br>airbag<br><br>Specifications Osprey Soelden 22 black:<br>Material: 210D High Tenacity Nylon Shadowbox<br>Volume: 22 l<br>Size: 51x29x24 cm<br>Weight: 1 kg"
+    },
+    "product35": {
+      "name": "Ortovox Tour Light Glove Mns",
+      "description": "Features of Ortovox Tour Light Glove Mns men's black raven:<br>Elastic protection<br>Durable, abrasion-resistant outer material<br>Goat skin on the palm (washable)<br>Filling from processed merino wool<br>Smart finger function for touch devices<br><br>Technical characteristics of Ortovox Tour Light Glove Mns men's black raven:<br>Main material: 75% Polyamide 18% Wool (Merino OWP) 7% Elastane<br>Inserts: 100% Goat leather"
+    },
+    "product36": {
+      "name": "Lifeventure Inflatable Pillow",
+      "description": "Pillow Lifeventure Inflatable Pillow – a classic inflatable pillow made of pleasant material will help you save space in your luggage and provide comfort when traveling. <br><br>Features of the Lifeventure Inflatable Pillow:<br><br>Polyester and TPU fabric<br>Quick inflation/deflation valve<br>Ergonomic shape<br>Durable ripstop carrying case<br>Characteristics of the Lifeventure Inflatable Pillow:<br><br>Weight: 77 g<br>Size (in package): 360 x 510 x 100 mm"
+    },
+    "product37": {
+      "name": "Flashlight Black Diamond Storm 400 lumens",
+      "description": "light and powerful<br>multifaceted lens design, PowerTap technology allows you to instantly switch between full and dimmed light, the ability to choose a mode<br>a large number of operating modes: low beam, high beam, diffused light, bright beam, RGB night mode, strobe red, green and blue night mode lights cover the entire range of lighting needs in the dark<br>waterproof case<br>saves battery consumption<br>three-level battery charge indicator<br>remembers the desired mode<br>digital lock function<br>Characteristics of Black Diamond Storm 400 lumens (Dark Olive):<br><br>Lumens: 400<br>Light beam range: 8 lm - 9 m, 180 lm - 45 m, 400 lm -100 m<br>Working time: 8 lm - 150 hours, 180 lm - 10 hours, 400 lm - 5 hours<br>Weight: 120 g (with batteries)<br>Power supply: 4 AAA batteries (included)<br>Degree of protection: IPX67"
+    }
+  }
 }

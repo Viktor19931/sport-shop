@@ -14,7 +14,7 @@ import { getAllProducts } from '../helpers/mock';
 
 import * as styles from './index.module.css';
 import { Link, navigate } from 'gatsby';
-import { LocalizationContext } from '../context/LocalizationContext';
+import { LocalizationContext } from '../context/localizationContext';
 
 const IndexPage = () => {
   const allProducts = getAllProducts();

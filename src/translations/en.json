@@ -1,0 +1,9 @@
+{
+  "MENU": {
+    "main": "Main",
+    "shop": "Shop",
+    "contact": "Contact us",
+    "about": "About us"
+  },
+  "mainPage": { "title": "Basic things for outdoor activities" }
+}

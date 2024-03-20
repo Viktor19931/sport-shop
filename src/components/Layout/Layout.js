@@ -8,12 +8,12 @@ import * as styles from './Layout.module.css';
 
 // CSS not modular here to provide global styles
 import './Globals.css';
+import { LocalizationProvider } from '../../context/LocalizationContext';
 
 const Layout = ({ props, children, disablePaddingBottom = false }) => {
   return (
     <>
       <Helmet>
-        {/* Add any sitewide scripts here */}
         <link
           rel="stylesheet"
           type="text/css"
@@ -27,15 +27,17 @@ const Layout = ({ props, children, disablePaddingBottom = false }) => {
         />
       </Helmet>
 
-      <Header />
-      <main
-        className={`${styles.main} ${
-          disablePaddingBottom === true ? styles.disablePaddingBottom : ''
-        }`}
-      >
-        {children}
-      </main>
-      <Footer />
+      <LocalizationProvider>
+        <Header />
+        <main
+          className={`${styles.main} ${
+            disablePaddingBottom === true ? styles.disablePaddingBottom : ''
+          }`}
+        >
+          {children}
+        </main>
+        <Footer />
+      </LocalizationProvider>
     </>
   );
 };

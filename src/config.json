@@ -24,32 +24,32 @@
   },
   "footerLinks": [
     {
-      "subTitle": "Інформація",
+      "subTitle": "FOOTER.information",
       "links": [
         {
-          "text": "Про нас",
+          "text": "FOOTER.about",
           "link": "/about"
         },
 
         {
-          "text": "Політика конфіденційності",
+          "text": "FOOTER.privacy",
           "link": "/policy"
         },
         {
-          "text": "Публічна оферта",
+          "text": "FOOTER.offer",
           "link": "/public-offer"
         }
       ]
     },
     {
-      "subTitle": "Підтримка",
+      "subTitle": "FOOTER.support",
       "links": [
         {
-          "text": "Зв'язатися з нами",
+          "text": "FOOTER.contact",
           "link": "/contact-us"
         },
         {
-          "text": "Доставка та повернення",
+          "text": "FOOTER.shipping",
           "link": "/shipping"
         }
       ]
@@ -57,17 +57,17 @@
   ],
   "headerLinks": [
     {
-      "menuLabel": "Магазин",
+      "menuLabel": "MENU.shop",
       "menuLink": "/shop",
       "category": null
     },
     {
-      "menuLabel": "Зв'язатися з нами",
+      "menuLabel": "MENU.contact",
       "menuLink": "/contact-us",
       "category": null
     },
     {
-      "menuLabel": "Про нас",
+      "menuLabel": "MENU.about",
       "menuLink": "/about",
       "category": null
     }

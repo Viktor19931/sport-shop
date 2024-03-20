@@ -14,6 +14,7 @@ import MiniCart from '../MiniCart';
 import MobileNavigation from '../MobileNavigation';
 import * as styles from './Header.module.css';
 import CartContext from '../../context/cartContext';
+import { LocalizationContext } from '../../context/LocalizationContext';
 
 const Header = (prop) => {
   const [showMiniCart, setShowMiniCart] = useState(false);
@@ -81,6 +82,8 @@ const Header = (prop) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [showSearch]);
 
+  const { lang, t, changeLanguage } = useContext(LocalizationContext);
+
   return (
     <div className={styles.root}>
       <div className={styles.headerMessageContainer}>
@@ -105,7 +108,7 @@ const Header = (prop) => {
                   }`}
                   to={navObject.menuLink}
                 >
-                  {navObject.menuLabel}
+                  {t(navObject.menuLabel)}
                 </Link>
               ))}
             </nav>
@@ -122,7 +125,21 @@ const Header = (prop) => {
           </div>
           <Brand />
           <div className={styles.actionContainers}>
-            <button
+            <div className={styles.translation}>
+              <div
+                onClick={() => changeLanguage('ua')}
+                className={lang === 'ua' && styles.selectedLang}
+              >
+                UA
+              </div>
+              <div
+                onClick={() => changeLanguage('en')}
+                className={lang === 'en' && styles.selectedLang}
+              >
+                EN
+              </div>
+            </div>
+            {/* <button
               aria-label="Search"
               className={`${styles.iconButton} ${styles.iconContainer}`}
               onClick={() => {
@@ -130,21 +147,21 @@ const Header = (prop) => {
               }}
             >
               <Icon symbol={'search'}></Icon>
-            </button>
-            <Link
+            </button> */}
+            {/* <Link
               aria-label="Favorites"
               href="/account/favorites"
               className={`${styles.iconContainer} ${styles.hideOnMobile}`}
             >
               <Icon symbol={'heart'}></Icon>
-            </Link>
-            <Link
+            </Link> */}
+            {/* <Link
               aria-label="Orders"
               href={isAuth() ? '/login' : '/account/orders/'}
               className={`${styles.iconContainer} ${styles.hideOnMobile}`}
             >
               <Icon symbol={'user'}></Icon>
-            </Link>
+            </Link> */}
             <button
               aria-label="Cart"
               className={`${styles.iconButton} ${styles.iconContainer} ${styles.bagIconContainer}`}

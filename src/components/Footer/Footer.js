@@ -1,5 +1,5 @@
 import { Link } from 'gatsby';
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 
 import Accordion from '../Accordion';
 import Container from '../Container';
@@ -9,6 +9,7 @@ import Icon from '../Icons/Icon';
 import Button from '../Button';
 import Config from '../../config.json';
 import * as styles from './Footer.module.css';
+import { LocalizationContext } from '../../context/LocalizationContext';
 
 const Footer = (prop) => {
   const [email, setEmail] = useState('');
@@ -23,6 +24,8 @@ const Footer = (prop) => {
     window.open('https://www.instagram.com/elite_sport__lviv/');
   };
 
+  const { t } = useContext(LocalizationContext);
+
   const renderLinks = (linkCollection) => {
     return (
       <ul className={styles.linkList}>
@@ -30,7 +33,7 @@ const Footer = (prop) => {
           return (
             <li key={index}>
               <Link className={`${styles.link} fancy`} to={link.link}>
-                {link.text}
+                {t(link.text)}
               </Link>
             </li>
           );
@@ -50,7 +53,7 @@ const Footer = (prop) => {
                   {/* for web version */}
                   <div className={styles.footerLinks}>
                     <span className={styles.linkTitle}>
-                      {linkCollection.subTitle}
+                      {t(linkCollection.subTitle)}
                     </span>
                     {renderLinks(linkCollection)}
                   </div>
@@ -69,7 +72,9 @@ const Footer = (prop) => {
             })}
             <div className={styles.newsLetter}>
               <div className={styles.newsLetterContent}>
-                <span className={styles.linkTitle}>Підпишіться на нас</span>
+                <span className={styles.linkTitle}>
+                  {t('FOOTER.subscribe')}
+                </span>
                 <form
                   className={styles.newsLetterForm}
                   onSubmit={(e) => subscribeHandler(e)}

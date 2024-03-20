@@ -1,8 +1,4 @@
-import CryptoJs from 'crypto-js';
-
 import forge from 'node-forge';
-
-import { b64EncodeUnicode } from '../helpers/base64';
 
 const useVostokPayment = () => {
   const handlePayVostok = async (name, amount, email, rate) => {

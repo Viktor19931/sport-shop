@@ -14,6 +14,7 @@ import { getAllProducts } from '../helpers/mock';
 
 import * as styles from './index.module.css';
 import { Link, navigate } from 'gatsby';
+import { LocalizationContext } from '../context/LocalizationContext';
 
 const IndexPage = () => {
   const allProducts = getAllProducts();
@@ -31,15 +32,15 @@ const IndexPage = () => {
       <Hero
         maxWidth={'500px'}
         image={'/walk.jpeg'}
-        title={'Основні речі для активного відпочинку'}
-        ctaText={'Магазин'}
+        title={'MAIN_PAGE.section1.title'}
+        ctaText={'MAIN_PAGE.section1.button'}
         ctaAction={goToShop}
       />
 
       {/* Collection Container */}
       <div className={styles.collectionContainer}>
         <Container size={'large'}>
-          <Title name={'Нова колекія'} />
+          <Title name={'MAIN_PAGE.section2.title'} />
           <ProductCollectionGrid />
         </Container>
       </div>
@@ -48,9 +49,9 @@ const IndexPage = () => {
       <div className={styles.newArrivalsContainer}>
         <Container>
           <Title
-            name={'Нові надходження'}
+            name={'MAIN_PAGE.section3.title'}
             link={'/shop'}
-            textLink={'подивитись все'}
+            textLink={'MAIN_PAGE.section3.seeAll'}
           />
           <ProductCardGrid
             spacing={true}
@@ -70,9 +71,9 @@ const IndexPage = () => {
             altImage={'куртка'}
             miniImage={'/products/product1/4.jpeg'}
             miniImageAlt={'mini highlight image'}
-            title={'Водотривка куртка'}
-            description={`Ця лижна куртка Nevica Banff має чотиристоронню еластичну тканину для комфортної посадки, водонепроникні блискавки спереду та кишені. Стрейч-підкладка з внутрішньої сторони робить носіння куртки приємнішим і дозволяє їй розтягуватися. Образ доповнює назва бренду на грудях і кольорова блискавка, щоб виділятися на схилах.`}
-            textLink={'купити'}
+            title="MAIN_PAGE.section4.title"
+            description={`MAIN_PAGE.section4.description`}
+            textLink={'MAIN_PAGE.section4.button'}
             link={'/product/sample?id=1'}
           />
         </Container>
@@ -82,21 +83,23 @@ const IndexPage = () => {
       <Quote
         bgColor={'var(--standard-light-grey)'}
         title={''}
-        quote={
-          '“Ми віримо в дві речі: прагнення до якості в усьому, що ми робимо, і турбота один про одного. Все інше має подбати про себе.”'
-        }
+        quote="MAIN_PAGE.section5.text"
       />
 
       {/* Promotion */}
       <div className={styles.promotionContainer}>
         <Hero
           image={'/board.jpeg'}
-          title={`Знижка до 30%`}
-          subtitle={'для оптових клієнтів'}
+          title="MAIN_PAGE.section6.title"
+          subtitle="MAIN_PAGE.section6.subTitle"
         />
-        <div className={styles.linkContainers}>
-          <Link to={'/shop'}>Купити</Link>
-        </div>
+        <LocalizationContext.Consumer>
+          {({ t }) => (
+            <div className={styles.linkContainers}>
+              <Link to={'/shop'}>{t('MAIN_PAGE.section6.button')}</Link>
+            </div>
+          )}
+        </LocalizationContext.Consumer>
       </div>
 
       {/* Blog Grid */}
@@ -124,8 +127,8 @@ const IndexPage = () => {
       {/* Social Media */}
       <div className={styles.socialContainer}>
         <Title
-          name={'Hайкращі товари'}
-          subtitle={'Тегни @elite_sport__lviv щоб бути особливим.'}
+          name="MAIN_PAGE.section7.title"
+          subtitle="MAIN_PAGE.section7.subTitle"
         />
         <div className={styles.socialContentGrid}>
           {bestSellers.map((p) => (

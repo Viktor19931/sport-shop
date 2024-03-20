@@ -1,9 +1,9 @@
 [
   {
     "id": 37,
-    "name": "Ліхтарик Black Diamond Storm 400 люмен",
+    "name": "PRODUCTS.product37.name",
     "price": 55,
-    "description": "легкий та потужний<br>багатогранна конструкція лінзтехнологія PowerTap дозволяє миттєво перемикатися між повним і затемненим світломможливість обрати режим<br>велика кількість режимів роботи: ближнє, дальнє світло, розсіяне світло, яскравий промінь, RGB нічний режим, стробоскопчервоне, зелене і синє світло нічного режиму покривають весь спектр потреб освітлення в темряві<br>водостійкий корпус<br>заощаджує витрати батареї<br>трирівневий індикатор заряду батареї<br>запам’ятовує потрібний режим<br>функція цифрового блокування<br>Характеристики Black Diamond Storm 400 люмен (Dark Olive):<br><br>Люмени: 400<br>Дальність променя світла: 8 лм - 9 м, 180 лм - 45 м, 400 лм -100 м<br>Час роботи: 8 лм - 150 год, 180 лм - 10 год, 400 лм - 5 год<br>Вага: 120 г (з батарейками)<br>Живлення: 4 батарейки ААА (у комплекті)<br>Ступінь захисту: IPX67",
+    "description": "PRODUCTS.product37.description",
     "gallery": ["/products/product-37/1.jpeg"],
     "tags": ["woman", "man"],
     "colorOptions": [{ "color": "black", "title": "Black" }],
@@ -11,9 +11,9 @@
   },
   {
     "id": 36,
-    "name": "Подушка Lifeventure Inflatable",
+    "name": "PRODUCTS.product36.name",
     "price": 29,
-    "description": "Pillow Lifeventure Inflatable Pillow – класична надувна подушка із приємного матеріалу допоможе зберегти місце у багажі та забезпечить комфорт у подорожі. Клапани подвійної дії дозволяють надути подушку буквально за секунди і відпочити незалежно від того, де знаходитесь. Подушка підходить під будь-який розмір голови як для дорослих, так і для дітей. Відмінна для ночівлі в наметі, міститься в капюшоні спального мішка. Подушку можна використовувати як поперекову підтримку під час тривалого сидіння в транспорті.<br><br>Особливості подушки Lifeventure Inflatable Pillow:<br><br>Тканина з поліестеру та TPU<br>Клапан швидкого надування/спуску<br>Ергономічна форма<br>Міцний чохол для перенесення ripstop<br>Характеристики подушки Lifeventure Inflatable Pillow:<br><br>Вага: 77 г<br>Розмір (в упаковці): 360 х 510 х 100 мм",
+    "description": "PRODUCTS.product36.description",
     "gallery": [
       "/products/product-36/1.jpeg",
       "/products/product-36/2.jpeg",
@@ -25,9 +25,9 @@
   },
   {
     "id": 35,
-    "name": "Рукавиці Ortovox Tour Light Glove Mns",
+    "name": "PRODUCTS.product35.name",
     "price": 55,
-    "description": "Особливості Ortovox Tour Light Glove Mns чоловічі black raven:<br>Еластичний захист<br>Міцний, стійкий до стирання зовнішній матеріал<br>Козяча шкіра на долоні (можна прати)<br>Набивання з переробленої мериносової вовни<br>Функція “розумний палець” для сенсорних пристроїв<br><br>Технічні характеристики Ortovox Tour Light Glove Mns чоловічі black raven:<br>Основний матеріал: 75% Поліамід + 18% Вовна (Merino OWP) + 7% Еластан<br>Вставки: 100% Козяча шкіра",
+    "description": "PRODUCTS.product35.description",
     "gallery": ["/products/product-35/1.jpeg"],
     "tags": ["woman", "man"],
     "colorOptions": [{ "color": "black", "title": "Black" }],
@@ -35,9 +35,9 @@
   },
   {
     "id": 34,
-    "name": "Рюкзак Osprey Soelden 22 чорний ",
+    "name": "PRODUCTS.product34.name",
     "price": 112,
-    "description": "зроблений з посиленої тканини 210D High Tenacity Nylon Shadowbox спінена спинка. <br>доступ до основного відділення через задній відсік<br>кріплення для лиж чи сноуборду<br>місце для лавинного зонда та лопати<br>місце під шолом<br>захищені відділення для окулярів (3)<br>місце для пляшки<br>подушка безпеки<br><br>Технічні характеристики Osprey Soelden 22 чорний:<br>Матеріал: 210D High Tenacity Nylon Shadowbox<br>Об`єм: 22 л<br>Розмір: 51x29x24 см<br>Вага: 1 кг",
+    "description": "PRODUCTS.product34.description",
     "gallery": ["/products/product-34/1.jpeg", "/products/product-34/2.jpeg"],
     "tags": ["woman", "man"],
     "colorOptions": [{ "color": "black", "title": "Black" }],
@@ -45,9 +45,9 @@
   },
   {
     "id": 33,
-    "name": "Рюкзак Deuter Aircontact 50+10 SL",
+    "name": "PRODUCTS.product33.name",
     "price": 199,
-    "description": "Перегородка для поділу рюкзака на дві частини Адаптований до жіночого тіла (конструкція SlimLine) Два пришитих daisy chain для навішування спорядження Кріплення для перенесення льодових інструментів і трекінгових палиць Функціональна кишеня розміщений в клапані рюкзака Внутрішня кишеня для дрібниць Невелика кишенька для дрібниць на поясі Бічні кишені для стійок намету У комплекті з рюкзаком є чохол від дощу Зносостійке дно з двох шарів тканини Компресійні ремені на нижньому відділі та з боків Спеціальне відділення для вологого одягу Спеціальне відділення для питної системи Характеристики Deuter Aircontact 50+10 SL shale-graphite сірий: <br>Габарити: 80 x 30 x 24 см <br>Вага: 2,22 кг <br>Об’єм: 50+10 літрів <br>Матеріал: 100D PA High Tenacity / 600D PES",
+    "description": "PRODUCTS.product33.description",
     "gallery": [
       "/products/product-33/1.jpeg",
       "/products/product-33/2.jpeg",
@@ -60,9 +60,9 @@
   },
   {
     "id": 32,
-    "name": "Рукавиці для велосипеда безпалі GUB 2099",
+    "name": "PRODUCTS.product32.name",
     "price": 16,
-    "description": "Комфортні велосипедні рукавички високої європейської якості.<br>М'який і в той же час міцний матеріал підвищує комфорт і гарантує ідеальне зчеплення і зносостійкість. Спеціальні вентиляційні отвори на долоні, а також міцна верхня частина з сітки, дозволяють зберігати руки завжди сухими. 5ти-міліметрові зовнішні гелеві прокладки на долонях запобігають травмам, перешкоджають вібраціям і натиранням рук.Вставка на великий палець Microwipe для видалення поту.Гачки на середньому і безіменному пальці для легкого зняття рукавичок з рукСезон: весна, літо, осінь",
+    "description": "PRODUCTS.product32.description",
     "gallery": [
       "/products/product-32/1.jpeg",
       "/products/product-32/2.jpeg",
@@ -78,9 +78,9 @@
   },
   {
     "id": 31,
-    "name": "Топ Nebbia Padded High-Impact Sports bra Gym",
+    "name": "PRODUCTS.product31.name",
     "price": 69,
-    "description": "",
+    "description": "PRODUCTS.product31.description",
     "gallery": [
       "/products/product-31/1.jpeg",
       "/products/product-31/2.jpeg",
@@ -92,9 +92,9 @@
   },
   {
     "id": 30,
-    "name": "Легінси Legging Fitzona Glorial",
+    "name": "PRODUCTS.product30.name",
     "price": 69,
-    "description": "за рахунок свого фасону, ідеально облягають ваші сідниці. Вони зроблені з якісного синтетичного матеріалу, який вбирає піт, що допоможе вам ефективніше тренуватися. У цих легінси ви будете виглядати чарівно в тренажерному залі.",
+    "description": "PRODUCTS.product30.description",
     "gallery": [
       "/products/product-30/1.jpeg",
       "/products/product-30/2.jpeg",
@@ -110,9 +110,9 @@
   },
   {
     "id": 29,
-    "name": "Легінси Legging Fitzona Nanaiz",
+    "name": "PRODUCTS.product29.name",
     "price": 55,
-    "description": "за рахунок свого фасону, ідеально облягають ваші сідниці. Вони зроблені з якісного синтетичного матеріалу, який вбирає піт, що допоможе вам ефективніше тренуватися. У цих легінси ви будете виглядати чарівно в тренажерному залі.",
+    "description": "PRODUCTS.product29.description",
     "gallery": [
       "/products/product-29/1.jpeg",
       "/products/product-29/2.jpeg",
@@ -128,9 +128,9 @@
   },
   {
     "id": 28,
-    "name": "Топ Mini Top Fitzona Yumi",
+    "name": "PRODUCTS.product28.name",
     "price": 55,
-    "description": "",
+    "description": "PRODUCTS.product28.description",
     "gallery": [
       "/products/product-28/1.jpeg",
       "/products/product-28/2.jpeg",
@@ -146,9 +146,9 @@
   },
   {
     "id": 27,
-    "name": "Шорти Double-Layer Shorts with Smart Pockets ",
+    "name": "PRODUCTS.product27.name",
     "price": 89,
-    "description": "",
+    "description": "PRODUCTS.product27.description",
     "gallery": [
       "/products/product-27/1.jpeg",
       "/products/product-27/2.jpeg",
@@ -164,9 +164,9 @@
   },
   {
     "id": 26,
-    "name": "Чоловічі велосипедки NEBBIA ROAD ",
+    "name": "PRODUCTS.product26.name",
     "price": 39,
-    "description": "",
+    "description": "PRODUCTS.product26.description",
     "gallery": [
       "/products/product-26/1.jpeg",
       "/products/product-26/2.jpeg",
@@ -181,9 +181,9 @@
   },
   {
     "id": 25,
-    "name": "Легінси Nebbia Thermal Sports",
+    "name": "PRODUCTS.product25.name",
     "price": 69,
-    "description": "Компресійні легінси — це функціональна річ, яка відчувається як друга шкіра. Вони ідеально адаптуються до будь-якої фігури, а їх компресія зменшує мʼязовий шок у нижніх кінцівках. Крім того, вони відмінно відводять піт, тому вам буде комфортно носити їх навіть під час інтенсивних тренувань. Таким чином, леггінси ідеально підходять для силових тренувань, бігу та інших занять. Склад 79% поліестер, 21% еластан",
+    "description": "PRODUCTS.product25.description",
     "gallery": ["/products/product-25/1.jpeg"],
     "tags": ["man"],
     "colorOptions": [{ "color": "black", "title": "Black" }],
@@ -191,7 +191,7 @@
   },
   {
     "id": 24,
-    "name": "АЙКА З КАПЮШОНОМ LEGEND-APPROVED HOODIE",
+    "name": "PRODUCTS.product24.name",
     "price": 39,
     "description": "",
     "gallery": [
@@ -206,7 +206,7 @@
   },
   {
     "id": 23,
-    "name": "Шорти Nebbia Workout Compression",
+    "name": "PRODUCTS.product23.name",
     "price": 69,
     "description": "",
     "gallery": [
@@ -223,9 +223,9 @@
   },
   {
     "id": 22,
-    "name": "Футболка Nebbia Workout Compression",
+    "name": "PRODUCTS.product22.name",
     "price": 69,
-    "description": "Idolo Black Red Metallic Glossy XL 60–64 см.",
+    "description": "PRODUCTS.product22.description",
     "gallery": [
       "/products/product-22/1.jpeg",
       "/products/product-22/2.jpeg",
@@ -241,9 +241,9 @@
   },
   {
     "id": 21,
-    "name": "Шлем велосипедний",
+    "name": "PRODUCTS.product21.name",
     "price": 69,
-    "description": "Idolo Black Red Metallic Glossy XL 60–64 см.",
+    "description": "PRODUCTS.product21.description",
     "gallery": [
       "/products/product-21/1.jpeg",
       "/products/product-21/2.jpeg",
@@ -259,9 +259,9 @@
   },
   {
     "id": 20,
-    "name": "Велоформа (куртка + штани) SPOINT DIMENSION",
+    "name": "PRODUCTS.product20.name",
     "price": 39,
-    "description": "Матеріал преміум-класу із високою зносостійкістю.Стильний, зручний крій.Висока якість у поєднанні з доступною",
+    "description": "PRODUCTS.product20.description",
     "gallery": ["/products/product-20/1.jpeg", "/products/product-20/2.jpeg"],
     "tags": ["man"],
     "colorOptions": [
@@ -272,9 +272,9 @@
   },
   {
     "id": 19,
-    "name": "Велокофта чоловіча",
+    "name": "PRODUCTS.product19.name",
     "price": 69,
-    "description": "Northwave Fahrenheit Jersey",
+    "description": "PRODUCTS.product19.description",
     "gallery": ["/products/product19/1.jpeg"],
     "tags": ["man"],
     "colorOptions": [
@@ -285,9 +285,9 @@
   },
   {
     "id": 18,
-    "name": "Компресійний одяг",
+    "name": "PRODUCTS.product18.name",
     "price": 69,
-    "description": "комплект 5 в 1 MANTO (Манто) для тренувань Чорний. Склад:<br>Легінси та Рашгард: Поліестер 87 % Еластан 13 %<br>Шорти Поліестер - 100%<br>Матеріал м'який та приємний до тіла",
+    "description": "PRODUCTS.product18.description",
     "gallery": ["/products/product18/1.jpeg"],
     "tags": ["man"],
     "colorOptions": [{ "color": "black", "title": "Black" }],
@@ -295,9 +295,9 @@
   },
   {
     "id": 17,
-    "name": "Палиці для скандинавської ходьби Vipole Traveller DLX",
+    "name": "PRODUCTS.product17.name",
     "price": 99,
-    "description": "Характеристика :<br>* Тип: надміцні, що складаються.<br>* Призначення: Скандинавська ходьба.<br>* Кількість секцій: 4.<br>* Матеріал: алюмінієвий метал Alu 7075.<br>* Рукоятка: із пресованої пробки та пластику.<br>* Темляк: з неопрену, асиметричний, дихаючий, гіпоалергенний, із системою швидкого відстібування.<br>* Наконечник: карбід вольфраму.<br>Комплектація:<br>* Палиця: 2 шт.<br>* Знімний темляк розміром M із спеціальним фастексом системи Top-Click: 2 шт.<br>* Знімне трекінгове кільце з морозостійкого пластику (32 мм): 2 шт.<br>* Гумовий захисний ковпачок-чобіток: 2 шт.<br>* Чохол для транспортування: 1 шт.<br>* Габарити та вага:<br>* Мінімальна довжина у складеному стані: 34 см.<br>* Максимальна довжина у робочому стані: 130 см.<br>* Діаметр секцій: 12/12/12/14/16 мм.<br>* Маса (однієї палиці): 240 г.",
+    "description": "PRODUCTS.product17.description",
     "gallery": [
       "/products/product17/1.jpeg",
       "/products/product17/2.jpeg",
@@ -310,9 +310,9 @@
   },
   {
     "id": 16,
-    "name": "Трекінгові палиці Eagle Rock",
+    "name": "PRODUCTS.product16.name",
     "price": 55,
-    "description": "Технічні характеристики<br>ДОВЖИНА:<br>* 54 см - у розібраному стані<br>* 62 см - складені<br>* 135 см - повністю розкладені<br>ВАГА ПАЛОК:<br>* 260 грами без кошика чи наконечника<br>Повна комплектація включена!На відміну від інших брендів, трекінг-палиці Eagle Rock вже включають:<br>* 1 пару грязьових кошиків<br>* 1 пару снігових кошиків<br>*  2 пари гумових наконечників<br>* 1 пару роз'ємів<br>* 1 сумку для перенесення та зберігання",
+    "description": "PRODUCTS.product16.description",
     "gallery": [
       "/products/product16/1.jpeg",
       "/products/product16/2.jpeg",
@@ -324,9 +324,9 @@
   },
   {
     "id": 15,
-    "name": "Палиці для скандинавської ходьби",
+    "name": "PRODUCTS.product15.name",
     "price": 69,
-    "description": "Характеристики <br>* Тип палиці: телескопічні трисекційні<br>* Довжина: 68 см до 135 см<br>* Вага однієї палиці близько 240 гр. (включаючи наконечники і темляки)<br>* Матеріал палиці: карбон 50% (2 нижні секції – карбон, верхня секція - алюміній)<br>* Рукоять з натуральним корковим покриттям<br>* Швидкознімний темляк з неопрену. Розмір універсальний. Лівий і правий.<br>* Сталевий штир-наконечник<br>* Знімні черевички з міцної гуми для ходіння по асфальту і твердому грунтуВиготовлені в Німеччині.",
+    "description": "PRODUCTS.product15.description",
     "gallery": [
       "/products/product15/1.jpeg",
       "/products/product15/2.jpeg",
@@ -338,9 +338,9 @@
   },
   {
     "id": 14,
-    "name": "Ковзани CCM JETSPEED FT1",
+    "name": "PRODUCTS.product14.name",
     "price": 499,
-    "description": "Професійні ковзани для досвідчених хокеїстів з лінійки Jetspeed. Модель ковзанів CCM Jetspeed FT1 зносостійка, з хорошою посадкою, відмінною бічною підтримкою і змінними лезами.Рівень: професійний.Посадка: середній обсяг, стандартна ширина миска і п’яти, стандартний підйом.Каркас: з композитного матеріалу ROCKETFRAME™ за технологією L1Teframe 360 з посиленою п’ятою для максимальної швидкості. Зручна посадка ноги з підстроюванням на 360 градусів. Дуже легка, жорстка термоформуемая основа з технологією теплової формування Speedcore 3 для забезпечення максимальної продуктивності.Підкладка: стійкий до вологи матеріал TotalDri Pro з зонами DuraZone, не схильними до стирання. Гладкий контур для більшого комфорту стопи і гомілковостопного суглоба. Застосування мульти-щільного спіненого матеріалу для комфортного анатомічного облягання стопи.Язичок: легкий і формований язичок забезпечує захист від ударів, добру посадку і комфорт.Підошва: композитна полегшена підошва максимізує передачу зусилля при кожному русі, допомагаючи їм розвинути реактивну швидкість.Устілка: індивідуальний супінатор устілки забезпечує підвищену площа контакту з підошвою.Стакан: SpeedBlade 4.0, збільшений кут атаки, забезпечує більшу ефективність на поворотах.Леза: SpeedBlade HyperGlide, поліпшена швидкість ковзання",
+    "description": "PRODUCTS.product14.description",
     "gallery": [
       "/products/product14/1.jpeg",
       "/products/product14/2.jpeg",
@@ -357,9 +357,9 @@
   },
   {
     "id": 13,
-    "name": "Футьольні Бутси Nike Mercurial Superfly 9",
+    "name": "PRODUCTS.product13.name",
     "price": 219,
-    "description": "Будьте готові покращити свою гру з футбольними бутсами Nike Mercurial Superfly 9 Elite Firm Ground. Верх, виготовлений з Vaporposite+, поєднує чіпку сітку з високоякісним матеріалом, що забезпечує оптимальний контроль м’яча навіть на високих швидкостях. Завдяки спеціальному футбольному блоку 3/4 Zoom Air він забезпечує додаткове відчуття пружності під ногами, яке штовхає вас вперед. Шпилька, виготовлена ​​з тонкого, але міцного матеріалу, фіксує вашу ногу на підошві, не обтяжуючи вас, а тризіркові шипи забезпечують зчеплення в різних напрямках, дозволяючи вам швидко рухатися по полю. Матеріал Flyknit обертається навколо вашої щиколотки, створюючи м’яку та еластичну тканину, яка забезпечує відчуття безпеки. Завдяки рельєфному носку та покращеній фіксації п’яти, він забезпечує підвищену стабільність і комфорт під час гри. Щоб завершити дизайн, елегантні деталі Mercurial і культова галочка Nike додають нотку стилю вашому виступу. Будь ласка, зверніться до етикетки продукту, щоб отримати повний склад та інструкції з догляду.",
+    "description": "PRODUCTS.product13.description",
     "gallery": [
       "/products/product13/1.jpeg",
       "/products/product13/2.jpeg",
@@ -376,9 +376,9 @@
   },
   {
     "id": 12,
-    "name": "Футьольні Бутси Nike Premier 3",
+    "name": "PRODUCTS.product12.name",
     "price": 149,
-    "description": "Отримайте позачасовий вигляд, показуючи перемогу в матчі з цими футбольними бутсами Nike Premier 3, які були виготовлені з високоякісної K-шкіри, яка гарантує вам відчуття близькості до м’яча для неймовірного першого дотику, а також дозволяє вам грати комфортно. Черевики мають спеціально розроблену підошву з формованими шпильками для оптимізації зчеплення з твердою поверхнею, а складний язичок має вирізану лінію, що дозволяє вибрати між традиційним або сучасним виглядом, а логотип Nike Swoosh завершує дизайн.",
+    "description": "PRODUCTS.product12.description",
     "gallery": [
       "/products/product12/1.jpeg",
       "/products/product12/2.jpeg",
@@ -391,7 +391,7 @@
   },
   {
     "id": 11,
-    "name": "Окуляри для катання",
+    "name": "PRODUCTS.product11.name",
     "price": 99,
     "alt": "relaxed t shirt woman",
     "description": "",
@@ -409,7 +409,7 @@
   },
   {
     "id": 10,
-    "name": "Жіночі лижні штани",
+    "name": "PRODUCTS.product10.name",
     "price": 71,
     "alt": "relaxed t shirt woman",
     "description": "",
@@ -428,10 +428,10 @@
 
   {
     "id": 9,
-    "name": "Чоловічі рукавиці",
+    "name": "PRODUCTS.product9.name",
     "price": 59,
     "alt": "relaxed t shirt woman",
-    "description": "Nevica Meribel забезпечать комфорт і сухість під час катання. Прогумована долоня не ковзає під час зчеплення. Рукавиці мають еластичний манжет і теплу підкладку з флісу. Особливості* Лижні рукавиці* Флісова підкладка* Еластичний манжет* Стяжка для кращої фіксації* Прогумована долоня* Захист від вологи 5000мм",
+    "description": "PRODUCTS.product9.description",
     "gallery": [
       "/products/product9/1.jpeg",
       "/products/product9/2.jpeg",
@@ -443,7 +443,7 @@
   },
   {
     "id": 8,
-    "name": "Окуляри для катання",
+    "name": "PRODUCTS.product7.name",
     "price": 39,
     "alt": "relaxed t shirt woman",
     "gallery": [
@@ -458,18 +458,18 @@
 
   {
     "id": 7,
-    "name": "костюм для дівчинки",
+    "name": "PRODUCTS.product7.name",
     "price": 59,
     "alt": "relaxed t shirt woman",
     "gallery": ["/products/product7/1.jpg", "/products/product7/2.jpg"],
     "tags": ["woman"],
-    "description": "Цей дизайн костюма Nevica Meribel ідеально підходить для зимових спортивних пригод. Оснащена довгими рукавами з внутрішніми манжетами для додаткового тепла, ця куртка оснащена всіма необхідними характеристиками лиж, щоб зробити ваш день на схилах успішним. Ці функції запобігають потраплянню снігу та холодного повітря, забезпечують сухість і комфорт незалежно від погодних умов.",
+    "description": "PRODUCTS.product7.description",
     "colorOptions": [{ "color": "pink", "title": "Pink" }],
     "sizeOptions": ["s", "m", "l"]
   },
   {
     "id": 6,
-    "name": "Захисний шолом",
+    "name": "PRODUCTS.product6.name",
     "price": 75,
     "alt": "relaxed t shirt woman",
     "gallery": [
@@ -480,7 +480,7 @@
     ],
     "tags": ["man", "woman"],
     "originalPrice": 31.5,
-    "description": "Шолом гірськолижний Nevica Meribel чорний чоловічий. Це шолом, який оцінять люди, які вже катаються не перший раз і знають, що їм потрібно. Безліч приємних і корисних функції, які поєднані в цьому шоломі зроблять ваше катання максимально комфортним. Вентиляційні отвори з можливістю відкривання і закривання, механізм регулювання розміру шолома, внутрішня флісова частина шолома може відстібатися при потребі , кліпса для фіксації маски на шоломі.Особливості:- вентиляційні отвори (on/off);- регулювання розміру;- внутрішня частина знімається;- кліпса для фіксації маски.",
+    "description": "PRODUCTS.product6.description",
     "colorOptions": [
       { "color": "#000", "title": "Black" },
       { "color": "#fff", "title": "White" }
@@ -489,7 +489,7 @@
   },
   {
     "id": 5,
-    "name": "Окуляри для катання безрамкові",
+    "name": "PRODUCTS.product5.name",
     "price": 39,
     "alt": "relaxed t shirt woman",
     "gallery": [
@@ -503,11 +503,11 @@
   },
   {
     "id": 4,
-    "name": "Куртка Nevica man",
+    "name": "PRODUCTS.product4.name",
     "price": 112,
     "alt": "relaxed t shirt woman",
     "gallery": ["/products/product4/1.jpeg"],
-    "description": "Ця куртка має довгі рукави, внутрішні манжети, дизайн з капюшоном і класичний зовнішній вигляд з елементами малюнка в тон. Ця лижна куртка Nevica Banff має чотиристоронню еластичну тканину для комфортної посадки, водонепроникні блискавки спереду та кишені. Стрейч-підкладка з внутрішньої сторони робить носіння куртки приємнішим і дозволяє їй розтягуватися. Образ доповнює назва бренду на грудях і кольорова блискавка, щоб виділятися на схилах.",
+    "description": "PRODUCTS.product4.description",
     "tags": ["man"],
     "meta": "+ 2 colors",
     "colorOptions": [
@@ -519,7 +519,7 @@
   },
   {
     "id": 3,
-    "name": "костюм для хлопчика",
+    "name": "PRODUCTS.product3.name",
     "price": 59,
     "alt": "relaxed t shirt woman",
     "gallery": [
@@ -527,7 +527,7 @@
       "/products/product3/3.jpeg",
       "/products/product3/2.jpeg"
     ],
-    "description": "Цей дизайн костюма Nevica Meribel ідеально підходить для зимових спортивних пригод. Оснащена довгими рукавами з внутрішніми манжетами для додаткового тепла, ця куртка оснащена всіма необхідними характеристиками лиж, щоб зробити ваш день на схилах успішним. Ці функції запобігають потраплянню снігу та холодного повітря, забезпечують сухість і комфорт незалежно від погодних умов.",
+    "description": "PRODUCTS.product3.description",
     "tags": ["man"],
     "colorOptions": [
       { "color": "#000000", "title": "Anthracite Melange" },
@@ -538,7 +538,7 @@
   },
   {
     "id": 2,
-    "name": "Термо білизна",
+    "name": "PRODUCTS.product2.name",
     "price": 49,
     "alt": "relaxed t shirt woman",
     "gallery": [
@@ -547,7 +547,7 @@
       "/products/product2/3.jpeg",
       "/products/product2/4.jpeg"
     ],
-    "description": "Цей еластичний поліестеровий одяг є ідеальним базовим шаром, що відводить вологу, під час прогулянок у горах або як легкий шар під час будь-якої активної діяльності.",
+    "description": "PRODUCTS.product2.description",
     "tags": ["man", "woman"],
     "colorOptions": [
       { "color": "#000000", "title": "Anthracite Melange" },
@@ -558,11 +558,11 @@
   },
   {
     "id": 1,
-    "name": "лижна куртка Nevica Banff",
+    "name": "PRODUCTS.product1.name",
     "price": 69,
     "alt": "relaxed t shirt woman",
     "tags": ["man"],
-    "description": "Ця куртка має довгі рукави, внутрішні манжети, дизайн з капюшоном і класичний зовнішній вигляд з елементами малюнка в тон. Ця лижна куртка Nevica Banff має чотиристоронню еластичну тканину для комфортної посадки, водонепроникні блискавки спереду та кишені. Стрейч-підкладка з внутрішньої сторони робить носіння куртки приємнішим і дозволяє їй розтягуватися. Образ доповнює назва бренду на грудях і кольорова блискавка, щоб виділятися на схилах.",
+    "description": "PRODUCTS.product2.description",
     "colorOptions": [
       { "color": "#000000", "title": "Anthracite Melange" },
       { "color": "#4D34AE", "title": "Pale Purple" },

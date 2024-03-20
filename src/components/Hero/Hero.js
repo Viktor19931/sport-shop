@@ -2,6 +2,7 @@ import React from 'react';
 import * as styles from './Hero.module.css';
 import Button from '../Button';
 import { Link } from 'gatsby';
+import { LocalizationContext } from '../../context/LocalizationContext';
 
 const Hero = (props) => {
   const {
@@ -15,20 +16,23 @@ const Hero = (props) => {
     ctaLink,
     ctaTo,
     header,
+    children,
   } = props;
+  const { t } = React.useContext(LocalizationContext);
+
   return (
     <div className={styles.root} style={{ backgroundImage: `url(${image})` }}>
       <div className={styles.content} style={{ maxWidth: maxWidth }}>
-        {header && <span className={styles.header}>{header}</span>}
-        {title && <h2 className={styles.title}>{title}</h2>}
-        {subtitle && <span className={styles.subtitle}>{subtitle}</span>}
+        {header && <span className={styles.header}>{t(header)}</span>}
+        {title && <h2 className={styles.title}>{t(title)}</h2>}
+        {subtitle && <span className={styles.subtitle}>{t(subtitle)}</span>}
         {ctaText && (
           <Button
             className={`${styles.ctaButton} ${ctaStyle}`}
             level={'primary'}
             onClick={ctaAction}
           >
-            {ctaText}
+            {t(ctaText)}
           </Button>
         )}
         {ctaLink && (
@@ -37,6 +41,7 @@ const Hero = (props) => {
           </Link>
         )}
       </div>
+      {children}
     </div>
   );
 };

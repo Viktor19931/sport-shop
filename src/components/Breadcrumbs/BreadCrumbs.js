@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
 
 import * as styles from './BreadCrumbs.module.css';
 import Icon from '../Icons/Icon';
 import { Link } from 'gatsby';
+import { LocalizationContext } from '../../context/LocalizationContext';
 
 const Breadcrumbs = ({ crumbs }) => {
   let crumbsOutput = crumbs;
@@ -13,6 +14,8 @@ const Breadcrumbs = ({ crumbs }) => {
       crumbsOutput = [crumbsOutput];
     }
   }
+
+  const { t } = useContext(LocalizationContext);
 
   return (
     <div data-breadcrumbs className={styles.breadcrumbs}>
@@ -26,14 +29,14 @@ const Breadcrumbs = ({ crumbs }) => {
             )}
             {typeof crumb === 'object' && 'link' in crumb && (
               <Link className={styles.crumb} to={crumb.link}>
-                {crumb.label.trim()}
+                {t(crumb.label)}
               </Link>
             )}
             {typeof crumb === 'object' && !('link' in crumb) && (
-              <span className={styles.crumb}>{crumb.label.trim()}</span>
+              <span className={styles.crumb}>{t(crumb.label)}</span>
             )}
             {typeof crumb !== 'object' && (
-              <span className={styles.crumb}>{crumb.trim()}</span>
+              <span className={styles.crumb}>{t(crumb)}</span>
             )}
           </span>
         ))}

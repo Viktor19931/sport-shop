@@ -37,8 +37,8 @@ const ShopPage = (props) => {
           <div className={styles.breadcrumbContainer}>
             <Breadcrumbs
               crumbs={[
-                { link: '/', label: 'Головна' },
-                { label: 'Магазин', link: '/shop' },
+                { link: '/', label: 'MENU.main' },
+                { label: 'MENU.shop', link: '/shop' },
               ]}
             />
           </div>

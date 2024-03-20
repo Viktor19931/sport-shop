@@ -1,6 +1,7 @@
 import { Link } from 'gatsby';
-import React from 'react';
+import React, { useContext } from 'react';
 import * as styles from './Title.module.css';
+import { LocalizationContext } from '../../context/LocalizationContext';
 
 const Title = (props) => {
   const {
@@ -14,6 +15,8 @@ const Title = (props) => {
     marginBottom = '32px',
   } = props;
 
+  const { t } = useContext(LocalizationContext);
+
   return (
     <div
       className={`${styles.root} ${
@@ -22,12 +25,12 @@ const Title = (props) => {
       style={{ maxWidth: maxWidth, marginBottom: marginBottom }}
     >
       <h2 className={styles.title} style={{ color: color }}>
-        {name}
+        {t(name)}
       </h2>
-      {subtitle && <span className={`${styles.subtitle}`}>{subtitle}</span>}
+      {subtitle && <span className={`${styles.subtitle}`}>{t(subtitle)}</span>}
       {link && textLink && (
         <Link className={styles.link} to={link}>
-          {textLink}
+          {t(textLink)}
         </Link>
       )}
     </div>

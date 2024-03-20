@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { navigate } from 'gatsby';
 import * as styles from './ProductCard.module.css';
 
 import Icon from '../Icons/Icon';
+import { LocalizationContext } from '../../context/LocalizationContext';
 
 const ProductCard = (props) => {
   const [isWishlist, setIsWishlist] = useState(false);
@@ -31,6 +32,8 @@ const ProductCard = (props) => {
     e.stopPropagation();
     setIsWishlist(!isWishlist);
   };
+
+  const { t } = useContext(LocalizationContext);
 
   return (
     <div className={styles.root}>
@@ -67,7 +70,7 @@ const ProductCard = (props) => {
         </div>
       </div>
       <div className={styles.detailsContainer}>
-        <span className={styles.productName}>{name}</span>
+        <span className={styles.productName}>{t(name)}</span>
         <div className={styles.prices}>
           <span
             className={`${originalPrice !== undefined ? styles.salePrice : ''}`}

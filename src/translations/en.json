@@ -21,10 +21,10 @@
       "button": "Shop"
     },
     "section2": {
-      "title": "New collecium",
+      "title": "New collection",
       "button": "Shop",
-      "forMan": "To men",
-      "forWoman": "To women",
+      "forMan": "men",
+      "forWoman": "women",
       "buy": "Buy"
     },
     "section3": {

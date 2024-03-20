@@ -26,7 +26,11 @@ const TRANSLATIONS = {
   en: enJson,
 };
 
-export const LocalizationContext = createContext([]);
+export const LocalizationContext = createContext({
+  lang: DEFAULT_LANG,
+  t: (k) => k,
+  changeLanguage: () => {},
+});
 
 export const LocalizationProvider = ({ children }) => {
   const [lang, setLang] = useState(DEFAULT_LANG);

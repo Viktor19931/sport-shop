@@ -8,7 +8,7 @@ import * as styles from './Layout.module.css';
 
 // CSS not modular here to provide global styles
 import './Globals.css';
-import { LocalizationProvider } from '../../context/LocalizationContext';
+import { LocalizationProvider } from '../../context/localizationContext';
 
 const Layout = ({ props, children, disablePaddingBottom = false }) => {
   return (

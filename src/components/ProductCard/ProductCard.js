@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { navigate } from 'gatsby';
 
-// import { LocalizationContext } from '../../context/LocalizationContext';
+import { LocalizationContext } from '../../context/localizationContext';
 import Icon from '../Icons/Icon';
 
 import * as styles from './ProductCard.module.css';
@@ -34,8 +34,7 @@ const ProductCard = (props) => {
     setIsWishlist(!isWishlist);
   };
 
-  const t = (k) => k;
-  // const { t } = useContext(LocalizationContext);
+  const { t } = useContext(LocalizationContext);
 
   return (
     <div className={styles.root}>

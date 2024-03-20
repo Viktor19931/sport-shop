@@ -1,15 +1,14 @@
 import React, { useContext } from 'react';
 
 import Icon from '../Icons/Icon';
-// import { LocalizationContext } from '../../context/LocalizationContext';
+import { LocalizationContext } from '../../context/localizationContext';
 
 import * as styles from './Attribute.module.css';
 
 const Attribute = (props) => {
   const { icon, title, subtitle } = props;
 
-  const t = (k) => k;
-  // const { t } = useContext(LocalizationContext);
+  const { t } = useContext(LocalizationContext);
 
   return (
     <div className={styles.root}>

@@ -2,7 +2,7 @@ import React from 'react';
 import * as styles from './Hero.module.css';
 import Button from '../Button';
 import { Link } from 'gatsby';
-// import { LocalizationContext } from '../../context/LocalizationContext';
+import { LocalizationContext } from '../../context/localizationContext';
 
 const Hero = (props) => {
   const {
@@ -18,8 +18,7 @@ const Hero = (props) => {
     header,
     children,
   } = props;
-  const t = (k) => k;
-  // const { t } = useContext(LocalizationContext);
+  const { t } = useContext(LocalizationContext);
 
   return (
     <div className={styles.root} style={{ backgroundImage: `url(${image})` }}>

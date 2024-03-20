@@ -1,9 +1,10 @@
 import React, { useContext, useState } from 'react';
 import { navigate } from 'gatsby';
-import * as styles from './ProductCard.module.css';
 
-import Icon from '../Icons/Icon';
 import { LocalizationContext } from '../../context/LocalizationContext';
+import Icon from '../Icons/Icon';
+
+import * as styles from './ProductCard.module.css';
 
 const ProductCard = (props) => {
   const [isWishlist, setIsWishlist] = useState(false);

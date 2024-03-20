@@ -1,9 +1,10 @@
 import React, { useContext } from 'react';
+import { Link } from 'gatsby';
+
+import Icon from '../Icons/Icon';
+import { LocalizationContext } from '../../context/LocalizationContext';
 
 import * as styles from './BreadCrumbs.module.css';
-import Icon from '../Icons/Icon';
-import { Link } from 'gatsby';
-import { LocalizationContext } from '../../context/LocalizationContext';
 
 const Breadcrumbs = ({ crumbs }) => {
   let crumbsOutput = crumbs;

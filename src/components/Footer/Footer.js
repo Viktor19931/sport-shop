@@ -8,8 +8,9 @@ import FormInputField from '../FormInputField/FormInputField';
 import Icon from '../Icons/Icon';
 import Button from '../Button';
 import Config from '../../config.json';
-import * as styles from './Footer.module.css';
 import { LocalizationContext } from '../../context/LocalizationContext';
+
+import * as styles from './Footer.module.css';
 
 const Footer = (prop) => {
   const [email, setEmail] = useState('');

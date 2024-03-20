@@ -1,6 +1,8 @@
 import React, { useContext } from 'react';
-import * as styles from './Quote.module.css';
+
 import { LocalizationContext } from '../../context/LocalizationContext';
+
+import * as styles from './Quote.module.css';
 
 const Quote = (props) => {
   const { bgColor, title, quote } = props;

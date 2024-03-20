@@ -12,9 +12,10 @@ import FormInputField from '../FormInputField/FormInputField';
 import Icon from '../Icons/Icon';
 import MiniCart from '../MiniCart';
 import MobileNavigation from '../MobileNavigation';
-import * as styles from './Header.module.css';
-import CartContext from '../../context/cartContext';
 import { LocalizationContext } from '../../context/LocalizationContext';
+import CartContext from '../../context/cartContext';
+
+import * as styles from './Header.module.css';
 
 const Header = (prop) => {
   const [showMiniCart, setShowMiniCart] = useState(false);

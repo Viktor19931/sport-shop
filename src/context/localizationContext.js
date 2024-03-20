@@ -4,7 +4,7 @@ import enJson from '../translations/en.json';
 import uaJson from '../translations/ua.json';
 
 const LANG_KEY = 'current-language';
-const DEFAULT_LANG = 'ua';
+const DEFAULT_LANG = 'en';
 
 const getPropertyByStringKey = (obj, keyString) => {
   const keys = keyString.split('.');

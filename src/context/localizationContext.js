@@ -21,15 +21,15 @@ const getPropertyByStringKey = (obj, keyString) => {
   return result;
 };
 
+const TRANSLATIONS = {
+  ua: uaJson,
+  en: enJson,
+};
+
 export const LocalizationContext = createContext([]);
 
 export const LocalizationProvider = ({ children }) => {
   const [lang, setLang] = useState(DEFAULT_LANG);
-
-  const TRANSLATIONS = {
-    ua: uaJson,
-    en: enJson,
-  };
 
   useEffect(() => {
     const savedLang = localStorage.getItem(LANG_KEY);

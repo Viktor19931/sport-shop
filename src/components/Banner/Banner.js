@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import * as styles from './Banner.module.css';
+import { LocalizationContext } from '../../context/localizationContext';
 
 const Banner = (props) => {
   const {
@@ -13,6 +14,8 @@ const Banner = (props) => {
     hideSubtitleOnMobile = true,
   } = props;
 
+  const { t } = useContext(LocalizationContext);
+
   const customStyling = {
     backgroundColor: bgColor,
     backgroundImage: bgImage !== undefined ? `url(${bgImage})` : 'none',
@@ -23,14 +26,14 @@ const Banner = (props) => {
   return (
     <div className={styles.root} style={customStyling}>
       <div className={styles.content} style={{ maxWidth: maxWidth }}>
-        <h2>{name}</h2>
+        <h2>{t(name)}</h2>
         {subtitle && (
           <span
             className={`${styles.subtitle} ${
               hideSubtitleOnMobile === true ? styles.hideSubtitleOnMobile : ''
             }`}
           >
-            {subtitle}
+            {t(subtitle)}
           </span>
         )}
       </div>

@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import Button from '../Button';
 
 import FormInputField from '../FormInputField/FormInputField';
 
 import * as styles from './Contact.module.css';
+import { LocalizationContext } from '../../context/localizationContext';
 
 const Contact = (props) => {
   const initialState = {
@@ -25,31 +26,34 @@ const Contact = (props) => {
     setContactForm(initialState);
   };
 
+  const { t } = useContext(LocalizationContext);
+
   return (
     <div className={styles.root}>
       <div className={styles.section}>
-        <h4>Надішліть нам повідомлення</h4>
-        <p>
-          Наша команда обслуговування клієнтів готова відповісти на всі
-          запитання з понеділка по п’ятницю з 9:00–20:00.
-        </p>
-        <p>Ми з нетерпінням чекаємо на вашу думку.</p>
+        <h4>{t('CONTACT_US_PAGE.sendMessageTitle')}</h4>
+        <p
+          dangerouslySetInnerHTML={{ __html: t('CONTACT_US_PAGE.description') }}
+        />
       </div>
 
       <div className={styles.section}>
-        <h4>Телефон</h4>
-        <p>+380 (97) 8865161</p>
-        <p>З понеділка по п’ятницю з 9:00 до 20:00</p>
-        <p>Наша адреса: м. Львів вул.Медовоі Печери 11/16</p>
+        <h4>{t('CONTACT_US_PAGE.phoneTitle')}</h4>
+        <p
+          dangerouslySetInnerHTML={{
+            __html: t('CONTACT_US_PAGE.contactDetails'),
+          }}
+        />
       </div>
 
       <div className={styles.section}>
-        <h4>Електронна пошта</h4>
-        <p>
-          Ви можете надіслати електронного листа нашій команді обслуговування
-          клієнтів за адресою elite_sport@gmail.com або через контактну форму
-          нижче
-        </p>
+        <h4>{t('CONTACT_US_PAGE.emailTitle')}</h4>
+
+        <p
+          dangerouslySetInnerHTML={{
+            __html: t('CONTACT_US_PAGE.emailContact'),
+          }}
+        />
       </div>
 
       <div className={styles.contactContainer}>
@@ -60,7 +64,7 @@ const Contact = (props) => {
               value={contactForm.name}
               handleChange={(id, e) => handleChange(id, e)}
               type={'text'}
-              labelName={"Повне ім'я"}
+              labelName={'CONTACT_US_PAGE.form.name'}
               required
             />
             <FormInputField
@@ -68,7 +72,7 @@ const Contact = (props) => {
               value={contactForm.phone}
               handleChange={(id, e) => handleChange(id, e)}
               type={'number'}
-              labelName={'Номер телефону'}
+              labelName={'CONTACT_US_PAGE.form.phone'}
               required
             />
             <FormInputField
@@ -76,7 +80,7 @@ const Contact = (props) => {
               value={contactForm.email}
               handleChange={(id, e) => handleChange(id, e)}
               type={'email'}
-              labelName={'Електронна пошта'}
+              labelName={'CONTACT_US_PAGE.form.email'}
               required
             />
             <div className={styles.commentInput}>
@@ -85,7 +89,7 @@ const Contact = (props) => {
                 value={contactForm.comment}
                 handleChange={(id, e) => handleChange(id, e)}
                 type={'textarea'}
-                labelName={'Коментарі / Питання'}
+                labelName={'CONTACT_US_PAGE.form.message'}
                 required
               />
             </div>
@@ -95,7 +99,7 @@ const Contact = (props) => {
             level={'primary'}
             type={'buttonSubmit'}
           >
-            Надіслати
+            {t('CONTACT_US_PAGE.form.submit')}
           </Button>
         </form>
       </div>

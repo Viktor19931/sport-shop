@@ -2,25 +2,15 @@ import React, { useContext, useRef } from 'react';
 
 import Container from '../components/Container';
 import Hero from '../components/Hero';
-import ThemeLink from '../components/ThemeLink';
-import Layout from '../components/Layout/Layout';
 
 import * as styles from './about.module.css';
 import { LocalizationContext } from '../context/localizationContext';
+
 const AboutPage = (props) => {
   let historyRef = useRef();
   let valuesRef = useRef();
 
   const { t } = useContext(LocalizationContext);
-
-  const handleScroll = (elementReference) => {
-    if (elementReference) {
-      window.scrollTo({
-        behavior: 'smooth',
-        top: elementReference.current.offsetTop - 280,
-      });
-    }
-  };
 
   return (
     <div className={styles.root}>

@@ -14,7 +14,7 @@ const ContactPage = (props) => {
     <div className={styles.root}>
       <Banner
         maxWidth={'650px'}
-        name={"ЗВ'ЯЗАТИСЯ З НАМИ"}
+        name={'CONTACT_US_PAGE.bannerText'}
         bgImage={'/support.png'}
         color={'var(--standard-white)'}
         height={'350px'}

@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useContext } from 'react';
 
 import Icon from '../Icons/Icon';
 import * as styles from './FormInputField.module.css';
+import { LocalizationContext } from '../../context/localizationContext';
 
 const FormInputField = React.forwardRef((props, ref) => {
   const {
@@ -21,11 +22,13 @@ const FormInputField = React.forwardRef((props, ref) => {
     icon,
   } = props;
 
+  const { t } = useContext(LocalizationContext);
+
   return (
     <div className={`formField ${styles.formField}`}>
       {labelName !== undefined && (
         <label htmlFor={id} className={styles.label}>
-          {labelName} {required === true ? <span>*</span> : ''}
+          {t(labelName)} {required === true ? <span>*</span> : ''}
         </label>
       )}
       {(type === 'text' || type === 'input') && (

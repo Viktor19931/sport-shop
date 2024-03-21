@@ -23,6 +23,8 @@ const Header = (prop) => {
   const [showMenu, setShowMenu] = useState(true);
 
   const { items } = useContext(CartContext);
+  const { lang, t, changeLanguage } = useContext(LocalizationContext);
+
   const totalItems = items?.reduce((acc, item) => acc + item.quantity, 0);
 
   const [menu, setMenu] = useState();
@@ -32,12 +34,7 @@ const Header = (prop) => {
   const [search, setSearch] = useState('');
 
   const searchRef = createRef();
-  const bannerMessage = 'Безкоштовна доставка по всьому світу';
-  const searchSuggestions = [
-    'Oversize sweaters',
-    'Lama Pajamas',
-    'Candles Cinnamon',
-  ];
+  const bannerMessage = t('ShippingBanner');
 
   const handleHover = (navObject) => {
     if (navObject.category) {
@@ -82,8 +79,6 @@ const Header = (prop) => {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [showSearch]);
-
-  const { lang, t, changeLanguage } = useContext(LocalizationContext);
 
   return (
     <div className={styles.root}>
@@ -199,21 +194,6 @@ const Header = (prop) => {
               handleChange={(_, e) => setSearch(e)}
             />
           </form>
-          <div className={styles.suggestionContianer}>
-            {searchSuggestions.map((suggestion, index) => (
-              <p
-                role={'presentation'}
-                onClick={() => {
-                  setShowSearch(false);
-                  navigate(`/search?q=${suggestion}`);
-                }}
-                key={index}
-                className={styles.suggestion}
-              >
-                {suggestion}
-              </p>
-            ))}
-          </div>
           <div
             role={'presentation'}
             onClick={(e) => {
@@ -238,11 +218,6 @@ const Header = (prop) => {
           <ExpandedMenu menu={menu} />
         </Container>
       </div>
-
-      {/* minicart container */}
-      {/* <Drawer visible={showMiniCart} close={() => setShowMiniCart(false)}>
-        <MiniCart />
-      </Drawer> */}
 
       {/* mobile menu */}
       <div className={styles.mobileMenuContainer}>

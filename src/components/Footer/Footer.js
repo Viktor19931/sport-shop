@@ -3,10 +3,8 @@ import React, { useContext, useState } from 'react';
 
 import Accordion from '../Accordion';
 import Container from '../Container';
-import Dropdown from '../Dropdown/Dropdown';
 import FormInputField from '../FormInputField/FormInputField';
 import Icon from '../Icons/Icon';
-import Button from '../Button';
 import Config from '../../config.json';
 import { LocalizationContext } from '../../context/localizationContext';
 

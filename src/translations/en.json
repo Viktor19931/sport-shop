@@ -1,4 +1,5 @@
 {
+  "ShippingBanner": "Free shipping worldwide",
   "MENU": {
     "main": "Main",
     "shop": "Shop",
@@ -6,6 +7,7 @@
     "about": "About us"
   },
   "FOOTER": {
+    "test": "test",
     "information": "Information",
     "about": "About us",
     "privacy": "Privacy Policy",
@@ -21,10 +23,10 @@
       "button": "Shop"
     },
     "section2": {
-      "title": "New collection",
+      "title": "New collecium",
       "button": "Shop",
-      "forMan": "men",
-      "forWoman": "women",
+      "forMan": "To men",
+      "forWoman": "To women",
       "buy": "Buy"
     },
     "section3": {
@@ -56,6 +58,15 @@
       "title3": "Secure payment",
       "subTitle3": "Buy safely"
     }
+  },
+  "PRODUCT_PAGE": {
+    "shippingTerms": "For all orders, delivery is at the expense of the sender according to postal rates. <br>Exchange and return You can always exchange or return the product you purchased on the Elit Sport Lviv website, provided that the product has not been used, and its original packaging, product appearance and consumer properties (labels, labels containing the characteristics of the product) are preserved ",
+    "basketButton": "Add to cart",
+    "similarProducts": "Similar products",
+    "shippingInfo": "delivery and return",
+    "color": "color",
+    "quantity": "number",
+    "size": "size"
   },
   "PRODUCTS": {
     "product1": {
@@ -200,11 +211,49 @@
     },
     "product36": {
       "name": "Lifeventure Inflatable Pillow",
-      "description": "Pillow Lifeventure Inflatable Pillow – a classic inflatable pillow made of pleasant material will help you save space in your luggage and provide comfort when traveling. <br><br>Features of the Lifeventure Inflatable Pillow:<br><br>Polyester and TPU fabric<br>Quick inflation/deflation valve<br>Ergonomic shape<br>Durable ripstop carrying case<br>Characteristics of the Lifeventure Inflatable Pillow:<br><br>Weight: 77 g<br>Size (in package): 360 x 510 x 100 mm"
+      "description": "Pillow Lifeventure Inflatable Pillow - a classic inflatable pillow made of pleasant material will help save space in your luggage and provide comfort during your trip. <br><br>Features of the Lifeventure Inflatable Pillow:<br><br>Polyester and TPU fabric<br>Quick inflation/deflation valve<br>Ergonomic shape<br>Durable ripstop carrying case<br>Characteristics of the Lifeventure Inflatable Pillow:<br><br>Weight: 77 g<br>Size (in package): 360 x 510 x 100 mm"
     },
     "product37": {
       "name": "Flashlight Black Diamond Storm 400 lumens",
       "description": "light and powerful<br>multifaceted lens design, PowerTap technology allows you to instantly switch between full and dimmed light, the ability to choose a mode<br>a large number of operating modes: low beam, high beam, diffused light, bright beam, RGB night mode, strobe red, green and blue night mode lights cover the entire range of lighting needs in the dark<br>waterproof case<br>saves battery consumption<br>three-level battery charge indicator<br>remembers the desired mode<br>digital lock function<br>Characteristics of Black Diamond Storm 400 lumens (Dark Olive):<br><br>Lumens: 400<br>Light beam range: 8 lm - 9 m, 180 lm - 45 m, 400 lm -100 m<br>Working time: 8 lm - 150 hours, 180 lm - 10 hours, 400 lm - 5 hours<br>Weight: 120 g (with batteries)<br>Power supply: 4 AAA batteries (included)<br>Degree of protection: IPX67"
     }
+  },
+  "ABOUT_PAGE": {
+    "section1": {
+      "title": "ELITE SPORT is an online store of sports goods for active recreation. <br>In the catalog you will find high-quality and stylish, comfortable and reliable sports clothes for every taste."
+    },
+    "section2": {
+      "title": "Quality",
+      "description": "High-quality sportswear is the key to comfortable fitness and relaxation.<br> One of the important components of an unforgettable active vacation at a ski resort is properly selected ski clothing that will protect you from adverse weather conditions. <br>ELITE SPORT is the quality and availability of the best clothes.<br>We wish you a pleasant shopping!"
+    }
+  },
+  "CONTACT_US_PAGE": {
+    "bannerText": "Contact us",
+    "sendMessageTitle": "Send us a message",
+    "description": "Our customer service team is available to answer any questions Monday through Friday, 9:00 a.m. to 8:00 p.m.<br>We look forward to hearing from you.",
+    "phoneTitle": "Phone",
+    "contactDetails": "380 (97) 8865161<br>Monday through Friday from 9:00 a.m. to 8:00 p.m<br>Our address: 11/16 Medovoi Pechery St., Lviv",
+    "emailTitle": "Email",
+    "emailContact": "You can email our customer service team at elite_sport@gmail.com or via the contact form below",
+    "form": {
+      "name": "Full name",
+      "phone": "Phone number",
+      "email": "Email",
+      "message": "Comments / Questions",
+      "submit": "Send"
+    }
+  },
+  "POLICY_PAGE": {
+    "text": "!!!>>> Failed to fetch <<<!!!"
+  },
+  "OFFER_PAGE": {
+    "text": "PUBLIC OFFER AGREEMENT<br><br>PUBLIC OFFER AGREEMENT This offer is an official offer of the ELITE SPORT INTERNET STORE, on behalf of which the individual-entrepreneur Stefaniv Maryana Yuriivna (TIN 3429501701), legal address, Lviv, Medovaya Pechery Street, building 11, block 16, contact details 38 <br><br> This agreement is in the nature of a public offer, is the equivalent of an oral agreement and has due legal force.<br><br>1. GENERAL PROVISIONS<br>1.1. <br>1.2. <br> 1.2. <br><br>2. TERMS AND DEFINITIONS<br> 2.1. <br> 2.2.  <br>2.3. <br>2.4. <br />a) it cannot be eliminated at all; <br />b) its elimination requires significant costs; <br />c) he makes the goods significantly different from what is provided for in the AGREEMENT;<br><br>3. SUBJECT OF THE AGREEMENT<br>3.1. <br>3.2.  <br /> b) self-registration of the order by the Buyer on the website in the INTERNET STORE; <br /> c) ordering by the Buyer using telephone means of communication or other means of communication (Viber, Telegram, etc.); <br /> d) payment by the Buyer of the order placed in the ONLINE STORE; <br /> e) execution and transfer of ownership of the order to the Buyer under the terms of this AGREEMENT.<br><br>4. ORDER PROCEDURE<br>4.1. <br><br>5.1. <br>5.2. <br>5.3. <br><br>6. ORDER DELIVERY<br> 6.1. <br>6.2. <br>6.4. <br> 6.5. <br><br> 7. PROCEDURE FOR EXCHANGE AND RETURN OF PROPER QUALITY GOODS<br> 7.1.  <br /> a) the goods for exchange were provided to the SELLER within no more than fourteen days, excluding the day of purchase; <br /> b) the product can be replaced if it has never been used, does not contain traces of use, its product appearance, consumer properties, seals, labels, films, packaging have been preserved, the integrity of the packaging of both the product itself and its accessories has not been violated; <br /> c) the product does not contain scratches, chips, wear, is completely intact (serviceable); <br /> d) the completeness of the product is preserved; <br /> e) the goods can be replaced upon presentation by the Buyer of the settlement document issued to the Buyer together with the sold Goods. 7.2. <br>7.3. <br>7.4. <br>7.5. <br><br>8. RIGHTS AND OBLIGATIONS OF THE PARTIES<br>8.1.  <br /> a) read the information about the Product, which is posted on the SELLER's website; <br /> b) place an order independently on the website or with the help of means of communication in the INTERNET STORE; <br /> c) timely pay and receive the order from the Carrier under the terms of this AGREEMENT; <br /> d) when receiving the goods from the carrier, make sure of its integrity and completeness by inspecting the contents of the package. <br>8.2. <br> 8.3.  <br /> a) comply with the terms of this AGREEMENT; <br /> b) deliver the goods to the Buyer in accordance with the selected description posted in the ONLINE STORE, the completed order and the terms of this AGREEMENT; <br /> c) THE INTERNET STORE is not responsible and does not compensate for losses incurred by the Buyer due to the action or inaction of third parties.  <br /> a) unilaterally suspend the provision of services under this AGREEMENT in the event of a breach by the Buyer of the terms of this AGREEMENT<br><br> 9. Procedure for acceptance of goods by the Buyer<br> 9.1. <br> 9.2. <br> 9.3. <br><br> 10. WARRANTY<br> 10.1. <br> 10.2. <br><br> 11. RESPONSIBILITY OF THE PARTIES<br> 11.1. <br> 11.2. <br> 11.3. <br> 11.4. <br> 11.5. <br> 11.6. <br><br> 12. OTHER TERMS<br> 12.1. <br> 12.2. <br> 12.3. <br> 12.4. <br> 12.5. <br> 12.6. <br> 12.7. <br> 12.8. <br> 12.9. <br> 12.10. <br><br> 13. DURATION OF THIS AGREEMENT<br> 13.1. "
+  },
+  "SHIPPING_PAGE": {
+    "bannerText": "Delivery and returns",
+    "shippingTitle": "For all orders, delivery is at the expense of the Sender according to postal rates.",
+    "shippingDescription": "DELIVERY TIME: The expected delivery time at the post office is 2-4 working days in Ukraine, 14-50 working days abroad. ",
+    "returnTitle": "Exchange and return",
+    "returnDescription": "You can always exchange or return the product that you purchased on the ELITE SPORT website, provided that the product has not been used, and its original packaging, product appearance and consumer properties (labels, labels containing the characteristics of the product) have been preserved. "
   }
 }

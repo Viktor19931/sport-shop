@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useContext, useRef } from 'react';
 
 import Container from '../components/Container';
 import Hero from '../components/Hero';
@@ -6,9 +6,12 @@ import ThemeLink from '../components/ThemeLink';
 import Layout from '../components/Layout/Layout';
 
 import * as styles from './about.module.css';
+import { LocalizationContext } from '../context/localizationContext';
 const AboutPage = (props) => {
   let historyRef = useRef();
   let valuesRef = useRef();
+
+  const { t } = useContext(LocalizationContext);
 
   const handleScroll = (elementReference) => {
     if (elementReference) {
@@ -26,17 +29,9 @@ const AboutPage = (props) => {
 
       <Container size={'large'} spacing={'min'}>
         <div className={styles.detailContainer} ref={historyRef}>
-          <p>
-            ELITE SPORT - це інтернет магазин спортивних товарів для активного
-            відпочинку. Тут Ви можете замовити будь який одяг , аксесуари для
-            відпочинку на лижах, сноуборді, велосипеді, спортзалі та ін.
-          </p>
-          <br />
-          <br />
-          <p>
-            У каталозі Ви знайдете якісний і стильний, зручний і надійний
-            спортивний одяг на будь-який смак.
-          </p>
+          <p
+            dangerouslySetInnerHTML={{ __html: t('ABOUT_PAGE.section1.title') }}
+          />
         </div>
       </Container>
 
@@ -46,22 +41,13 @@ const AboutPage = (props) => {
 
       <Container size={'large'} spacing={'min'}>
         <div className={styles.content}>
-          <h3>Якість</h3>
+          <h3>{t('ABOUT_PAGE.section2.title')}</h3>
           <div ref={valuesRef}>
-            <p>
-              Якісний спортивний одяг - запорука комфортного фітнесу та
-              відпочинку.
-            </p>
-            <p>
-              Однією з важливих складових незабутнього активного відпочинку на
-              гірськолижному курорті, є правильно підібране гірськолижне вбрання
-              яке захистить Вас від несприятливих погодних умов. Разом із
-              магазином ELITE SPORT на схилах ви будете завжди виглядати стильно
-              та впевнено в собі . У спортзалі чи при їзді на велосипеді Ви
-              почуватимете себе комфортно під час тренувань.
-            </p>
-            <p>ELITE SPORT - це якість і доступність найкращого одягу.</p>
-            <p>Бажаємо приємного шопінгу!</p>
+            <p
+              dangerouslySetInnerHTML={{
+                __html: t('ABOUT_PAGE.section2.description'),
+              }}
+            />
             <img alt={'founder'} src={'/about2.webp'}></img>
           </div>
         </div>

@@ -255,5 +255,20 @@
     "shippingDescription": "DELIVERY TIME: The expected delivery time at the post office is 2-4 working days in Ukraine, 14-50 working days abroad. ",
     "returnTitle": "Exchange and return",
     "returnDescription": "You can always exchange or return the product that you purchased on the ELITE SPORT website, provided that the product has not been used, and its original packaging, product appearance and consumer properties (labels, labels containing the characteristics of the product) have been preserved. "
+  },
+  "CART_PAGE": {
+    "title": "My basket",
+    "goToShop": "Continue shopping",
+    "total": "Sum",
+    "form": {
+      "title": "Recipient of the order",
+      "name": "Name",
+      "address": "Full address",
+      "phone": "Phone",
+      "email": "mailbox",
+      "coupon": "Coupon",
+      "certificate": "Gift certificate",
+      "button": "Buy"
+    }
   }
 }

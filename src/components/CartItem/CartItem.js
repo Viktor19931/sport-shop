@@ -1,7 +1,6 @@
 import React, { useContext, useState } from 'react';
 
 import AdjustItem from '../AdjustItem';
-import CurrencyFormatter from '../CurrencyFormatter';
 import Drawer from '../Drawer';
 import RemoveItem from '../RemoveItem';
 import QuickView from '../QuickView';
@@ -9,11 +8,14 @@ import QuickView from '../QuickView';
 import * as styles from './CartItem.module.css';
 import { navigate } from 'gatsby';
 import CartContext from '../../context/cartContext';
+import { LocalizationContext } from '../../context/localizationContext';
 
 const CartItem = (props) => {
   const { setItem, deleteItems } = useContext(CartContext);
   const [showQuickView, setShowQuickView] = useState(false);
-  const { gallery, alt, color, name, size, price, quantity } = props;
+  const { gallery, alt, name, price } = props;
+
+  const { t } = useContext(LocalizationContext);
 
   return (
     <div className={styles.root}>
@@ -25,7 +27,7 @@ const CartItem = (props) => {
         <img src={gallery?.[0]} alt={alt} />
       </div>
       <div className={styles.itemContainer}>
-        <span className={styles.name}>{name}</span>
+        <span className={styles.name}>{t(name)}</span>
       </div>
       <div className={styles.adjustItemContainer}>
         <AdjustItem

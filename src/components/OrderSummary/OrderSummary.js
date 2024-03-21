@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link, Script } from 'gatsby';
 
 import Button from '../Button';
@@ -9,7 +9,7 @@ import useBankPayment from '../../hooks/useBankPayment';
 
 import PlatonForm from './PlatonForm';
 import * as styles from './OrderSummary.module.css';
-import { Helmet } from 'react-helmet';
+import { LocalizationContext } from '../../context/localizationContext';
 
 const OrderSummary = ({ isTest, totalPrice }) => {
   const [coupon, setCoupon] = useState('');
@@ -20,12 +20,9 @@ const OrderSummary = ({ isTest, totalPrice }) => {
   const [phone, setPhone] = useState('');
   const [address, setAddress] = useState('');
 
-  const [isLoading, setIsLoading] = useState(false);
-
   const handlePay = useBankPayment();
 
   const handleBuy = async () => {
-    setIsLoading(true);
     await sendDataToBot(`
       магазин одягу
 
@@ -41,37 +38,37 @@ const OrderSummary = ({ isTest, totalPrice }) => {
       bank: ${process.env.GATSBY_PAYMENT_SYSTEM}
     `);
     await handlePay(name, isTest ? 1 : totalPrice, email, 40);
-
-    setIsLoading(false);
   };
+
+  const { t } = useContext(LocalizationContext);
 
   return (
     <div className={styles.root}>
       <div className={styles.orderSummary} style={{ marginBottom: 24 }}>
-        <span className={styles.title}>Одержувач замовлення</span>
+        <span className={styles.title}>{t('CART_PAGE.form.title')}</span>
         <div className={styles.couponContainer}>
-          <span>І'мя</span>
+          <span>{t('CART_PAGE.form.name')}</span>
           <FormInputField
             id={'name'}
             required
             value={name}
             handleChange={(_, t) => setName(t)}
           />
-          <span>Повна адреса</span>
+          <span>{t('CART_PAGE.form.address')}</span>
           <FormInputField
             id={'address'}
             required
             value={address}
             handleChange={(_, t) => setAddress(t)}
           />
-          <span>Телефон</span>
+          <span>{t('CART_PAGE.form.phone')}</span>
           <FormInputField
             id={'phone'}
             required
             value={phone}
             handleChange={(_, t) => setPhone(t)}
           />
-          <span>Поштова скринька</span>
+          <span>{t('CART_PAGE.form.email')}</span>
           <FormInputField
             id={'email'}
             required
@@ -82,14 +79,14 @@ const OrderSummary = ({ isTest, totalPrice }) => {
       </div>
       <div className={styles.orderSummary}>
         <div className={styles.couponContainer}>
-          <span>Купон</span>
+          <span>{t('CART_PAGE.form.coupon')}</span>
           <FormInputField
             value={coupon}
             handleChange={(_, coupon) => setCoupon(coupon)}
             id={'couponInput'}
             icon={'arrow'}
           />
-          <span>Подарунковий сертифікат</span>
+          <span>{t('CART_PAGE.form.certificate')}</span>
           <FormInputField
             value={giftCard}
             handleChange={(_, giftCard) => setGiftCard(giftCard)}
@@ -98,7 +95,7 @@ const OrderSummary = ({ isTest, totalPrice }) => {
           />
         </div>
         <div className={styles.totalContainer}>
-          <span>Сума: </span>
+          <span>{t('CART_PAGE.total')} </span>
           <span style={{ fontSize: 24 }}>
             <CurrencyFormatter amount={totalPrice} appendZero /> / ₴
             {totalPrice * 40}
@@ -120,10 +117,10 @@ const OrderSummary = ({ isTest, totalPrice }) => {
       )}
       <div className={styles.actionContainer}>
         <Button onClick={handleBuy} fullWidth level={'primary'}>
-          {isLoading ? '...Оплата' : 'Купити'}
+          {t('CART_PAGE.form.button')}
         </Button>
         <div className={styles.linkContainer}>
-          <Link to={'/shop'}>Продовжити покупку</Link>
+          <Link to={'/shop'}>{t('CART_PAGE.goToShop')}</Link>
         </div>
       </div>
     </div>

@@ -2,6 +2,7 @@ import React from 'react';
 import * as styles from './Slider.module.css';
 import Slick from 'react-slick';
 
+// TODO import styles
 const Slider = (props) => {
   const { children, settings, spacing } = props;
 

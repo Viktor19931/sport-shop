@@ -55,7 +55,7 @@ const IndexPage = () => {
           />
           <ProductCardGrid
             spacing={true}
-            showSlider
+            showSlider={false}
             height={480}
             columns={3}
             data={newArrivals}

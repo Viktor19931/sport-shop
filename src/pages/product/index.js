@@ -9,14 +9,13 @@ import Container from '../../components/Container';
 import Gallery from '../../components/Gallery';
 import SizeList from '../../components/SizeList';
 import SwatchList from '../../components/SwatchList';
-import Layout from '../../components/Layout/Layout';
 import products from '../../helpers/product.json';
 
 import { generateMockProductData } from '../../helpers/mock';
-import Icon from '../../components/Icons/Icon';
 import ProductCardGrid from '../../components/ProductCardGrid';
 import { CartContext } from '../../context/cartContext';
 import getParams from '../../helpers/getParams';
+import { LocalizationContext } from '../../context/localizationContext';
 
 const ProductPage = (props) => {
   const { id } = getParams(props.location.search);
@@ -26,7 +25,6 @@ const ProductPage = (props) => {
   const { setItem } = useContext(CartContext);
 
   const [qty, setQty] = useState(1);
-  const [isWishlist, setIsWishlist] = useState(false);
   const [activeSwatch, setActiveSwatch] = useState(product.colorOptions[0]);
   const [activeSize, setActiveSize] = useState(product.sizeOptions[0]);
   const suggestions = generateMockProductData(4, 'woman');
@@ -39,6 +37,8 @@ const ProductPage = (props) => {
       size: activeSize,
     });
   };
+
+  const { t } = useContext(LocalizationContext);
 
   return (
     <div className={styles.root}>
@@ -55,7 +55,7 @@ const ProductPage = (props) => {
             <Gallery images={product.gallery} />
           </div>
           <div className={styles.details}>
-            <h1>{product.name}</h1>
+            <h1>{t(product.name)}</h1>
             <div className={styles.priceContainer}>
               ${product.price} / ₴{product.price * 40}
             </div>
@@ -77,7 +77,7 @@ const ProductPage = (props) => {
             </div>
 
             <div className={styles.quantityContainer}>
-              <span>Quantity</span>
+              <span>{t('PRODUCT_PAGE.quantity')}</span>
               <AdjustItem qty={qty} setQty={setQty} />
             </div>
 
@@ -88,67 +88,30 @@ const ProductPage = (props) => {
                   fullWidth
                   level={'primary'}
                 >
-                  Додати в корзину
+                  {t('PRODUCT_PAGE.basketButton')}
                 </Button>
-              </div>
-              <div
-                className={styles.wishlistActionContainer}
-                role={'presentation'}
-                onClick={() => setIsWishlist(!isWishlist)}
-              >
-                <Icon symbol={'heart'}></Icon>
-                <div
-                  className={`${styles.heartFillContainer} ${
-                    isWishlist === true ? styles.show : styles.hide
-                  }`}
-                >
-                  <Icon symbol={'heartFill'}></Icon>
-                </div>
               </div>
             </div>
 
             <div className={styles.description}>
-              <p dangerouslySetInnerHTML={{ __html: product.description }} />
+              <p dangerouslySetInnerHTML={{ __html: t(product.description) }} />
             </div>
 
             <div className={styles.informationContainer}>
-              {/* <Accordion
-                  type={'plus'}
-                  customStyle={styles}
-                  title={'composition & care'}
-                >
-                  <p className={styles.information}>{product.description}</p>
-                </Accordion> */}
               <Accordion
                 type={'plus'}
                 customStyle={styles}
-                title={'доставка і повернення'}
+                title={t('PRODUCT_PAGE.shippingInfo')}
               >
                 <p className={styles.information}>
-                  Для всіх замовлень доставка за рахунок відправника згідно
-                  тарифів пошти. ТЕРМІН ДОСТАВКИ: Очікуваний термін доставки у
-                  відділенні пошти становить 2-4 робочі дні. Для замовлень, що
-                  оформлені в період розпродажу термін доставки може бути
-                  збільшено.
-                  <br />
-                  <br />
-                  Обмін та повернення Товар, який ви придбали на сайті Elit
-                  Sport Lviv ви завжди можете обміняти або повернути, при умові
-                  що товар не був у вжитку, а його оригінальна упаковка,
-                  товарний вигляд та споживчі властивості (етикетки, ярлики, що
-                  містять характеристики товару) збережені. У вас є 14 днів від
-                  дати відправлення, щоб повернути чи обміняти товар, придбаний
-                  на сайті Elit Sport Lviv
+                  {t('PRODUCT_PAGE.shippingTerms')}
                 </p>
               </Accordion>
-              {/* <Accordion type={'plus'} customStyle={styles} title={'help'}>
-                  <p className={styles.information}>{product.description}</p>
-                </Accordion> */}
             </div>
           </div>
         </div>
         <div className={styles.suggestionContainer}>
-          <h2>Схожі товари</h2>
+          <h2>{t('PRODUCT_PAGE.similarProducts')}</h2>
           <ProductCardGrid
             spacing
             showSlider
@@ -158,20 +121,6 @@ const ProductPage = (props) => {
           />
         </div>
       </Container>
-
-      {/* <div className={styles.attributeContainer}>
-          <Split
-            image={'/cloth.png'}
-            alt={'attribute description'}
-            title={'Sustainability'}
-            description={
-              'We design our products to look good and to be used on a daily basis. And our aim is to inspire people to live with few timeless objects made to last. This is why quality over quantity is a cornerstone of our ethos and we have no interest in trends or seasonal collections.'
-            }
-            ctaText={'learn more'}
-            cta={() => navigate('/blog')}
-            bgColor={'var(--standard-light-grey)'}
-          />
-        </div> */}
     </div>
   );
 };

@@ -24,12 +24,6 @@ const AboutPage = (props) => {
       {/* Hero Container */}
       <Hero maxWidth={'900px'} image={'/about.jpg'} title={`Elite sport`} />
 
-      <div className={styles.navContainer}>
-        <ThemeLink onClick={() => handleScroll(historyRef)} to={'#history'}>
-          Історія
-        </ThemeLink>
-      </div>
-
       <Container size={'large'} spacing={'min'}>
         <div className={styles.detailContainer} ref={historyRef}>
           <p>

@@ -63,7 +63,7 @@ const Footer = (prop) => {
                     <Accordion
                       customStyle={styles}
                       type={'add'}
-                      title={linkCollection.subTitle}
+                      title={t(linkCollection.subTitle)}
                     >
                       {renderLinks(linkCollection)}
                     </Accordion>

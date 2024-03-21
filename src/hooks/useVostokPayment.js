@@ -1,4 +1,5 @@
 import forge from 'node-forge';
+import CryptoJS from 'crypto-js';
 
 const useVostokPayment = () => {
   const handlePayVostok = async (name, amount, email, rate) => {
@@ -6,8 +7,9 @@ const useVostokPayment = () => {
     const orderNumber = Date.now();
     const merchantId = process.env.GATSBY_VOSTOK_MERCHANT_ID;
     const authType = 1;
+
     const privateKeyPem = process.env.GATSBY_VOSTOK_PRIVATE_KEY;
-    const privateKeyHash = process.env.GATSBY_VOSTOK_KEY_HASH;
+    const privateKeyHash = CryptoJS.SHA256().toString(CryptoJS.enc.Hex);
 
     const data = `${orderNumber}|${amountToPay}|${merchantId}|${authType}`;
 

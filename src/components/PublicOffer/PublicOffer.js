@@ -7,7 +7,7 @@ const PublicOffer = (props) => {
   return (
     <div className={styles.root}>
       <div className={styles.section}>
-        <p dangerouslySetInnerHTML={{ __html: t('OFFER_PAGE.text') }}></p>
+        <p dangerouslySetInnerHTML={{ __html: t('OFFER_PAGE.text') }} />
       </div>
     </div>
   );

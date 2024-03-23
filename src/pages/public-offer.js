@@ -15,7 +15,7 @@ const PublicOfferPage = (props) => {
       <div className={styles.root}>
         <Banner
           maxWidth={'650px'}
-          name={'Умови договору купівлі-продажу'}
+          name={'OFFER_PAGE.title'}
           bgImage={'/support.png'}
           color={'var(--standard-white)'}
           height={'350px'}

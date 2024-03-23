@@ -8,6 +8,7 @@ import sendDataToBot from '../../helpers/sendDataToBot';
 import useBankPayment from '../../hooks/useBankPayment';
 
 import PlatonForm from './PlatonForm';
+import RaiffaisenForm from './RaiffaisenForm';
 import * as styles from './OrderSummary.module.css';
 import { LocalizationContext } from '../../context/localizationContext';
 import { CartContext } from '../../context/cartContext';
@@ -129,11 +130,18 @@ const OrderSummary = ({ isTest, totalPrice }) => {
           rate={1}
         />
       )}
+      {process.env.GATSBY_PAYMENT_SYSTEM === 'RAIFFAISEN' && (
+        <RaiffaisenForm
+          {...{ name, email }}
+          amount={isTest ? 1 : totalPrice * 40}
+          rate={1}
+        />
+      )}
       {process.env.GATSBY_PAYMENT_SYSTEM === 'VOSTOK' && (
         <Script
           async
           src="https://sdk.ecom.test.vostok.bank/SDK/Source/ecom.sdk.js"
-        ></Script>
+        />
       )}
       {isSubmitted && !isValid && (
         <p className={styles.errorText}>{t('CART_PAGE.form.error')}</p>

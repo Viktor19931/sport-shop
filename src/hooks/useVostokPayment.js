@@ -4,6 +4,7 @@ import CryptoJS from 'crypto-js';
 const ORDER_NUMBER = Date.now();
 const MERCHANT_id = process.env.GATSBY_VOSTOK_MERCHANT_ID;
 const AUTH_TYPE = 1;
+const PRIVATE_KEY_PEM = process.env.GATSBY_VOSTOK_PRIVATE_KEY;
 
 const useVostokPayment = () => {
   const handlePayVostok = async (name, amount, email, rate) => {
@@ -12,12 +13,11 @@ const useVostokPayment = () => {
     // hash of private key
     // e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
 
-    const privateKeyPem = process.env.GATSBY_VOSTOK_PRIVATE_KEY;
     const privateKeyHash = CryptoJS.SHA256().toString(CryptoJS.enc.Hex);
 
     const data = `${ORDER_NUMBER}|${amountToPay}|${MERCHANT_id}|${AUTH_TYPE}`;
 
-    const privateKey = forge.pki.privateKeyFromPem(privateKeyPem);
+    const privateKey = forge.pki.privateKeyFromPem(PRIVATE_KEY_PEM);
 
     const md = forge.md.sha256.create();
     md.update(data, 'utf8');

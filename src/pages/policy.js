@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import * as styles from './contact-us.module.css';
 
 import Banner from '../components/Banner';
-import Layout from '../components/Layout/Layout';
 import Policy from '../components/Policy';
 import Container from '../components/Container';
 
@@ -16,7 +15,7 @@ const PolicePage = (props) => {
       <div className={styles.root}>
         <Banner
           maxWidth={'650px'}
-          name={'Політика конфіденційності'}
+          name={'POLICY_PAGE.title'}
           bgImage={'/support.png'}
           color={'var(--standard-white)'}
           height={'350px'}

@@ -101,6 +101,20 @@
   border-bottom: 1px solid var(--standard-gold);
 }
 
+.disabledButton {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.disabledButton:hover {
+  background-color: var(--standard-black);
+}
+
+.errorText {
+  margin-top: 5px;
+  color: red;
+}
+
 /* @media (max-width: 900px) {
     .couponContainer {
         grid-template-columns: 1fr 1fr;

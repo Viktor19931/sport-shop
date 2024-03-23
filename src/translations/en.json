@@ -268,7 +268,8 @@
       "email": "mailbox",
       "coupon": "Coupon",
       "certificate": "Gift certificate",
-      "button": "Buy"
+      "button": "Buy",
+      "error": "Fill all required details (name, address and mailbox)"
     }
   }
 }

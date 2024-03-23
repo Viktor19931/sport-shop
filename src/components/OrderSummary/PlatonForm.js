@@ -31,13 +31,12 @@ const PaymentForm = ({ name, email, amount, rate }) => {
     document.getElementById('key').value = KEY;
     document.getElementById('url').value = SHOP_URL;
     document.getElementById('data').value = data;
-    // document.getElementById('req_token').value = 'Y';
     document.getElementById('sign').value = sign;
   }, [name, email, amount, rate]);
 
   return (
     <form
-      id="paymentForm"
+      id="PlatonPaymentForm"
       method="post"
       action="https://secure.platononline.com/payment/auth"
     >

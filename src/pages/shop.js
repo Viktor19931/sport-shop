@@ -4,8 +4,6 @@ import * as styles from './shop.module.css';
 import Breadcrumbs from '../components/Breadcrumbs';
 import CardController from '../components/CardController';
 import Container from '../components/Container';
-import Layout from '../components/Layout';
-// import LayoutOption from '../components/LayoutOption';
 import ProductCardGrid from '../components/ProductCardGrid';
 import { getAllProducts } from '../helpers/mock';
 import Config from '../config.json';

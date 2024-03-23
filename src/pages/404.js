@@ -5,7 +5,6 @@ import * as styles from './404.module.css';
 import Button from '../components/Button';
 import Container from '../components/Container';
 import FormInputField from '../components/FormInputField/FormInputField';
-import Layout from '../components/Layout';
 
 const NotFoundPage = () => {
   const [search, setSearch] = useState('');

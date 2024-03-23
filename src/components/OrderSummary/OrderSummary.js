@@ -43,7 +43,10 @@ const OrderSummary = ({ isTest, totalPrice }) => {
 
     if (!isValid) return;
 
-    await sendDataToBot(`
+    console.log('AAA 1 submit');
+
+    false &&
+      (await sendDataToBot(`
       магазин одягу
 
       name: ${name}
@@ -58,7 +61,8 @@ const OrderSummary = ({ isTest, totalPrice }) => {
 
       price: ${totalPrice}$
       bank: ${process.env.GATSBY_PAYMENT_SYSTEM}
-    `);
+    `));
+    console.log('AAA 2 submit');
 
     await handlePay(name, isTest ? 1 : totalPrice, email, 40);
   };
@@ -130,7 +134,7 @@ const OrderSummary = ({ isTest, totalPrice }) => {
           rate={1}
         />
       )}
-      {process.env.GATSBY_PAYMENT_SYSTEM === 'RAIFFAISEN' && (
+      {process.env.GATSBY_PAYMENT_SYSTEM === 'RAIFFEISEN' && (
         <RaiffaisenForm
           {...{ name, email }}
           amount={isTest ? 1 : totalPrice * 40}

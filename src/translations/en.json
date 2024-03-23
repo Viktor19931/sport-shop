@@ -23,7 +23,7 @@
       "button": "Shop"
     },
     "section2": {
-      "title": "New collecium",
+      "title": "New collection",
       "button": "Shop",
       "forMan": "Men",
       "forWoman": "Women",
@@ -267,11 +267,11 @@
       "name": "Name",
       "address": "Full address",
       "phone": "Phone",
-      "email": "mailbox",
+      "email": "Email",
       "coupon": "Coupon",
       "certificate": "Gift certificate",
       "button": "Buy",
-      "error": "Fill all required details (name, address and mailbox)"
+      "error": "Fill all required details (name, address and email)"
     }
   }
 }

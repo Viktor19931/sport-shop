@@ -2,7 +2,6 @@ import React, { useContext } from 'react';
 
 import CartItem from '../components/CartItem';
 import Container from '../components/Container';
-import Footer from '../components/Footer';
 import OrderSummary from '../components/OrderSummary';
 
 import * as styles from './cart.module.css';
@@ -33,7 +32,6 @@ const CartPage = ({ location }) => {
           </div>
         </Container>
       </div>
-      <Footer />
     </div>
   );
 };

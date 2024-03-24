@@ -21,12 +21,18 @@ const Gallery = (props) => {
     });
   };
 
+  const showSlider = images.length > 1;
+
   return (
     <div className={styles.root}>
       <div>
-        <Slider settings={customSliderSettings}>
-          {images && renderImages()}
-        </Slider>
+        {showSlider ? (
+          <Slider settings={customSliderSettings}>
+            {images && renderImages()}
+          </Slider>
+        ) : (
+          renderImages()
+        )}
       </div>
     </div>
   );

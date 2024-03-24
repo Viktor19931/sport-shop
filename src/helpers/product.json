@@ -1,5 +1,21 @@
 [
   {
+    "id": 41,
+    "name": "PRODUCTS.product41.name",
+    "price": 39,
+    "description": "PRODUCTS.product41.description",
+    "gallery": [
+      "/products/product-41/1.jpeg",
+      "/products/product-41/2.jpeg",
+      "/products/product-41/3.jpg",
+      "/products/product-41/4.jpeg",
+      "/products/product-41/5.jpeg"
+    ],
+    "tags": ["man"],
+    "colorOptions": [{ "color": "#000", "title": "Black" }],
+    "sizeOptions": ["m", "l"]
+  },
+  {
     "id": 40,
     "name": "PRODUCTS.product40.name",
     "price": 39,
@@ -37,8 +53,7 @@
     "gallery": [
       "/products/product-38/1.jpeg",
       "/products/product-38/2.jpeg",
-      "/products/product-38/3.jpeg",
-      "/products/product-38/4.jpeg"
+      "/products/product-38/3.jpeg"
     ],
     "tags": ["woman", "man"],
     "colorOptions": [

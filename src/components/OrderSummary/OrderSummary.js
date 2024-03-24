@@ -43,10 +43,7 @@ const OrderSummary = ({ isTest, totalPrice }) => {
 
     if (!isValid) return;
 
-    console.log('AAA 1 submit');
-
-    false &&
-      (await sendDataToBot(`
+    await sendDataToBot(`
       магазин одягу
 
       name: ${name}
@@ -61,8 +58,7 @@ const OrderSummary = ({ isTest, totalPrice }) => {
 
       price: ${totalPrice}$
       bank: ${process.env.GATSBY_PAYMENT_SYSTEM}
-    `));
-    console.log('AAA 2 submit');
+    `);
 
     await handlePay(name, isTest ? 1 : totalPrice, email, 40);
   };

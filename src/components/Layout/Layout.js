@@ -6,9 +6,10 @@ import Header from '../Header';
 import Footer from '../Footer';
 import * as styles from './Layout.module.css';
 
-// CSS not modular here to provide global styles
-import './Globals.css';
+import { CartProvider } from '../../context/cartContext';
 import { LocalizationProvider } from '../../context/localizationContext';
+
+import './Globals.css';
 
 const Layout = ({ props, children, disablePaddingBottom = false }) => {
   return (
@@ -28,15 +29,17 @@ const Layout = ({ props, children, disablePaddingBottom = false }) => {
       </Helmet>
 
       <LocalizationProvider>
-        <Header />
-        <main
-          className={`${styles.main} ${
-            disablePaddingBottom === true ? styles.disablePaddingBottom : ''
-          }`}
-        >
-          {children}
-        </main>
-        <Footer />
+        <CartProvider>
+          <Header />
+          <main
+            className={`${styles.main} ${
+              disablePaddingBottom === true ? styles.disablePaddingBottom : ''
+            }`}
+          >
+            {children}
+          </main>
+          <Footer />
+        </CartProvider>
       </LocalizationProvider>
     </>
   );

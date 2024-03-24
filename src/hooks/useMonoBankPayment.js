@@ -2,7 +2,6 @@ import axios from 'axios';
 
 const useMonoBankPayment = () => {
   const handlePayMono = async (name, amount, email) => {
-    console.log('AAA MONO ');
     const monoData = await axios
       .post(
         'https://api.monobank.ua/api/merchant/invoice/create',
@@ -25,7 +24,6 @@ const useMonoBankPayment = () => {
       .catch((e) => console.log('MMM error', e));
 
     if (monoData) window.location.href = monoData.data.pageUrl;
-    // window.open(monoData?.data.pageUrl);
   };
 
   return handlePayMono;

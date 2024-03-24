@@ -1,5 +1,20 @@
 [
   {
+    "id": 42,
+    "name": "PRODUCTS.product41.name",
+    "price": 39,
+    "description": "PRODUCTS.product41.description",
+    "gallery": [
+      "/products/product-42/1.jpeg",
+      "/products/product-42/2.jpeg",
+      "/products/product-42/3.jpeg",
+      "/products/product-42/4.jpeg"
+    ],
+    "tags": ["man"],
+    "colorOptions": [{ "color": "#000", "title": "Black" }],
+    "sizeOptions": ["m", "l"]
+  },
+  {
     "id": 41,
     "name": "PRODUCTS.product41.name",
     "price": 39,
@@ -11,7 +26,7 @@
       "/products/product-41/4.jpeg",
       "/products/product-41/5.jpeg"
     ],
-    "tags": ["man"],
+    "tags": ["man", "woman"],
     "colorOptions": [{ "color": "#000", "title": "Black" }],
     "sizeOptions": ["m", "l"]
   },

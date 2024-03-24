@@ -1,6 +1,3 @@
-.root {
-}
-
 .cardGrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -19,21 +16,15 @@
 }
 
 .mobileSlider {
-  display: none;
+  margin-bottom: 32px;
 }
 
+.root {
+  margin-left: -3.5%;
+  margin-right: -2.5%;
+}
 @media (max-width: 800px) {
-  .cardGrid {
-    display: none;
-  }
-
-  .mobileSlider {
-    display: block;
-    margin-bottom: 32px;
-  }
-
   .root {
-    margin-left: -3.5%;
-    margin-right: -2.5%;
+    margin-bottom: 20px;
   }
 }

@@ -1,5 +1,5 @@
 import React, { useState, useContext } from 'react';
-import * as styles from './sample.module.css';
+import * as styles from './product.module.css';
 
 import Accordion from '../../components/Accordion';
 import AdjustItem from '../../components/AdjustItem';
@@ -103,9 +103,12 @@ const ProductPage = (props) => {
                 customStyle={styles}
                 title={t('PRODUCT_PAGE.shippingInfo')}
               >
-                <p className={styles.information}>
-                  {t('PRODUCT_PAGE.shippingTerms')}
-                </p>
+                <p
+                  dangerouslySetInnerHTML={{
+                    __html: t('PRODUCT_PAGE.shippingTerms'),
+                  }}
+                  className={styles.information}
+                />
               </Accordion>
             </div>
           </div>

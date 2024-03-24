@@ -23,16 +23,7 @@ const Gallery = (props) => {
 
   return (
     <div className={styles.root}>
-      <div className={styles.cardGrid}>
-        {images?.map((img, index) => {
-          return (
-            <div key={index} className={styles.imageContainer}>
-              <img alt={img} src={img} />
-            </div>
-          );
-        })}
-      </div>
-      <div className={styles.mobileSlider}>
+      <div>
         <Slider settings={customSliderSettings}>
           {images && renderImages()}
         </Slider>

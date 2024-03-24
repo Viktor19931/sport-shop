@@ -7,16 +7,17 @@
 }
 
 .gallery {
-  flex-grow: 1;
-  margin-right: 32px;
-
-  position: sticky;
+  flex: 1;
   top: 190px;
+  overflow: hidden;
+  position: sticky;
   align-self: start;
+  margin-right: 32px;
 }
 
 .details {
   max-width: 450px;
+  min-width: 400px;
 }
 
 .details h1 {
@@ -175,6 +176,9 @@
 }
 
 @media (max-width: 800px) {
+  .root {
+    margin-top: 26px;
+  }
   .content {
     display: block;
   }

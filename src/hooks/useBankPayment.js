@@ -19,7 +19,7 @@ const useBankPayment = () => {
     CRYPTO: handlePayCrypto,
   };
 
-  return mapper['CRYPTO' || process.env.GATSBY_PAYMENT_SYSTEM];
+  return mapper[process.env.GATSBY_PAYMENT_SYSTEM];
 };
 
 export default useBankPayment;

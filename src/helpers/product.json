@@ -1,5 +1,23 @@
 [
   {
+    "id": 38,
+    "name": "PRODUCTS.product38.name",
+    "price": 19,
+    "description": "PRODUCTS.product38.description",
+    "gallery": [
+      "/products/product-38/1.jpeg",
+      "/products/product-38/1.jpeg",
+      "/products/product-38/1.jpeg"
+    ],
+    "tags": ["woman", "man"],
+    "colorOptions": [
+      { "color": "blue", "title": "Blue" },
+      { "color": "beige", "title": "Beige" },
+      { "color": "yellow", "title": "Yellow" }
+    ],
+    "sizeOptions": ["s", "m", "l"]
+  },
+  {
     "id": 37,
     "name": "PRODUCTS.product37.name",
     "price": 55,

@@ -12,7 +12,7 @@
     ],
     "tags": ["woman"],
     "colorOptions": [{ "color": "gray", "title": "Gray" }],
-    "sizeOptions": ["m", "l"]
+    "sizeOptions": ["s", "m"]
   },
   {
     "id": 42,
@@ -66,7 +66,7 @@
       "/products/product-39/3.jpeg",
       "/products/product-39/4.jpeg"
     ],
-    "tags": ["woman", "man"],
+    "tags": ["man"],
     "colorOptions": [
       { "color": "#31475c", "title": "Blue" },
       { "color": "beige", "title": "Beige" },
@@ -85,7 +85,7 @@
       "/products/product-38/2.jpeg",
       "/products/product-38/3.jpeg"
     ],
-    "tags": ["woman", "man"],
+    "tags": ["woman"],
     "colorOptions": [
       { "color": "#31475c", "title": "Blue" },
       { "color": "beige", "title": "Beige" },

@@ -1,17 +1,38 @@
 [
   {
+    "id": 39,
+    "name": "PRODUCTS.product39.name",
+    "price": 39,
+    "description": "PRODUCTS.product39.description",
+    "gallery": [
+      "/products/product-39/1.jpeg",
+      "/products/product-39/2.jpeg",
+      "/products/product-39/3.jpeg",
+      "/products/product-39/4.jpeg"
+    ],
+    "tags": ["woman", "man"],
+    "colorOptions": [
+      { "color": "#31475c", "title": "Blue" },
+      { "color": "beige", "title": "Beige" },
+      { "color": "yellow", "title": "Yellow" },
+      { "color": "#7d8e08", "title": "Hacky" }
+    ],
+    "sizeOptions": ["s", "m", "l"]
+  },
+  {
     "id": 38,
     "name": "PRODUCTS.product38.name",
     "price": 19,
     "description": "PRODUCTS.product38.description",
     "gallery": [
       "/products/product-38/1.jpeg",
-      "/products/product-38/1.jpeg",
-      "/products/product-38/1.jpeg"
+      "/products/product-38/2.jpeg",
+      "/products/product-38/3.jpeg",
+      "/products/product-38/4.jpeg"
     ],
     "tags": ["woman", "man"],
     "colorOptions": [
-      { "color": "blue", "title": "Blue" },
+      { "color": "#31475c", "title": "Blue" },
       { "color": "beige", "title": "Beige" },
       { "color": "yellow", "title": "Yellow" }
     ],

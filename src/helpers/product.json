@@ -1,5 +1,15 @@
 [
   {
+    "id": 40,
+    "name": "PRODUCTS.product40.name",
+    "price": 39,
+    "description": "PRODUCTS.product40.description",
+    "gallery": ["/products/product-40/1.jpeg"],
+    "tags": ["man"],
+    "colorOptions": [{ "color": "#31475c", "title": "Blue" }],
+    "sizeOptions": ["s", "m", "l"]
+  },
+  {
     "id": 39,
     "name": "PRODUCTS.product39.name",
     "price": 39,

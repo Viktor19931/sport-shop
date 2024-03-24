@@ -1,9 +1,24 @@
 [
   {
+    "id": 43,
+    "name": "PRODUCTS.product43.name",
+    "price": 69,
+    "description": "PRODUCTS.product43.description",
+    "gallery": [
+      "/products/product-43/1.jpeg",
+      "/products/product-43/2.jpeg",
+      "/products/product-43/3.jpeg",
+      "/products/product-43/4.jpeg"
+    ],
+    "tags": ["woman"],
+    "colorOptions": [{ "color": "gray", "title": "Gray" }],
+    "sizeOptions": ["m", "l"]
+  },
+  {
     "id": 42,
-    "name": "PRODUCTS.product41.name",
-    "price": 39,
-    "description": "PRODUCTS.product41.description",
+    "name": "PRODUCTS.product42.name",
+    "price": 100,
+    "description": "PRODUCTS.product42.description",
     "gallery": [
       "/products/product-42/1.jpeg",
       "/products/product-42/2.jpeg",

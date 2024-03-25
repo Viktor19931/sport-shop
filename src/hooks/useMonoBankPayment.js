@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const useMonoBankPayment = () => {
-  const handlePayMono = async (name, amount, email) => {
+  const handlePayMono = async (name, email, amount) => {
     const monoData = await axios
       .post(
         'https://api.monobank.ua/api/merchant/invoice/create',

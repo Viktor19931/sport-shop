@@ -7,7 +7,7 @@ const AUTH_TYPE = 1;
 const PRIVATE_KEY_PEM = process.env.GATSBY_VOSTOK_PRIVATE_KEY;
 
 const useVostokPayment = () => {
-  const handlePayVostok = async (name, amount, email, rate) => {
+  const handlePayVostok = async (name, email, amount, rate) => {
     const amountToPay = (amount * rate).toFixed(2);
 
     const privateKeyHash = CryptoJS.SHA256().toString(CryptoJS.enc.Hex);
@@ -32,7 +32,7 @@ const useVostokPayment = () => {
     eComPay.authType = AUTH_TYPE;
     eComPay.successRedirectUrl = `https://elite-sport.netlify.app/orderConfirm?name=${name}&amount=${amount}`;
     eComPay.failureRedirectUrl = 'https://elite-sport.netlify.app/404';
-    eComPay.cultureName = 'uk-UA'; // TODO use en
+    eComPay.cultureName = 'en';
     eComPay.signature = base64Signature;
     eComPay.keyHash = privateKeyHash;
     eComPay.customParameters = {};

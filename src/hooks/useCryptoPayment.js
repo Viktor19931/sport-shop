@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const useCryptoPayment = () => {
-  const handlePayCrypto = async (_name, _email, amount) => {
+  const handlePayCrypto = async (name, email, amount) => {
     const data = await axios.post(
       'https://api.nowpayments.io/v1/invoice',
       {

@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { navigate } from 'gatsby';
 import * as styles from './ActionCard.module.css';
 
 import Icon from '../Icons/Icon';
+import { LocalizationContext } from '../../context/localizationContext';
 
-const ActionCard = (props) => {
-  const { title, icon, subtitle, link, size } = props;
+const ActionCard = ({ title, icon, subtitle, link, size }) => {
+  const { t } = useContext(LocalizationContext);
+
   return (
     <div
       className={styles.root}
@@ -15,10 +17,10 @@ const ActionCard = (props) => {
       <div className={`${styles.iconContainer} ${styles[size]}`}>
         <Icon symbol={icon} />
       </div>
-      <span className={styles.actionName}>{title}</span>
+      <span className={styles.actionName}>{t(title)}</span>
       <span className={styles.link}>
-        {subtitle}
-        <Icon symbol={'caret'}></Icon>
+        {t(subtitle)}
+        <Icon symbol={'caret'} />
       </span>
     </div>
   );

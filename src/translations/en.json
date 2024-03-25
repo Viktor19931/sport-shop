@@ -297,5 +297,21 @@
       "button": "Buy",
       "error": "Fill all required details (name, address and email)"
     }
+  },
+  "SUCCESS_PAGE": {
+    "ThankYou": "Thank you",
+    "description": "We are currently processing your order. If you have any problems, feel free to email us at stefaniv.mariana@gmail.com",
+    "btn1": {
+      "title": "Shop",
+      "subTitle": "Continue shopping"
+    },
+    "btn2": {
+      "title": "FAQs",
+      "subTitle": "Check out the FAQ page"
+    },
+    "btn3": {
+      "title": "Contact us",
+      "subTitle": "Contact us"
+    }
   }
 }

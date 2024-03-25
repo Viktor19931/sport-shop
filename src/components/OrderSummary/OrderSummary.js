@@ -43,7 +43,8 @@ const OrderSummary = ({ isTest, totalPrice }) => {
 
     if (!isValid) return;
 
-    await sendDataToBot(`
+    false &&
+      (await sendDataToBot(`
       магазин одягу
 
       name: ${name}
@@ -58,7 +59,7 @@ const OrderSummary = ({ isTest, totalPrice }) => {
 
       price: ${totalPrice}$
       bank: ${process.env.GATSBY_PAYMENT_SYSTEM}
-    `);
+    `));
 
     await handlePay(name, isTest ? 1 : totalPrice, email, 40);
   };
@@ -140,7 +141,7 @@ const OrderSummary = ({ isTest, totalPrice }) => {
       {process.env.GATSBY_PAYMENT_SYSTEM === 'VOSTOK' && (
         <Script
           async
-          src="https://sdk.ecom.test.vostok.bank/SDK/Source/ecom.sdk.js"
+          src="https://sdk.ecom.vostok.bank/SDK/Source/ecom.sdk.js"
         />
       )}
       {isSubmitted && !isValid && (

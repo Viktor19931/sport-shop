@@ -10,9 +10,6 @@ const useVostokPayment = () => {
   const handlePayVostok = async (name, amount, email, rate) => {
     const amountToPay = (amount * rate).toFixed(2);
 
-    // hash of private key
-    // e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-
     const privateKeyHash = CryptoJS.SHA256().toString(CryptoJS.enc.Hex);
 
     const data = `${ORDER_NUMBER}|${amountToPay}|${MERCHANT_id}|${AUTH_TYPE}`;
@@ -29,7 +26,7 @@ const useVostokPayment = () => {
 
     eComPay.phoneNumber = '+380981234567';
     eComPay.amount = amountToPay;
-    eComPay.description = 'Тестовий платіж';
+    eComPay.description = `Покупка речей, ${name}`;
     eComPay.partnerOrderId = ORDER_NUMBER;
     eComPay.merchantId = MERCHANT_id;
     eComPay.authType = AUTH_TYPE;

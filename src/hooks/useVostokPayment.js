@@ -32,7 +32,7 @@ const useVostokPayment = () => {
     eComPay.authType = AUTH_TYPE;
     eComPay.successRedirectUrl = `https://elite-sport.netlify.app/orderConfirm?name=${name}&amount=${amount}`;
     eComPay.failureRedirectUrl = 'https://elite-sport.netlify.app/404';
-    eComPay.cultureName = 'en';
+    eComPay.cultureName = 'uk-UA';
     eComPay.signature = base64Signature;
     eComPay.keyHash = privateKeyHash;
     eComPay.customParameters = {};

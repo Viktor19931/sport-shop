@@ -8,7 +8,7 @@ const useCryptoPayment = () => {
         price_amount: amount,
         price_currency: 'usd',
         order_id: Date.now(),
-        order_description: `Покупка речей`,
+        order_description: `Оплата за товар`,
         success_url: `https://amanita-store.com/orderConfirm`,
         cancel_url: `https://amanita-store.com/404`,
       },

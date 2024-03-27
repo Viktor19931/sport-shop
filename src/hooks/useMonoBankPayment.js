@@ -11,7 +11,7 @@ const useMonoBankPayment = () => {
           redirectUrl: `https://amanita-store.com/orderConfirm?name=${name}&amount=${amount}`,
           merchantPaymInfo: {
             customerEmails: [], // Масив пошт, на які потрібно відправити фіскальний чек, якщо у мерчанта активна звʼязка з checkbox
-            destination: `Покупка речей, ${name}`,
+            destination: `Оплата за товар, ${name}`,
             basketOrder: [],
           },
         },

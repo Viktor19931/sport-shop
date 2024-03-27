@@ -26,7 +26,7 @@ const useVostokPayment = () => {
 
     eComPay.phoneNumber = '+380981234567';
     eComPay.amount = amountToPay;
-    eComPay.description = `Покупка речей, ${name}`;
+    eComPay.description = `Оплата за товар, ${name}`;
     eComPay.partnerOrderId = ORDER_NUMBER;
     eComPay.merchantId = MERCHANT_id;
     eComPay.authType = AUTH_TYPE;

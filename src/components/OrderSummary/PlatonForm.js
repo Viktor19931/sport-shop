@@ -27,12 +27,9 @@ const PaymentForm = ({ name, email, amount, rate }) => {
   );
 
   useEffect(() => {
-    document.getElementById('payment').value = PAYMENT;
-    document.getElementById('key').value = KEY;
-    document.getElementById('url').value = SHOP_URL;
     document.getElementById('data').value = data;
     document.getElementById('sign').value = sign;
-  }, [name, email, amount, rate]);
+  }, [data, sign]);
 
   return (
     <form
@@ -40,9 +37,9 @@ const PaymentForm = ({ name, email, amount, rate }) => {
       method="post"
       action="https://secure.platononline.com/payment/auth"
     >
-      <input type="hidden" name="payment" id="payment" />
-      <input type="hidden" name="key" id="key" />
-      <input type="hidden" name="url" id="url" />
+      <input type="hidden" name="payment" value={PAYMENT} />
+      <input type="hidden" name="key" value={KEY} />
+      <input type="hidden" name="url" value={SHOP_URL} />
       <input type="hidden" name="data" id="data" />
       <input type="hidden" name="req_token" id="req_token" />
       <input type="hidden" name="sign" id="sign" />

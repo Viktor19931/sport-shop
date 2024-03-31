@@ -29,6 +29,8 @@ const ProductPage = (props) => {
   const [activeSize, setActiveSize] = useState(product.sizeOptions[0]);
   const suggestions = generateMockProductData(4, 'woman');
 
+  console.log('PPP product ', product);
+
   const handleAddToCart = () => {
     setItem({
       ...product,
@@ -94,7 +96,11 @@ const ProductPage = (props) => {
             </div>
 
             <div className={styles.description}>
-              <p dangerouslySetInnerHTML={{ __html: t(product.description) }} />
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: t(product.description),
+                }}
+              />
             </div>
 
             <div className={styles.informationContainer}>

@@ -7,7 +7,7 @@ const useRaiffeisenPayment = () => {
       'AAA 2 ',
       JSON.stringify(Object.fromEntries(new FormData(form)))
     );
-    // form.submit();
+    form.submit();
   };
 
   return handlePayRaiffeisen;

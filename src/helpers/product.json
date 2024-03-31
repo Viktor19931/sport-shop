@@ -537,7 +537,8 @@
   },
   {
     "id": 8,
-    "name": "PRODUCTS.product7.name",
+    "name": "PRODUCTS.product8.name",
+    "description": "PRODUCTS.product8.description",
     "price": 39,
     "alt": "relaxed t shirt woman",
     "gallery": [
@@ -573,7 +574,6 @@
       "/products/product6/4.jpeg"
     ],
     "tags": ["man", "woman"],
-    "originalPrice": 31.5,
     "description": "PRODUCTS.product6.description",
     "colorOptions": [
       { "color": "#000", "title": "Black" },
@@ -584,6 +584,7 @@
   {
     "id": 5,
     "name": "PRODUCTS.product5.name",
+    "description": "PRODUCTS.product5.description",
     "price": 39,
     "alt": "relaxed t shirt woman",
     "gallery": [

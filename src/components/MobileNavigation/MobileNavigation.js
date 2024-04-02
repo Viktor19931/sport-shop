@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link, navigate } from 'gatsby';
 
 import Config from '../../config.json';
@@ -10,9 +10,11 @@ import { isAuth } from '../../helpers/general';
 // refactor this
 
 import * as styles from './MobileNavigation.module.css';
+import { LocalizationContext } from '../../context/localizationContext';
 
 const MobileNavigation = (props) => {
   const { close } = props;
+  const { t } = useContext(LocalizationContext);
 
   const [subMenu, setSubMenu] = useState();
   const [category, setCategory] = useState();
@@ -46,7 +48,7 @@ const MobileNavigation = (props) => {
                       }
                     }}
                   >
-                    {navObject.menuLabel}
+                    {t(navObject.menuLabel)}
                     {hasSubmenu && <Icon symbol={'caret'}></Icon>}
                   </Link>
                 );

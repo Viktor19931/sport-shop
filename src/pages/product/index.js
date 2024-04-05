@@ -29,7 +29,7 @@ const ProductPage = (props) => {
   const [activeSize, setActiveSize] = useState(product.sizeOptions[0]);
   const suggestions = generateMockProductData(4, 'woman');
 
-  console.log('PPP product ', product);
+  console.log('PPP product ', id, product);
 
   const handleAddToCart = () => {
     setItem({

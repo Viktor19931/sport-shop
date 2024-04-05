@@ -287,7 +287,7 @@
     "id": 24,
     "name": "PRODUCTS.product24.name",
     "price": 39,
-    "description": "",
+    "description": "PRODUCTS.product24.description",
     "gallery": [
       "/products/product-24/1.jpeg",
       "/products/product-24/2.jpeg",
@@ -302,7 +302,7 @@
     "id": 23,
     "name": "PRODUCTS.product23.name",
     "price": 69,
-    "description": "",
+    "description": "PRODUCTS.product23.description",
     "gallery": [
       "/products/product-23/1.jpeg",
       "/products/product-23/2.jpeg",
@@ -488,7 +488,7 @@
     "name": "PRODUCTS.product11.name",
     "price": 99,
     "alt": "relaxed t shirt woman",
-    "description": "",
+    "description": "PRODUCTS.product11.description",
     "gallery": [
       "/products/product11/1.jpeg",
       "/products/product11/2.jpeg",
@@ -506,7 +506,7 @@
     "name": "PRODUCTS.product10.name",
     "price": 71,
     "alt": "relaxed t shirt woman",
-    "description": "",
+    "description": "PRODUCTS.product10.description",
     "gallery": [
       "/products/product10/1.jpg",
       "/products/product10/2.jpg",
@@ -657,7 +657,7 @@
     "price": 69,
     "alt": "relaxed t shirt woman",
     "tags": ["man"],
-    "description": "PRODUCTS.product2.description",
+    "description": "PRODUCTS.product1.description",
     "colorOptions": [
       { "color": "#000000", "title": "Anthracite Melange" },
       { "color": "#4D34AE", "title": "Pale Purple" },

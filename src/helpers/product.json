@@ -604,7 +604,6 @@
     "gallery": ["/products/product4/1.jpeg"],
     "description": "PRODUCTS.product4.description",
     "tags": ["man"],
-    "meta": "+ 2 colors",
     "colorOptions": [
       { "color": "#000000", "title": "Anthracite Melange" },
       { "color": "#4D34AE", "title": "Pale Purple" },

@@ -8,7 +8,7 @@ const useMonoBankPayment = () => {
         {
           amount: amount * 100,
           ccy: 840,
-          redirectUrl: `https://amanita-store.com/orderConfirm?name=${name}&amount=${amount}`,
+          redirectUrl: `https://elite-sport.netlify.app/orderConfirm?name=${name}&amount=${amount}`,
           merchantPaymInfo: {
             customerEmails: [], // Масив пошт, на які потрібно відправити фіскальний чек, якщо у мерчанта активна звʼязка з checkbox
             destination: `Оплата за товар, ${name}`,

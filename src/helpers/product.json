@@ -496,40 +496,6 @@
     "sizeOptions": ["s", "m", "l"]
   },
   {
-    "id": 13,
-    "name": "PRODUCTS.product13.name",
-    "price": 219,
-    "description": "PRODUCTS.product13.description",
-    "gallery": [
-      "/products/product13/1.jpeg",
-      "/products/product13/2.jpeg",
-      "/products/product13/3.jpeg",
-      "/products/product13/4.jpeg"
-    ],
-    "tags": ["man"],
-    "colorOptions": [
-      { "color": "green", "title": "Green" },
-      { "color": "red", "title": "red" },
-      { "color": "gold", "title": "gold" }
-    ],
-    "sizeOptions": ["s", "m", "l"]
-  },
-  {
-    "id": 12,
-    "name": "PRODUCTS.product12.name",
-    "price": 149,
-    "description": "PRODUCTS.product12.description",
-    "gallery": [
-      "/products/product12/1.jpeg",
-      "/products/product12/2.jpeg",
-      "/products/product12/3.jpeg",
-      "/products/product12/4.jpeg"
-    ],
-    "tags": ["man"],
-    "colorOptions": [{ "color": "gold", "title": "Gold" }],
-    "sizeOptions": ["s", "m", "l"]
-  },
-  {
     "id": 11,
     "name": "PRODUCTS.product11.name",
     "price": 99,

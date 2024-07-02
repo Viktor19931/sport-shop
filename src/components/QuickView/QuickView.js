@@ -1,11 +1,7 @@
-import React, { useState, useContext } from 'react';
+import React, { useContext } from 'react';
 
 import Button from '../Button';
-import CurrencyFormatter from '../CurrencyFormatter';
-import SizeList from '../SizeList';
-import SwatchList from '../SwatchList';
 
-import { generateMockProductData } from '../../helpers/mock';
 import AddItemNotificationContext from '../../context/cartContext';
 
 import * as styles from './QuickView.module.css';
@@ -15,8 +11,6 @@ const QuickView = (props) => {
 
   const ctxAddItemNotification = useContext(AddItemNotificationContext);
   const showNotification = ctxAddItemNotification.showNotification;
-  const [activeSwatch, setActiveSwatch] = useState();
-  const [activeSize, setActiveSize] = useState();
 
   const handleAddToBag = () => {
     close();

@@ -61,21 +61,6 @@
     "sizeOptions": ["s", "m"]
   },
   {
-    "id": 42,
-    "name": "PRODUCTS.product42.name",
-    "price": 100,
-    "description": "PRODUCTS.product42.description",
-    "gallery": [
-      "/products/product-42/1.jpeg",
-      "/products/product-42/2.jpeg",
-      "/products/product-42/3.jpeg",
-      "/products/product-42/4.jpeg"
-    ],
-    "tags": ["man"],
-    "colorOptions": [{ "color": "#000", "title": "Black" }],
-    "sizeOptions": ["m", "l"]
-  },
-  {
     "id": 41,
     "name": "PRODUCTS.product41.name",
     "price": 39,
@@ -172,16 +157,6 @@
     "tags": ["woman", "man"],
     "colorOptions": [{ "color": "black", "title": "Black" }],
     "sizeOptions": ["s", "m", "l"]
-  },
-  {
-    "id": 34,
-    "name": "PRODUCTS.product34.name",
-    "price": 112,
-    "description": "PRODUCTS.product34.description",
-    "gallery": ["/products/product-34/1.jpeg", "/products/product-34/2.jpeg"],
-    "tags": ["woman", "man"],
-    "colorOptions": [{ "color": "black", "title": "Black" }],
-    "sizeOptions": ["m"]
   },
   {
     "id": 33,

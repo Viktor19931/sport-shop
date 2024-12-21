@@ -1,5 +1,94 @@
 [
   {
+    "id": 54,
+    "name": "PRODUCTS.product54.name",
+    "price": 27,
+    "description": "PRODUCTS.product54.description",
+    "gallery": ["/products/product-54/1.jpg", "/products/product-54/2.jpg"],
+    "tags": ["man", "woman"],
+    "colorOptions": [{ "color": "black", "title": "black" }],
+    "sizeOptions": ["m"]
+  },
+  {
+    "id": 53,
+    "name": "PRODUCTS.product53.name",
+    "price": 70,
+    "description": "PRODUCTS.product53.description",
+    "gallery": ["/products/product-53/1.jpg"],
+    "tags": ["man", "woman"],
+    "colorOptions": [{ "color": "black", "title": "black" }],
+    "sizeOptions": ["m"]
+  },
+  {
+    "id": 52,
+    "name": "PRODUCTS.product52.name",
+    "price": 25,
+    "description": "PRODUCTS.product52.description",
+    "gallery": ["/products/product-52/1.jpg"],
+    "tags": ["man", "woman"],
+    "colorOptions": [{ "color": "gray", "title": "20 colors" }],
+    "sizeOptions": ["m"]
+  },
+  {
+    "id": 51,
+    "name": "PRODUCTS.product51.name",
+    "price": 35,
+    "description": "PRODUCTS.product51.description",
+    "gallery": ["/products/product-51/1.jpg", "/products/product-51/2.jpg"],
+    "tags": ["man", "woman"],
+    "colorOptions": [{ "color": "red", "title": "red" }],
+    "sizeOptions": ["m"]
+  },
+  {
+    "id": 50,
+    "name": "PRODUCTS.product50.name",
+    "price": 35,
+    "description": "PRODUCTS.product50.description",
+    "gallery": ["/products/product-50/1.jpg"],
+    "tags": ["man", "woman"],
+    "colorOptions": [{ "color": "#7eebc3", "title": "Green" }],
+    "sizeOptions": ["m"]
+  },
+  {
+    "id": 49,
+    "name": "PRODUCTS.product49.name",
+    "price": 50,
+    "description": "PRODUCTS.product49.description",
+    "gallery": [
+      "/products/product-49/1.jpg",
+      "/products/product-49/2.jpg",
+      "/products/product-49/3.jpg"
+    ],
+    "tags": ["man", "woman"],
+    "colorOptions": [{ "color": "grey", "title": "Grey" }],
+    "sizeOptions": ["m"]
+  },
+  {
+    "id": 48,
+    "name": "PRODUCTS.product48.name",
+    "price": 75,
+    "description": "PRODUCTS.product48.description",
+    "gallery": [
+      "/products/product-48/1.jpg",
+      "/products/product-48/2.jpg",
+      "/products/product-48/3.jpg",
+      "/products/product-48/4.jpg"
+    ],
+    "tags": ["man", "woman"],
+    "colorOptions": [{ "color": "silver", "title": "Silver" }],
+    "sizeOptions": ["m"]
+  },
+  {
+    "id": 47,
+    "name": "PRODUCTS.product47.name",
+    "price": 35,
+    "description": "PRODUCTS.product47.description",
+    "gallery": ["/products/product-47/1.jpg"],
+    "tags": ["man", "woman"],
+    "colorOptions": [{ "color": "#808d7e", "title": "Green" }],
+    "sizeOptions": ["m"]
+  },
+  {
     "id": 46,
     "name": "PRODUCTS.product46.name",
     "price": 105,

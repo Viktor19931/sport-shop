@@ -1,21 +1,22 @@
 import React, { useState, useContext } from 'react';
-import * as styles from './product.module.css';
 
-import Accordion from '../../components/Accordion';
-import AdjustItem from '../../components/AdjustItem';
 import Button from '../../components/Button';
-import Breadcrumbs from '../../components/Breadcrumbs';
-import Container from '../../components/Container';
 import Gallery from '../../components/Gallery';
-import SizeList from '../../components/SizeList';
-import SwatchList from '../../components/SwatchList';
 import products from '../../helpers/product.json';
-
-import { generateMockProductData } from '../../helpers/mock';
+import SizeList from '../../components/SizeList';
+import Accordion from '../../components/Accordion';
+import getParams from '../../helpers/getParams';
+import Container from '../../components/Container';
+import AdjustItem from '../../components/AdjustItem';
+import SwatchList from '../../components/SwatchList';
+import Breadcrumbs from '../../components/Breadcrumbs';
+import { USD_RATE } from '../../constants';
 import ProductCardGrid from '../../components/ProductCardGrid';
 import { CartContext } from '../../context/cartContext';
-import getParams from '../../helpers/getParams';
 import { LocalizationContext } from '../../context/localizationContext';
+import { generateMockProductData } from '../../helpers/mock';
+
+import * as styles from './product.module.css';
 
 const ProductPage = (props) => {
   const { id } = getParams(props.location.search);
@@ -59,7 +60,7 @@ const ProductPage = (props) => {
           <div className={styles.details}>
             <h1>{t(product.name)}</h1>
             <div className={styles.priceContainer}>
-              ${product.price} / ₴{product.price * 40}
+              ${product.price} / ₴{product.price * USD_RATE}
             </div>
 
             <div>

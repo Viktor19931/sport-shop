@@ -1,17 +1,18 @@
-import React, { useContext, useState } from 'react';
 import { Link, Script } from 'gatsby';
+import React, { useContext, useState } from 'react';
 
 import Button from '../Button';
-import FormInputField from '../FormInputField/FormInputField';
-import CurrencyFormatter from '../CurrencyFormatter';
+import { USD_RATE } from '../../constants';
 import sendDataToBot from '../../helpers/sendDataToBot';
 import useBankPayment from '../../hooks/useBankPayment';
+import FormInputField from '../FormInputField/FormInputField';
+import RaiffaisenForm from './RaiffaisenForm';
+import { CartContext } from '../../context/cartContext';
+import CurrencyFormatter from '../CurrencyFormatter';
+import { LocalizationContext } from '../../context/localizationContext';
 
 import PlatonForm from './PlatonForm';
-import RaiffaisenForm from './RaiffaisenForm';
 import * as styles from './OrderSummary.module.css';
-import { LocalizationContext } from '../../context/localizationContext';
-import { CartContext } from '../../context/cartContext';
 
 const OrderSummary = ({ isTest, totalPrice }) => {
   const { t } = useContext(LocalizationContext);
@@ -60,7 +61,7 @@ const OrderSummary = ({ isTest, totalPrice }) => {
       bank: ${process.env.GATSBY_PAYMENT_SYSTEM}
     `);
 
-    await handlePay(name, email, isTest ? 1 : totalPrice, 40);
+    await handlePay(name, email, isTest ? 1 : totalPrice, USD_RATE);
   };
 
   return (
@@ -119,21 +120,21 @@ const OrderSummary = ({ isTest, totalPrice }) => {
           <span>{t('CART_PAGE.total')} </span>
           <span style={{ fontSize: 24 }}>
             <CurrencyFormatter amount={totalPrice} appendZero /> / ₴
-            {totalPrice * 40}
+            {totalPrice * USD_RATE}
           </span>
         </div>
       </div>
       {process.env.GATSBY_PAYMENT_SYSTEM === 'PLATON' && (
         <PlatonForm
           {...{ name, email }}
-          amount={isTest ? 1 : totalPrice * 40}
+          amount={isTest ? 1 : totalPrice * USD_RATE}
           rate={1}
         />
       )}
       {process.env.GATSBY_PAYMENT_SYSTEM === 'RAIFFEISEN' && (
         <RaiffaisenForm
           {...{ name, email }}
-          amount={isTest ? 1 : totalPrice * 40}
+          amount={isTest ? 1 : totalPrice * USD_RATE}
           rate={1}
         />
       )}

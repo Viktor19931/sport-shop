@@ -1,8 +1,9 @@
 import React, { useContext, useState } from 'react';
 import { navigate } from 'gatsby';
 
-import { LocalizationContext } from '../../context/localizationContext';
 import Icon from '../Icons/Icon';
+import { USD_RATE } from '../../constants';
+import { LocalizationContext } from '../../context/localizationContext';
 
 import * as styles from './ProductCard.module.css';
 
@@ -76,7 +77,7 @@ const ProductCard = (props) => {
           <span
             className={`${originalPrice !== undefined ? styles.salePrice : ''}`}
           >
-            ${price} / ₴{price * 40}
+            ${price} / ₴{price * USD_RATE}
           </span>
           {originalPrice && (
             <span className={styles.originalPrice}>${originalPrice}</span>

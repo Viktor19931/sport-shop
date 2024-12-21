@@ -1,13 +1,13 @@
+import { navigate } from 'gatsby';
 import React, { useContext, useState } from 'react';
 
-import AdjustItem from '../AdjustItem';
 import Drawer from '../Drawer';
-import RemoveItem from '../RemoveItem';
 import QuickView from '../QuickView';
-
+import AdjustItem from '../AdjustItem';
+import RemoveItem from '../RemoveItem';
 import * as styles from './CartItem.module.css';
-import { navigate } from 'gatsby';
 import CartContext from '../../context/cartContext';
+import { USD_RATE } from '../../constants';
 import { LocalizationContext } from '../../context/localizationContext';
 
 const CartItem = (props) => {
@@ -36,7 +36,7 @@ const CartItem = (props) => {
         />
       </div>
       <div className={styles.priceContainer}>
-        {price}$ / ₴{price * 40}
+        {price}$ / ₴{price * USD_RATE}
       </div>
       <div className={styles.removeContainer}>
         <RemoveItem onRemove={() => deleteItems(props.id)} />

@@ -1,221 +1,191 @@
 [
   {
-    "id": 64,
-    "name": "PRODUCTS.product54.name",
-    "price": 84,
-    "description": "PRODUCTS.product54.description",
-    "gallery": [
-      "/products/product-44/1.jpeg",
-      "/products/product-44/2.jpeg",
-      "/products/product-44/3.jpeg"
-    ],
-    "tags": ["man", "woman"],
-    "colorOptions": [
-      { "color": "#111827", "title": "Midnight" },
-      { "color": "#2f7cff", "title": "Electric Blue" }
-    ],
-    "sizeOptions": ["s", "m", "l", "xl"]
-  },
-  {
-    "id": 63,
-    "name": "PRODUCTS.product53.name",
-    "price": 62,
-    "description": "PRODUCTS.product53.description",
-    "gallery": [
-      "/products/product-43/1.jpeg",
-      "/products/product-43/2.jpeg",
-      "/products/product-43/3.jpeg"
-    ],
-    "tags": ["woman"],
-    "colorOptions": [
-      { "color": "#000000", "title": "Black" },
-      { "color": "#b91c1c", "title": "Red" }
-    ],
-    "sizeOptions": ["s", "m", "l"]
-  },
-  {
-    "id": 62,
-    "name": "PRODUCTS.product52.name",
-    "price": 119,
-    "description": "PRODUCTS.product52.description",
-    "gallery": [
-      "/products/product-46/1.jpeg",
-      "/products/product-46/2.jpeg",
-      "/products/product-46/3.jpeg"
-    ],
-    "tags": ["man"],
-    "colorOptions": [
-      { "color": "#1f2937", "title": "Graphite" },
-      { "color": "#4b5563", "title": "Steel" }
-    ],
-    "sizeOptions": ["m", "l", "xl"]
-  },
-  {
-    "id": 61,
-    "name": "PRODUCTS.product51.name",
-    "price": 46,
-    "description": "PRODUCTS.product51.description",
-    "gallery": [
-      "/products/product-40/1.jpeg",
-      "/products/product-39/2.jpeg"
-    ],
-    "tags": ["man", "woman"],
-    "colorOptions": [
-      { "color": "#0f172a", "title": "Navy" },
-      { "color": "#f8fafc", "title": "White" }
-    ],
-    "sizeOptions": ["s", "m", "l"]
-  },
-  {
-    "id": 60,
-    "name": "PRODUCTS.product50.name",
-    "price": 59,
-    "description": "PRODUCTS.product50.description",
-    "gallery": [
-      "/products/product-30/1.jpeg",
-      "/products/product-30/2.jpeg",
-      "/products/product-30/3.jpeg"
-    ],
-    "tags": ["woman"],
-    "colorOptions": [
-      { "color": "#f3f4f6", "title": "Snow" },
-      { "color": "#111827", "title": "Onyx" }
-    ],
-    "sizeOptions": ["s", "m", "l"]
-  },
-  {
-    "id": 59,
-    "name": "PRODUCTS.product49.name",
-    "price": 72,
-    "description": "PRODUCTS.product49.description",
-    "gallery": [
-      "/products/product-27/1.jpeg",
-      "/products/product-27/2.jpeg",
-      "/products/product-27/3.jpeg"
-    ],
-    "tags": ["man"],
-    "colorOptions": [
-      { "color": "#111827", "title": "Black" },
-      { "color": "#ef4444", "title": "Crimson" }
-    ],
-    "sizeOptions": ["s", "m", "l", "xl"]
-  },
-  {
     "id": 58,
-    "name": "PRODUCTS.product48.name",
-    "price": 38,
-    "description": "PRODUCTS.product48.description",
+    "name": "PRODUCTS.product58.name",
+    "price": 699,
+    "description": "PRODUCTS.product58.description",
     "gallery": [
-      "/products/product-38/1.jpeg",
-      "/products/product-38/2.jpeg"
+      "/products/product-58/1.png"
     ],
-    "tags": ["woman", "man"],
+    "tags": [
+      "man",
+      "woman"
+    ],
+    "meta": "NEW",
     "colorOptions": [
-      { "color": "#22c55e", "title": "Lime" },
-      { "color": "#eab308", "title": "Gold" }
+      {
+        "color": "#d97706",
+        "title": "Lemon-Lime"
+      },
+      {
+        "color": "#9ca3af",
+        "title": "Unflavored"
+      }
     ],
-    "sizeOptions": ["s", "m", "l"]
+    "sizeOptions": [
+      "500 g"
+    ]
   },
   {
     "id": 57,
-    "name": "PRODUCTS.product47.name",
-    "price": 33,
-    "description": "PRODUCTS.product47.description",
+    "name": "PRODUCTS.product57.name",
+    "price": 1750,
+    "description": "PRODUCTS.product57.description",
     "gallery": [
-      "/products/product-36/1.jpeg",
-      "/products/product-36/2.jpeg",
-      "/products/product-36/3.jpeg"
+      "/products/product-57/1.png",
+      "/products/product-57/2.png",
+      "/products/product-57/3.png"
     ],
-    "tags": ["man", "woman"],
+    "tags": [
+      "man",
+      "woman"
+    ],
+    "meta": "NEW",
     "colorOptions": [
-      { "color": "#0ea5e9", "title": "Sky Blue" },
-      { "color": "#0891b2", "title": "Cyan" }
+      {
+        "color": "#1e3a8a",
+        "title": "Blue"
+      }
     ],
-    "sizeOptions": ["m", "l"]
-  },
-  {
-    "id": 56,
-    "name": "PRODUCTS.product46.name",
-    "price": 97,
-    "description": "PRODUCTS.product46.description",
-    "gallery": [
-      "/products/product-33/1.jpeg",
-      "/products/product-33/2.jpeg",
-      "/products/product-33/3.jpeg"
-    ],
-    "tags": ["woman", "man"],
-    "colorOptions": [
-      { "color": "#111827", "title": "Black" },
-      { "color": "#6366f1", "title": "Indigo" }
-    ],
-    "sizeOptions": ["m", "l", "xl"]
+    "sizeOptions": [
+      "30 servings"
+    ]
   },
   {
     "id": 55,
-    "name": "PRODUCTS.product45.name",
-    "price": 44,
-    "description": "PRODUCTS.product45.description",
+    "name": "PRODUCTS.product65.name",
+    "price": 31,
+    "description": "PRODUCTS.product65.description",
     "gallery": [
-      "/products/product-32/1.jpeg",
-      "/products/product-32/2.jpeg",
-      "/products/product-32/3.jpeg"
+      "/products/product-65/1.png",
+      "/products/product-65/2.png"
     ],
-    "tags": ["woman", "man"],
+    "tags": [
+      "man",
+      "woman"
+    ],
+    "meta": "NEW",
     "colorOptions": [
-      { "color": "#ffffff", "title": "White" },
-      { "color": "#111827", "title": "Black" }
+      {
+        "color": "#94a3b8",
+        "title": "Neutral"
+      }
     ],
-    "sizeOptions": ["s", "m", "l"]
+    "sizeOptions": [
+      "250 ml"
+    ]
   },
   {
     "id": 54,
     "name": "PRODUCTS.product54.name",
     "price": 27,
     "description": "PRODUCTS.product54.description",
-    "gallery": ["/products/product-54/1.jpg", "/products/product-54/2.jpg"],
-    "tags": ["man", "woman"],
-    "colorOptions": [{ "color": "black", "title": "black" }],
-    "sizeOptions": ["m"]
+    "gallery": [
+      "/products/product-54/1.png",
+      "/products/product-54/2.png"
+    ],
+    "tags": [
+      "man",
+      "woman"
+    ],
+    "colorOptions": [
+      {
+        "color": "black",
+        "title": "black"
+      }
+    ],
+    "sizeOptions": [
+      "m"
+    ]
   },
   {
     "id": 53,
     "name": "PRODUCTS.product53.name",
     "price": 70,
     "description": "PRODUCTS.product53.description",
-    "gallery": ["/products/product-53/1.jpg"],
-    "tags": ["man", "woman"],
-    "colorOptions": [{ "color": "black", "title": "black" }],
-    "sizeOptions": ["m"]
+    "gallery": [
+      "/products/product-53/1.png"
+    ],
+    "tags": [
+      "man",
+      "woman"
+    ],
+    "colorOptions": [
+      {
+        "color": "black",
+        "title": "black"
+      }
+    ],
+    "sizeOptions": [
+      "m"
+    ]
   },
   {
     "id": 52,
     "name": "PRODUCTS.product52.name",
     "price": 25,
     "description": "PRODUCTS.product52.description",
-    "gallery": ["/products/product-52/1.jpg"],
-    "tags": ["man", "woman"],
-    "colorOptions": [{ "color": "gray", "title": "20 colors" }],
-    "sizeOptions": ["m"]
+    "gallery": [
+      "/products/product-52/1.png"
+    ],
+    "tags": [
+      "man",
+      "woman"
+    ],
+    "colorOptions": [
+      {
+        "color": "gray",
+        "title": "20 colors"
+      }
+    ],
+    "sizeOptions": [
+      "m"
+    ]
   },
   {
     "id": 51,
     "name": "PRODUCTS.product51.name",
     "price": 35,
     "description": "PRODUCTS.product51.description",
-    "gallery": ["/products/product-51/1.jpg", "/products/product-51/2.jpg"],
-    "tags": ["man", "woman"],
-    "colorOptions": [{ "color": "red", "title": "red" }],
-    "sizeOptions": ["m"]
+    "gallery": [
+      "/products/product-51/1.png",
+      "/products/product-51/2.png"
+    ],
+    "tags": [
+      "man",
+      "woman"
+    ],
+    "colorOptions": [
+      {
+        "color": "red",
+        "title": "red"
+      }
+    ],
+    "sizeOptions": [
+      "m"
+    ]
   },
   {
     "id": 50,
     "name": "PRODUCTS.product50.name",
     "price": 35,
     "description": "PRODUCTS.product50.description",
-    "gallery": ["/products/product-50/1.jpg"],
-    "tags": ["man", "woman"],
-    "colorOptions": [{ "color": "#7eebc3", "title": "Green" }],
-    "sizeOptions": ["m"]
+    "gallery": [
+      "/products/product-50/1.png"
+    ],
+    "tags": [
+      "man",
+      "woman"
+    ],
+    "colorOptions": [
+      {
+        "color": "#7eebc3",
+        "title": "Green"
+      }
+    ],
+    "sizeOptions": [
+      "m"
+    ]
   },
   {
     "id": 49,
@@ -223,13 +193,23 @@
     "price": 50,
     "description": "PRODUCTS.product49.description",
     "gallery": [
-      "/products/product-49/1.jpg",
-      "/products/product-49/2.jpg",
-      "/products/product-49/3.jpg"
+      "/products/product-49/1.png",
+      "/products/product-49/2.png",
+      "/products/product-49/3.png"
     ],
-    "tags": ["man", "woman"],
-    "colorOptions": [{ "color": "grey", "title": "Grey" }],
-    "sizeOptions": ["m"]
+    "tags": [
+      "man",
+      "woman"
+    ],
+    "colorOptions": [
+      {
+        "color": "grey",
+        "title": "Grey"
+      }
+    ],
+    "sizeOptions": [
+      "m"
+    ]
   },
   {
     "id": 48,
@@ -237,24 +217,46 @@
     "price": 75,
     "description": "PRODUCTS.product48.description",
     "gallery": [
-      "/products/product-48/1.jpg",
-      "/products/product-48/2.jpg",
-      "/products/product-48/3.jpg",
-      "/products/product-48/4.jpg"
+      "/products/product-48/1.png",
+      "/products/product-48/2.png",
+      "/products/product-48/3.png",
+      "/products/product-48/4.png"
     ],
-    "tags": ["man", "woman"],
-    "colorOptions": [{ "color": "silver", "title": "Silver" }],
-    "sizeOptions": ["m"]
+    "tags": [
+      "man",
+      "woman"
+    ],
+    "colorOptions": [
+      {
+        "color": "silver",
+        "title": "Silver"
+      }
+    ],
+    "sizeOptions": [
+      "m"
+    ]
   },
   {
     "id": 47,
     "name": "PRODUCTS.product47.name",
     "price": 35,
     "description": "PRODUCTS.product47.description",
-    "gallery": ["/products/product-47/1.jpg"],
-    "tags": ["man", "woman"],
-    "colorOptions": [{ "color": "#808d7e", "title": "Green" }],
-    "sizeOptions": ["m"]
+    "gallery": [
+      "/products/product-47/1.png"
+    ],
+    "tags": [
+      "man",
+      "woman"
+    ],
+    "colorOptions": [
+      {
+        "color": "#808d7e",
+        "title": "Green"
+      }
+    ],
+    "sizeOptions": [
+      "m"
+    ]
   },
   {
     "id": 46,
@@ -262,16 +264,26 @@
     "price": 105,
     "description": "PRODUCTS.product46.description",
     "gallery": [
-      "/products/product-46/1.jpeg",
-      "/products/product-46/2.jpeg",
-      "/products/product-46/3.jpeg",
-      "/products/product-46/4.jpeg",
-      "/products/product-46/5.jpeg",
-      "/products/product-46/6.jpeg"
+      "/products/product-46/1.png",
+      "/products/product-46/2.png",
+      "/products/product-46/3.png",
+      "/products/product-46/4.png",
+      "/products/product-46/5.png",
+      "/products/product-46/6.png"
     ],
-    "tags": ["man"],
-    "colorOptions": [{ "color": "#28313e", "title": "Blue" }],
-    "sizeOptions": ["m", "l"]
+    "tags": [
+      "man"
+    ],
+    "colorOptions": [
+      {
+        "color": "#28313e",
+        "title": "Blue"
+      }
+    ],
+    "sizeOptions": [
+      "m",
+      "l"
+    ]
   },
   {
     "id": 45,
@@ -279,13 +291,22 @@
     "price": 110,
     "description": "PRODUCTS.product45.description",
     "gallery": [
-      "/products/product-45/1.jpeg",
-      "/products/product-45/2.jpeg",
-      "/products/product-45/3.jpeg"
+      "/products/product-45/1.png",
+      "/products/product-45/2.png",
+      "/products/product-45/3.png"
     ],
-    "tags": ["woman"],
-    "colorOptions": [{ "color": "#000", "title": "Black" }],
-    "sizeOptions": ["m"]
+    "tags": [
+      "woman"
+    ],
+    "colorOptions": [
+      {
+        "color": "#000",
+        "title": "Black"
+      }
+    ],
+    "sizeOptions": [
+      "m"
+    ]
   },
   {
     "id": 44,
@@ -293,14 +314,26 @@
     "price": 110,
     "description": "PRODUCTS.product44.description",
     "gallery": [
-      "/products/product-44/1.jpeg",
-      "/products/product-44/2.jpeg",
-      "/products/product-44/3.jpeg",
-      "/products/product-44/4.jpeg"
+      "/products/product-44/1.png",
+      "/products/product-44/2.png",
+      "/products/product-44/3.png",
+      "/products/product-44/4.png"
     ],
-    "tags": ["woman", "man"],
-    "colorOptions": [{ "color": "#4c4f43", "title": "Hacky" }],
-    "sizeOptions": ["s", "m", "l"]
+    "tags": [
+      "woman",
+      "man"
+    ],
+    "colorOptions": [
+      {
+        "color": "#4c4f43",
+        "title": "Hacky"
+      }
+    ],
+    "sizeOptions": [
+      "s",
+      "m",
+      "l"
+    ]
   },
   {
     "id": 43,
@@ -308,14 +341,24 @@
     "price": 69,
     "description": "PRODUCTS.product43.description",
     "gallery": [
-      "/products/product-43/1.jpeg",
-      "/products/product-43/2.jpeg",
-      "/products/product-43/3.jpeg",
-      "/products/product-43/4.jpeg"
+      "/products/product-43/1.png",
+      "/products/product-43/2.png",
+      "/products/product-43/3.png",
+      "/products/product-43/4.png"
     ],
-    "tags": ["woman"],
-    "colorOptions": [{ "color": "gray", "title": "Gray" }],
-    "sizeOptions": ["s", "m"]
+    "tags": [
+      "woman"
+    ],
+    "colorOptions": [
+      {
+        "color": "gray",
+        "title": "Gray"
+      }
+    ],
+    "sizeOptions": [
+      "s",
+      "m"
+    ]
   },
   {
     "id": 41,
@@ -323,25 +366,49 @@
     "price": 39,
     "description": "PRODUCTS.product41.description",
     "gallery": [
-      "/products/product-41/1.jpeg",
-      "/products/product-41/2.jpeg",
-      "/products/product-41/3.jpg",
-      "/products/product-41/4.jpeg",
-      "/products/product-41/5.jpeg"
+      "/products/product-41/1.png",
+      "/products/product-41/2.png",
+      "/products/product-41/3.png",
+      "/products/product-41/4.png",
+      "/products/product-41/5.png"
     ],
-    "tags": ["man", "woman"],
-    "colorOptions": [{ "color": "#000", "title": "Black" }],
-    "sizeOptions": ["m", "l"]
+    "tags": [
+      "man",
+      "woman"
+    ],
+    "colorOptions": [
+      {
+        "color": "#000",
+        "title": "Black"
+      }
+    ],
+    "sizeOptions": [
+      "m",
+      "l"
+    ]
   },
   {
     "id": 40,
     "name": "PRODUCTS.product40.name",
     "price": 39,
     "description": "PRODUCTS.product40.description",
-    "gallery": ["/products/product-40/1.jpeg"],
-    "tags": ["man"],
-    "colorOptions": [{ "color": "#31475c", "title": "Blue" }],
-    "sizeOptions": ["s", "m", "l"]
+    "gallery": [
+      "/products/product-40/1.png"
+    ],
+    "tags": [
+      "man"
+    ],
+    "colorOptions": [
+      {
+        "color": "#31475c",
+        "title": "Blue"
+      }
+    ],
+    "sizeOptions": [
+      "s",
+      "m",
+      "l"
+    ]
   },
   {
     "id": 39,
@@ -349,19 +416,37 @@
     "price": 39,
     "description": "PRODUCTS.product39.description",
     "gallery": [
-      "/products/product-39/1.jpeg",
-      "/products/product-39/2.jpeg",
-      "/products/product-39/3.jpeg",
-      "/products/product-39/4.jpeg"
+      "/products/product-39/1.png",
+      "/products/product-39/2.png",
+      "/products/product-39/3.png",
+      "/products/product-39/4.png"
     ],
-    "tags": ["man"],
+    "tags": [
+      "man"
+    ],
     "colorOptions": [
-      { "color": "#31475c", "title": "Blue" },
-      { "color": "beige", "title": "Beige" },
-      { "color": "yellow", "title": "Yellow" },
-      { "color": "#7d8e08", "title": "Hacky" }
+      {
+        "color": "#31475c",
+        "title": "Blue"
+      },
+      {
+        "color": "beige",
+        "title": "Beige"
+      },
+      {
+        "color": "yellow",
+        "title": "Yellow"
+      },
+      {
+        "color": "#7d8e08",
+        "title": "Hacky"
+      }
     ],
-    "sizeOptions": ["s", "m", "l"]
+    "sizeOptions": [
+      "s",
+      "m",
+      "l"
+    ]
   },
   {
     "id": 38,
@@ -369,27 +454,54 @@
     "price": 19,
     "description": "PRODUCTS.product38.description",
     "gallery": [
-      "/products/product-38/1.jpeg",
-      "/products/product-38/2.jpeg",
-      "/products/product-38/3.jpeg"
+      "/products/product-38/1.png",
+      "/products/product-38/2.png",
+      "/products/product-38/3.png"
     ],
-    "tags": ["woman"],
+    "tags": [
+      "woman"
+    ],
     "colorOptions": [
-      { "color": "#31475c", "title": "Blue" },
-      { "color": "beige", "title": "Beige" },
-      { "color": "yellow", "title": "Yellow" }
+      {
+        "color": "#31475c",
+        "title": "Blue"
+      },
+      {
+        "color": "beige",
+        "title": "Beige"
+      },
+      {
+        "color": "yellow",
+        "title": "Yellow"
+      }
     ],
-    "sizeOptions": ["s", "m", "l"]
+    "sizeOptions": [
+      "s",
+      "m",
+      "l"
+    ]
   },
   {
     "id": 37,
     "name": "PRODUCTS.product37.name",
     "price": 55,
     "description": "PRODUCTS.product37.description",
-    "gallery": ["/products/product-37/1.jpeg"],
-    "tags": ["woman", "man"],
-    "colorOptions": [{ "color": "black", "title": "Black" }],
-    "sizeOptions": ["m"]
+    "gallery": [
+      "/products/product-37/1.png"
+    ],
+    "tags": [
+      "woman",
+      "man"
+    ],
+    "colorOptions": [
+      {
+        "color": "black",
+        "title": "Black"
+      }
+    ],
+    "sizeOptions": [
+      "m"
+    ]
   },
   {
     "id": 36,
@@ -397,23 +509,47 @@
     "price": 29,
     "description": "PRODUCTS.product36.description",
     "gallery": [
-      "/products/product-36/1.jpeg",
-      "/products/product-36/2.jpeg",
-      "/products/product-36/3.jpeg"
+      "/products/product-36/1.png",
+      "/products/product-36/2.png",
+      "/products/product-36/3.png"
     ],
-    "tags": ["woman", "man"],
-    "colorOptions": [{ "color": "blue", "title": "Blue" }],
-    "sizeOptions": ["m"]
+    "tags": [
+      "woman",
+      "man"
+    ],
+    "colorOptions": [
+      {
+        "color": "blue",
+        "title": "Blue"
+      }
+    ],
+    "sizeOptions": [
+      "m"
+    ]
   },
   {
     "id": 35,
     "name": "PRODUCTS.product35.name",
     "price": 55,
     "description": "PRODUCTS.product35.description",
-    "gallery": ["/products/product-35/1.jpeg"],
-    "tags": ["woman", "man"],
-    "colorOptions": [{ "color": "black", "title": "Black" }],
-    "sizeOptions": ["s", "m", "l"]
+    "gallery": [
+      "/products/product-35/1.png"
+    ],
+    "tags": [
+      "woman",
+      "man"
+    ],
+    "colorOptions": [
+      {
+        "color": "black",
+        "title": "Black"
+      }
+    ],
+    "sizeOptions": [
+      "s",
+      "m",
+      "l"
+    ]
   },
   {
     "id": 33,
@@ -421,14 +557,24 @@
     "price": 199,
     "description": "PRODUCTS.product33.description",
     "gallery": [
-      "/products/product-33/1.jpeg",
-      "/products/product-33/2.jpeg",
-      "/products/product-33/3.jpeg",
-      "/products/product-33/4.jpeg"
+      "/products/product-33/1.png",
+      "/products/product-33/2.png",
+      "/products/product-33/3.png",
+      "/products/product-33/4.png"
     ],
-    "tags": ["woman", "man"],
-    "colorOptions": [{ "color": "blue", "title": "Blue" }],
-    "sizeOptions": ["L"]
+    "tags": [
+      "woman",
+      "man"
+    ],
+    "colorOptions": [
+      {
+        "color": "blue",
+        "title": "Blue"
+      }
+    ],
+    "sizeOptions": [
+      "L"
+    ]
   },
   {
     "id": 32,
@@ -436,17 +582,30 @@
     "price": 16,
     "description": "PRODUCTS.product32.description",
     "gallery": [
-      "/products/product-32/1.jpeg",
-      "/products/product-32/2.jpeg",
-      "/products/product-32/3.jpeg",
-      "/products/product-32/4.jpeg"
+      "/products/product-32/1.png",
+      "/products/product-32/2.png",
+      "/products/product-32/3.png",
+      "/products/product-32/4.png"
     ],
-    "tags": ["woman", "man"],
+    "tags": [
+      "woman",
+      "man"
+    ],
     "colorOptions": [
-      { "color": "black", "title": "Black" },
-      { "color": "white", "title": "White" }
+      {
+        "color": "black",
+        "title": "Black"
+      },
+      {
+        "color": "white",
+        "title": "White"
+      }
     ],
-    "sizeOptions": ["s", "m", "l"]
+    "sizeOptions": [
+      "s",
+      "m",
+      "l"
+    ]
   },
   {
     "id": 31,
@@ -454,13 +613,24 @@
     "price": 69,
     "description": "PRODUCTS.product31.description",
     "gallery": [
-      "/products/product-31/1.jpeg",
-      "/products/product-31/2.jpeg",
-      "/products/product-31/3.jpeg"
+      "/products/product-31/1.png",
+      "/products/product-31/2.png",
+      "/products/product-31/3.png"
     ],
-    "tags": ["woman"],
-    "colorOptions": [{ "color": "black", "title": "Black" }],
-    "sizeOptions": ["s", "m", "l"]
+    "tags": [
+      "woman"
+    ],
+    "colorOptions": [
+      {
+        "color": "black",
+        "title": "Black"
+      }
+    ],
+    "sizeOptions": [
+      "s",
+      "m",
+      "l"
+    ]
   },
   {
     "id": 30,
@@ -468,17 +638,29 @@
     "price": 69,
     "description": "PRODUCTS.product30.description",
     "gallery": [
-      "/products/product-30/1.jpeg",
-      "/products/product-30/2.jpeg",
-      "/products/product-30/3.jpeg",
-      "/products/product-30/4.jpeg"
+      "/products/product-30/1.png",
+      "/products/product-30/2.png",
+      "/products/product-30/3.png",
+      "/products/product-30/4.png"
     ],
-    "tags": ["woman"],
+    "tags": [
+      "woman"
+    ],
     "colorOptions": [
-      { "color": "blue", "title": "Blue" },
-      { "color": "white", "title": "White" }
+      {
+        "color": "blue",
+        "title": "Blue"
+      },
+      {
+        "color": "white",
+        "title": "White"
+      }
     ],
-    "sizeOptions": ["s", "m", "l"]
+    "sizeOptions": [
+      "s",
+      "m",
+      "l"
+    ]
   },
   {
     "id": 29,
@@ -486,17 +668,29 @@
     "price": 55,
     "description": "PRODUCTS.product29.description",
     "gallery": [
-      "/products/product-29/1.jpeg",
-      "/products/product-29/2.jpeg",
-      "/products/product-29/3.jpeg",
-      "/products/product-29/4.jpeg"
+      "/products/product-29/1.png",
+      "/products/product-29/2.png",
+      "/products/product-29/3.png",
+      "/products/product-29/4.png"
     ],
-    "tags": ["woman"],
+    "tags": [
+      "woman"
+    ],
     "colorOptions": [
-      { "color": "beige", "title": "Beige" },
-      { "color": "red", "title": "Red" }
+      {
+        "color": "beige",
+        "title": "Beige"
+      },
+      {
+        "color": "red",
+        "title": "Red"
+      }
     ],
-    "sizeOptions": ["s", "m", "l"]
+    "sizeOptions": [
+      "s",
+      "m",
+      "l"
+    ]
   },
   {
     "id": 28,
@@ -504,17 +698,29 @@
     "price": 55,
     "description": "PRODUCTS.product28.description",
     "gallery": [
-      "/products/product-28/1.jpeg",
-      "/products/product-28/2.jpeg",
-      "/products/product-28/3.jpeg",
-      "/products/product-28/4.jpeg"
+      "/products/product-28/1.png",
+      "/products/product-28/2.png",
+      "/products/product-28/3.png",
+      "/products/product-28/4.png"
     ],
-    "tags": ["woman"],
+    "tags": [
+      "woman"
+    ],
     "colorOptions": [
-      { "color": "beige", "title": "Beige" },
-      { "color": "red", "title": "Red" }
+      {
+        "color": "beige",
+        "title": "Beige"
+      },
+      {
+        "color": "red",
+        "title": "Red"
+      }
     ],
-    "sizeOptions": ["s", "m", "l"]
+    "sizeOptions": [
+      "s",
+      "m",
+      "l"
+    ]
   },
   {
     "id": 27,
@@ -522,17 +728,29 @@
     "price": 89,
     "description": "PRODUCTS.product27.description",
     "gallery": [
-      "/products/product-27/1.jpeg",
-      "/products/product-27/2.jpeg",
-      "/products/product-27/3.jpeg",
-      "/products/product-27/4.jpeg"
+      "/products/product-27/1.png",
+      "/products/product-27/2.png",
+      "/products/product-27/3.png",
+      "/products/product-27/4.png"
     ],
-    "tags": ["man"],
+    "tags": [
+      "man"
+    ],
     "colorOptions": [
-      { "color": "black", "title": "Black" },
-      { "color": "red", "title": "Red" }
+      {
+        "color": "black",
+        "title": "Black"
+      },
+      {
+        "color": "red",
+        "title": "Red"
+      }
     ],
-    "sizeOptions": ["s", "m", "l"]
+    "sizeOptions": [
+      "s",
+      "m",
+      "l"
+    ]
   },
   {
     "id": 26,
@@ -540,26 +758,51 @@
     "price": 39,
     "description": "PRODUCTS.product26.description",
     "gallery": [
-      "/products/product-26/1.jpeg",
-      "/products/product-26/2.jpeg",
-      "/products/product-26/3.jpeg"
+      "/products/product-26/1.png",
+      "/products/product-26/2.png",
+      "/products/product-26/3.png"
     ],
-    "tags": ["man"],
+    "tags": [
+      "man"
+    ],
     "colorOptions": [
-      { "color": "black", "title": "Black" },
-      { "color": "white", "title": "White" }
+      {
+        "color": "black",
+        "title": "Black"
+      },
+      {
+        "color": "white",
+        "title": "White"
+      }
     ],
-    "sizeOptions": ["s", "m", "l"]
+    "sizeOptions": [
+      "s",
+      "m",
+      "l"
+    ]
   },
   {
     "id": 25,
     "name": "PRODUCTS.product25.name",
     "price": 69,
     "description": "PRODUCTS.product25.description",
-    "gallery": ["/products/product-25/1.jpeg"],
-    "tags": ["man"],
-    "colorOptions": [{ "color": "black", "title": "Black" }],
-    "sizeOptions": ["s", "m", "l"]
+    "gallery": [
+      "/products/product-25/1.png"
+    ],
+    "tags": [
+      "man"
+    ],
+    "colorOptions": [
+      {
+        "color": "black",
+        "title": "Black"
+      }
+    ],
+    "sizeOptions": [
+      "s",
+      "m",
+      "l"
+    ]
   },
   {
     "id": 24,
@@ -567,14 +810,25 @@
     "price": 39,
     "description": "PRODUCTS.product24.description",
     "gallery": [
-      "/products/product-24/1.jpeg",
-      "/products/product-24/2.jpeg",
-      "/products/product-24/3.jpeg",
-      "/products/product-24/4.jpeg"
+      "/products/product-24/1.png",
+      "/products/product-24/2.png",
+      "/products/product-24/3.png",
+      "/products/product-24/4.png"
     ],
-    "tags": ["man"],
-    "colorOptions": [{ "color": "gray", "title": "Grey" }],
-    "sizeOptions": ["s", "m", "l"]
+    "tags": [
+      "man"
+    ],
+    "colorOptions": [
+      {
+        "color": "gray",
+        "title": "Grey"
+      }
+    ],
+    "sizeOptions": [
+      "s",
+      "m",
+      "l"
+    ]
   },
   {
     "id": 23,
@@ -582,16 +836,28 @@
     "price": 69,
     "description": "PRODUCTS.product23.description",
     "gallery": [
-      "/products/product-23/1.jpeg",
-      "/products/product-23/2.jpeg",
-      "/products/product-23/3.jpeg"
+      "/products/product-23/1.png",
+      "/products/product-23/2.png",
+      "/products/product-23/3.png"
     ],
-    "tags": ["man"],
+    "tags": [
+      "man"
+    ],
     "colorOptions": [
-      { "color": "black", "title": "Black" },
-      { "color": "white", "title": "White" }
+      {
+        "color": "black",
+        "title": "Black"
+      },
+      {
+        "color": "white",
+        "title": "White"
+      }
     ],
-    "sizeOptions": ["s", "m", "l"]
+    "sizeOptions": [
+      "s",
+      "m",
+      "l"
+    ]
   },
   {
     "id": 22,
@@ -599,17 +865,29 @@
     "price": 69,
     "description": "PRODUCTS.product22.description",
     "gallery": [
-      "/products/product-22/1.jpeg",
-      "/products/product-22/2.jpeg",
-      "/products/product-22/3.jpeg",
-      "/products/product-22/4.jpeg"
+      "/products/product-22/1.png",
+      "/products/product-22/2.png",
+      "/products/product-22/3.png",
+      "/products/product-22/4.png"
     ],
-    "tags": ["man"],
+    "tags": [
+      "man"
+    ],
     "colorOptions": [
-      { "color": "black", "title": "Black" },
-      { "color": "white", "title": "White" }
+      {
+        "color": "black",
+        "title": "Black"
+      },
+      {
+        "color": "white",
+        "title": "White"
+      }
     ],
-    "sizeOptions": ["s", "m", "l"]
+    "sizeOptions": [
+      "s",
+      "m",
+      "l"
+    ]
   },
   {
     "id": 21,
@@ -617,53 +895,109 @@
     "price": 69,
     "description": "PRODUCTS.product21.description",
     "gallery": [
-      "/products/product-21/1.jpeg",
-      "/products/product-21/2.jpeg",
-      "/products/product-21/3.jpeg"
+      "/products/product-21/1.png",
+      "/products/product-21/2.png",
+      "/products/product-21/3.png"
     ],
-    "tags": ["woman", "man"],
+    "tags": [
+      "woman",
+      "man"
+    ],
     "colorOptions": [
-      { "color": "black", "title": "Black" },
-      { "color": "red", "title": "Red" },
-      { "color": "white", "title": "White" }
+      {
+        "color": "black",
+        "title": "Black"
+      },
+      {
+        "color": "red",
+        "title": "Red"
+      },
+      {
+        "color": "white",
+        "title": "White"
+      }
     ],
-    "sizeOptions": ["m"]
+    "sizeOptions": [
+      "m"
+    ]
   },
   {
     "id": 20,
     "name": "PRODUCTS.product20.name",
     "price": 39,
     "description": "PRODUCTS.product20.description",
-    "gallery": ["/products/product-20/1.jpeg", "/products/product-20/2.jpeg"],
-    "tags": ["man"],
-    "colorOptions": [
-      { "color": "black", "title": "Black" },
-      { "color": "gray", "title": "Gray" }
+    "gallery": [
+      "/products/product-20/1.png",
+      "/products/product-20/2.png"
     ],
-    "sizeOptions": ["s", "m", "l"]
+    "tags": [
+      "man"
+    ],
+    "colorOptions": [
+      {
+        "color": "black",
+        "title": "Black"
+      },
+      {
+        "color": "gray",
+        "title": "Gray"
+      }
+    ],
+    "sizeOptions": [
+      "s",
+      "m",
+      "l"
+    ]
   },
   {
     "id": 19,
     "name": "PRODUCTS.product19.name",
     "price": 69,
     "description": "PRODUCTS.product19.description",
-    "gallery": ["/products/product19/1.jpeg"],
-    "tags": ["man"],
-    "colorOptions": [
-      { "color": "black", "title": "Black" },
-      { "color": "gray", "title": "Gray" }
+    "gallery": [
+      "/products/product19/1.png"
     ],
-    "sizeOptions": ["s", "m", "l"]
+    "tags": [
+      "man"
+    ],
+    "colorOptions": [
+      {
+        "color": "black",
+        "title": "Black"
+      },
+      {
+        "color": "gray",
+        "title": "Gray"
+      }
+    ],
+    "sizeOptions": [
+      "s",
+      "m",
+      "l"
+    ]
   },
   {
     "id": 18,
     "name": "PRODUCTS.product18.name",
     "price": 69,
     "description": "PRODUCTS.product18.description",
-    "gallery": ["/products/product18/1.jpeg"],
-    "tags": ["man"],
-    "colorOptions": [{ "color": "black", "title": "Black" }],
-    "sizeOptions": ["s", "m", "l"]
+    "gallery": [
+      "/products/product18/1.png"
+    ],
+    "tags": [
+      "man"
+    ],
+    "colorOptions": [
+      {
+        "color": "black",
+        "title": "Black"
+      }
+    ],
+    "sizeOptions": [
+      "s",
+      "m",
+      "l"
+    ]
   },
   {
     "id": 17,
@@ -671,14 +1005,24 @@
     "price": 99,
     "description": "PRODUCTS.product17.description",
     "gallery": [
-      "/products/product17/1.jpeg",
-      "/products/product17/2.jpeg",
-      "/products/product17/3.jpeg",
-      "/products/product17/4.jpeg"
+      "/products/product17/1.png",
+      "/products/product17/2.png",
+      "/products/product17/3.png",
+      "/products/product17/4.png"
     ],
-    "tags": ["woman", "man"],
-    "colorOptions": [{ "color": "black", "title": "Black" }],
-    "sizeOptions": ["m"]
+    "tags": [
+      "woman",
+      "man"
+    ],
+    "colorOptions": [
+      {
+        "color": "black",
+        "title": "Black"
+      }
+    ],
+    "sizeOptions": [
+      "m"
+    ]
   },
   {
     "id": 16,
@@ -686,13 +1030,23 @@
     "price": 55,
     "description": "PRODUCTS.product16.description",
     "gallery": [
-      "/products/product16/1.jpeg",
-      "/products/product16/2.jpeg",
-      "/products/product16/3.jpeg"
+      "/products/product16/1.png",
+      "/products/product16/2.png",
+      "/products/product16/3.png"
     ],
-    "tags": ["woman", "man"],
-    "colorOptions": [{ "color": "black", "title": "Black" }],
-    "sizeOptions": ["m"]
+    "tags": [
+      "woman",
+      "man"
+    ],
+    "colorOptions": [
+      {
+        "color": "black",
+        "title": "Black"
+      }
+    ],
+    "sizeOptions": [
+      "m"
+    ]
   },
   {
     "id": 15,
@@ -700,13 +1054,23 @@
     "price": 69,
     "description": "PRODUCTS.product15.description",
     "gallery": [
-      "/products/product15/1.jpeg",
-      "/products/product15/2.jpeg",
-      "/products/product15/3.jpeg"
+      "/products/product15/1.png",
+      "/products/product15/2.png",
+      "/products/product15/3.png"
     ],
-    "tags": ["woman", "man"],
-    "colorOptions": [{ "color": "black", "title": "Black" }],
-    "sizeOptions": ["m"]
+    "tags": [
+      "woman",
+      "man"
+    ],
+    "colorOptions": [
+      {
+        "color": "black",
+        "title": "Black"
+      }
+    ],
+    "sizeOptions": [
+      "m"
+    ]
   },
   {
     "id": 14,
@@ -714,18 +1078,34 @@
     "price": 499,
     "description": "PRODUCTS.product14.description",
     "gallery": [
-      "/products/product14/1.jpeg",
-      "/products/product14/2.jpeg",
-      "/products/product14/3.jpeg",
-      "/products/product14/4.jpeg"
+      "/products/product14/1.png",
+      "/products/product14/2.png",
+      "/products/product14/3.png",
+      "/products/product14/4.png"
     ],
-    "tags": ["woman", "man"],
+    "tags": [
+      "woman",
+      "man"
+    ],
     "colorOptions": [
-      { "color": "black", "title": "Black" },
-      { "color": "red", "title": "red" },
-      { "color": "gold", "title": "gold" }
+      {
+        "color": "black",
+        "title": "Black"
+      },
+      {
+        "color": "red",
+        "title": "red"
+      },
+      {
+        "color": "gold",
+        "title": "gold"
+      }
     ],
-    "sizeOptions": ["s", "m", "l"]
+    "sizeOptions": [
+      "s",
+      "m",
+      "l"
+    ]
   },
   {
     "id": 11,
@@ -734,16 +1114,29 @@
     "alt": "relaxed t shirt woman",
     "description": "PRODUCTS.product11.description",
     "gallery": [
-      "/products/product11/1.jpeg",
-      "/products/product11/2.jpeg",
-      "/products/product11/3.jpeg"
+      "/products/product11/1.png",
+      "/products/product11/2.png",
+      "/products/product11/3.png"
     ],
-    "tags": ["woman", "man"],
+    "tags": [
+      "woman",
+      "man"
+    ],
     "colorOptions": [
-      { "color": "#000", "title": "Black" },
-      { "color": "pink", "title": "Pink" }
+      {
+        "color": "#000",
+        "title": "Black"
+      },
+      {
+        "color": "pink",
+        "title": "Pink"
+      }
     ],
-    "sizeOptions": ["s", "m", "l"]
+    "sizeOptions": [
+      "s",
+      "m",
+      "l"
+    ]
   },
   {
     "id": 10,
@@ -756,14 +1149,25 @@
       "/products/product10/2.jpg",
       "/products/product10/3.jpg"
     ],
-    "tags": ["woman"],
-    "colorOptions": [
-      { "color": "#000", "title": "Black" },
-      { "color": "#fff", "title": "White" }
+    "tags": [
+      "woman"
     ],
-    "sizeOptions": ["s", "m", "l"]
+    "colorOptions": [
+      {
+        "color": "#000",
+        "title": "Black"
+      },
+      {
+        "color": "#fff",
+        "title": "White"
+      }
+    ],
+    "sizeOptions": [
+      "s",
+      "m",
+      "l"
+    ]
   },
-
   {
     "id": 9,
     "name": "PRODUCTS.product9.name",
@@ -771,13 +1175,24 @@
     "alt": "relaxed t shirt woman",
     "description": "PRODUCTS.product9.description",
     "gallery": [
-      "/products/product9/1.jpeg",
-      "/products/product9/2.jpeg",
-      "/products/product9/3.jpeg"
+      "/products/product9/1.png",
+      "/products/product9/2.png",
+      "/products/product9/3.png"
     ],
-    "tags": ["man"],
-    "colorOptions": [{ "color": "#000", "title": "Black" }],
-    "sizeOptions": ["s", "m", "l"]
+    "tags": [
+      "man"
+    ],
+    "colorOptions": [
+      {
+        "color": "#000",
+        "title": "Black"
+      }
+    ],
+    "sizeOptions": [
+      "s",
+      "m",
+      "l"
+    ]
   },
   {
     "id": 8,
@@ -786,25 +1201,47 @@
     "price": 39,
     "alt": "relaxed t shirt woman",
     "gallery": [
-      "/products/product8/1.jpeg",
-      "/products/product8/2.jpeg",
-      "/products/product8/3.jpeg"
+      "/products/product8/1.png",
+      "/products/product8/2.png",
+      "/products/product8/3.png"
     ],
-    "tags": ["woman"],
-    "colorOptions": [{ "color": "#fff", "title": "White" }],
-    "sizeOptions": ["m"]
+    "tags": [
+      "woman"
+    ],
+    "colorOptions": [
+      {
+        "color": "#fff",
+        "title": "White"
+      }
+    ],
+    "sizeOptions": [
+      "m"
+    ]
   },
-
   {
     "id": 7,
     "name": "PRODUCTS.product7.name",
     "price": 59,
     "alt": "relaxed t shirt woman",
-    "gallery": ["/products/product7/1.jpg", "/products/product7/2.jpg"],
-    "tags": ["woman"],
+    "gallery": [
+      "/products/product7/1.png",
+      "/products/product7/2.png"
+    ],
+    "tags": [
+      "woman"
+    ],
     "description": "PRODUCTS.product7.description",
-    "colorOptions": [{ "color": "pink", "title": "Pink" }],
-    "sizeOptions": ["s", "m", "l"]
+    "colorOptions": [
+      {
+        "color": "pink",
+        "title": "Pink"
+      }
+    ],
+    "sizeOptions": [
+      "s",
+      "m",
+      "l"
+    ]
   },
   {
     "id": 6,
@@ -812,18 +1249,31 @@
     "price": 75,
     "alt": "relaxed t shirt woman",
     "gallery": [
-      "/products/product6/1.jpeg",
-      "/products/product6/2.jpeg",
-      "/products/product6/3.jpeg",
-      "/products/product6/4.jpeg"
+      "/products/product6/1.png",
+      "/products/product6/2.png",
+      "/products/product6/3.png",
+      "/products/product6/4.png"
     ],
-    "tags": ["man", "woman"],
+    "tags": [
+      "man",
+      "woman"
+    ],
     "description": "PRODUCTS.product6.description",
     "colorOptions": [
-      { "color": "#000", "title": "Black" },
-      { "color": "#fff", "title": "White" }
+      {
+        "color": "#000",
+        "title": "Black"
+      },
+      {
+        "color": "#fff",
+        "title": "White"
+      }
     ],
-    "sizeOptions": ["s", "m", "l"]
+    "sizeOptions": [
+      "s",
+      "m",
+      "l"
+    ]
   },
   {
     "id": 5,
@@ -832,28 +1282,56 @@
     "price": 39,
     "alt": "relaxed t shirt woman",
     "gallery": [
-      "/products/product5/1.jpeg",
-      "/products/product5/2.jpeg",
-      "/products/product5/3.jpeg"
+      "/products/product5/1.png",
+      "/products/product5/2.png",
+      "/products/product5/3.png"
     ],
-    "tags": ["woman"],
-    "colorOptions": [{ "color": "pink", "title": "pink" }],
-    "sizeOptions": ["m"]
+    "tags": [
+      "woman"
+    ],
+    "colorOptions": [
+      {
+        "color": "pink",
+        "title": "pink"
+      }
+    ],
+    "sizeOptions": [
+      "m"
+    ]
   },
   {
     "id": 4,
     "name": "PRODUCTS.product4.name",
     "price": 112,
     "alt": "relaxed t shirt woman",
-    "gallery": ["/products/product4/1.jpeg"],
-    "description": "PRODUCTS.product4.description",
-    "tags": ["man"],
-    "colorOptions": [
-      { "color": "#000000", "title": "Anthracite Melange" },
-      { "color": "#4D34AE", "title": "Pale Purple" },
-      { "color": "#488266", "title": "Green Moss" }
+    "gallery": [
+      "/products/product4/1.png"
     ],
-    "sizeOptions": ["xs", "s", "m", "l", "xl"]
+    "description": "PRODUCTS.product4.description",
+    "tags": [
+      "man"
+    ],
+    "colorOptions": [
+      {
+        "color": "#000000",
+        "title": "Anthracite Melange"
+      },
+      {
+        "color": "#4D34AE",
+        "title": "Pale Purple"
+      },
+      {
+        "color": "#488266",
+        "title": "Green Moss"
+      }
+    ],
+    "sizeOptions": [
+      "xs",
+      "s",
+      "m",
+      "l",
+      "xl"
+    ]
   },
   {
     "id": 3,
@@ -861,18 +1339,35 @@
     "price": 59,
     "alt": "relaxed t shirt woman",
     "gallery": [
-      "/products/product3/1.jpeg",
-      "/products/product3/3.jpeg",
-      "/products/product3/2.jpeg"
+      "/products/product3/1.png",
+      "/products/product3/3.png",
+      "/products/product3/2.png"
     ],
     "description": "PRODUCTS.product3.description",
-    "tags": ["man"],
-    "colorOptions": [
-      { "color": "#000000", "title": "Anthracite Melange" },
-      { "color": "#4D34AE", "title": "Pale Purple" },
-      { "color": "#488266", "title": "Green Moss" }
+    "tags": [
+      "man"
     ],
-    "sizeOptions": ["xs", "s", "m", "l", "xl"]
+    "colorOptions": [
+      {
+        "color": "#000000",
+        "title": "Anthracite Melange"
+      },
+      {
+        "color": "#4D34AE",
+        "title": "Pale Purple"
+      },
+      {
+        "color": "#488266",
+        "title": "Green Moss"
+      }
+    ],
+    "sizeOptions": [
+      "xs",
+      "s",
+      "m",
+      "l",
+      "xl"
+    ]
   },
   {
     "id": 2,
@@ -880,39 +1375,74 @@
     "price": 49,
     "alt": "relaxed t shirt woman",
     "gallery": [
-      "/products/product2/1.jpeg",
-      "/products/product2/2.jpeg",
-      "/products/product2/3.jpeg",
-      "/products/product2/4.jpeg"
+      "/products/product2/1.png",
+      "/products/product2/2.png",
+      "/products/product2/3.png",
+      "/products/product2/4.png"
     ],
     "description": "PRODUCTS.product2.description",
-    "tags": ["man", "woman"],
-    "colorOptions": [
-      { "color": "#000000", "title": "Anthracite Melange" },
-      { "color": "#4D34AE", "title": "Pale Purple" },
-      { "color": "#488266", "title": "Green Moss" }
+    "tags": [
+      "man",
+      "woman"
     ],
-    "sizeOptions": ["xs", "s", "m", "l", "xl"]
+    "colorOptions": [
+      {
+        "color": "#000000",
+        "title": "Anthracite Melange"
+      },
+      {
+        "color": "#4D34AE",
+        "title": "Pale Purple"
+      },
+      {
+        "color": "#488266",
+        "title": "Green Moss"
+      }
+    ],
+    "sizeOptions": [
+      "xs",
+      "s",
+      "m",
+      "l",
+      "xl"
+    ]
   },
   {
     "id": 1,
     "name": "PRODUCTS.product1.name",
     "price": 69,
     "alt": "relaxed t shirt woman",
-    "tags": ["man"],
+    "tags": [
+      "man"
+    ],
     "description": "PRODUCTS.product1.description",
     "colorOptions": [
-      { "color": "#000000", "title": "Anthracite Melange" },
-      { "color": "#4D34AE", "title": "Pale Purple" },
-      { "color": "#488266", "title": "Green Moss" }
+      {
+        "color": "#000000",
+        "title": "Anthracite Melange"
+      },
+      {
+        "color": "#4D34AE",
+        "title": "Pale Purple"
+      },
+      {
+        "color": "#488266",
+        "title": "Green Moss"
+      }
     ],
-    "sizeOptions": ["xs", "s", "m", "l", "xl"],
+    "sizeOptions": [
+      "xs",
+      "s",
+      "m",
+      "l",
+      "xl"
+    ],
     "wishlist": true,
     "gallery": [
-      "/products/product1/1.jpeg",
-      "/products/product1/2.jpeg",
-      "/products/product1/3.jpeg",
-      "/products/product1/4.jpeg"
+      "/products/product1/1.png",
+      "/products/product1/2.png",
+      "/products/product1/3.png",
+      "/products/product1/4.png"
     ]
   }
 ]

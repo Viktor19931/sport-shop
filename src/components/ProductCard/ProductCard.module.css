@@ -111,7 +111,7 @@
 
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, color 0.2s ease-in-out;
 }
 
 .root:hover .heartContainer {
@@ -119,28 +119,17 @@
   visibility: visible;
 }
 
-.heartFillContainer {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  color: var(--standard-gold);
-
-  transition: opacity 0.3s ease-in-out;
-}
-
-.heartFillContainer svg {
+.heartContainer svg {
   width: 20px;
   height: 20px;
 }
 
-.show {
-  visibility: visible;
-  opacity: 1;
+.heartDefault {
+  color: var(--standard-black);
 }
 
-.hide {
-  visibility: hidden;
-  opacity: 0;
+.heartLiked {
+  color: var(--standard-gold);
 }
 
 @media (max-width: 800px) {

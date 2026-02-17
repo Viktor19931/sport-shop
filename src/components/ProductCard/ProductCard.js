@@ -52,18 +52,13 @@ const ProductCard = (props) => {
           <Icon symbol={'bagPlus'} />
         </div>
         <div
-          className={styles.heartContainer}
+          className={`${styles.heartContainer} ${
+            isWishlist ? styles.heartLiked : styles.heartDefault
+          }`}
           role={'presentation'}
           onClick={(e) => handleFavorite(e)}
         >
-          <Icon symbol={'heart'} />
-          <div
-            className={`${styles.heartFillContainer} ${
-              isWishlist === true ? styles.show : styles.hide
-            }`}
-          >
-            <Icon symbol={'heartFill'}></Icon>
-          </div>
+          <Icon symbol={isWishlist ? 'heartFill' : 'heart'} />
         </div>
       </div>
       <div className={styles.detailsContainer}>

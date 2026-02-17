@@ -14,7 +14,8 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "format": "prettier --write \"{gatsby-*.js,src/**/*.js}\"",
-    "plop": "plop"
+    "plop": "plop",
+    "optimize:images": "node scripts/optimize-images.js"
   },
   "dependencies": {
     "@netlify/plugin-gatsby": "^3.8.0",

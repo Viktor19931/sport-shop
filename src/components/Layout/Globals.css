@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&display=swap');
 /**
  *
  Font weight references:
@@ -15,40 +15,45 @@
 
 /* Variables */
 :root {
-  --space1: 3px;
-  --space2: 5px;
-  --space3: 8px;
-  --space4: 13px;
-  --space5: 26px;
-  --space6: 52px;
-  --space7: 76px;
-  --space8: 112px;
+  --space1: 4px;
+  --space2: 8px;
+  --space3: 12px;
+  --space4: 16px;
+  --space5: 24px;
+  --space6: 40px;
+  --space7: 64px;
+  --space8: 96px;
   --mobile: 400px;
   --small: 600px;
   --medium: 1000px;
   --large: 1300px;
-  --standard-header: 'Inria Serif', serif;
+  --standard-header: 'Space Grotesk', sans-serif;
   --standard-font: 'Inter', sans-serif;
-  --brand-font: 'Yeseva One', cursive;
-  --standard-black: #000000;
+  --brand-font: 'Rajdhani', sans-serif;
+  --standard-black: #0e1420;
   --standard-white: #ffffff;
-  --standard-grey: #e2e2e2;
-  --standard-dark-grey: #545250;
-  --standard-light-grey: #FCFAF6;
+  --standard-grey: #d8dee7;
+  --standard-dark-grey: #1f2a3d;
+  --standard-light-grey: #f6f8fb;
   --grey-passthough: #979797;
-  --grey-border: #A9A9A8;
-  --grey-placeholder: #716868;
-  --grey-crumb: #53524E;
-  --grey-disabled: #F2F2F2;
-  --grey-chip: #F1F1F1;
-  --grey-one: #D8D8D8;
-  --bg-grey: #F7F7F7;
-  --bg-dark: #383634;
-  --bg-close-icon: #E9E7E3;
-  --bg-light-gray: #e5e5e5;
-  --standard-gold: #B59F66;
-  --sale: #902F15;
-  --error: #9A3515;
+  --grey-border: #bec8d6;
+  --grey-placeholder: #5f6f85;
+  --grey-crumb: #67768a;
+  --grey-disabled: #edf1f6;
+  --grey-chip: #e9eef5;
+  --grey-one: #d4dde8;
+  --bg-grey: #f2f5fa;
+  --bg-dark: #0f1726;
+  --bg-close-icon: #e8edf5;
+  --bg-light-gray: #dce3ed;
+  --standard-gold: #2f7cff;
+  --sale: #ef4444;
+  --error: #dc2626;
+  --elite-accent: #2f7cff;
+  --elite-accent-strong: #1e64dd;
+  --elite-surface: #f5f8fd;
+  --elite-border: #d4deeb;
+  --elite-shadow: 0 12px 28px rgba(15, 23, 38, 0.08);
 
   /* not sure if we are to maintain existing color palletes. better if we keep it lightweight? */
   /* --standard-grey-darker: #393939;
@@ -90,9 +95,16 @@ html, body {
   margin: 0;
   font-family: var(--standard-font);
   color: var(--standard-black);
-  font-size: 16px; /* BASE FONT SIZE */
-  line-height: 1.5em;
+  background-color: #fbfdff;
+  font-size: 16px;
+  line-height: 1.5;
   font-weight: 400;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 * [data-button] {
@@ -103,55 +115,57 @@ html, body {
 h1,
 .h1 {
   font-family: var(--standard-header);
-  font-size: 72px;
-  line-height: 83px;
+  font-size: 64px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
   margin: 0;
 }
 
 h2,
 .h2 {
   font-family: var(--standard-header);
-  font-size: 52px;
-  line-height: 60px;
+  font-size: 48px;
+  line-height: 1.15;
+  letter-spacing: -0.015em;
   margin: 0;
 }
 
 h3,
 .h3 {
   font-family: var(--standard-header);
-  font-size: 42px;
-  line-height: 49px;
+  font-size: 36px;
+  line-height: 1.2;
   margin: 0;
 }
 
 h4,
 .h4 {
   font-family: var(--standard-header);
-  font-size: 32px;
-  line-height: 37px;
+  font-size: 28px;
+  line-height: 1.25;
   margin: 0;
 }
 
 h5,
 .h5 {
   font-family: var(--standard-header);
-  font-size: 30px;
-  line-height: 35px;
+  font-size: 24px;
+  line-height: 1.25;
   margin: 0;
 }
 
 h6,
 .h6 {
   font-family: var(--standard-header);
-  font-size: 25px;
-  line-height: 29px;
+  font-size: 20px;
+  line-height: 1.25;
   margin: 0;
 }
 
 .quote {
   font-family: var(--standard-header);
-  font-size: 42px;
-  line-height: 49px;
+  font-size: 34px;
+  line-height: 1.25;
   margin: 0;
 }
 
@@ -179,54 +193,23 @@ p {
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 600;
+  letter-spacing: 0.04em;
 }
 
 @media only screen and (max-width: 767px) {
   h1,
   .h1 {
-    font-size: 55px;
+    font-size: 44px;
   }
 
   h2,
   .h2 {
-    font-size: 50px;
+    font-size: 36px;
   }
 
   h3,
   .h3 {
-    font-size: 40px;
-  }
-
-  h4,
-  .h4 {
     font-size: 30px;
-  }
-
-  h5,
-  .h5 {
-    font-size: 25px;
-  }
-
-  h6,
-  .h6 {
-    font-size: 20px;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  h1,
-  .h1 {
-    font-size: 30px;
-  }
-
-  h2,
-  .h2 {
-    font-size: 28px;
-  }
-
-  h3,
-  .h3 {
-    font-size: 26px;
   }
 
   h4,
@@ -236,7 +219,39 @@ p {
 
   h5,
   .h5 {
-    font-size: 22px;
+    font-size: 20px;
+  }
+
+  h6,
+  .h6 {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  h1,
+  .h1 {
+    font-size: 34px;
+  }
+
+  h2,
+  .h2 {
+    font-size: 30px;
+  }
+
+  h3,
+  .h3 {
+    font-size: 24px;
+  }
+
+  h4,
+  .h4 {
+    font-size: 21px;
+  }
+
+  h5,
+  .h5 {
+    font-size: 18px;
   }
 }
 
@@ -262,8 +277,8 @@ p {
 }
 
 input:focus {
-  outline: none !important;
-  outline-offset: none !important;  
+  outline: 2px solid var(--elite-accent) !important;
+  outline-offset: 1px !important;
 }
 
 /* Font controls */
@@ -271,7 +286,7 @@ input:focus {
 a {
   text-decoration: none;
   color: var(--standard-black);
-  transition: all ease-in-out 0.3s;
+  transition: color ease-in-out 0.25s;
 }
 
 .uppercase {
@@ -279,7 +294,7 @@ a {
 }
 
 .hover-text-main:hover {
-  color: var(--standard-grey);
+  color: var(--elite-accent);
 }
 
 ul {

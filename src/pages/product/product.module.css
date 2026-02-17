@@ -1,5 +1,5 @@
 .root {
-  margin-top: 16px;
+  margin-top: 24px;
 }
 
 .content {
@@ -16,19 +16,27 @@
 }
 
 .details {
-  max-width: 450px;
+  max-width: 480px;
   min-width: 400px;
+  padding: 16px;
+  border: 1px solid var(--elite-border);
+  border-radius: 16px;
+  background-color: var(--standard-white);
+  box-shadow: 0 8px 24px rgba(15, 23, 38, 0.05);
 }
 
 .details h1 {
-  font-weight: normal;
-  font-size: 32px;
-  line-height: 38px;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 1.2;
   margin-bottom: 16px;
 }
 
 .priceContainer {
-  margin: 32px 0px;
+  margin: 20px 0 26px;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--elite-accent-strong);
 }
 
 .priceContainer span {
@@ -44,11 +52,11 @@
 }
 
 .sizeContainer {
-  margin-top: 56px;
+  margin-top: 40px;
 }
 
 .quantityContainer {
-  margin-top: 40px;
+  margin-top: 28px;
   text-transform: capitalize;
 }
 
@@ -63,7 +71,7 @@
 }
 
 .actionContainer {
-  margin-top: 32px;
+  margin-top: 28px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -103,10 +111,11 @@
 }
 
 .description {
-  margin-top: 40px;
+  margin-top: 30px;
   font-weight: normal;
   font-size: 14px;
-  line-height: 17px;
+  line-height: 1.6;
+  color: #2e3a4f;
 }
 
 .description p {
@@ -120,7 +129,7 @@
 }
 
 .informationContainer {
-  margin-top: 32px;
+  margin-top: 20px;
 }
 
 .informationContainer > div:first-child {
@@ -138,14 +147,14 @@
 }
 
 .suggestionContainer {
-  margin-top: 80px;
+  margin-top: 96px;
 }
 
 .suggestionContainer h2 {
   text-align: center;
-  font-weight: normal;
-  font-size: 32px;
-  line-height: 38px;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 1.2;
   margin-bottom: 48px;
 }
 
@@ -167,7 +176,7 @@
 
 @media (max-width: 1000px) {
   .details {
-    max-width: 350px;
+    max-width: 420px;
   }
 
   .gallery {
@@ -185,6 +194,8 @@
 
   .details {
     max-width: unset;
+    min-width: 0;
+    margin-top: 18px;
   }
 
   .gallery {

@@ -1,5 +1,5 @@
 .root {
-    margin-top: 16px;
+    margin-top: 22px;
 }
 
 .bannerContainer h2 {
@@ -57,7 +57,8 @@
 }
 
 .productContainer {
-    margin-top: 32px;
+    margin-top: 20px;
+    padding: 12px 0 0;
 }
 
 .loadMoreContainer {
@@ -109,8 +110,8 @@
     }
 
     .productContainer {
-        margin-left: 8px;
-        margin-right: 8px;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .breadcrumbContainer {

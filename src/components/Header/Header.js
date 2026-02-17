@@ -25,7 +25,7 @@ const Header = (prop) => {
   const { items } = useContext(CartContext);
   const { lang, t, changeLanguage } = useContext(LocalizationContext);
 
-  const totalItems = items?.reduce((acc, item) => acc + item.quantity, 0);
+  const totalItems = items?.reduce((acc, item) => acc + item.quantity, 0) || 0;
 
   const [menu, setMenu] = useState();
   const [activeMenu, setActiveMenu] = useState();

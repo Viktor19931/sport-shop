@@ -5,8 +5,8 @@ import * as styles from './Brand.module.css';
 
 const Brand = (props) => {
   return (
-    <Link to="/">
-      <h2 style={{ textAlign: 'center', lineHeight: '20px' }}>Elite Sport</h2>
+    <Link to="/" className={styles.root}>
+      <span className={styles.wordmark}>Elite Sport</span>
     </Link>
   );
 };

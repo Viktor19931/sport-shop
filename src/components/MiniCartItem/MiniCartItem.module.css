@@ -5,7 +5,7 @@
 
 .imageContainer {
     width: 155px;
-    height: 200px;
+    aspect-ratio: 1 / 1;
     flex-shrink: 0;
     cursor: pointer;
 }
@@ -13,7 +13,8 @@
 .imageContainer img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    object-position: center;
 }
 
 .detailsContainer {
@@ -68,7 +69,7 @@
 @media (max-width: 500px) {
     .imageContainer {
         width: 80px;
-        height: 110px;
+        aspect-ratio: 1 / 1;
     }
 
     .adjustItemContainer {

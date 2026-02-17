@@ -17,7 +17,6 @@ const ProductCard = (props) => {
     gallery,
     originalPrice,
     meta,
-    height = 580,
   } = props;
 
   const handleRouteToProduct = () => {
@@ -44,11 +43,7 @@ const ProductCard = (props) => {
         onClick={() => handleRouteToProduct()}
         role={'presentation'}
       >
-        <img
-          style={{ height: `${height}px` }}
-          src={gallery[0]}
-          alt={imageAlt}
-        ></img>
+        <img src={gallery[0]} alt={imageAlt}></img>
         <div
           className={styles.bagContainer}
           role={'presentation'}

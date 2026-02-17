@@ -1,49 +1,56 @@
 .button {
-    display: inline-block;
-    font-family: var(--standard-font);
-    font-size: 14px;
-    line-height: 17px;
-    padding: 16px 20px 15px;
-    margin: 0;
-    min-width: 150px;
-    height: auto !important;
-    transition: all 0.3s ease-in-out;
-    text-transform: initial;
-    text-align: center;
-    outline: none;
-    cursor: pointer;
-    position: relative;
+  display: inline-block;
+  font-family: var(--standard-font);
+  font-size: 14px;
+  line-height: 17px;
+  padding: 14px 22px;
+  margin: 0;
+  min-width: 150px;
+  height: auto !important;
+  transition: all 0.25s ease-in-out;
+  text-transform: initial;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  border-radius: 10px;
 }
 
 .primary {
-    border: 2px solid var(--standard-black);
-    color: var(--standard-white);
-    background-color: var(--standard-black);;
-    text-transform: uppercase;
-    font-weight: 500;
-    
+  border: 1px solid var(--elite-accent);
+  color: var(--standard-white);
+  background: linear-gradient(
+    135deg,
+    var(--elite-accent) 0%,
+    var(--elite-accent-strong) 100%
+  );
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  box-shadow: 0 8px 18px rgba(47, 124, 255, 0.25);
 }
 
 @media (hover: hover) {
-    .primary:hover {
-        border: 2px solid var(--standard-dark-grey);
-        background-color: var(--standard-dark-grey);
-    }
+  .primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 24px rgba(47, 124, 255, 0.34);
+  }
 }
 
 .secondary {
-    border: 2px solid var(--standard-black);
-    color: var(--standard-black);
-    background-color: var(--standard-white);
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 0.1em;
+  border: 1px solid var(--elite-border);
+  color: var(--standard-black);
+  background-color: var(--standard-white);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.08em;
 }
 
 @media (hover: hover) {
-    .secondary:hover {
-        border: 2px solid var(--grey-border);
-    }
+  .secondary:hover {
+    border-color: var(--elite-accent);
+    color: var(--elite-accent);
+  }
 }
 
 .secondary.alternate {

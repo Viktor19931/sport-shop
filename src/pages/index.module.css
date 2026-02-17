@@ -2,17 +2,20 @@
 }
 
 .collectionContainer {
-  margin-top: 50px;
-  margin-bottom: 30px;
+  margin-top: 72px;
+  margin-bottom: 24px;
 }
 
 .promotionContainer {
   position: relative;
+  margin-top: 88px;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 .promotionContainer h2 {
-  font-size: 52px;
-  line-height: 62px;
+  font-size: 56px;
+  line-height: 1.08;
 }
 
 .messageContainer {
@@ -42,18 +45,18 @@
 }
 
 .newArrivalsContainer {
-  margin-top: 64px;
+  margin-top: 82px;
 }
 
 .highlightContainer {
-  margin: 88px 0px;
+  margin: 96px 0px;
 }
 
 .linkContainers {
   display: flex;
   position: absolute;
   transform: translate(-50%, 0%);
-  bottom: 64px;
+  bottom: 52px;
   left: 50%;
   gap: 72px;
 }
@@ -64,17 +67,18 @@
 
 .linkContainers a {
   color: var(--standard-white);
-  border-bottom: 1px solid var(--standard-white);
-  font-weight: 500;
-  font-size: 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  font-weight: 600;
+  font-size: 13px;
   line-height: 17px;
   text-transform: uppercase;
-  transition: all 0.3s ease-in-out;
+  letter-spacing: 0.08em;
+  transition: all 0.25s ease-in-out;
 }
 
 .linkContainers a:hover {
-  color: var(--standard-gold);
-  border-bottom: 1px solid var(--standard-gold);
+  color: var(--elite-accent);
+  border-bottom: 1px solid var(--elite-accent);
 }
 
 .blogsContainer {
@@ -86,17 +90,21 @@
 }
 
 .socialContainer {
-  margin-top: 64px;
+  margin-top: 88px;
 }
 
 .socialContentGrid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 26px;
 }
 
 .socialContentGrid img {
   width: 100%;
   object-fit: cover;
+  aspect-ratio: 1;
+  border-radius: 14px;
 }
 
 @media (max-width: 800px) {

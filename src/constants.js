@@ -1,1 +1,1 @@
-export const USD_RATE = 42;
+export const USD_RATE = 43;

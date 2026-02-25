@@ -1,6 +1,11 @@
 import axios from 'axios';
+import { useContext } from 'react';
+
+import { ToastContext } from '../context/toastContext';
 
 const useMonoBankPayment = () => {
+  const { showToast } = useContext(ToastContext);
+
   const handlePayMono = async (name, email, amount) => {
     const monoData = await axios
       .post(
@@ -10,7 +15,7 @@ const useMonoBankPayment = () => {
           ccy: 840,
           redirectUrl: `https://elite-sport.netlify.app/orderConfirm?name=${name}&amount=${amount}`,
           merchantPaymInfo: {
-            customerEmails: [], // Масив пошт, на які потрібно відправити фіскальний чек, якщо у мерчанта активна звʼязка з checkbox
+            customerEmails: [],
             destination: `Оплата за товар, ${name}`,
             basketOrder: [],
           },
@@ -21,11 +26,16 @@ const useMonoBankPayment = () => {
           },
         }
       )
-      .catch((e) => console.log('MMM error MONO ', e));
+      .catch((e) => {
+        console.log('MMM error MONO ', e);
+        showToast('Payment request failed. Please try again later.', 'error');
+      });
 
-    console.log('MMM monoData', monoData);
-
-    if (monoData) window.location.href = monoData.data.pageUrl;
+    if (monoData && monoData.data?.pageUrl) {
+      window.location.href = monoData.data.pageUrl;
+    } else {
+      showToast('Payment request failed. Please try again later.', 'error');
+    }
   };
 
   return handlePayMono;

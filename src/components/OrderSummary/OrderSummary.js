@@ -1,4 +1,4 @@
-import { Link, Script } from 'gatsby';
+import { Link } from 'gatsby';
 import React, { useContext, useState } from 'react';
 
 import Button from '../Button';
@@ -6,12 +6,10 @@ import { USD_RATE } from '../../constants';
 import sendDataToBot from '../../helpers/sendDataToBot';
 import useBankPayment from '../../hooks/useBankPayment';
 import FormInputField from '../FormInputField/FormInputField';
-import RaiffaisenForm from './RaiffaisenForm';
 import { CartContext } from '../../context/cartContext';
 import CurrencyFormatter from '../CurrencyFormatter';
 import { LocalizationContext } from '../../context/localizationContext';
 
-import PlatonForm from './PlatonForm';
 import * as styles from './OrderSummary.module.css';
 
 const OrderSummary = ({ isTest, totalPrice }) => {
@@ -58,10 +56,10 @@ const OrderSummary = ({ isTest, totalPrice }) => {
       giftCard: ${giftCard}
 
       price: ${totalPrice}$
-      bank: ${process.env.GATSBY_PAYMENT_SYSTEM}
+      bank: MONO
     `);
 
-    await handlePay(name, email, isTest ? 1 : totalPrice, USD_RATE);
+    await handlePay(name, email, isTest ? 1 : totalPrice);
   };
 
   return (
@@ -124,26 +122,6 @@ const OrderSummary = ({ isTest, totalPrice }) => {
           </span>
         </div>
       </div>
-      {process.env.GATSBY_PAYMENT_SYSTEM === 'PLATON' && (
-        <PlatonForm
-          {...{ name, email }}
-          amount={isTest ? 1 : totalPrice * USD_RATE}
-          rate={1}
-        />
-      )}
-      {process.env.GATSBY_PAYMENT_SYSTEM === 'RAIFFEISEN' && (
-        <RaiffaisenForm
-          {...{ name, email }}
-          amount={isTest ? 1 : totalPrice * USD_RATE}
-          rate={1}
-        />
-      )}
-      {process.env.GATSBY_PAYMENT_SYSTEM === 'VOSTOK' && (
-        <Script
-          async
-          src="https://sdk.ecom.vostok.bank/SDK/Source/ecom.sdk.js"
-        />
-      )}
       {isSubmitted && !isValid && (
         <p className={styles.errorText}>{t('CART_PAGE.form.error')}</p>
       )}

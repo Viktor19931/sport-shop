@@ -7,6 +7,7 @@ import Footer from '../Footer';
 import * as styles from './Layout.module.css';
 
 import { CartProvider } from '../../context/cartContext';
+import { ToastProvider } from '../../context/toastContext';
 import { LocalizationProvider } from '../../context/localizationContext';
 
 import './Globals.css';
@@ -30,15 +31,17 @@ const Layout = ({ props, children, disablePaddingBottom = false }) => {
 
       <LocalizationProvider>
         <CartProvider>
-          <Header />
-          <main
-            className={`${styles.main} ${
-              disablePaddingBottom === true ? styles.disablePaddingBottom : ''
-            }`}
-          >
-            {children}
-          </main>
-          <Footer />
+          <ToastProvider>
+            <Header />
+            <main
+              className={`${styles.main} ${
+                disablePaddingBottom === true ? styles.disablePaddingBottom : ''
+              }`}
+            >
+              {children}
+            </main>
+            <Footer />
+          </ToastProvider>
         </CartProvider>
       </LocalizationProvider>
     </>

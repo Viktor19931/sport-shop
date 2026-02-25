@@ -21,7 +21,9 @@ const useMonoBankPayment = () => {
           },
         }
       )
-      .catch((e) => console.log('MMM error', e));
+      .catch((e) => console.log('MMM error MONO ', e));
+
+    console.log('MMM monoData', monoData);
 
     if (monoData) window.location.href = monoData.data.pageUrl;
   };

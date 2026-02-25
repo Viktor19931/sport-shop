@@ -15,15 +15,18 @@ const RaiffaisenPaymentForm = ({ name, email, amount, rate }) => {
   const ORDER_ID = `order-${NOW}`;
 
   const signData = `${MERCHANT_ID};${TERMINAL_ID};${NOW};${ORDER_ID};${CURRENCY};${amount};;`;
-  const privateKey = forge.pki.privateKeyFromPem(PRIVATE_KEY_PEM);
 
-  const md = forge.md.sha256.create();
-  md.update(signData);
-  const signature = privateKey.sign(md);
-
-  const base64Signature = forge.util.encode64(signature);
-
-  console.log('QQQ signData ', signData, base64Signature);
+  let base64Signature = '';
+  if (PRIVATE_KEY_PEM) {
+    try {
+      const privateKey = forge.pki.privateKeyFromPem(PRIVATE_KEY_PEM);
+      const md = forge.md.sha256.create();
+      md.update(signData);
+      base64Signature = forge.util.encode64(privateKey.sign(md));
+    } catch (e) {
+      console.error('RaiffaisenForm: failed to sign payment data', e);
+    }
+  }
 
   useEffect(() => {
     document.getElementById('raiffeisen-total-amount').value = amount;

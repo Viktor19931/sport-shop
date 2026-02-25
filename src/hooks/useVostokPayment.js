@@ -14,13 +14,21 @@ const useVostokPayment = () => {
 
     const data = `${ORDER_NUMBER}|${amountToPay}|${MERCHANT_id}|${AUTH_TYPE}`;
 
-    const privateKey = forge.pki.privateKeyFromPem(PRIVATE_KEY_PEM);
+    if (!PRIVATE_KEY_PEM) {
+      console.error('useVostokPayment: GATSBY_VOSTOK_PRIVATE_KEY is not set');
+      return;
+    }
 
-    const md = forge.md.sha256.create();
-    md.update(data, 'utf8');
-    const signature = privateKey.sign(md);
-
-    const base64Signature = forge.util.encode64(signature);
+    let base64Signature = '';
+    try {
+      const privateKey = forge.pki.privateKeyFromPem(PRIVATE_KEY_PEM);
+      const md = forge.md.sha256.create();
+      md.update(data, 'utf8');
+      base64Signature = forge.util.encode64(privateKey.sign(md));
+    } catch (e) {
+      console.error('useVostokPayment: failed to sign payment data', e);
+      return;
+    }
 
     const eComPay = new window.EcomSDK.CheckoutPay();
 

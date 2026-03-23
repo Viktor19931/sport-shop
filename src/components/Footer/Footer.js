@@ -128,7 +128,7 @@ const Footer = (prop) => {
                   alt={'prostir'}
                 ></img>
               </div>
-              <span>{new Date().getFullYear()} (c) Elite Sport</span>
+              <span>{new Date().getFullYear()} (c) Max Sport</span>
             </div>
           </div>
         </Container>

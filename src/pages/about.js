@@ -15,7 +15,7 @@ const AboutPage = (props) => {
   return (
     <div className={styles.root}>
       {/* Hero Container */}
-      <Hero maxWidth={'900px'} image={'/about.jpg'} title={`Elite sport`} />
+      <Hero maxWidth={'900px'} image={'/about.jpg'} title={`Max Sport`} />
 
       <Container size={'large'} spacing={'min'}>
         <div className={styles.detailContainer} ref={historyRef}>

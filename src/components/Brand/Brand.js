@@ -6,7 +6,7 @@ import * as styles from './Brand.module.css';
 const Brand = (props) => {
   return (
     <Link to="/" className={styles.root}>
-      <span className={styles.wordmark}>Elite Sport</span>
+      <span className={styles.wordmark}>Max Sport</span>
     </Link>
   );
 };

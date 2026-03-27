@@ -4,23 +4,15 @@
     "name": "PRODUCTS.product74.name",
     "price": 50,
     "description": "PRODUCTS.product74.description",
-    "gallery": [
-      "/products/product-74/1.jpg",
-      "/products/product-74/2.jpg"
-    ],
-    "tags": [
-      "man",
-      "woman"
-    ],
+    "gallery": ["/products/product-74/1.jpg", "/products/product-74/2.jpg"],
+    "tags": ["man", "woman"],
     "colorOptions": [
       {
         "color": "#f3e9cf",
         "title": "Capsules"
       }
     ],
-    "sizeOptions": [
-      "120 capsules"
-    ],
+    "sizeOptions": ["120 capsules"],
     "alt": "Lion's Mane capsules"
   },
   {
@@ -28,23 +20,15 @@
     "name": "PRODUCTS.product73.name",
     "price": 50,
     "description": "PRODUCTS.product73.description",
-    "gallery": [
-      "/products/product-73/2.webp",
-      "/products/product-73/1.jpg"
-    ],
-    "tags": [
-      "man",
-      "woman"
-    ],
+    "gallery": ["/products/product-73/1.webp", "/products/product-73/2.jpg"],
+    "tags": ["man", "woman"],
     "colorOptions": [
       {
         "color": "#d6c29b",
         "title": "Natural Beige"
       }
     ],
-    "sizeOptions": [
-      "100 g"
-    ],
+    "sizeOptions": ["100 g"],
     "alt": "Lion's Mane extract powder"
   },
   {
@@ -58,24 +42,14 @@
       "/products/product-72/3.png",
       "/products/product-72/4.png"
     ],
-    "tags": [
-      "man",
-      "woman"
-    ],
+    "tags": ["man", "woman"],
     "colorOptions": [
       {
         "color": "#1e3a5f",
         "title": "Navy / Yellow"
       }
     ],
-    "sizeOptions": [
-      "110 см",
-      "120 см",
-      "130 см",
-      "140 см",
-      "150 см",
-      "160 см"
-    ],
+    "sizeOptions": ["110 см", "120 см", "130 см", "140 см", "150 см", "160 см"],
     "alt": "Olaian Surfing 100 children shorty wetsuit"
   },
   {
@@ -89,20 +63,14 @@
       "/products/product-71/3.png",
       "/products/product-71/4.png"
     ],
-    "tags": [
-      "woman"
-    ],
+    "tags": ["woman"],
     "colorOptions": [
       {
         "color": "#be185d",
         "title": "Rose Pink"
       }
     ],
-    "sizeOptions": [
-      "S",
-      "M",
-      "L"
-    ],
+    "sizeOptions": ["S", "M", "L"],
     "alt": "Jobe Sofia Shorty 3/2mm Rose Pink wetsuit for women"
   },
   {
@@ -116,18 +84,14 @@
       "/products/product-70/3.png",
       "/products/product-70/4.png"
     ],
-    "tags": [
-      "woman"
-    ],
+    "tags": ["woman"],
     "colorOptions": [
       {
         "color": "#0f766e",
         "title": "Vintage Teal"
       }
     ],
-    "sizeOptions": [
-      "S"
-    ],
+    "sizeOptions": ["S"],
     "alt": "Jobe Sofia Shorty 3/2mm wetsuit for women"
   },
   {
@@ -140,19 +104,14 @@
       "/products/product-69/2.png",
       "/products/product-69/3.png"
     ],
-    "tags": [
-      "man"
-    ],
+    "tags": ["man"],
     "colorOptions": [
       {
         "color": "#0f172a",
         "title": "Black / Red"
       }
     ],
-    "sizeOptions": [
-      "M",
-      "L"
-    ],
+    "sizeOptions": ["M", "L"],
     "alt": "Cressi Tortuga Man 2.5mm shorty wetsuit for diving"
   },
   {
@@ -160,21 +119,15 @@
     "name": "PRODUCTS.product68.name",
     "price": 250,
     "description": "PRODUCTS.product68.description",
-    "gallery": [
-      "/products/product-68/1.png"
-    ],
-    "tags": [
-      "man"
-    ],
+    "gallery": ["/products/product-68/1.png"],
+    "tags": ["man"],
     "colorOptions": [
       {
         "color": "#44403c",
         "title": "Dark-Spectre Camo"
       }
     ],
-    "sizeOptions": [
-      "M"
-    ],
+    "sizeOptions": ["M"],
     "alt": "Cressi Dark Digital Spectre 7mm wetsuit for spearfishing"
   },
   {
@@ -182,21 +135,15 @@
     "name": "PRODUCTS.product67.name",
     "price": 140,
     "description": "PRODUCTS.product67.description",
-    "gallery": [
-      "/products/product-67/1.png"
-    ],
-    "tags": [
-      "man"
-    ],
+    "gallery": ["/products/product-67/1.png"],
+    "tags": ["man"],
     "colorOptions": [
       {
         "color": "#44403c",
         "title": "Dark-Spectre Camo"
       }
     ],
-    "sizeOptions": [
-      "M"
-    ],
+    "sizeOptions": ["M"],
     "alt": "Cressi Dark Digital Spectre wetsuit for spearfishing"
   },
   {
@@ -204,22 +151,15 @@
     "name": "PRODUCTS.product66.name",
     "price": 10,
     "description": "PRODUCTS.product66.description",
-    "gallery": [
-      "/products/product-66/1.png"
-    ],
-    "tags": [
-      "man",
-      "woman"
-    ],
+    "gallery": ["/products/product-66/1.png"],
+    "tags": ["man", "woman"],
     "colorOptions": [
       {
         "color": "#ffffff",
         "title": "White"
       }
     ],
-    "sizeOptions": [
-      "12 шт"
-    ],
+    "sizeOptions": ["12 шт"],
     "alt": "OULITE badminton shuttlecocks feather 12 pcs"
   },
   {
@@ -232,19 +172,14 @@
       "/products/product-64/2.png",
       "/products/product-64/3.png"
     ],
-    "tags": [
-      "man",
-      "woman"
-    ],
+    "tags": ["man", "woman"],
     "colorOptions": [
       {
         "color": "#ffffff",
         "title": "White"
       }
     ],
-    "sizeOptions": [
-      "5 м"
-    ],
+    "sizeOptions": ["5 м"],
     "alt": "Speed Net tennis badminton net with stand"
   },
   {
@@ -252,22 +187,15 @@
     "name": "PRODUCTS.product63.name",
     "price": 50,
     "description": "PRODUCTS.product63.description",
-    "gallery": [
-      "/products/product-63/1.png"
-    ],
-    "tags": [
-      "man",
-      "woman"
-    ],
+    "gallery": ["/products/product-63/1.png"],
+    "tags": ["man", "woman"],
     "colorOptions": [
       {
         "color": "#7c2d12",
         "title": "Brown"
       }
     ],
-    "sizeOptions": [
-      "6.1 × 0.76 м"
-    ],
+    "sizeOptions": ["6.1 × 0.76 м"],
     "alt": "Yonex AC141EX badminton net"
   },
   {
@@ -280,19 +208,14 @@
       "/products/product-62/2.png",
       "/products/product-62/3.png"
     ],
-    "tags": [
-      "man",
-      "woman"
-    ],
+    "tags": ["man", "woman"],
     "colorOptions": [
       {
         "color": "#881337",
         "title": "Burgundy"
       }
     ],
-    "sizeOptions": [
-      "6.1 × 0.76 м"
-    ],
+    "sizeOptions": ["6.1 × 0.76 м"],
     "alt": "Badminton net"
   },
   {
@@ -305,10 +228,7 @@
       "/products/product-61/2.png",
       "/products/product-61/3.png"
     ],
-    "tags": [
-      "man",
-      "woman"
-    ],
+    "tags": ["man", "woman"],
     "colorOptions": [
       {
         "color": "#eab308",
@@ -331,9 +251,7 @@
         "title": "Black - 30LB"
       }
     ],
-    "sizeOptions": [
-      "160 см"
-    ],
+    "sizeOptions": ["160 см"],
     "alt": "WCG T15 resistance bands set"
   },
   {

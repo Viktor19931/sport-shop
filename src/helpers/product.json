@@ -1,5 +1,29 @@
 [
   {
+    "id": 74,
+    "name": "PRODUCTS.product74.name",
+    "price": 50,
+    "description": "PRODUCTS.product74.description",
+    "gallery": [
+      "/products/product-74/1.jpg",
+      "/products/product-74/2.jpg"
+    ],
+    "tags": [
+      "man",
+      "woman"
+    ],
+    "colorOptions": [
+      {
+        "color": "#f3e9cf",
+        "title": "Capsules"
+      }
+    ],
+    "sizeOptions": [
+      "120 capsules"
+    ],
+    "alt": "Lion's Mane capsules"
+  },
+  {
     "id": 73,
     "name": "PRODUCTS.product73.name",
     "price": 50,

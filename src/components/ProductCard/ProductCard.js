@@ -73,7 +73,7 @@ const ProductCard = (props) => {
             <span className={styles.originalPrice}>${originalPrice}</span>
           )}
         </div>
-        <span className={styles.meta}>{meta}</span>
+        {meta && <span className={styles.meta}>{meta}</span>}
       </div>
     </div>
   );

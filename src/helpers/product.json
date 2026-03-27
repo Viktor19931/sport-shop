@@ -1,5 +1,29 @@
 [
   {
+    "id": 73,
+    "name": "PRODUCTS.product73.name",
+    "price": 50,
+    "description": "PRODUCTS.product73.description",
+    "gallery": [
+      "/products/product-73/2.webp",
+      "/products/product-73/1.jpg"
+    ],
+    "tags": [
+      "man",
+      "woman"
+    ],
+    "colorOptions": [
+      {
+        "color": "#d6c29b",
+        "title": "Natural Beige"
+      }
+    ],
+    "sizeOptions": [
+      "100 g"
+    ],
+    "alt": "Lion's Mane extract powder"
+  },
+  {
     "id": 72,
     "name": "PRODUCTS.product72.name",
     "price": 42,
@@ -14,7 +38,6 @@
       "man",
       "woman"
     ],
-    "meta": "NEW",
     "colorOptions": [
       {
         "color": "#1e3a5f",
@@ -45,7 +68,6 @@
     "tags": [
       "woman"
     ],
-    "meta": "NEW",
     "colorOptions": [
       {
         "color": "#be185d",
@@ -73,7 +95,6 @@
     "tags": [
       "woman"
     ],
-    "meta": "NEW",
     "colorOptions": [
       {
         "color": "#0f766e",
@@ -98,7 +119,6 @@
     "tags": [
       "man"
     ],
-    "meta": "NEW",
     "colorOptions": [
       {
         "color": "#0f172a",
@@ -122,7 +142,6 @@
     "tags": [
       "man"
     ],
-    "meta": "NEW",
     "colorOptions": [
       {
         "color": "#44403c",
@@ -145,7 +164,6 @@
     "tags": [
       "man"
     ],
-    "meta": "NEW",
     "colorOptions": [
       {
         "color": "#44403c",
@@ -169,7 +187,6 @@
       "man",
       "woman"
     ],
-    "meta": "NEW",
     "colorOptions": [
       {
         "color": "#ffffff",
@@ -195,7 +212,6 @@
       "man",
       "woman"
     ],
-    "meta": "NEW",
     "colorOptions": [
       {
         "color": "#ffffff",
@@ -219,7 +235,6 @@
       "man",
       "woman"
     ],
-    "meta": "NEW",
     "colorOptions": [
       {
         "color": "#7c2d12",
@@ -245,7 +260,6 @@
       "man",
       "woman"
     ],
-    "meta": "NEW",
     "colorOptions": [
       {
         "color": "#881337",
@@ -271,7 +285,6 @@
       "man",
       "woman"
     ],
-    "meta": "NEW",
     "colorOptions": [
       {
         "color": "#eab308",
@@ -310,7 +323,6 @@
       "/products/product-60/3.png"
     ],
     "tags": ["man", "woman"],
-    "meta": "NEW",
     "colorOptions": [
       {
         "color": "#000000",
@@ -332,7 +344,6 @@
       "/products/product-59/4.png"
     ],
     "tags": ["man", "woman"],
-    "meta": "NEW",
     "colorOptions": [
       {
         "color": "#000000",
@@ -349,7 +360,6 @@
     "description": "PRODUCTS.product58.description",
     "gallery": ["/products/product-58/1.png"],
     "tags": ["man", "woman"],
-    "meta": "NEW",
     "colorOptions": [
       {
         "color": "#d97706",
@@ -373,7 +383,6 @@
       "/products/product-57/3.png"
     ],
     "tags": ["man", "woman"],
-    "meta": "NEW",
     "colorOptions": [
       {
         "color": "#1e3a8a",
@@ -389,7 +398,6 @@
     "description": "PRODUCTS.product65.description",
     "gallery": ["/products/product-65/1.png", "/products/product-65/2.png"],
     "tags": ["man", "woman"],
-    "meta": "NEW",
     "colorOptions": [
       {
         "color": "#94a3b8",
